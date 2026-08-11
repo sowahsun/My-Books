@@ -23,8 +23,10 @@ jobs:
           git config --global user.email "action@github.com"
 
           echo "🟠 [API] 正在获取上游 40GB 仓库的文件树..."
-          # 利用系统自带的 Token 通过 API 获取结构树，避免触发限流限制
-          curl -s -H "Authorization: token $GH_TOKEN" "https://api.github.com/repos/TapXWorld/ChinaTextbook/git/trees/master?recursive=1" > tree.json
+          # 增加 per_page=100000 以支持超大仓库，避免截断；增加重试和超时
+          curl -s --retry 3 --retry-delay 5 --max-time 120 \
+            -H "Authorization: token $GH_TOKEN" \
+            "https://api.github.com/repos/TapXWorld/ChinaTextbook/git/trees/master?recursive=1&per_page=100000" > tree.json
 
           echo "🟠 [解析] 正在生成 list.json 与隐蔽的纯文本 README.md..."
           cat << 'EOF' > build_index.py
@@ -37,6 +39,12 @@ jobs:
           # 容错机制：如果未获取到完整结构，则中断以保护现有文件
           if 'tree' not in tree_data:
               print("❌ 获取 API 数据失败，请检查网络或仓库是否存在！")
+              exit(1)
+
+          # 检查 API 返回的 truncated 标记，避免因仓库过大导致索引不全
+          if tree_data.get('truncated'):
+              fetched_count = len(tree_data['tree'])
+              print(f"❌ 文件树被截断！已获取 {fetched_count} 条，可能不完整。请考虑进一步分页处理。")
               exit(1)
 
           current_time = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
