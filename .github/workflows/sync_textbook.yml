@@ -1,12 +1,14 @@
 name: ChinaTextbook - API Index Builder
 on:
   schedule:
-    - cron: '0 0 * * *' # 每天凌晨巡检
+    - cron: '0 16 * * *' # UTC 16:00 = 北京时间 00:00
   workflow_dispatch:      # 允许手动执行
 
 jobs:
   build_index:
     runs-on: ubuntu-latest
+    env:
+      TZ: Asia/Shanghai
     permissions:
       contents: write
     steps:
