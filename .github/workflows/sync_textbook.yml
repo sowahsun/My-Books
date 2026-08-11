@@ -1,0 +1,135 @@
+name: ChinaTextbook - API Index Builder
+on:
+  schedule:
+    - cron: '0 0 * * *' # 每天凌晨巡检
+  workflow_dispatch:      # 允许手动执行
+
+jobs:
+  build_index:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: Checkout local repo
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 1 # 仅拉取本地当前最新配置，瞬间完成
+
+      - name: Build index via GitHub API
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          git config --global user.name "GitHub Action"
+          git config --global user.email "action@github.com"
+
+          echo "🟠 [API] 正在获取上游 40GB 仓库的文件树..."
+          # 利用系统自带的 Token 通过 API 获取结构树，避免触发限流限制
+          curl -s -H "Authorization: token $GH_TOKEN" "https://api.github.com/repos/TapXWorld/ChinaTextbook/git/trees/master?recursive=1" > tree.json
+
+          echo "🟠 [解析] 正在生成 list.json 与隐蔽的纯文本 README.md..."
+          cat << 'EOF' > build_index.py
+          import json, re, os
+          from datetime import datetime
+
+          with open('tree.json', 'r', encoding='utf-8') as f:
+              tree_data = json.load(f)
+          
+          # 容错机制：如果未获取到完整结构，则中断以保护现有文件
+          if 'tree' not in tree_data:
+              print("❌ 获取 API 数据失败，请检查网络或仓库是否存在！")
+              exit(1)
+
+          current_time = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+          raw_base = "https://raw.githubusercontent.com/TapXWorld/ChinaTextbook/master/"
+
+          merged = {}
+          chunk_pattern = re.compile(r'^(.*)\.(\d+)$')
+
+          # 1. 解析所有文件并标记分片
+          for item in tree_data.get('tree', []):
+              if item.get('type') != 'blob':
+                  continue
+              path = item['path']
+              # 排除系统文件与文档
+              if path.startswith('.github/') or path.startswith('wiki/') or path in ('list.json', 'README.md'):
+                  continue
+
+              name = path.split('/')[-1]
+              url = raw_base + path.replace(' ', '%20')
+
+              match = chunk_pattern.match(name)
+              if match:
+                  base_name = match.group(1)
+                  base_path = path.rsplit('.', 1)[0]
+                  chunk_idx = int(match.group(2))
+
+                  if base_path not in merged:
+                      merged[base_path] = {
+                          'name': base_name,
+                          'path': base_path,
+                          'type': 'chunked_file',
+                          'is_chunked': True,
+                          'chunks': [],
+                          'time': current_time
+                      }
+                  merged[base_path]['chunks'].append({'url': url, 'index': chunk_idx})
+              else:
+                  merged[path] = {
+                      'name': name,
+                      'path': path,
+                      'type': 'repo_file',
+                      'is_chunked': False,
+                      'time': current_time,
+                      'url': url
+                  }
+
+          # 确保分片文件按 .1, .2, .3 顺序严格排列
+          for data in merged.values():
+              if data.get('is_chunked'):
+                  data['chunks'].sort(key=lambda x: x['index'])
+
+          with open('list.json', 'w', encoding='utf-8') as f:
+              json.dump(list(merged.values()), f, ensure_ascii=False, indent=2)
+
+          # 2. 生成完全无外链的纯文本 README.md 目录树
+          apps = list(merged.values())
+          tree_map = {}
+          for app in apps:
+              parts = app['path'].split('/')
+              cur = tree_map
+              for part in parts[:-1]:
+                  cur = cur.setdefault(part, {})
+              cur[parts[-1]] = app
+
+          def render(node, level=0):
+              res = ""
+              indent = "  " * level
+              for key, val in sorted(node.items()):
+                  if isinstance(val, dict) and 'type' not in val:
+                      res += f"{indent}- 📁 **{key}**\n"
+                      res += render(val, level + 1)
+                  else:
+                      name = val['name']
+                      time = val['time'][:10]
+                      badge = " *(🧩 分片合并)*" if val.get('is_chunked') else ""
+                      # 核心：此处彻底剥离了链接，仅作文本展示
+                      res += f"{indent}- 📄 {name}{badge} `同步于: {time}`\n"
+              return res
+
+          md = "# 📚 中国中小学教材 (极速镜像库)\n\n"
+          md += "> ⚡️ 本仓库仅作自动化资源索引与分片标记展示。\n\n"
+          md += "## 📦 教材资源树\n\n"
+          md += render(tree_map)
+          md += "\n---\n\n## 🙏 声明\n"
+          md += "- **数据来源**：全自动极速 API 索引自 [TapXWorld/ChinaTextbook](https://github.com/TapXWorld/ChinaTextbook)。\n"
+
+          with open('README.md', 'w', encoding='utf-8') as f:
+              f.write(md)
+          EOF
+
+          python3 build_index.py
+          rm -f tree.json build_index.py
+
+          git add list.json README.md
+          git commit -m "System: Secure API-based index rebuild" || exit 0
+          git push origin main --force
