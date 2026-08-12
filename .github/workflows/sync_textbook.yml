@@ -1,4 +1,4 @@
-Name: ChinaTextbook - API Index Builder
+name: ChinaTextbook - API Index Builder
 on:
   schedule:
     - cron: '0 16 * * *' # UTC 16:00 = 北京时间 00:00
