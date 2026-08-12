@@ -219,10 +219,6 @@ if (empty($requested_file)) {
             .meta { display: flex; align-items: center; gap: 12px; margin-top: auto; flex-wrap: wrap; }
             .chunked-icon { font-size: 1rem; cursor: pointer; opacity: 0.8; transition: opacity 0.2s; flex-shrink: 0; }
             .chunked-icon:hover { opacity: 1; }
-            .date { font-size: 0.78rem; color: var(--text-sub); flex-shrink: 0; }
-            
-            .test-link { font-size: 0.78rem; color: var(--primary); text-decoration: none; padding: 2px 8px; border: 1px solid #bfdbfe; border-radius: 6px; background: #eff6ff; transition: all 0.2s; white-space: nowrap; font-weight: 500; }
-            .test-link:hover { background: var(--primary); color: white; }
             
             .download-btn { background-color: var(--primary); color: white; text-decoration: none; padding: 10px 20px; font-size: 0.95rem; border-radius: 10px; font-weight: 500; margin-left: 16px; transition: all 0.2s; white-space: nowrap; display: flex; align-items: center; gap: 6px; flex-shrink: 0; align-self: center; box-shadow: 0 1px 2px rgba(37,99,235,0.2); }
             .download-btn:hover { background-color: var(--primary-hover); box-shadow: 0 4px 12px rgba(37,99,235,0.25); transform: translateY(-1px); }
@@ -238,19 +234,36 @@ if (empty($requested_file)) {
             @media (max-width: 600px) {
                 .header h1 { font-size: 1.15rem; }
                 .search-box input { font-size: 0.88rem; padding: 12px 30px 12px 38px; }
-                .list-item { padding: 14px 14px; align-items: flex-start; } 
-                .folder-icon-wrap { width: 40px; height: 40px; margin-right: 12px; }
+                
+                .list-item { padding: 16px; align-items: flex-start; position: relative; } 
+                
+                .folder-icon-wrap { width: 42px; height: 42px; margin-right: 12px; }
                 .folder-icon-wrap svg { width: 22px; height: 22px; }
-                .icon { width: 65px; margin-right: 12px; margin-top: 2px; }
-                .cover-img { width: 65px; height: 91px; }
-                .default-pdf { width: 38px; height: 38px; }
-                .info { min-height: 91px; height: auto; justify-content: flex-start; padding: 0; }
-                .name { font-size: 0.9rem; margin-bottom: 4px; line-height: 1.35; }
+                
+                .icon { width: 72px; margin-right: 14px; margin-top: 0; }
+                .cover-img { width: 72px; height: 100px; border-radius: 6px; }
+                .default-pdf { width: 40px; height: 40px; }
+                
+                .info { min-height: 100px; height: auto; justify-content: flex-start; padding: 0; padding-bottom: 30px; width: 100%; } 
+                .list-item.folder .info { padding-bottom: 0; min-height: auto; } 
+                
+                .name { font-size: 0.95rem; margin-bottom: 6px; line-height: 1.35; }
                 .search-path { font-size: 0.75rem; margin-top: 2px; margin-bottom: 4px; }
-                .meta-tags { margin-bottom: 4px; gap: 4px; }
-                .tag { font-size: 0.68rem; padding: 1px 6px; }
+                
+                .meta-tags { margin-bottom: 4px; gap: 5px; }
+                .tag { font-size: 0.7rem; padding: 2px 6px; }
                 .meta { margin-top: 6px; gap: 8px; }
-                .download-btn { padding: 8px 14px; font-size: 0.85rem; margin-left: 8px; align-self: center; } 
+                
+                .download-btn { 
+                    position: absolute; 
+                    right: 16px; 
+                    bottom: 16px; 
+                    padding: 6px 14px; 
+                    font-size: 0.85rem; 
+                    margin: 0; 
+                    border-radius: 8px;
+                    z-index: 2;
+                } 
                 .chevron { display: none; }
             }
             .header { flex-wrap: nowrap; }
@@ -339,7 +352,7 @@ if (empty($requested_file)) {
                 imgElement.outerHTML = defaultSvg;
             };
 
-            function parseBookMeta(filePath) {
+            function parseBookMeta(filePath, fileName) {
                 const parts = filePath.split('/');
                 let stage = parts[0] || '';
                 let subject = parts.length > 1 ? parts[1] : '';
@@ -352,6 +365,13 @@ if (empty($requested_file)) {
                 } else if (parts.length === 3) {
                     grade = parts[2];
                 }
+                
+                // 去除冗余：如果提取出的年级或出版社刚好是文件名本身（或包含.pdf/_merge_folder），则不显示
+                if (fileName) {
+                    if (grade === fileName || grade.includes('.pdf') || grade.includes('_merge_folder')) grade = '';
+                    if (publisher === fileName || publisher.includes('.pdf') || publisher.includes('_merge_folder')) publisher = '';
+                }
+
                 return { stage, subject, publisher, grade };
             }
 
@@ -408,13 +428,13 @@ if (empty($requested_file)) {
                 if (n.includes('地理') || n.includes('道德') || n.includes('法治') || n.includes('政治')) return 'folder-primary';
                 if (n.includes('音乐') || n.includes('美术') || n.includes('艺术') || n.includes('体育')) return 'folder-purple';
                 
-                // 3. 年级分类（如：七年级、八年级等）
+                // 3. 年级分类
                 if (n.includes('年级') || n.includes('上册') || n.includes('下册') || n.includes('全一册')) return 'folder-warning';
                 
-                // 4. 出版社分类（如：人教版、出版社等）
+                // 4. 出版社分类
                 if (n.includes('版') || n.includes('出版社') || n.includes('社')) return 'folder-cyan';
 
-                // 5. 兜底：基于名称生成稳定哈希，确保二级/三级目录的所有未知文件夹也拥有丰富多彩的颜色
+                // 5. 兜底
                 let hash = 0;
                 for (let i = 0; i < name.length; i++) {
                     hash = name.charCodeAt(i) + ((hash << 5) - hash);
@@ -465,15 +485,13 @@ if (empty($requested_file)) {
                     const encodedPath = encodeURIComponent(file.path);
                     
                     let iconHtml = defaultSvg;
-                    let testLink = '';
                     
                     if (file.name.toLowerCase().endsWith('.pdf')) {
                         const coverUrl = getCoverUrl(file.path);
-                        iconHtml = `<img src="${coverUrl}" class="cover-img" loading="lazy" onerror="handleImgError(this)" alt="cover"/>`;
-                        testLink = `<a href="${coverUrl}" target="_blank" class="test-link" title="点此在新标签页预览封面原图">预览封面</a>`;
+                        iconHtml = `<a href="${coverUrl}" target="_blank" title="点击预览高清封面" style="display: block; cursor: zoom-in; position: relative; z-index: 2;"><img src="${coverUrl}" class="cover-img" loading="lazy" onerror="handleImgError(this)" alt="cover"/></a>`;
                     }
                     
-                    const meta = parseBookMeta(file.path);
+                    const meta = parseBookMeta(file.path, file.name);
                     let tagsHtml = `
                         <div class="meta-tags">
                             ${meta.stage ? `<span class="tag tag-stage">🎓 ${esc(meta.stage)}</span>` : ''}
@@ -495,11 +513,10 @@ if (empty($requested_file)) {
                             <span class="search-path">📁 所属: ${highlight(parentDir, keywords)} <span class="enter-dir" onclick="event.stopPropagation();enterDir('${esc(dirPath)}')">[进入目录]</span></span>
                             <div class="meta">
                                 ${badgeHtml}
-                                ${testLink}
                             </div>
                         </div>
                         <a href="?file=${encodedPath}" class="download-btn">
-                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg> 下载
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg> ${file.size || '下载'}
                         </a>
                     `;
                     listWrap.appendChild(div);
@@ -596,19 +613,16 @@ if (empty($requested_file)) {
                 files.forEach(file => {
                     const div = document.createElement('div'); div.className = 'list-item';
                     const badgeHtml = file.is_chunked ? `<span class="chunked-icon" onclick="event.stopPropagation(); alert('此文件由多个分片自动合并，下载不受影响。')" title="点击了解详情">🧩</span>` : '';
-                    const timeStr = (file.time || '').substring(0, 10);
                     const encodedPath = encodeURIComponent(file.path);
                     
                     let iconHtml = defaultSvg;
-                    let testLink = '';
 
                     if (file.name.toLowerCase().endsWith('.pdf')) {
                         const coverUrl = getCoverUrl(file.path);
-                        iconHtml = `<img src="${coverUrl}" class="cover-img" loading="lazy" onerror="handleImgError(this)" alt="cover"/>`;
-                        testLink = `<a href="${coverUrl}" target="_blank" class="test-link" title="点此在新标签页预览封面原图">预览封面</a>`;
+                        iconHtml = `<a href="${coverUrl}" target="_blank" title="点击预览高清封面" style="display: block; cursor: zoom-in; position: relative; z-index: 2;"><img src="${coverUrl}" class="cover-img" loading="lazy" onerror="handleImgError(this)" alt="cover"/></a>`;
                     }
                     
-                    const meta = parseBookMeta(file.path);
+                    const meta = parseBookMeta(file.path, file.name);
                     let tagsHtml = `
                         <div class="meta-tags">
                             ${meta.stage ? `<span class="tag tag-stage">🎓 ${esc(meta.stage)}</span>` : ''}
@@ -625,12 +639,10 @@ if (empty($requested_file)) {
                             ${tagsHtml}
                             <div class="meta">
                                 ${badgeHtml}
-                                <span class="date">更新: ${timeStr}</span>
-                                ${testLink}
                             </div>
                         </div>
                         <a href="?file=${encodedPath}" class="download-btn">
-                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg> 下载
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg> ${file.size || '下载'}
                         </a>
                     `;
                     listWrap.appendChild(div);
