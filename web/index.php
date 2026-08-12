@@ -11,12 +11,53 @@ $list_json_raw_url = "https://raw.githubusercontent.com/{$github_repo}/main/list
 $cache_file = __DIR__ . '/list.json.cache';
 $cache_time = 600; 
 
-$proxies = [
-    "https://ghproxy.net/",
-    "https://mirror.ghproxy.com/",
-    "https://gh-proxy.com/",
-    "" 
-];
+// ==========================================
+// 全局通用网络请求上下文 (前置，供后续所有请求统一调用)
+// ==========================================
+$stream_context = stream_context_create([
+    'http' => [
+        'method' => 'GET',
+        'header' => "User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64)\r\n",
+        'timeout' => 60,
+        'follow_location' => 1,
+        'max_redirects' => 5
+    ],
+    'ssl' => ['verify_peer' => false, 'verify_peer_name' => false]
+]);
+
+// ==========================================
+// 代理节点远程配置与本地动态缓存
+// ==========================================
+$proxies_remote_url = "https://raw.githubusercontent.com/{$github_repo}/main/proxies.json";
+$proxies_cache_file = __DIR__ . '/proxies.json.cache';
+
+$proxies = [];
+if (file_exists($proxies_cache_file) && (time() - filemtime($proxies_cache_file)) < $cache_time) {
+    $proxies_data = file_get_contents($proxies_cache_file);
+    $proxies = json_decode($proxies_data, true);
+} else {
+    // 使用 @ 抑制网络请求可能的报错，保持输出流纯净
+    $proxies_data = @file_get_contents($proxies_remote_url, false, $stream_context);
+    if ($proxies_data !== false) {
+        file_put_contents($proxies_cache_file, $proxies_data);
+        $proxies = json_decode($proxies_data, true);
+    } elseif (file_exists($proxies_cache_file)) {
+        // 网络抖动拉取失败时，降级读取本地旧缓存
+        $proxies = json_decode(file_get_contents($proxies_cache_file), true);
+    }
+}
+
+// 终极硬编码兜底：如果远程配置拉取失败或格式错误，启用默认优选节点
+if (empty($proxies) || !is_array($proxies)) {
+    $proxies = [
+        "https://ghproxy.net/",
+        "https://mirror.ghproxy.com/",
+        "https://gh-proxy.com/",
+        "https://cors.isteed.cc/",
+        "https://v6.gh-proxy.org/",
+        "" 
+    ];
+}
 
 // ==========================================
 // 中文 URL 标准化转码器
@@ -87,22 +128,11 @@ function get_working_proxies_sorted($proxies, $test_url) {
     return $sorted_proxies;
 }
 
-$stream_context = stream_context_create([
-    'http' => [
-        'method' => 'GET',
-        'header' => "User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64)\r\n",
-        'timeout' => 60,
-        'follow_location' => 1,
-        'max_redirects' => 5
-    ],
-    'ssl' => ['verify_peer' => false, 'verify_peer_name' => false]
-]);
-
 $requested_file = isset($_GET['file']) ? $_GET['file'] : '';
 $requested_file = str_replace(['..', '\\', "\0"], '', $requested_file);
 
 // ==========================================
-// 缓存读取与数据清洗
+// 缓存读取与数据清洗 (list.json)
 // ==========================================
 $json_data = false;
 if (file_exists($cache_file) && (time() - filemtime($cache_file)) < $cache_time) {
