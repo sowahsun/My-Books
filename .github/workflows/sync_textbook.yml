@@ -1,4 +1,4 @@
-name: ChinaTextbook - API Index Builder
+Name: ChinaTextbook - API Index Builder
 on:
   schedule:
     - cron: '0 16 * * *' # UTC 16:00 = 北京时间 00:00
@@ -35,6 +35,13 @@ jobs:
           import json, re, os
           from datetime import datetime
 
+          # 格式化文件大小辅助函数
+          def format_size(size_bytes):
+              if size_bytes < 1024 * 1024:
+                  return f"{size_bytes / 1024:.1f} KB"
+              else:
+                  return f"{size_bytes / (1024 * 1024):.1f} MB"
+
           with open('tree.json', 'r', encoding='utf-8') as f:
               tree_data = json.load(f)
           
@@ -66,6 +73,7 @@ jobs:
 
               name = path.split('/')[-1]
               url = raw_base + path.replace(' ', '%20')
+              size_bytes = item.get('size', 0)
 
               match = chunk_pattern.match(name)
               if match:
@@ -80,9 +88,11 @@ jobs:
                           'type': 'chunked_file',
                           'is_chunked': True,
                           'chunks': [],
-                          'time': current_time
+                          'time': current_time,
+                          '_raw_size': 0
                       }
                   merged[base_path]['chunks'].append({'url': url, 'index': chunk_idx})
+                  merged[base_path]['_raw_size'] += size_bytes
               else:
                   merged[path] = {
                       'name': name,
@@ -90,13 +100,16 @@ jobs:
                       'type': 'repo_file',
                       'is_chunked': False,
                       'time': current_time,
-                      'url': url
+                      'url': url,
+                      'size': format_size(size_bytes)
                   }
 
-          # 确保分片文件按 .1, .2, .3 顺序严格排列
+          # 确保分片文件按 .1, .2, .3 顺序严格排列，并计算总大小
           for data in merged.values():
               if data.get('is_chunked'):
                   data['chunks'].sort(key=lambda x: x['index'])
+                  data['size'] = format_size(data['_raw_size'])
+                  del data['_raw_size']
 
           with open('list.json', 'w', encoding='utf-8') as f:
               json.dump(list(merged.values()), f, ensure_ascii=False, indent=2)
