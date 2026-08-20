@@ -1,8 +1,8 @@
-name: N9G9 - API Index Builder
+name: N9G9 - Dual Engine Index Builder
 on:
   schedule:
     - cron: '0 0 * * *' # UTC 0:00 = 北京时间 8:00
-  workflow_dispatch:      # 允许手动执行
+  workflow_dispatch:
 
 jobs:
   build_apk_index:
@@ -17,19 +17,18 @@ jobs:
         with:
           fetch-depth: 1
 
-      - name: Build N9G9 Index via GitHub API
+      - name: Build Dual Format JSON via API
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           git config --global user.name "GitHub Action"
           git config --global user.email "action@github.com"
 
-          echo "🟠 [解析] 正在隔空抓取 TVAPP 和 FMApp 数据，全程不下载任何 APK..."
-          cat << 'EOF' > build_n9g9_index.py
+          echo "🟠 [解析] 正在隔空抓取数据，准备生成双版本 JSON..."
+          cat << 'EOF' > build_apk_index.py
           import urllib.request, urllib.parse, json, re, os
           from datetime import datetime
 
-          # 注入 Token 防止 GitHub API 限制限制
           token = os.environ.get('GH_TOKEN')
           headers = {'Authorization': f'token {token}'} if token else {}
 
@@ -49,33 +48,47 @@ jobs:
               except:
                   return ""
 
-          apk_list = []
+          # 准备两个容器分别装旧版和新版的数据
+          old_list = []
+          new_php_list = []
           current_time = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
 
           # ==========================================
-          # 1. 搞定私活：直接提取 FMApp 原作者的 Release 链接
+          # 1. 提取 FMApp Releases (私活)
           # ==========================================
-          print("-> 正在提取 lystv/fmapp Releases 直链...")
+          print("-> 提取 lystv/fmapp Releases...")
           fmapp_api = fetch_api("https://api.github.com/repos/lystv/fmapp/releases")
           if fmapp_api:
-              for release in fmapp_api[:3]: # 取最新的 3 个版本
+              for release in fmapp_api[:3]:
                   for asset in release.get('assets', []):
                       if asset['name'].endswith('.apk'):
-                          apk_list.append({
+                          time_str = asset['updated_at'].replace('T', ' ').replace('Z', '')
+                          raw_url = asset['browser_download_url']
+                          
+                          # 【旧版 HTML 格式】
+                          old_list.append({
+                              "name": f"[{release['tag_name']}] {asset['name']}",
+                              "type": "release_asset",
+                              "path": f"Releases/{release['tag_name']}/{asset['name']}", 
+                              "time": time_str,
+                              "url": raw_url
+                          })
+                          
+                          # 【新版 PHP 格式】
+                          new_php_list.append({
                               "name": asset['name'],
-                              "path": f"FMApp专属/{release['tag_name']}/{asset['name']}", # 虚拟目录结构
+                              "path": f"FMApp专属/{release['tag_name']}/{asset['name']}",
                               "version": release['tag_name'],
-                              "category": "FMApp", # 已去掉了(私活)字样
-                              "time": asset['updated_at'].replace('T', ' ').replace('Z', ''),
+                              "category": "FMApp",
+                              "time": time_str,
                               "size": asset.get('size', 0),
-                              # ⚠️ 核心：直接使用原作者的下载链接，绝不走自己仓库
-                              "url": asset['browser_download_url'] 
+                              "url": raw_url 
                           })
 
           # ==========================================
-          # 2. 提取 youhunwl/TVAPP 的 README 描述
+          # 2. 提取 TVAPP 描述并生成单独的 desc_map
           # ==========================================
-          print("-> 正在提取 youhunwl/TVAPP 描述信息...")
+          print("-> 提取 youhunwl/TVAPP 描述信息...")
           readme_text = fetch_raw("https://raw.githubusercontent.com/youhunwl/TVAPP/main/README.md")
           desc_map = {}
           if readme_text:
@@ -91,55 +104,70 @@ jobs:
                               desc_map[name] = remark
 
           # ==========================================
-          # 3. 隔空获取 youhunwl/TVAPP 文件树
+          # 3. 隔空获取 TVAPP 文件树
           # ==========================================
-          print("-> 正在获取 youhunwl/TVAPP 完整文件树...")
+          print("-> 抓取 youhunwl/TVAPP 完整文件树...")
           tvapp_tree = fetch_api("https://api.github.com/repos/youhunwl/TVAPP/git/trees/main?recursive=1")
           if tvapp_tree and 'tree' in tvapp_tree:
               desc_keys = sorted(desc_map.keys(), key=len, reverse=True)
               for item in tvapp_tree['tree']:
                   path = item['path']
-                  # 过滤只保留 apk
                   if path.endswith('.apk') and not path.startswith('.github/') and not path.startswith('wiki/'):
                       filename = path.split('/')[-1]
+                      safe_path = urllib.parse.quote(path)
+                      file_url = f"https://raw.githubusercontent.com/youhunwl/TVAPP/main/{safe_path}"
+
+                      # 【旧版 HTML 格式】
+                      old_list.append({
+                          "name": filename,
+                          "type": "repo_file",
+                          "path": path, 
+                          "time": current_time, 
+                          "url": file_url
+                      })
                       
-                      # 匹配对应的描述，拼接到文件名后
+                      # 【新版 PHP 格式】(带后缀描述和独立大分类)
                       app_desc = ""
                       for key in desc_keys:
                           if key in filename:
                               app_desc = f" 💡[{desc_map[key]}]"
                               break
-                      
                       category = path.split('/')[0] if '/' in path else "根目录"
-                      safe_path = urllib.parse.quote(path)
-
-                      apk_list.append({
-                          "name": filename + app_desc, # 网页直接显示文件名+描述
-                          "path": f"TVAPP影视库/{path}", # 统一大类目录
+                      
+                      new_php_list.append({
+                          "name": filename + app_desc,
+                          "path": f"TVAPP影视库/{path}",
                           "version": "最新",
                           "category": category,
                           "time": current_time, 
                           "size": item.get('size', 0),
-                          # ⚠️ 核心：直指原作者 Raw 链接
-                          "url": f"https://raw.githubusercontent.com/youhunwl/TVAPP/main/{safe_path}"
+                          "url": file_url
                       })
 
           # ==========================================
-          # 4. 写入单一 JSON 文件
+          # 4. 并发写入三种 JSON 文件
           # ==========================================
+          # 给旧项目用的
           with open('apk_list.json', 'w', encoding='utf-8') as f:
-              json.dump(apk_list, f, ensure_ascii=False, indent=2)
-          print(f"✅ 成功生成 apk_list.json，共 {len(apk_list)} 个直链指针。")
+              json.dump(old_list, f, ensure_ascii=False, indent=2)
+          with open('apk_desc.json', 'w', encoding='utf-8') as f:
+              json.dump(desc_map, f, ensure_ascii=False, indent=2)
+              
+          # 给新 PHP 项目用的
+          with open('apk_list_php.json', 'w', encoding='utf-8') as f:
+              json.dump(new_php_list, f, ensure_ascii=False, indent=2)
+              
+          print(f"✅ 成功生成多版本索引！老版共 {len(old_list)} 条，新版共 {len(new_php_list)} 条。")
           EOF
 
-          python3 build_n9g9_index.py
-          rm -f build_n9g9_index.py
+          python3 build_apk_index.py
+          rm -f build_apk_index.py
 
-          # 只提交生成的 JSON 索引文件
-          git add apk_list.json
+          # 一并提交所有的清单文件
+          git add apk_list.json apk_desc.json apk_list_php.json
           if git diff --cached --quiet; then
             echo "✅ 数据无变化，无需提交"
           else
-            git commit -m "System: Secure API-based APK pointer rebuild"
+            git commit -m "System: Generate dual-engine APK indexes"
             git push origin main
           fi
