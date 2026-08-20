@@ -1,4 +1,4 @@
-name: APK Repo - API Index Builder
+name: N9G9 - API Index Builder
 on:
   schedule:
     - cron: '0 0 * * *' # UTC 0:00 = 北京时间 8:00
@@ -17,19 +17,19 @@ jobs:
         with:
           fetch-depth: 1
 
-      - name: Build APK Index via GitHub API
+      - name: Build N9G9 Index via GitHub API
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           git config --global user.name "GitHub Action"
           git config --global user.email "action@github.com"
 
-          echo "🟠 [解析] 正在隔空抓取 TVAPP 和 FMApp 数据..."
-          cat << 'EOF' > build_apk_index.py
+          echo "🟠 [解析] 正在隔空抓取 TVAPP 和 FMApp 数据，全程不下载任何 APK..."
+          cat << 'EOF' > build_n9g9_index.py
           import urllib.request, urllib.parse, json, re, os
           from datetime import datetime
 
-          # 配置带有 Token 的请求头，防止被 GitHub API 速率限制
+          # 注入 Token 防止 GitHub API 限制限制
           token = os.environ.get('GH_TOKEN')
           headers = {'Authorization': f'token {token}'} if token else {}
 
@@ -53,9 +53,9 @@ jobs:
           current_time = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
 
           # ==========================================
-          # 1. 搞定私活：获取 FMApp 的 Release
+          # 1. 搞定私活：直接提取 FMApp 原作者的 Release 链接
           # ==========================================
-          print("-> 正在获取 FMApp Releases...")
+          print("-> 正在提取 lystv/fmapp Releases 直链...")
           fmapp_api = fetch_api("https://api.github.com/repos/lystv/fmapp/releases")
           if fmapp_api:
               for release in fmapp_api[:3]: # 取最新的 3 个版本
@@ -63,18 +63,19 @@ jobs:
                       if asset['name'].endswith('.apk'):
                           apk_list.append({
                               "name": asset['name'],
-                              "path": f"FMApp专属/{release['tag_name']}/{asset['name']}", # 虚拟路径，网页会自动生成文件夹
+                              "path": f"FMApp专属/{release['tag_name']}/{asset['name']}", # 虚拟目录结构
                               "version": release['tag_name'],
-                              "category": "FMApp (私活)",
+                              "category": "FMApp", # 已去掉了(私活)字样
                               "time": asset['updated_at'].replace('T', ' ').replace('Z', ''),
                               "size": asset.get('size', 0),
-                              "url": asset['browser_download_url']
+                              # ⚠️ 核心：直接使用原作者的下载链接，绝不走自己仓库
+                              "url": asset['browser_download_url'] 
                           })
 
           # ==========================================
-          # 2. 获取 TVAPP 的 README 并提取描述
+          # 2. 提取 youhunwl/TVAPP 的 README 描述
           # ==========================================
-          print("-> 正在提取 TVAPP README 描述...")
+          print("-> 正在提取 youhunwl/TVAPP 描述信息...")
           readme_text = fetch_raw("https://raw.githubusercontent.com/youhunwl/TVAPP/main/README.md")
           desc_map = {}
           if readme_text:
@@ -90,54 +91,55 @@ jobs:
                               desc_map[name] = remark
 
           # ==========================================
-          # 3. 获取 TVAPP 文件树
+          # 3. 隔空获取 youhunwl/TVAPP 文件树
           # ==========================================
-          print("-> 正在获取 TVAPP 完整文件树...")
+          print("-> 正在获取 youhunwl/TVAPP 完整文件树...")
           tvapp_tree = fetch_api("https://api.github.com/repos/youhunwl/TVAPP/git/trees/main?recursive=1")
           if tvapp_tree and 'tree' in tvapp_tree:
               desc_keys = sorted(desc_map.keys(), key=len, reverse=True)
               for item in tvapp_tree['tree']:
                   path = item['path']
-                  # 过滤无关文件
+                  # 过滤只保留 apk
                   if path.endswith('.apk') and not path.startswith('.github/') and not path.startswith('wiki/'):
                       filename = path.split('/')[-1]
                       
-                      # 匹配对应的描述
+                      # 匹配对应的描述，拼接到文件名后
                       app_desc = ""
                       for key in desc_keys:
                           if key in filename:
-                              app_desc = f"  💡[{desc_map[key]}]"
+                              app_desc = f" 💡[{desc_map[key]}]"
                               break
                       
-                      # 解析分类 (取顶级目录名)
                       category = path.split('/')[0] if '/' in path else "根目录"
                       safe_path = urllib.parse.quote(path)
 
                       apk_list.append({
-                          "name": filename + app_desc, # 将描述无缝衔接到文件名后展示
-                          "path": f"TVBox影视库/{path}", # 统一放进大文件夹
+                          "name": filename + app_desc, # 网页直接显示文件名+描述
+                          "path": f"TVAPP影视库/{path}", # 统一大类目录
                           "version": "最新",
                           "category": category,
-                          "time": current_time, # API 获取 tree 不包含单独时间，统一使用同步时间
+                          "time": current_time, 
                           "size": item.get('size', 0),
+                          # ⚠️ 核心：直指原作者 Raw 链接
                           "url": f"https://raw.githubusercontent.com/youhunwl/TVAPP/main/{safe_path}"
                       })
 
           # ==========================================
-          # 4. 写入并保存 JSON
+          # 4. 写入单一 JSON 文件
           # ==========================================
-          with open('apk_list.json', 'w', encoding='utf-8') as f:
+          with open('n9g9_list.json', 'w', encoding='utf-8') as f:
               json.dump(apk_list, f, ensure_ascii=False, indent=2)
-          print(f"✅ 成功生成 apk_list.json，共 {len(apk_list)} 个 APK。")
+          print(f"✅ 成功生成 n9g9_list.json，共 {len(apk_list)} 个直链指针。")
           EOF
 
-          python3 build_apk_index.py
-          rm -f build_apk_index.py
+          python3 build_n9g9_index.py
+          rm -f build_n9g9_index.py
 
-          git add apk_list.json
+          # 只提交生成的 JSON 索引文件
+          git add n9g9_list.json
           if git diff --cached --quiet; then
             echo "✅ 数据无变化，无需提交"
           else
-            git commit -m "System: Secure API-based APK index rebuild"
+            git commit -m "System: Secure API-based N9G9 pointer rebuild"
             git push origin main
           fi
