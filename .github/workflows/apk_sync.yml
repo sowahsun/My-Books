@@ -24,7 +24,7 @@ jobs:
           git config --global user.name "GitHub Action"
           git config --global user.email "action@github.com"
 
-          echo "🟠 [解析] 正在隔空抓取数据，准备生成双版本 JSON..."
+          echo "🟠 [解析] 正在隔空尽情抓取数据，准备生成双版本 JSON..."
           cat << 'EOF' > build_apk_index.py
           import urllib.request, urllib.parse, json, re, os
           from datetime import datetime
@@ -54,9 +54,8 @@ jobs:
           current_time = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
 
           # ==========================================
-          # 1. 提取独立源 Releases (包含 fmapp 和 webhtv)
+          # 1. 提取独立源 Releases (全量抓取模式)
           # ==========================================
-          # 💡 在这里添加多个目标仓库，自动分配专属子文件夹
           release_targets = [
               {"repo": "lystv/fmapp", "folder": "fmapp"},
               {"repo": "fish2018/webhtv", "folder": "webhometv"}
@@ -64,11 +63,13 @@ jobs:
 
           for target in release_targets:
               print(f"-> 提取 {target['repo']} Releases...")
-              api_url = f"https://api.github.com/repos/{target['repo']}/releases"
+              # ⚠️ 关键修改 1：加上 per_page=100，直接请求最大 100 个版本记录
+              api_url = f"https://api.github.com/repos/{target['repo']}/releases?per_page=100"
               release_api = fetch_api(api_url)
               
               if release_api:
-                  for release in release_api[:3]: # 每个仓库取最新的 3 个版本
+                  # ⚠️ 关键修改 2：去掉了 [:3] 的切片限制，循环遍历抓到的所有版本
+                  for release in release_api: 
                       for asset in release.get('assets', []):
                           if asset['name'].endswith('.apk'):
                               time_str = asset['updated_at'].replace('T', ' ').replace('Z', '')
@@ -88,7 +89,7 @@ jobs:
                                   "name": asset['name'],
                                   "path": f"FMApp专属/{target['folder']}/{release['tag_name']}/{asset['name']}",
                                   "version": release['tag_name'],
-                                  "category": "FMApp", # 保持 FMApp 分类以触发前端高亮和图标
+                                  "category": "FMApp",
                                   "time": time_str,
                                   "size": asset.get('size', 0),
                                   "url": raw_url 
@@ -135,7 +136,7 @@ jobs:
                           "url": file_url
                       })
                       
-                      # 【新版 PHP 格式】(带后缀描述和独立大分类)
+                      # 【新版 PHP 格式】
                       app_desc = ""
                       for key in desc_keys:
                           if key in filename:
@@ -156,13 +157,11 @@ jobs:
           # ==========================================
           # 4. 并发写入三种 JSON 文件
           # ==========================================
-          # 给旧项目用的
           with open('apk_list.json', 'w', encoding='utf-8') as f:
               json.dump(old_list, f, ensure_ascii=False, indent=2)
           with open('apk_desc.json', 'w', encoding='utf-8') as f:
               json.dump(desc_map, f, ensure_ascii=False, indent=2)
               
-          # 给新 PHP 项目用的
           with open('apk_list_php.json', 'w', encoding='utf-8') as f:
               json.dump(new_php_list, f, ensure_ascii=False, indent=2)
               
@@ -172,11 +171,10 @@ jobs:
           python3 build_apk_index.py
           rm -f build_apk_index.py
 
-          # 一并提交所有的清单文件
           git add apk_list.json apk_desc.json apk_list_php.json
           if git diff --cached --quiet; then
             echo "✅ 数据无变化，无需提交"
           else
-            git commit -m "System: Add WebHTV and generate dual-engine APK indexes"
+            git commit -m "System: Fetch up to 100 releases per repo and update indexes"
             git push origin main
           fi
