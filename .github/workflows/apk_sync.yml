@@ -54,36 +54,45 @@ jobs:
           current_time = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
 
           # ==========================================
-          # 1. 提取 FMApp Releases (私活)
+          # 1. 提取独立源 Releases (包含 fmapp 和 webhtv)
           # ==========================================
-          print("-> 提取 lystv/fmapp Releases...")
-          fmapp_api = fetch_api("https://api.github.com/repos/lystv/fmapp/releases")
-          if fmapp_api:
-              for release in fmapp_api[:3]:
-                  for asset in release.get('assets', []):
-                      if asset['name'].endswith('.apk'):
-                          time_str = asset['updated_at'].replace('T', ' ').replace('Z', '')
-                          raw_url = asset['browser_download_url']
-                          
-                          # 【旧版 HTML 格式】
-                          old_list.append({
-                              "name": f"[{release['tag_name']}] {asset['name']}",
-                              "type": "release_asset",
-                              "path": f"Releases/{release['tag_name']}/{asset['name']}", 
-                              "time": time_str,
-                              "url": raw_url
-                          })
-                          
-                          # 【新版 PHP 格式】
-                          new_php_list.append({
-                              "name": asset['name'],
-                              "path": f"FMApp专属/{release['tag_name']}/{asset['name']}",
-                              "version": release['tag_name'],
-                              "category": "FMApp",
-                              "time": time_str,
-                              "size": asset.get('size', 0),
-                              "url": raw_url 
-                          })
+          # 💡 在这里添加多个目标仓库，自动分配专属子文件夹
+          release_targets = [
+              {"repo": "lystv/fmapp", "folder": "fmapp"},
+              {"repo": "fish2018/webhtv", "folder": "webhometv"}
+          ]
+
+          for target in release_targets:
+              print(f"-> 提取 {target['repo']} Releases...")
+              api_url = f"https://api.github.com/repos/{target['repo']}/releases"
+              release_api = fetch_api(api_url)
+              
+              if release_api:
+                  for release in release_api[:3]: # 每个仓库取最新的 3 个版本
+                      for asset in release.get('assets', []):
+                          if asset['name'].endswith('.apk'):
+                              time_str = asset['updated_at'].replace('T', ' ').replace('Z', '')
+                              raw_url = asset['browser_download_url']
+                              
+                              # 【旧版 HTML 格式】
+                              old_list.append({
+                                  "name": f"[{release['tag_name']}] {asset['name']}",
+                                  "type": "release_asset",
+                                  "path": f"Releases/{target['folder']}/{release['tag_name']}/{asset['name']}", 
+                                  "time": time_str,
+                                  "url": raw_url
+                              })
+                              
+                              # 【新版 PHP 格式】
+                              new_php_list.append({
+                                  "name": asset['name'],
+                                  "path": f"FMApp专属/{target['folder']}/{release['tag_name']}/{asset['name']}",
+                                  "version": release['tag_name'],
+                                  "category": "FMApp", # 保持 FMApp 分类以触发前端高亮和图标
+                                  "time": time_str,
+                                  "size": asset.get('size', 0),
+                                  "url": raw_url 
+                              })
 
           # ==========================================
           # 2. 提取 TVAPP 描述并生成单独的 desc_map
@@ -168,6 +177,6 @@ jobs:
           if git diff --cached --quiet; then
             echo "✅ 数据无变化，无需提交"
           else
-            git commit -m "System: Generate dual-engine APK indexes"
+            git commit -m "System: Add WebHTV and generate dual-engine APK indexes"
             git push origin main
           fi
