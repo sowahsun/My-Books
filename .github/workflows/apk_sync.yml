@@ -1,0 +1,143 @@
+name: APK Repo - API Index Builder
+on:
+  schedule:
+    - cron: '0 0 * * *' # UTC 0:00 = 北京时间 8:00
+  workflow_dispatch:      # 允许手动执行
+
+jobs:
+  build_apk_index:
+    runs-on: ubuntu-latest
+    env:
+      TZ: Asia/Shanghai
+    permissions:
+      contents: write
+    steps:
+      - name: Checkout local repo
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+
+      - name: Build APK Index via GitHub API
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          git config --global user.name "GitHub Action"
+          git config --global user.email "action@github.com"
+
+          echo "🟠 [解析] 正在隔空抓取 TVAPP 和 FMApp 数据..."
+          cat << 'EOF' > build_apk_index.py
+          import urllib.request, urllib.parse, json, re, os
+          from datetime import datetime
+
+          # 配置带有 Token 的请求头，防止被 GitHub API 速率限制
+          token = os.environ.get('GH_TOKEN')
+          headers = {'Authorization': f'token {token}'} if token else {}
+
+          def fetch_api(url):
+              req = urllib.request.Request(url, headers=headers)
+              try:
+                  with urllib.request.urlopen(req) as response:
+                      return json.loads(response.read().decode('utf-8'))
+              except Exception as e:
+                  print(f"❌ API 请求失败 {url}: {e}")
+                  return None
+
+          def fetch_raw(url):
+              try:
+                  with urllib.request.urlopen(url) as response:
+                      return response.read().decode('utf-8')
+              except:
+                  return ""
+
+          apk_list = []
+          current_time = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+
+          # ==========================================
+          # 1. 搞定私活：获取 FMApp 的 Release
+          # ==========================================
+          print("-> 正在获取 FMApp Releases...")
+          fmapp_api = fetch_api("https://api.github.com/repos/lystv/fmapp/releases")
+          if fmapp_api:
+              for release in fmapp_api[:3]: # 取最新的 3 个版本
+                  for asset in release.get('assets', []):
+                      if asset['name'].endswith('.apk'):
+                          apk_list.append({
+                              "name": asset['name'],
+                              "path": f"FMApp专属/{release['tag_name']}/{asset['name']}", # 虚拟路径，网页会自动生成文件夹
+                              "version": release['tag_name'],
+                              "category": "FMApp (私活)",
+                              "time": asset['updated_at'].replace('T', ' ').replace('Z', ''),
+                              "size": asset.get('size', 0),
+                              "url": asset['browser_download_url']
+                          })
+
+          # ==========================================
+          # 2. 获取 TVAPP 的 README 并提取描述
+          # ==========================================
+          print("-> 正在提取 TVAPP README 描述...")
+          readme_text = fetch_raw("https://raw.githubusercontent.com/youhunwl/TVAPP/main/README.md")
+          desc_map = {}
+          if readme_text:
+              for line in readme_text.splitlines():
+                  if line.startswith('|') and 'APP名称' not in line and '---' not in line:
+                      parts = [p.strip() for p in line.split('|')]
+                      if len(parts) >= 6:
+                          name = parts[1]
+                          remark = parts[5]
+                          name = re.sub(r'\[(.*?)\]\(.*?\)', r'\1', name)
+                          name = name.replace('**', '').strip()
+                          if name and remark:
+                              desc_map[name] = remark
+
+          # ==========================================
+          # 3. 获取 TVAPP 文件树
+          # ==========================================
+          print("-> 正在获取 TVAPP 完整文件树...")
+          tvapp_tree = fetch_api("https://api.github.com/repos/youhunwl/TVAPP/git/trees/main?recursive=1")
+          if tvapp_tree and 'tree' in tvapp_tree:
+              desc_keys = sorted(desc_map.keys(), key=len, reverse=True)
+              for item in tvapp_tree['tree']:
+                  path = item['path']
+                  # 过滤无关文件
+                  if path.endswith('.apk') and not path.startswith('.github/') and not path.startswith('wiki/'):
+                      filename = path.split('/')[-1]
+                      
+                      # 匹配对应的描述
+                      app_desc = ""
+                      for key in desc_keys:
+                          if key in filename:
+                              app_desc = f"  💡[{desc_map[key]}]"
+                              break
+                      
+                      # 解析分类 (取顶级目录名)
+                      category = path.split('/')[0] if '/' in path else "根目录"
+                      safe_path = urllib.parse.quote(path)
+
+                      apk_list.append({
+                          "name": filename + app_desc, # 将描述无缝衔接到文件名后展示
+                          "path": f"TVBox影视库/{path}", # 统一放进大文件夹
+                          "version": "最新",
+                          "category": category,
+                          "time": current_time, # API 获取 tree 不包含单独时间，统一使用同步时间
+                          "size": item.get('size', 0),
+                          "url": f"https://raw.githubusercontent.com/youhunwl/TVAPP/main/{safe_path}"
+                      })
+
+          # ==========================================
+          # 4. 写入并保存 JSON
+          # ==========================================
+          with open('apk_list.json', 'w', encoding='utf-8') as f:
+              json.dump(apk_list, f, ensure_ascii=False, indent=2)
+          print(f"✅ 成功生成 apk_list.json，共 {len(apk_list)} 个 APK。")
+          EOF
+
+          python3 build_apk_index.py
+          rm -f build_apk_index.py
+
+          git add apk_list.json
+          if git diff --cached --quiet; then
+            echo "✅ 数据无变化，无需提交"
+          else
+            git commit -m "System: Secure API-based APK index rebuild"
+            git push origin main
+          fi
