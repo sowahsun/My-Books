@@ -127,19 +127,19 @@ jobs:
           # ==========================================
           # 4. 写入单一 JSON 文件
           # ==========================================
-          with open('n9g9_list.json', 'w', encoding='utf-8') as f:
+          with open('apk_list.json', 'w', encoding='utf-8') as f:
               json.dump(apk_list, f, ensure_ascii=False, indent=2)
-          print(f"✅ 成功生成 n9g9_list.json，共 {len(apk_list)} 个直链指针。")
+          print(f"✅ 成功生成 apk_list.json，共 {len(apk_list)} 个直链指针。")
           EOF
 
           python3 build_n9g9_index.py
           rm -f build_n9g9_index.py
 
           # 只提交生成的 JSON 索引文件
-          git add n9g9_list.json
+          git add apk_list.json
           if git diff --cached --quiet; then
             echo "✅ 数据无变化，无需提交"
           else
-            git commit -m "System: Secure API-based N9G9 pointer rebuild"
+            git commit -m "System: Secure API-based APK pointer rebuild"
             git push origin main
           fi
