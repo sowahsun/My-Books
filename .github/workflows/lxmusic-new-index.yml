@@ -58,12 +58,21 @@ jobs:
               base = filename[:-3] if filename.endswith('.js') else filename
               base = re.sub(r'[\(\（\[].*?[\)\）\]]', ' ', base)
               base = re.sub(r'[^\u4e00-\u9fa5a-zA-Z0-9]+', ' ', base)
-              # 移除版本标记（带点或不带点）
               base = re.sub(r'(?<![a-zA-Z0-9])(?:[vV])?\d+(?:\.\d+)*(?![a-zA-Z0-9])', ' ', base)
-              # 移除纯数字和日期
               base = re.sub(r'\b\d{2,8}\b', ' ', base)
-              # 移除孤立字母
               base = re.sub(r'\b[a-zA-Z]\b', ' ', base)
+
+              # 移除描述性词汇
+              noise_words = [
+                  'TSS解密版', '特供版', 'DeepSeek优化', '修复部分问题', '兼容性处理',
+                  '修复版本', '优化版', '解密版', '优化', '修复', '测试', 'beta',
+                  '公益测试', '即将恢复', '仅支持网易', '需自备网易云VIP密钥',
+                  '酷狗挂了', '会停用', '已停用', '需自行配置', '不推荐', '未测试',
+                  '自备', '密钥', '密码', '挂', '挂了', '恢复'
+              ]
+              for word in noise_words:
+                  base = base.replace(word, ' ')
+
               base = re.sub(r'\s+', ' ', base).strip()
               if not base:
                   base = filename[:-3] if filename.endswith('.js') else filename
@@ -142,6 +151,6 @@ jobs:
           if git diff --cached --quiet; then
             echo "✅ 上游无变化，无需提交"
           else
-            git commit -m "System: Improved metadata extraction"
+            git commit -m "System: Improved source_key normalization"
             git push origin main
           fi
