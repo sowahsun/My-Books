@@ -34,46 +34,62 @@ jobs:
           import json, urllib.parse, re
           from datetime import datetime
 
-          # ---------- 新增工具函数 ----------
+          # ---------- 优化工具函数 ----------
           def extract_version_from_filename(filename):
-              """从文件名中提取版本号，如 v1.0.1 -> 1.0.1，9.7 -> 9.7"""
+              """
+              提取版本号，支持：
+                - v1.0.1 / V1.0.1 -> 1.0.1
+                - V4 / v4           -> 4
+                - V2603 / v2603     -> 2603
+              """
+              # 1. 尝试匹配带点版本：v1.0.1, V9.7
               m = re.search(r'(?:v|V)?(\d+(?:\.\d+)+)', filename)
-              return m.group(1) if m else ''
+              if m:
+                  return m.group(1)
+              # 2. 匹配 V 后跟 1-4 位数字（无点）：V4, V2603, v42
+              m = re.search(r'(?:v|V)(\d{1,4})\b', filename)
+              if m:
+                  return m.group(1)
+              return ''
 
           def extract_date_from_string(s):
-              """尝试提取日期，支持 YYYY-MM-DD / YYYYMMDD / YYMMDD 等格式"""
-              # 优先匹配完整日期
+              """
+              提取日期，支持：
+                - 2026-07-16 / 2026_07_16 / 20260716
+                - V2607 (年份后两位+月份) -> 2026-07-01
+                - V260716 -> 2026-07-16
+              """
+              # 完整日期
               m = re.search(r'(20\d{2})[-_]?(\d{2})[-_]?(\d{2})', s)
               if m:
                   return f"{m.group(1)}-{m.group(2)}-{m.group(3)}"
-              # 匹配类似 V260620 的短日期（年份后两位）
-              m = re.search(r'(?:v|V)?(\d{2})(\d{2})(\d{2})', s)
+              # 短日期：V2607 或 2607 或 V260716 等
+              m = re.search(r'(?:v|V)?(\d{2})(\d{2})(?:\d{2})?', s)
               if m:
                   year = int(m.group(1))
                   full_year = 2000 + year if year < 80 else 1900 + year
-                  return f"{full_year}-{m.group(2)}-{m.group(3)}"
+                  month = m.group(2)
+                  return f"{full_year}-{month}-01"
               return ''
 
           def normalize_source_key(filename):
               """
-              从文件名中提取核心源名称，去除版本号、日期、数字、特殊符号等，
-              返回一个用于唯一标识“源”的字符串。
+              从文件名提取核心源标识，彻底移除版本、日期、数字及符号。
               """
               base = filename[:-3] if filename.endswith('.js') else filename
-              # 去掉括号内容（通常为注释）
+              # 去掉括号及内部内容
               base = re.sub(r'[\(\（].*?[\)\）]', ' ', base)
-              # 将下划线、连字符、点替换为空格
-              base = re.sub(r'[_\-.]+', ' ', base)
-              # 移除版本号模式（v1.0.1, 9.7 等）
-              base = re.sub(r'\s*(?:v|V)?\d+(?:\.\d+)+\s*', ' ', base)
-              # 移除纯数字和日期模式
-              base = re.sub(r'\b\d{6,8}\b', ' ', base)
-              base = re.sub(r'\d+', ' ', base)
-              # 移除单字母或空白
+              # 将所有非中文、非字母数字的字符（包括~、_、-、.等）替换为空格
+              base = re.sub(r'[^\u4e00-\u9fa5a-zA-Z0-9]+', ' ', base)
+              # 移除版本标记（带点或无点）
+              base = re.sub(r'\b(?:v|V)?\d+(?:\.\d+)*\b', ' ', base)
+              # 移除纯数字和日期模式（如 2026、2607 等）
+              base = re.sub(r'\b\d{2,8}\b', ' ', base)
+              # 移除残留的孤立字母（如版本移除后剩的 V）
               base = re.sub(r'\b[a-zA-Z]\b', ' ', base)
-              # 合并多个空格
+              # 合并空格
               base = re.sub(r'\s+', ' ', base).strip()
-              # 如果结果为空，退回原文件名（去扩展名）
+              # 如果结果为空，回退到原文件名（去扩展名）
               if not base:
                   base = filename[:-3] if filename.endswith('.js') else filename
               return base
