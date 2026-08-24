@@ -1,11 +1,11 @@
-name: LXMusic - API Index Builder (New Metadata)
+name: LXMusic - New Metadata Index Builder
 on:
   schedule:
     - cron: '0 6 * * *' # UTC 6:00 = 北京时间 14:00
   workflow_dispatch:      # 允许手动执行
 
 jobs:
-  build_index:
+  build_new_index:
     runs-on: ubuntu-latest
     env:
       TZ: Asia/Shanghai
@@ -15,9 +15,9 @@ jobs:
       - name: Checkout local repo
         uses: actions/checkout@v4
         with:
-          fetch-depth: 1 # 仅拉取本地当前最新配置，瞬间完成
+          fetch-depth: 1 # 仅拉取本地当前最新配置
 
-      - name: Build LXMusic Index via GitHub API
+      - name: Build LXMusic New Index via GitHub API
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
@@ -34,7 +34,7 @@ jobs:
           import json, urllib.parse, re
           from datetime import datetime
 
-          # ---------- 优化工具函数 ----------
+          # ---------- 工具函数 ----------
           def extract_version_from_filename(filename):
               """
               提取版本号，支持：
@@ -64,12 +64,13 @@ jobs:
               if m:
                   return f"{m.group(1)}-{m.group(2)}-{m.group(3)}"
               # 短日期：V2607 或 2607 或 V260716 等
-              m = re.search(r'(?:v|V)?(\d{2})(\d{2})(?:\d{2})?', s)
+              m = re.search(r'(?:v|V)?(\d{2})(\d{2})(\d{2})?', s)
               if m:
                   year = int(m.group(1))
                   full_year = 2000 + year if year < 80 else 1900 + year
                   month = m.group(2)
-                  return f"{full_year}-{month}-01"
+                  day = m.group(3) if m.group(3) else '01'
+                  return f"{full_year}-{month}-{day}"
               return ''
 
           def normalize_source_key(filename):
@@ -77,13 +78,13 @@ jobs:
               从文件名提取核心源标识，彻底移除版本、日期、数字及符号。
               """
               base = filename[:-3] if filename.endswith('.js') else filename
-              # 去掉括号及内部内容
-              base = re.sub(r'[\(\（].*?[\)\）]', ' ', base)
+              # 去掉括号及内部内容（包括中英文括号）
+              base = re.sub(r'[\(\（\[].*?[\)\）\]]', ' ', base)
               # 将所有非中文、非字母数字的字符（包括~、_、-、.等）替换为空格
               base = re.sub(r'[^\u4e00-\u9fa5a-zA-Z0-9]+', ' ', base)
-              # 移除版本标记（带点或无点）
+              # 移除版本标记：v1.0.1、V4、v9.7 等
               base = re.sub(r'\b(?:v|V)?\d+(?:\.\d+)*\b', ' ', base)
-              # 移除纯数字和日期模式（如 2026、2607 等）
+              # 移除纯数字和日期模式（如 2026、2607、260716 等）
               base = re.sub(r'\b\d{2,8}\b', ' ', base)
               # 移除残留的孤立字母（如版本移除后剩的 V）
               base = re.sub(r'\b[a-zA-Z]\b', ' ', base)
@@ -96,7 +97,11 @@ jobs:
 
           def check_active(filename):
               """根据文件名判断源是否可用，返回布尔值"""
-              bad_words = ['停用', '需自行配置', '失效', '测试', '无效', '废弃', '暂停']
+              bad_words = [
+                  '停用', '需自行配置', '需自备', '需自带', '密码', '密钥',
+                  '失效', '测试', '无效', '废弃', '暂停', '已停用', '会停用',
+                  '恢复', '挂', '挂了', '不推荐', '未测试', '自备'
+              ]
               return not any(word in filename for word in bad_words)
 
           # ---------- 主逻辑（保留原版结构） ----------
