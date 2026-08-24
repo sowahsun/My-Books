@@ -42,9 +42,11 @@ jobs:
               return ''
 
           def extract_date_from_string(s):
+              # 完整日期 YYYY-MM-DD / YYYYMMDD
               m = re.search(r'(20\d{2})[-_]?(\d{2})[-_]?(\d{2})', s)
               if m:
                   return f"{m.group(1)}-{m.group(2)}-{m.group(3)}"
+              # 短日期 v260716 -> 2026-07-16；v2603 -> 2026-03-01
               m = re.search(r'(?:v|V)?(\d{2})(\d{2})(\d{2})?', s)
               if m:
                   year = int(m.group(1))
@@ -62,13 +64,14 @@ jobs:
               base = re.sub(r'\b\d{2,8}\b', ' ', base)
               base = re.sub(r'\b[a-zA-Z]\b', ' ', base)
 
-              # 移除描述性词汇
+              # 噪声词列表（先长后短，确保彻底移除修饰性词汇）
               noise_words = [
                   'TSS解密版', '特供版', 'DeepSeek优化', '修复部分问题', '兼容性处理',
-                  '修复版本', '优化版', '解密版', '优化', '修复', '测试', 'beta',
+                  '修复版本', '并', '版本', '优化', '修复', '测试', 'beta',
                   '公益测试', '即将恢复', '仅支持网易', '需自备网易云VIP密钥',
                   '酷狗挂了', '会停用', '已停用', '需自行配置', '不推荐', '未测试',
-                  '自备', '密钥', '密码', '挂', '挂了', '恢复'
+                  '自备', '密钥', '密码', '挂', '挂了', '恢复',
+                  '支持', '无损', '全平台', '平台', '部分', '问题', '兼容', '处理'
               ]
               for word in noise_words:
                   base = base.replace(word, ' ')
@@ -120,7 +123,11 @@ jobs:
               version_clean = extract_version_from_filename(name)
               source_key = normalize_source_key(name)
               is_active = check_active(name)
-              file_date = extract_date_from_string(path) or extract_date_from_string(name)
+
+              # 优先从第一级目录提取日期（如 V260716）
+              file_date = extract_date_from_string(parts[0]) if parts else ''
+              if not file_date:
+                  file_date = extract_date_from_string(path) or extract_date_from_string(name)
 
               safe_path = urllib.parse.quote(path)
               url = raw_base + safe_path
@@ -151,6 +158,6 @@ jobs:
           if git diff --cached --quiet; then
             echo "✅ 上游无变化，无需提交"
           else
-            git commit -m "System: Improved source_key normalization"
+            git commit -m "System: Improved source_key normalization and date extraction"
             git push origin main
           fi
