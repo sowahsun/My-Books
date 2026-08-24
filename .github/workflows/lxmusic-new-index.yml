@@ -1,8 +1,8 @@
 name: LXMusic - New Metadata Index Builder
 on:
   schedule:
-    - cron: '0 6 * * *' # UTC 6:00 = 北京时间 14:00
-  workflow_dispatch:      # 允许手动执行
+    - cron: '0 6 * * *'
+  workflow_dispatch:
 
 jobs:
   build_new_index:
@@ -15,7 +15,7 @@ jobs:
       - name: Checkout local repo
         uses: actions/checkout@v4
         with:
-          fetch-depth: 1 # 仅拉取本地当前最新配置
+          fetch-depth: 1
 
       - name: Build LXMusic New Index via GitHub API
         env:
@@ -24,46 +24,27 @@ jobs:
           git config --global user.name "GitHub Action"
           git config --global user.email "action@github.com"
 
-          echo "🟠 [API] 正在隔空获取上游 guoyue2010/lxmusic- 的文件树..."
           curl -s --retry 3 --retry-delay 5 --max-time 60 \
             -H "Authorization: token $GH_TOKEN" \
             "https://api.github.com/repos/guoyue2010/lxmusic-/git/trees/main?recursive=1" > tree.json
 
-          echo "🟠 [解析] 正在生成 lx_new_list.json (含 source_key / version_clean / is_active)..."
           cat << 'EOF' > build_new_index.py
           import json, urllib.parse, re
           from datetime import datetime
 
-          # ---------- 工具函数 ----------
           def extract_version_from_filename(filename):
-              """
-              提取版本号，支持：
-                - v1.0.1 / V1.0.1 -> 1.0.1
-                - V4 / v4           -> 4
-                - V2603 / v2603     -> 2603
-              """
-              # 1. 尝试匹配带点版本：v1.0.1, V9.7
               m = re.search(r'(?:v|V)?(\d+(?:\.\d+)+)', filename)
               if m:
                   return m.group(1)
-              # 2. 匹配 V 后跟 1-4 位数字（无点）：V4, V2603, v42
               m = re.search(r'(?:v|V)(\d{1,4})\b', filename)
               if m:
                   return m.group(1)
               return ''
 
           def extract_date_from_string(s):
-              """
-              提取日期，支持：
-                - 2026-07-16 / 2026_07_16 / 20260716
-                - V2607 (年份后两位+月份) -> 2026-07-01
-                - V260716 -> 2026-07-16
-              """
-              # 完整日期
               m = re.search(r'(20\d{2})[-_]?(\d{2})[-_]?(\d{2})', s)
               if m:
                   return f"{m.group(1)}-{m.group(2)}-{m.group(3)}"
-              # 短日期：V2607 或 2607 或 V260716 等
               m = re.search(r'(?:v|V)?(\d{2})(\d{2})(\d{2})?', s)
               if m:
                   year = int(m.group(1))
@@ -74,47 +55,38 @@ jobs:
               return ''
 
           def normalize_source_key(filename):
-              """
-              从文件名提取核心源标识，彻底移除版本、日期、数字及符号。
-              """
               base = filename[:-3] if filename.endswith('.js') else filename
-              # 去掉括号及内部内容（包括中英文括号）
               base = re.sub(r'[\(\（\[].*?[\)\）\]]', ' ', base)
-              # 将所有非中文、非字母数字的字符（包括~、_、-、.等）替换为空格
               base = re.sub(r'[^\u4e00-\u9fa5a-zA-Z0-9]+', ' ', base)
-              # 移除版本标记：v1.0.1、V4、v9.7 等
-              base = re.sub(r'\b(?:v|V)?\d+(?:\.\d+)*\b', ' ', base)
-              # 移除纯数字和日期模式（如 2026、2607、260716 等）
+              # 移除版本标记（带点或不带点）
+              base = re.sub(r'(?<![a-zA-Z0-9])(?:[vV])?\d+(?:\.\d+)*(?![a-zA-Z0-9])', ' ', base)
+              # 移除纯数字和日期
               base = re.sub(r'\b\d{2,8}\b', ' ', base)
-              # 移除残留的孤立字母（如版本移除后剩的 V）
+              # 移除孤立字母
               base = re.sub(r'\b[a-zA-Z]\b', ' ', base)
-              # 合并空格
               base = re.sub(r'\s+', ' ', base).strip()
-              # 如果结果为空，回退到原文件名（去扩展名）
               if not base:
                   base = filename[:-3] if filename.endswith('.js') else filename
               return base
 
           def check_active(filename):
-              """根据文件名判断源是否可用，返回布尔值"""
               bad_words = [
                   '停用', '需自行配置', '需自备', '需自带', '密码', '密钥',
                   '失效', '测试', '无效', '废弃', '暂停', '已停用', '会停用',
-                  '恢复', '挂', '挂了', '不推荐', '未测试', '自备'
+                  '恢复', '挂', '挂了', '不推荐', '未测试', '自备',
+                  '酷狗挂了', '即将恢复', '仅支持网易', '需自备网易云VIP密钥'
               ]
               return not any(word in filename for word in bad_words)
 
-          # ---------- 主逻辑（保留原版结构） ----------
           with open('tree.json', 'r', encoding='utf-8') as f:
               tree_data = json.load(f)
 
           if 'tree' not in tree_data:
-              print("❌ 获取 API 数据失败，请检查网络或上游仓库是否存在！")
+              print("❌ 获取 API 数据失败")
               exit(1)
 
           current_time = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
           raw_base = "https://raw.githubusercontent.com/guoyue2010/lxmusic-/main/"
-
           js_files = []
 
           for item in tree_data.get('tree', []):
@@ -126,8 +98,6 @@ jobs:
 
               parts = path.split('/')
               name = parts[-1]
-
-              # 目录结构解析（与原版一致）
               if len(parts) >= 3:
                   folder_version = parts[0]
                   folder_category = parts[1]
@@ -138,7 +108,6 @@ jobs:
                   folder_version = "根目录"
                   folder_category = "根目录"
 
-              # 提取元数据
               version_clean = extract_version_from_filename(name)
               source_key = normalize_source_key(name)
               is_active = check_active(name)
@@ -151,15 +120,15 @@ jobs:
               js_files.append({
                   'name': name,
                   'path': path,
-                  'version': folder_version,          # 保留目录中的版本标识
-                  'category': folder_category,        # 保留目录中的分类
-                  'time': current_time,               # 索引生成时间
+                  'version': folder_version,
+                  'category': folder_category,
+                  'time': current_time,
                   'size': size_bytes,
                   'url': url,
-                  'source_key': source_key,           # 核心源标识
-                  'version_clean': version_clean,     # 标准版本号
-                  'is_active': is_active,             # 是否可用
-                  'file_date': file_date              # 从路径/文件名提取的日期（可能为空）
+                  'source_key': source_key,
+                  'version_clean': version_clean,
+                  'is_active': is_active,
+                  'file_date': file_date
               })
 
           with open('lx_new_list.json', 'w', encoding='utf-8') as f:
@@ -170,11 +139,9 @@ jobs:
           rm -f tree.json build_new_index.py
 
           git add lx_new_list.json
-          
-          # 只有当数据发生变化时才提交，避免无效的 commit 记录
           if git diff --cached --quiet; then
             echo "✅ 上游无变化，无需提交"
           else
-            git commit -m "System: New index with source_key/version_clean/is_active"
+            git commit -m "System: Improved metadata extraction"
             git push origin main
           fi
