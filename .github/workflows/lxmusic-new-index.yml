@@ -1,0 +1,150 @@
+name: LXMusic - New Metadata Index Builder
+on:
+  schedule:
+    - cron: '0 6 * * *' # UTC 6:00 = 北京时间 14:00
+  workflow_dispatch:      # 允许手动执行
+
+jobs:
+  build_new_index:
+    runs-on: ubuntu-latest
+    env:
+      TZ: Asia/Shanghai
+    permissions:
+      contents: write
+    steps:
+      - name: Checkout local repo
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 1 # 仅拉取本地当前最新配置
+
+      - name: Build LXMusic New Index via GitHub API
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          git config --global user.name "GitHub Action"
+          git config --global user.email "action@github.com"
+
+          echo "🟠 [API] 正在隔空获取上游 guoyue2010/lxmusic- 的文件树..."
+          curl -s --retry 3 --retry-delay 5 --max-time 60 \
+            -H "Authorization: token $GH_TOKEN" \
+            "https://api.github.com/repos/guoyue2010/lxmusic-/git/trees/main?recursive=1" > tree.json
+
+          echo "🟠 [解析] 正在生成 lx_new_list.json (含 source_key / version_clean / is_active)..."
+          cat << 'EOF' > build_new_index.py
+          import json, urllib.parse, re
+          from datetime import datetime
+
+          # ---------- 工具函数 ----------
+          def extract_version_from_filename(filename):
+              """从文件名中提取版本号，如 v1.0.1 -> 1.0.1，9.7 -> 9.7"""
+              m = re.search(r'(?:v|V)?(\d+(?:\.\d+)+)', filename)
+              return m.group(1) if m else ''
+
+          def extract_date_from_string(s):
+              """尝试提取日期，支持 YYYY-MM-DD / YYYYMMDD / YYMMDD 等格式"""
+              m = re.search(r'(20\d{2})[-_]?(\d{2})[-_]?(\d{2})', s)
+              if m:
+                  return f"{m.group(1)}-{m.group(2)}-{m.group(3)}"
+              m = re.search(r'(?:v|V)?(\d{2})(\d{2})(\d{2})', s)
+              if m:
+                  year = int(m.group(1))
+                  full_year = 2000 + year if year < 80 else 1900 + year
+                  return f"{full_year}-{m.group(2)}-{m.group(3)}"
+              return ''
+
+          def normalize_source_key(filename):
+              """
+              从文件名中提取核心源名称，去除版本号、日期、数字、特殊符号等，
+              返回一个用于唯一标识“源”的字符串。
+              """
+              base = filename[:-3] if filename.endswith('.js') else filename
+              base = re.sub(r'[\(\（].*?[\)\）]', ' ', base)
+              base = re.sub(r'[_\-.]+', ' ', base)
+              base = re.sub(r'\s*(?:v|V)?\d+(?:\.\d+)+\s*', ' ', base)
+              base = re.sub(r'\b\d{6,8}\b', ' ', base)
+              base = re.sub(r'\d+', ' ', base)
+              base = re.sub(r'\b[a-zA-Z]\b', ' ', base)
+              base = re.sub(r'\s+', ' ', base).strip()
+              if not base:
+                  base = filename[:-3] if filename.endswith('.js') else filename
+              return base
+
+          def check_active(filename):
+              """根据文件名判断源是否可用，返回布尔值"""
+              bad_words = ['停用', '需自行配置', '失效', '测试', '无效', '废弃', '暂停']
+              return not any(word in filename for word in bad_words)
+
+          # ---------- 主逻辑 ----------
+          with open('tree.json', 'r', encoding='utf-8') as f:
+              tree_data = json.load(f)
+
+          if 'tree' not in tree_data:
+              print("❌ 获取 API 数据失败，请检查网络或上游仓库是否存在！")
+              exit(1)
+
+          current_time = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+          raw_base = "https://raw.githubusercontent.com/guoyue2010/lxmusic-/main/"
+
+          js_files = []
+
+          for item in tree_data.get('tree', []):
+              if item.get('type') != 'blob':
+                  continue
+              path = item['path']
+              if not path.endswith('.js') or path.startswith('.github/'):
+                  continue
+
+              parts = path.split('/')
+              name = parts[-1]
+
+              # 解析目录结构
+              if len(parts) >= 3:
+                  folder_version = parts[0]
+                  folder_category = parts[1]
+              elif len(parts) == 2:
+                  folder_version = parts[0]
+                  folder_category = "根目录"
+              else:
+                  folder_version = "根目录"
+                  folder_category = "根目录"
+
+              # 提取元数据
+              version_clean = extract_version_from_name(name)
+              source_key = normalize_source_key(name)
+              is_active = check_active(name)
+              file_date = extract_date_from_string(path) or extract_date_from_string(name)
+
+              safe_path = urllib.parse.quote(path)
+              url = raw_base + safe_path
+              size_bytes = item.get('size', 0)
+
+              js_files.append({
+                  'name': name,
+                  'path': path,
+                  'version': folder_version,
+                  'category': folder_category,
+                  'time': current_time,
+                  'size': size_bytes,
+                  'url': url,
+                  'source_key': source_key,
+                  'version_clean': version_clean,
+                  'is_active': is_active,
+                  'file_date': file_date
+              })
+
+          with open('lx_new_list.json', 'w', encoding='utf-8') as f:
+              json.dump(js_files, f, ensure_ascii=False, indent=2)
+          EOF
+
+          python3 build_new_index.py
+          rm -f tree.json build_new_index.py
+
+          git add lx_new_list.json
+          
+          # 只有当数据发生变化时才提交，避免无效的 commit 记录
+          if git diff --cached --quiet; then
+            echo "✅ 上游无变化，无需提交"
+          else
+            git commit -m "System: Enhanced index with source_key/version_clean/is_active (new file)"
+            git push origin main
+          fi
