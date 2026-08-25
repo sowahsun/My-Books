@@ -1,109 +1,83 @@
-name: LXMusic - API Index Builder
+name: LXMusic - Pure JSON Extractor
+
+permissions:
+  contents: write
+
 on:
   schedule:
-    - cron: '0 6 * * *' # UTC 6:00 = 北京时间 14:00
-  workflow_dispatch:      # 允许手动执行
+    - cron: "0 6 * * *" # 每天北京时间 14:00 (UTC 时间 6:00) 运行一次
+  workflow_dispatch: # 允许手动点击触发
 
 jobs:
-  build_index:
+  build_json:
+    name: Extract JSON only
     runs-on: ubuntu-latest
-    env:
-      TZ: Asia/Shanghai
-    permissions:
-      contents: write
-    steps:
-      - name: Checkout local repo
-        uses: actions/checkout@v4
-        with:
-          fetch-depth: 1
 
-      - name: Build LXMusic Index via GitHub API
-        env:
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+    steps:
+      # Step 1: 正常检出你的 My-Books 仓库
+      - name: Checkout My-Books repo
+        uses: actions/checkout@v4
+
+      - name: Configure Git
         run: |
           git config --global user.name "GitHub Action"
           git config --global user.email "action@github.com"
 
-          echo "🟠 [API] 正在隔空获取上游 guoyue2010/lxmusic- 的文件树..."
-          curl -s --retry 3 --retry-delay 5 --max-time 60 \
-            -H "Authorization: token $GH_TOKEN" \
-            "https://api.github.com/repos/guoyue2010/lxmusic-/git/trees/main?recursive=1" > tree.json
+      # Step 2: 将上游仓库克隆到临时目录，只为获取最真实的 Git 提交时间
+      - name: Clone Upstream (Temporary)
+        run: |
+          echo "🟠 正在克隆上游仓库到临时目录..."
+          git clone https://github.com/guoyue2010/lxmusic-.git upstream_temp
 
-          echo "🟠 [解析] 正在生成 lxmusic_list.json (处理时间戳沉底)..."
-          cat << 'EOF' > build_index.py
-          import json, urllib.parse, re
-          from datetime import datetime
+      # Step 3: 扫描临时目录中的 JS，生成你的 lxmusic_list.json
+      - name: Generate JSON
+        run: |
+          echo "🟠 正在扫描 JS 音源并提取真实物理时间..."
+          cd upstream_temp
+          rm -f ../js_files_raw.txt
 
-          with open('tree.json', 'r', encoding='utf-8') as f:
-              tree_data = json.load(f)
+          # 遍历所有 JS 文件获取时间和大小
+          while IFS= read -r -d '' filepath; do
+            if [[ "$filepath" == *.js ]] && [[ ! "$filepath" =~ ^\.github/ ]]; then
+              committime=$(git log -1 --format=%ci -- "$filepath" 2>/dev/null || echo "")
+              filesize=$(stat -c%s "$filepath" 2>/dev/null || echo "0")
+              echo "$filepath|$committime|$filesize" >> ../js_files_raw.txt
+            fi
+          done < <(git ls-files -z)
 
-          if 'tree' not in tree_data:
-              print("❌ 获取 API 数据失败，请检查网络或上游仓库是否存在！")
-              exit(1)
+          cd ..
 
-          raw_base = "https://raw.githubusercontent.com/guoyue2010/lxmusic-/main/"
-          js_files = []
-
-          for item in tree_data.get('tree', []):
-              if item.get('type') != 'blob':
-                  continue
-              path = item['path']
-              
-              if not path.endswith('.js') or path.startswith('.github/'):
-                  continue
-
-              parts = path.split('/')
-              name = parts[-1]
-              
-              if len(parts) >= 3:
-                  version = parts[0]
-                  category = parts[1]
-              elif len(parts) == 2:
-                  version = parts[0]
-                  category = "根目录"
-              else:
-                  version = "根目录"
-                  category = "根目录"
-
-              # 💡 核心魔法2.0：完美处理各种奇葩版本号
-              file_time = "2000-01-01 00:00:00" # 默认给个远古时间，防止乱顶排名
-              
-              # 先尝试匹配 6 位数字 (如 V260817 -> 2026-08-17)
-              match_full = re.search(r'^[Vv](\d{2})(\d{2})(\d{2})', version)
-              # 再尝试匹配 4 位数字 (如 V2603 -> 2026-03-01)
-              match_short = re.search(r'^[Vv](\d{2})(\d{2})', version)
-              
-              if match_full:
-                  file_time = f"20{match_full.group(1)}-{match_full.group(2)}-{match_full.group(3)} 00:00:00"
-              elif match_short:
-                  file_time = f"20{match_short.group(1)}-{match_short.group(2)}-01 00:00:00"
-
-              safe_path = urllib.parse.quote(path)
-              url = raw_base + safe_path
-              size_bytes = item.get('size', 0)
-
-              js_files.append({
-                  'name': name,
-                  'path': path,
-                  'version': version,
-                  'category': category,
-                  'time': file_time,
-                  'size': size_bytes,
-                  'url': url
+          echo "🟠 正在格式化为 JSON 并替换直链..."
+          # 利用 jq 处理，并将下载直链强行指向 guoyue2010
+          if [ -f js_files_raw.txt ]; then
+            cat js_files_raw.txt | jq -R -s -c '
+              split("\n") | map(select(length > 0)) | map(split("|") | {
+                name: (.[0] | split("/") | last),
+                path: .[0],
+                version: (.[0] | split("/")[0]),
+                category: (.[0] | split("/")[1] // "根目录"),
+                time: .[1],
+                size: (.[2] | tonumber),
+                url: ("https://raw.githubusercontent.com/guoyue2010/lxmusic-/main/" + (.[0] | split("/") | map(gsub(" "; "%20") | gsub("\\["; "%5B") | gsub("\\]"; "%5D") | gsub("\\("; "%28") | gsub("\\)"; "%29")) | join("/")))
               })
-
-          with open('lxmusic_list.json', 'w', encoding='utf-8') as f:
-              json.dump(js_files, f, ensure_ascii=False, indent=2)
-          EOF
-
-          python3 build_index.py
-          rm -f tree.json build_index.py
-
-          git add lxmusic_list.json
-          
-          if git diff --cached --quiet; then
-            echo "✅ 上游无变化，无需提交"
+            ' > lxmusic_list.json
           else
-            git commit -m "System: Fix timestamp logic to prevent old files from floating to top"
+            echo "[]" > lxmusic_list.json
+          fi
+
+          echo "✅ lxmusic_list.json 生成完毕！"
+          
+          # 清理战场，销毁临时仓库和缓存文件
+          rm -rf upstream_temp js_files_raw.txt
+
+      # Step 4: 仅提交 lxmusic_list.json 到你的 My-Books 仓库
+      - name: Commit and Push
+        run: |
+          git add lxmusic_list.json
+          if git diff --cached --quiet; then
+            echo "✅ 数据无变化，无需提交"
+          else
+            git commit -m "Auto: Extract real timestamps & update lxmusic_list.json"
             git push origin main
+            echo "✅ 已成功将最新的 json 列表推送到 My-Books"
           fi
