@@ -31,7 +31,7 @@ jobs:
 
           echo "🟠 [解析] 正在生成 lxmusic_list.json (无 README)..."
           cat << 'EOF' > build_index.py
-          import json, urllib.parse
+          import json, urllib.parse, re
           from datetime import datetime
 
           with open('tree.json', 'r', encoding='utf-8') as f:
@@ -41,7 +41,7 @@ jobs:
               print("❌ 获取 API 数据失败，请检查网络或上游仓库是否存在！")
               exit(1)
 
-          # 使用当前同步时间作为文件更新时间
+          # 兜底时间：以 Action 运行时间为准
           current_time = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
           
           # 核心：目标直接指向原作者仓库的 Raw 链接
@@ -72,6 +72,13 @@ jobs:
                   version = "根目录"
                   category = "根目录"
 
+              # 💡 核心魔法：从类似 V260817 或 v260212 的目录名中提取真实发布日期！
+              file_time = current_time
+              match = re.search(r'^[Vv](\d{2})(\d{2})(\d{2})', version)
+              if match:
+                  # 拼装成标准的 YYYY-MM-DD HH:MM:SS 格式
+                  file_time = f"20{match.group(1)}-{match.group(2)}-{match.group(3)} 00:00:00"
+
               # 自动对 URL 里的中文和空格进行安全编码
               safe_path = urllib.parse.quote(path)
               url = raw_base + safe_path
@@ -82,7 +89,7 @@ jobs:
                   'path': path,
                   'version': version,
                   'category': category,
-                  'time': current_time,
+                  'time': file_time,  # 写入提取出的真实时间
                   'size': size_bytes,
                   'url': url
               })
@@ -100,6 +107,6 @@ jobs:
           if git diff --cached --quiet; then
             echo "✅ 上游无变化，无需提交"
           else
-            git commit -m "System: Secure API-based lxmusic index rebuild"
+            git commit -m "System: Secure API-based lxmusic index rebuild with real timestamps"
             git push origin main
           fi
