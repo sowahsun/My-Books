@@ -29,19 +29,18 @@ jobs:
           echo "🟠 正在克隆上游仓库到临时目录..."
           git clone https://github.com/guoyue2010/lxmusic-.git upstream_temp
 
-      # Step 3: 扫描源生成 JSON（融合 Macrohard0001 Releases）
+      # Step 3: 扫描临时目录中的 JS，生成你的 lxmusic_list.json
       - name: Generate JSON
         run: |
           echo "🟠 正在扫描 JS 音源并提取真实物理时间..."
           cd upstream_temp
           rm -f ../js_files_raw.txt
 
-          # [原有逻辑保留] 遍历所有 JS 文件获取时间和大小，末尾增加标识 GUOYUE
+          # 遍历所有 JS 文件获取时间和大小，末尾增加标识 GUOYUE
           while IFS= read -r -d '' filepath; do
             if [[ "$filepath" == *.js ]] && [[ ! "$filepath" =~ ^\.github/ ]]; then
               committime=$(git log -1 --format=%ci -- "$filepath" 2>/dev/null || echo "")
               filesize=$(stat -c%s "$filepath" 2>/dev/null || echo "0")
-              # 稍微修改：尾部加上 |GUOYUE 方便后续 jq 判断
               echo "$filepath|$committime|$filesize|GUOYUE" >> ../js_files_raw.txt
             fi
           done < <(git ls-files -z)
@@ -49,7 +48,7 @@ jobs:
           cd ..
 
           echo "🟠 正在请求 Macrohard0001 最新 Release 获取未压缩 JS..."
-          # [新增逻辑] 通过 API 获取最新 release 的 JS 文件
+          # 通过 API 获取最新 release 的 JS 文件
           release_json=$(curl -sL https://api.github.com/repos/Macrohard0001/lx-ikun-music-sources/releases/latest)
           
           # 提取 Release 的标签名作为版本/分类（例如：v260831_开学前的挣扎）
@@ -58,20 +57,19 @@ jobs:
           # 遍历 assets 中以 .js 结尾的文件
           echo "$release_json" | jq -c '.assets[]? | select(.name | endswith(".js"))' | while read -r asset; do
             asset_name=$(echo "$asset" | jq -r '.name')
-            asset_time=$(echo "$asset" | jq -r '.updated_at') # 时间格式如 2024-08-31T...
+            asset_time=$(echo "$asset" | jq -r '.updated_at')
             asset_size=$(echo "$asset" | jq -r '.size')
             asset_url=$(echo "$asset" | jq -r '.browser_download_url')
             
-            # 为了契合你原有的分类逻辑 (split("/"))，我们构造一个虚拟路径
-            # 格式：Macrohard0001 / 版本号 / 文件名.js
-            mock_filepath="Macrohard0001/$tag_name/$asset_name"
+            # 加上“优质_”前缀，以通过 PHP 端 $is_good 的检测机制
+            mock_filepath="Macrohard0001/优质_$tag_name/$asset_name"
             
             # 直接将下载直链写在第4个字段
             echo "$mock_filepath|$asset_time|$asset_size|$asset_url" >> js_files_raw.txt
           done
 
           echo "🟠 正在格式化为 JSON 并替换直链..."
-          # [微调逻辑] 利用 jq 处理。增加判断：是 GUOYUE 就用原方式拼接，否则直接用第4个字段的直链
+          # 利用 jq 处理，并将下载直链强行指向 guoyue2010，或者使用新源直链
           if [ -f js_files_raw.txt ]; then
             cat js_files_raw.txt | jq -R -s -c '
               split("\n") | map(select(length > 0)) | map(split("|") | {
