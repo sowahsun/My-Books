@@ -76,7 +76,7 @@ jobs:
                 name: (.[0] | split("/") | last),
                 path: .[0],
                 version: (.[0] | split("/")[0]),
-                category: (.[0] | split("/")[1] // "根目录"),
+                category: (if (.[0] | split("/") | length) <= 2 then "优质" else (.[0] | split("/")[1]) end),
                 time: .[1],
                 size: (.[2] | tonumber),
                 url: (if .[3] == "GUOYUE" then ("https://raw.githubusercontent.com/guoyue2010/lxmusic-/main/" + (.[0] | split("/") | map(gsub(" "; "%20") | gsub("\\["; "%5B") | gsub("\\]"; "%5D") | gsub("\\("; "%28") | gsub("\\)"; "%29")) | join("/"))) else .[3] end)
