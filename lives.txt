@@ -1,4 +1,4 @@
-抖音K歌,#genre#,DE=3
+抖音K歌,#genre#
 小米澎程N90,https://www.iesdouyin.com/aweme/v1/playwm/?line=0&logo_name=aweme_diversion_search&ratio=720p&video_id=v1e00fgi0000d9lklmfog65t7jl676f0
 小米YU7,http://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0200fg10000d0nrolvog65uva9acetg&ratio=720p&line=0
 小米SU7 ultra,https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0300fg10000cv4jntnog65skq4ct860&ratio=720p&line=0
@@ -218,7 +218,7 @@ F4-决不能失去你,https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0200f
 张芸京-偏爱,https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v1e00fgi0000csmuo9fog65j08392110&ratio=720p&line=0
 张韶涵-无名的人,https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0200fg10000ctari87og65ksgs0rnpg&ratio=720p&line=0
 张韶涵-12首合集,https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0d00fg10000ct7cdovog65o09j282vg&ratio=720p&line=0
-清风DJ,#genre#,DE=3
+清风DJ,#genre#
 女孩DJ,https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v1e00fgi0000d2aa0qfog65vmvgg5sjg&ratio=720p&line=0
 gamgamDJ,https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0200fg10000cr8r23nog65mnbf3616g&ratio=720p&line=0
 离开我的依赖DJ,https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v1e00fgi0000d2hio3nog65lre771jt0&ratio=720p&line=0
@@ -272,7 +272,7 @@ DJ傑少-全粤语Electro音乐谢谢对不起幻想已醒劲爆 DJ串烧,https:
 DJ369-全粤语Electro音乐打造廿四味鬼佬凉茶包房上头串烧,https://mp4.djuu.com/c2/16/2026/9282f410b5437e16.m4a
 恩平DJ基仔-全粤语Electro音乐港式潮流越听越正DJ慢摇串烧,https://mp4.djuu.com/c2/16/2026/ded571d03559a9ae.m4a
 DJVinCent-全粤语Electro港台女声唱K必点粤听粤过瘾DJ串烧,https://mp4.djuu.com/c2/16/2026/b355cd7e4ac8489d.m4a
-欧美music,#genre#,DE=3
+欧美music,#genre#
 Nevada,https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0300ff30000but4f2452a13sf6temog&ratio=720p&line=0
 Unstoppable,https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0200fg10000ce4av3bc77u7mqoje2kg&ratio=720p&line=0
 once upon a time,https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0200fg10000cumt1mfog65krksdg31g&ratio=720p&line=0
@@ -404,7 +404,7 @@ AK电影,#genre#
 1992鹿鼎记2神龙教,https://play.modujx16.com/20240830/hhzZN6Th/index.m3u8
 1991逃学威龙,https://vip.dytt-film.com/20250311/12297_35fcfa9e/index.m3u8
 1990赌侠,https://play.modujx11.com/20241224/mBSx76B4/index.m3u8
-极速港台（挂梯）,#genre#,DE=3
+极速港台（挂梯）,#genre#
 翡翠台4K(字幕),https://cdn3.indevs.in/stream/tvb/fct4k/
 凤凰中文,https://cdn6.cc.cd/163189/fhzw
 翡翠台,https://cdn6.cc.cd/163189/fct
@@ -505,7 +505,7 @@ TVB Plus,https://smt.1678520.xyz/163189/tvbp
 东森洋片,https://smt.1678520.xyz/163189/dsyp
 咪咕4K(限移动网络),http://r.jdshipin.com/ln4xk
 咪咕4K-2(限移动网络),http://r.jdshipin.com/Lqdwf
-极速港台2,#genre#,DE=3
+极速港台2,#genre#
 翡翠台,http://gd.wsd.gd.cn:1698/hls/92/index.m3u8
 翡翠台,http://116.77.239.26:44300/tsfile/live/0141_1.m3u8
 翡翠台,http://211.97.63.3:3443/hls/541/index.m3u8
@@ -579,7 +579,7 @@ TVB星河3,http://php.jdshipin.com/TVOD/iptv.php?id=xinghe
 亚洲武侠,http://php.jdshipin.com/TVOD/iptv.php?id=yzwx
 娱乐新闻,http://v2hcdn.jdshipin.com/enew/enew.stream/chunklist_w103.m3u8
 TVBJ1,https://bcovlive-a.akamaihd.net/e360e3f9895c4fae99b133ec8dc20f01/us-west-2/5324042807001/4a3bca5b047b4564b18bb12dfa26ba62/playlist_ssaiM.m3u8
-四季台湾,#genre#,DE=3
+四季台湾,#genre#
 三立新闻,https://d2jc41c1shgcol.cloudfront.net/live/iNEWS/playlist.m3u8
 中天新闻,https://d2jc41c1shgcol.cloudfront.net/live/CtiNEWS1/playlist.m3u8
 东森新闻,https://d2jc41c1shgcol.cloudfront.net/live/EBCNews/playlist.m3u8
@@ -636,7 +636,6 @@ DAZN-体育,rtmp://f13h.mine.nu/sat/tv731
 DAZN-体育,rtmp://f13h.mine.nu/sat/tv741
 momo'tv,rtmp://f13h.mine.nu/sat/tv761
 今日影视,#genre#
-需切换EXO解码,1
 翡翠台,http://play.wenxiang.cn/live/e240363d284b6f41fcb7136eef507ef6.flv
 TVBPlus,http://play.wenxiang.cn/live/5ec77f27f37babab48d60b879fde862a.flv
 HOY76,http://play.wenxiang.cn/live/02267bba92f0f4b8291abefa0560664f.flv
@@ -893,7 +892,7 @@ NewKID4,https://stream.ads.ottera.tv/playlist.m3u8?network_id=888
 NewKID4,https://stream.ads.ottera.tv/playlist.m3u8?network_id=872
 韩国音乐,http://mgugaklive.nowcdn.co.kr/gugakvideo/gugakvideo.stream/playlist.m3u8
 RNA,http://5ddfc48289114.streamlock.net/CHsoom/LIVE/playist.m3u8
-抖音直播,#genre#,DE=3
+抖音直播,#genre#
 水水家猪蹄,https://cdn.ttvb.eu.org/douyin/ssjzt777
 格格睡醒了,https://cdn.ttvb.eu.org/douyin/42347122605
 格格睡不醒,https://cdn.ttvb.eu.org/douyin/41753242146
@@ -929,7 +928,7 @@ DV现场,http://cfss.cc/cdn/dy/gdtvdvxc.flv
 央视财经,http://cfss.cc/cdn/dy/yscjxmt.flv
 财联社,http://cfss.cc/cdn/dy/clscccaijing.flv
 小强热线浙江教科,http://cfss.cc/cdn/dy/ZTV4.flv
-广东荔枝网,#genre#,DE=3
+广东荔枝网,#genre#
 广东珠江3,http://m.061899.xyz/mg/gdzj
 广东新闻,http://m.061899.xyz/mg/gdxw
 广东民生2,http://m.061899.xyz/mg/gdms
@@ -961,7 +960,7 @@ DV现场,http://cfss.cc/cdn/dy/gdtvdvxc.flv
 番禺综合,http://video.epaper.pybtv.cn:8080/live/rtmp_live_demo.flv
 丰顺综合,https://p2.vzan.com/701678271/024926084736123670/live.m3u8
 深圳龙岗,http://zhfw-t.szlg.com:8080/live/television1.m3u8
-广东酒店,#genre#,DE=3
+广东酒店,#genre#
 广东珠江,http://8.138.7.223/tv/gdzj.m3u8
 大湾区卫视,http://8.138.7.223/tv/dwq.m3u8
 广东珠江频道,https://gx.484947.xyz/PLTV/77777777/224/3221225717/index.m3u8
@@ -1010,7 +1009,7 @@ DV现场,http://cfss.cc/cdn/dy/gdtvdvxc.flv
 肇庆生活,http://zmylivestream.nfnews.com/zmy_slive/27871.m3u8
 怀集综合,https://www.zqhjtv.com/hls/hjzhpd.m3u8
 中山综合,http://v.zsbtv.com.cn/lsdream/qTl38me/1000/live.m3u8
-揭阳IPTV,#genre#,DE=3
+揭阳IPTV,#genre#
 揭阳综合高清,http://119.29.142.81:4022/udp/239.77.0.229:5146
 揭阳生活高清,http://119.29.142.81:4022/udp/239.77.0.251:5146
 汕尾综合高清,http://119.29.142.81:4022/udp/239.77.0.25:5146
@@ -1266,7 +1265,7 @@ DV现场,http://cfss.cc/cdn/dy/gdtvdvxc.flv
 大湾区卫视高清,http://61.145.188.90:50055/udp/239.77.0.215:5146
 广东影视高清,http://61.145.188.90:50055/udp/239.77.0.217:5146
 广东少儿高清,http://61.145.188.90:50055/udp/239.77.0.250:5146
-海南移动,#genre#,DE=3
+海南移动,#genre#
 CCTV1,http://111.29.9.33:6610/000000001000/1000000001000021973/index.m3u8?channel-id=bestzb&Contentid=1000000001000021973&livemode=1&stbId=3
 CCTV2,http://111.29.9.33:6610/000000001000/1000000001000012442/index.m3u8?channel-id=bestzb&Contentid=1000000001000012442&livemode=1&stbId=3
 CCTV3,http://111.29.9.33:6610/000000001000/1000000001000011218/index.m3u8?channel-id=bestzb&Contentid=1000000001000011218&livemode=1&stbId=3
@@ -1341,7 +1340,7 @@ CCTV17,http://111.29.9.33:6610/000000001000/1000000005000056836/index.m3u8?chann
 茶频道,http://111.29.9.33:6610/000000001000/5000000011000031209/index.m3u8?channel-id=bestzb&Contentid=5000000011000031209&livemode=1&stbId=3
 纯享4K,http://111.29.9.33:6610/000000001000/1000000004000011651/index.m3u8?channel-id=bestzb&Contentid=1000000004000011651&livemode=1&stbId=3
 乐游,http://111.29.9.33:6610/000000001000/5000000011000031112/index.m3u8?channel-id=bestzb&Contentid=5000000011000031112&livemode=1&stbId=3
-广东电信(内网),#genre#,DE=3
+广东电信(内网),#genre#
 CCTV1综合超清,rtsp://183.59.56.116:554/PLTV/88888905/224/3221227610/10000100000000060000000004462931_0.smil?0&accountinfo=%7E%7EV2.0%7EjrJOUmzk157kD2TdQGpdFA%7EzJeEdQQK6GK7r2Q5jZjxjKYhZiHklGs8wg1XyXUSKdk5d8f2s2AYjzO2-qcyDeaExan3Pra4cuU_Whoju6BKGf666OGX7-GKwJrfpZjwyfM~ExtInfoWNHSPSTb+3AG0FnUkYLPMw=-1%2C0%2C1%2C%2C%2C2%2C%2C%2C%2C2%2CEND&GuardEncType=2
 CCTV1综合高清,rtsp://183.59.56.116:554/PLTV/88888888/224/3221229774/10000100000000060000000008842383_0.smil?0&accountinfo=%7E%7EV2.0%7EGUoe1ahxCx0poylztUdZdg%7EzJeEdQQK6GK7r2Q5jZjxjKYhZiHklGs8wg1XyXUSKdk5d8f2s2AYjzO2-qcyDeaExan3Pra4cuU_Whoju6BKGf666OGX7-GKwJrfpZjwyfM~ExtInfoWNHSPSTb+3AG0FnUkYLPMw=-1%2C0%2C1%2C%2C%2C2%2C%2C%2C%2C2%2CEND&GuardEncType=2
 CCTV1综合高清,rtsp://183.59.56.116:554/PLTV/88888905/224/3221227270/10000100000000060000000001141346_0.smil?0&accountinfo=%7E%7EV2.0%7EUwOl-Gl8Z1MFFJlY1q_RCg%7EzJeEdQQK6GK7r2Q5jZjxjKYhZiHklGs8wg1XyXUSKdk5d8f2s2AYjzO2-qcyDeaExan3Pra4cuU_Whoju6BKGf666OGX7-GKwJrfpZjwyfM~ExtInfoWNHSPSTb+3AG0FnUkYLPMw=-1%2C0%2C1%2C%2C%2C2%2C%2C%2C%2C2%2CEND&GuardEncType=2
@@ -1432,7 +1431,7 @@ IPTV谍战剧场,rtsp://183.59.56.116:554/PLTV/88888905/224/3221227158/100001000
 精选4k频道1,rtsp://183.59.56.116:554/PLTV/88888905/224/3221228307/10000100000000060000000008189136_0.smil?0&accountinfo=%7E%7EV2.0%7EAqd3ciY3-pzJVhUaGjQUaw%7EzJeEdQQK6GK7r2Q5jZjxjKYhZiHklGs8wg1XyXUSKdk5d8f2s2AYjzO2-qcyDeaExan3Pra4cuU_Whoju6BKGf666OGX7-GKwJrfpZjwyfM~ExtInfoWNHSPSTb+3AG0FnUkYLPMw=-1%2C0%2C1%2C%2C%2C2%2C%2C%2C%2C2%2CEND&GuardEncType=2
 精选4k频道2,rtsp://183.59.56.116:554/PLTV/88888905/224/3221228179/10000100000000060000000008189131_0.smil?0&accountinfo=%7E%7EV2.0%7El0PMxMTr89VnbogvGkhHKQ%7EzJeEdQQK6GK7r2Q5jZjxjKYhZiHklGs8wg1XyXUSKdk5d8f2s2AYjzO2-qcyDeaExan3Pra4cuU_Whoju6BKGf666OGX7-GKwJrfpZjwyfM~ExtInfoWNHSPSTb+3AG0FnUkYLPMw=-1%2C0%2C1%2C%2C%2C2%2C%2C%2C%2C2%2CEND&GuardEncType=2
 精选4k频道3,rtsp://183.59.56.116:554/PLTV/88888905/224/3221229891/10000100000000060000000009714024_0.smil?0&accountinfo=%7E%7EV2.0%7Ewh4GzNmJ9Ru12FmJnUao9A%7EzJeEdQQK6GK7r2Q5jZjxjKYhZiHklGs8wg1XyXUSKdk5d8f2s2AYjzO2-qcyDeaExan3Pra4cuU_Whoju6BKGf666OGX7-GKwJrfpZjwyfM~ExtInfoWNHSPSTb+3AG0FnUkYLPMw=-1%2C0%2C1%2C%2C%2C2%2C%2C%2C%2C2%2CEND&GuardEncType=2
-广东联通(内网),#genre#,DE=3
+广东联通(内网),#genre#
 CCTV1综合,http://120.87.19.109:80/PLTV/88888973/224/3221225737/10000100000000060000000000334541_0.smil/01.m3u8?fmt=ts2hls,244,01.m3u8&accountinfo=UoQbCSdhOfs+Fhzpjb+WON1faRQ9pU15SBx6EULzJM/q63EjPL5/UXSVfEKzDq3x22CBjqHLOLP9Vdf8+YjRnwWZ1F4+6A1eDkDeh5XZlpvpn23wIF+ldb6dnBPa8zHj,END&tenantId=8601
 CCTV2财经,http://120.87.19.109:80/PLTV/88888973/224/3221225738/10000100000000060000000000334543_0.smil/01.m3u8?fmt=ts2hls,244,01.m3u8&accountinfo=UoQbCSdhOfs+Fhzpjb+WON1faRQ9pU15SBx6EULzJM/q63EjPL5/UXSVfEKzDq3x9ZwJZK5v8A25s5ynmqdLpAWZ1F4+6A1eDkDeh5XZlpvpn23wIF+ldb6dnBPa8zHj,END&tenantId=8601
 CCTV3综艺,http://120.87.19.109:80/PLTV/88888973/224/3221225814/10000100000000060000000000388928_0.smil/01.m3u8?fmt=ts2hls,244,01.m3u8&accountinfo=UoQbCSdhOfs+Fhzpjb+WON1faRQ9pU15SBx6EULzJM/q63EjPL5/UXSVfEKzDq3xHSB4VtQtUn/eDSJtRBzPKgWZ1F4+6A1eDkDeh5XZlpvpn23wIF+ldb6dnBPa8zHj,END&tenantId=8601
@@ -1633,7 +1632,7 @@ IPTV影视推荐,http://120.87.19.109:80/PLTV/88888973/224/3221225700/1000010000
 广东卫视4k,http://120.87.19.109:80/PLTV/88888973/224/3221226702/371164168.smil/01.m3u8?fmt=ts2hls,1,01.m3u8&rrsip=120.87.4.103:80&zoneoffset=0&servicetype=1&icpid=&limitflux=-1&limitdur=-1&tenantId=8601&accountinfo=ZErBHdoicx6KA8k34VvsyxmZWqqhmoqWnjwSzvmAgjq8m6DMrBjwBDjtfkmBgyvoi2n%2FkYZZroy5c4pnOUwIF0b4KWe%2FIRdbiEb8SokWJtVGAMCQWKP%2FVYv0YgXiGkmJ%3A20260214223934%2C10500001346793%2C27.45.45.191%2C20260214223934%2Curn%3AHuawei%3AliveTV%3AXTV371164167%2C10001000211336%2C-1%2C0%2C1%2C%2C%2C2%2C%2C%2C%2C2%2C%2C371164168%2CEND&GuardEncType=2
 深圳卫视4k,http://120.87.19.109:80/PLTV/88888973/224/3221226683/371164180.smil/01.m3u8?fmt=ts2hls,1,01.m3u8&rrsip=120.87.4.103:80&zoneoffset=0&servicetype=1&icpid=&limitflux=-1&limitdur=-1&tenantId=8601&accountinfo=ZErBHdoicx6KA8k34VvsyxmZWqqhmoqWnjwSzvmAgjq8m6DMrBjwBDjtfkmBgyvoi2n%2FkYZZroy5c4pnOUwIFy%2B%2FkIAavci9z%2FLJPqxg7dZGAMCQWKP%2FVYv0YgXiGkmJ%3A20260214223934%2C10500001346793%2C27.45.45.191%2C20260214223934%2Curn%3AHuawei%3AliveTV%3AXTV371164179%2C10001000211336%2C-1%2C0%2C1%2C%2C%2C2%2C%2C%2C%2C2%2C%2C371164180%2CEND&GuardEncType=2
 北京卫视4K,http://120.87.19.109:80/PLTV/88888973/224/3221226685/371059429.smil/01.m3u8?fmt=ts2hls,1,01.m3u8&rrsip=120.87.4.103:80&zoneoffset=0&servicetype=1&icpid=&limitflux=-1&limitdur=-1&tenantId=8601&accountinfo=ZErBHdoicx6KA8k34VvsyxmZWqqhmoqWnjwSzvmAgjq8m6DMrBjwBDjtfkmBgyvoi2n%2FkYZZroy5c4pnOUwIFwjPONabwq4Db4vofET%2FLZdGAMCQWKP%2FVYv0YgXiGkmJ%3A20260214223934%2C10500001346793%2C27.45.45.191%2C20260214223934%2Curn%3AHuawei%3AliveTV%3AXTV371059428%2C10001000211336%2C-1%2C0%2C1%2C%2C%2C2%2C%2C%2C%2C2%2C%2C371059429%2CEND&GuardEncType=2
-广东移动(内网),#genre#,DE=3
+广东移动(内网),#genre#
 CCTV1,http://rrs03.hw.gmcc.net:8088/PLTV/651/224/3221226737/1.m3u8
 CCTV2,http://rrs03.hw.gmcc.net:8088/PLTV/651/224/3221226739/1.m3u8
 CCTV3,http://rrs03.hw.gmcc.net:8088/PLTV/651/224/3221226720/1.m3u8
@@ -1762,7 +1761,7 @@ CETV4,http://rrs03.hw.gmcc.net:8088/PLTV/651/224/3221226724/1.m3u8
 咪咕视频32,http://rrs03.hw.gmcc.net:8088/PLTV/651/224/3221227024/1.m3u8
 咪咕视频33,http://rrs03.hw.gmcc.net:8088/PLTV/651/224/3221227027/1.m3u8
 咪咕视频34,http://rrs03.hw.gmcc.net:8088/PLTV/651/224/3221227030/1.m3u8
-咪咕央视,#genre#,DE=3
+咪咕央视,#genre#
 CCTV-1,http://go.bkpcp.top/mg/cctv1
 CCTV-2,http://go.bkpcp.top/mg/cctv2
 CCTV-3,http://go.bkpcp.top/mg/cctv3
@@ -2481,8 +2480,7 @@ CETV4,http://2280.eu.org:1234/923287339
 中华特产,http://2280.eu.org:1234/959986618
 环球旅游,http://2280.eu.org:1234/958475356
 梨园频道,http://2280.eu.org:1234/961930369
-咪咕体育,#genre#,DE=3
-移动网专用,1
+咪咕体育,#genre#
 咪咕直播1,http://gslbserv.itv.cmvideo.cn:80/5000000011000265001/1.m3u8?channel-id=FifastbLive&Contentid=3000000001000005308&livemode=1&stbId=toShengfen&mode=1
 咪咕直播2,http://gslbserv.itv.cmvideo.cn:80/5000000011000265001/1.m3u8?channel-id=FifastbLive&Contentid=3000000001000005969&livemode=1&stbId=toShengfen&mode=1
 咪咕直播3,http://gslbserv.itv.cmvideo.cn:80/5000000011000265001/1.m3u8?channel-id=FifastbLive&Contentid=3000000001000007218&livemode=1&stbId=toShengfen&mode=1
@@ -2513,7 +2511,7 @@ CETV4,http://2280.eu.org:1234/923287339
 咪咕直播28,http://gslbserv.itv.cmvideo.cn:80/5000000011000265001/1.m3u8?channel-id=FifastbLive&Contentid=3000000010000019839&livemode=1&stbId=toShengfen&mode=1
 咪咕直播29,http://gslbserv.itv.cmvideo.cn:80/5000000011000265001/1.m3u8?channel-id=FifastbLive&Contentid=3000000010000021904&livemode=1&stbId=toShengfen&mode=1
 咪咕直播30,http://gslbserv.itv.cmvideo.cn:80/5000000011000265001/1.m3u8?channel-id=FifastbLive&Contentid=3000000010000023434&livemode=1&stbId=toShengfen&mode=1
-央视频,#genre#,DE=3
+央视频,#genre#
 CCTV-1HD,http://38.75.136.137:98/gslb/dsdqpub/cctv1hd.m3u8?auth=testpub
 CCTV-2HD,http://38.75.136.137:98/gslb/dsdqpub/cctv2hd.m3u8?auth=testpub
 CCTV-3HD,http://38.75.136.137:98/gslb/dsdqpub/cctv3hd.m3u8?auth=testpub
@@ -2750,7 +2748,7 @@ cctv14,http://38.75.136.137:98/gslb/dsdqca/chcdzdyhd.m3u8?auth=test20251009
 cctv15,http://38.75.136.137:98/gslb/dsdqca/chcymdyhd.m3u8?auth=test20251009
 cctv16,http://38.75.136.137:98/gslb/dsdqca/chcjtyyhd.m3u8?auth=test20251009
 cctv17,http://38.75.136.137:98/gslb/dsdqca/fhzwhd.m3u8?auth=test20251009
-央视频2,#genre#,DE=3
+央视频2,#genre#
 CCTV-1HD,http://120.76.248.139/live/bfgd/4200000484.m3u8
 CCTV-1HD,http://120.76.248.139/live/bfgd/4200000488.m3u8
 CCTV-1HD,http://120.76.248.139/live/bfgd/4200000489.m3u8
@@ -2799,7 +2797,7 @@ CCTV-5+HD,http://120.76.248.139/live/bfgd/4200000246.m3u8
 辽宁卫视HD,http://120.76.248.139/live/bfgd/4200000141.m3u8
 辽宁卫视HD,http://120.76.248.139/live/bfgd/4200000185.m3u8
 黑龙江卫视HD,http://120.76.248.139/live/bfgd/4200000095.m3u8
-央视频3,#genre#,DE=3
+央视频3,#genre#
 CCTV-1HD,http://107.150.60.122/live/cctv1hd.m3u8
 CCTV-2HD,http://107.150.60.122/live/cctv2hd.m3u8
 CCTV-3HD,http://107.150.60.122/live/cctv3hd.m3u8
@@ -3154,7 +3152,7 @@ CCTV-卫生健康,http://198.204.228.26/live/wsjk.m3u8
 周润发电影,http://198.204.228.26/live/lbzrf.m3u8
 周星驰电影,http://198.204.228.26/live/lbzxc.m3u8
 林正英影院,http://198.204.228.26/live/lblzy.m3u8
-央视频5,#genre#,DE=3
+央视频5,#genre#
 CCTV-1,http://bztv.tvbus.cc:8081/cdnlive/cctv1.m3u8
 CCTV-2,http://bztv.tvbus.cc:8081/cdnlive/cctv2.m3u8
 CCTV-3,http://bztv.tvbus.cc:8081/cdnlive/cctv3.m3u8
@@ -3220,7 +3218,7 @@ CCTV-卫生健康,http://bztv.tvbus.cc:8081/cdnlive/wsjk.m3u8
 厦门卫视,http://bztv.tvbus.cc:8081/cdnlive/xmws.m3u8
 云南卫视,http://bztv.tvbus.cc:8081/cdnlive/ynws.m3u8
 浙江卫视,http://bztv.tvbus.cc:8081/cdnlive/zjws.m3u8
-央视频6,#genre#,DE=3
+央视频6,#genre#
 CCTV-1综合,http://173.208.212.130:8181/720p/cctv1.m3u8
 CCTV-2财经,http://173.208.212.130:8181/720p/cctv2.m3u8
 CCTV-3综艺,http://173.208.212.130:8181/720p/cctv3.m3u8
@@ -3285,7 +3283,7 @@ CCTV-5+HD,http://173.208.212.130:8181/1080p/cctv5p.m3u8
 江苏卫视,http://173.208.212.130:8181/720p/jsws.m3u8
 江苏卫视,http://173.208.212.130:8181/1080p/jsws.m3u8
 浙江卫视,http://173.208.212.130:8181/720p/zjws.m3u8
-安徽JD,#genre#,DE=3
+安徽JD,#genre#
 CCTV1,http://112.30.73.119:9901/tsfile/live/0001_1.m3u8?key=txiptv&playlive=0&authid=0
 CCTV2,http://112.30.73.119:9901/tsfile/live/0002_1.m3u8?key=txiptv&playlive=0&authid=0
 CCTV3,http://112.30.73.119:9901/tsfile/live/0003_1.m3u8?key=txiptv&playlive=0&authid=0
@@ -3367,7 +3365,7 @@ CETV-1,http://by4.nty.tv189.cn/live/tm-yszgjy1-4000k.m3u8
 CETV-2,http://by4.nty.tv189.cn/live/tm-yszgjy2-4000k.m3u8
 CETV-4,http://by4.nty.tv189.cn/live/tm-yszgjy4-4000k.m3u8
 东方综合,http://by4.nty.tv189.cn/live//tm-xpxwzhws-4000k.m3u8
-虎牙轮播,#genre#,DE=3
+虎牙轮播,#genre#
 名侦探柯南剧场版,https://www.goodiptv.club/huya/30080236
 火影忍者,https://www.goodiptv.club/huya/29465866
 海贼王,https://www.goodiptv.club/huya/29982634
@@ -3654,7 +3652,7 @@ CETV-4,http://by4.nty.tv189.cn/live/tm-yszgjy4-4000k.m3u8
 妙手仁心,https://www.goodiptv.club/huya/29465853
 大时代,https://www.goodiptv.club/huya/23865161
 笑看风云,https://www.goodiptv.club/huya/29465858
-斗鱼轮播,#genre#,DE=3
+斗鱼轮播,#genre#
 橙子 弹幕看剧坊,https://www.goodiptv.club/douyu/4549169
 [奇光]喜剧点播剧场,https://www.goodiptv.club/douyu/8009547
 林正英【久久】下饭电视剧,https://www.goodiptv.club/douyu/8371123
@@ -4634,7 +4632,7 @@ Rimworld：皇权,https://www.goodiptv.club/douyu/7661496
 星海璃幻V的直播间,https://www.goodiptv.club/douyu/9567313
 补番目录V的直播间,https://www.goodiptv.club/douyu/9668692
 阿烦与小铃铛甜蜜日常,https://www.goodiptv.club/douyu/9702820
-YY轮播,#genre#,DE=3
+YY轮播,#genre#
 YY用户,https://www.goodiptv.club/yy/1382736810
 超精彩武打场景,https://www.goodiptv.club/yy/1354936131
 举起手来-惊险抗日,https://www.goodiptv.club/yy/1382736877
@@ -5217,7 +5215,7 @@ w_400,https://www.goodiptv.club/yy/1354693629
 魅力女神别错过,https://www.goodiptv.club/yy/1356076442
 少寒回归啦-真,https://www.goodiptv.club/yy/13739310
 你的声音女友,https://www.goodiptv.club/yy/1460008724
-音乐电台,#genre#,DE=3
+音乐电台,#genre#
 广东,https://lhttp.qingting.fm/live/1257/64k.mp3
 广东音乐,https://lhttp.qingting.fm/live/1260/64k.mp3
 广东2,https://lhttp.qingting.fm/live/1259/64k.mp3
