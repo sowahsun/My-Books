@@ -23,20 +23,11 @@ jobs:
           url = "https://raw.githubusercontent.com/fafa002/yf2025/refs/heads/main/yiyifafa.txt"
           output_file = "lives.txt"
           
-          # 第一道防火墙：分类黑名单（只要分类名包含这些字眼，整个分类直接团灭）
-          black_categories = [
-              "加入易發群", 
-              "私密", 
-              "JAV", 
-              "随机点播"
-          ]
+          # 1. 分类黑名单：杀掉各类色情、广告引流分类
+          black_categories = ["易發", "私密", "JAV", "随机点播"]
           
-          # 第二道防火墙：频道关键字黑名单（正常分类里如果夹杂了这些广告，单独踢掉）
-          black_keywords = [
-              "盗源狗", "si全家", "全家下地狱", 
-              "QQ群", "扫码进群", "永久免费", 
-              "换安卓9盒子", "请勿打赏"
-          ]
+          # 2. 关键字黑名单：杀掉频道名里的牛皮癣广告
+          black_keywords = ["盗源", "si全家", "全家下地狱", "QQ群", "扫码进群", "永久免费", "换安卓", "打赏"]
           
           try:
               req = urllib.request.Request(url, headers={'User-Agent': 'Mozilla/5.0'})
@@ -52,25 +43,34 @@ jobs:
                   if not line_str:
                       continue
                   
-                  # 遇到分类声明行
+                  # 核心修复 1：处理分类行，强制剥离原作者加的 ",DE=3" 这种干扰尾巴
                   if ",#genre#" in line_str:
-                      # 检查是否命中了脏分类
-                      if any(bc in line_str for bc in black_categories):
-                          skip_current_category = True  # 开启全局拦截
+                      category_name = line_str.split(',#genre#')[0].strip()
+                      
+                      if any(bc in category_name for bc in black_categories):
+                          skip_current_category = True
                       else:
-                          skip_current_category = False # 放行正常分类
-                          result.append(line_str)
+                          skip_current_category = False
+                          # 重新输出为最标准纯净的 TVBox 分类格式
+                          result.append(category_name + ",#genre#")
                       continue
                   
-                  # 如果当前处于脏分类的范围内，所有频道直接无视
                   if skip_current_category:
                       continue
                       
-                  # 即使在正常分类里，也要检查频道名是否包含恶心人的广告词
                   if any(bk in line_str for bk in black_keywords):
                       continue
                       
-                  # 顺利通过双重防火墙的，才是纯净的频道
+                  # 核心修复 2：过滤没有有效直播源的公告假频道（例如 "请勿打赏,1"）
+                  if "," in line_str:
+                      parts = line_str.split(',', 1)
+                      if len(parts) == 2:
+                          channel_url = parts[1].strip()
+                          # 正常的直播流必然以这些主流协议开头
+                          valid_prefixes = ("http", "rtmp", "rtsp", "p2p", "mitv", "tvbus")
+                          if not channel_url.lower().startswith(valid_prefixes):
+                              continue
+                              
                   result.append(line_str)
                   
               if result:
