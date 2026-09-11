@@ -1,0 +1,93 @@
+name: Update lives_sync
+
+on:
+  schedule:
+    - cron: '0 22 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  update-lives:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Process data sync
+        run: |
+          cat << 'EOF' > sync.py
+          import urllib.request
+          
+          url = "https://raw.githubusercontent.com/fafa002/yf2025/refs/heads/main/yiyifafa.txt"
+          output_file = "lives.txt"
+          
+          # 第一道防火墙：分类黑名单（只要分类名包含这些字眼，整个分类直接团灭）
+          black_categories = [
+              "加入易發群", 
+              "私密", 
+              "JAV", 
+              "随机点播"
+          ]
+          
+          # 第二道防火墙：频道关键字黑名单（正常分类里如果夹杂了这些广告，单独踢掉）
+          black_keywords = [
+              "盗源狗", "si全家", "全家下地狱", 
+              "QQ群", "扫码进群", "永久免费", 
+              "换安卓9盒子", "请勿打赏"
+          ]
+          
+          try:
+              req = urllib.request.Request(url, headers={'User-Agent': 'Mozilla/5.0'})
+              with urllib.request.urlopen(req) as response:
+                  content = response.read().decode('utf-8')
+              
+              lines = content.split('\n')
+              result = []
+              skip_current_category = False
+              
+              for line in lines:
+                  line_str = line.strip()
+                  if not line_str:
+                      continue
+                  
+                  # 遇到分类声明行
+                  if ",#genre#" in line_str:
+                      # 检查是否命中了脏分类
+                      if any(bc in line_str for bc in black_categories):
+                          skip_current_category = True  # 开启全局拦截
+                      else:
+                          skip_current_category = False # 放行正常分类
+                          result.append(line_str)
+                      continue
+                  
+                  # 如果当前处于脏分类的范围内，所有频道直接无视
+                  if skip_current_category:
+                      continue
+                      
+                  # 即使在正常分类里，也要检查频道名是否包含恶心人的广告词
+                  if any(bk in line_str for bk in black_keywords):
+                      continue
+                      
+                  # 顺利通过双重防火墙的，才是纯净的频道
+                  result.append(line_str)
+                  
+              if result:
+                  with open(output_file, "w", encoding="utf-8") as f:
+                      f.write("\n".join(result))
+                  print(f"Sync success, saved as {output_file}")
+          except Exception as e:
+              print(f"Process failed: {e}")
+          EOF
+          
+          python3 sync.py
+          rm sync.py
+
+      - name: Commit and push changes
+        run: |
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git add lives.txt
+          git commit -m "Update lives.txt" || echo "No changes to commit"
+          git push
