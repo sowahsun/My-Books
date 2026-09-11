@@ -26,8 +26,11 @@ jobs:
 
           echo "🟠 [API] 正在获取上游 40GB 仓库的文件树..."
           # 增加 per_page=100000 以支持超大仓库，避免截断；增加重试和超时
+          # 补充标准 API 请求头，防止被 GitHub 拦截
           curl -s --retry 3 --retry-delay 5 --max-time 120 \
-            -H "Authorization: token $GH_TOKEN" \
+            -H "Authorization: Bearer $GH_TOKEN" \
+            -H "Accept: application/vnd.github.v3+json" \
+            -H "User-Agent: GitHub-Action-Bot" \
             "https://api.github.com/repos/TapXWorld/ChinaTextbook/git/trees/master?recursive=1&per_page=100000" > tree.json
 
           echo "🟠 [解析] 正在生成 list.json 与隐蔽的纯文本 README.md..."
@@ -45,16 +48,17 @@ jobs:
           with open('tree.json', 'r', encoding='utf-8') as f:
               tree_data = json.load(f)
           
-          # 容错机制：如果未获取到完整结构，则中断以保护现有文件
+          # 容错机制：如果未获取到完整结构，打印真实报错并中断以保护现有文件
           if 'tree' not in tree_data:
-              print("❌ 获取 API 数据失败，请检查网络或仓库是否存在！")
-              exit(1)
+              print("❌ 获取 API 数据失败，GitHub API 实际返回错误如下：")
+              print(json.dumps(tree_data, indent=2, ensure_ascii=False))
+              exit(1) # 此处退出，后续 git 命令不会执行，原有文件安全
 
           # 检查 API 返回的 truncated 标记，避免因仓库过大导致索引不全
           if tree_data.get('truncated'):
               fetched_count = len(tree_data['tree'])
               print(f"❌ 文件树被截断！已获取 {fetched_count} 条，可能不完整。请考虑进一步分页处理。")
-              exit(1)
+              exit(1) # 此处退出，保护现有文件
 
           current_time = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
           raw_base = "https://raw.githubusercontent.com/TapXWorld/ChinaTextbook/master/"
@@ -135,7 +139,6 @@ jobs:
                       name = val['name']
                       time = val['time'][:10]
                       badge = " *(🧩 分片合并)*" if val.get('is_chunked') else ""
-                      # 核心：此处彻底剥离了链接，仅作文本展示
                       res += f"{indent}- 📄 {name}{badge} `同步于: {time}`\n"
               return res
 
