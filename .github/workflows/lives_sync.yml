@@ -2,7 +2,7 @@ name: Update lives_sync
 
 on:
   schedule:
-    - cron: '0 22 * * *'
+    - cron: '0 */2 * * *'
   workflow_dispatch:
 
 permissions:
@@ -25,7 +25,7 @@ jobs:
           
           black_categories = ["易發", "私密", "JAV", "随机点播"]
           
-          black_keywords = ["盗源", "si全家", "全家下地狱", "QQ群", "扫码进群", "永久免费", "换安卓", "打赏"]
+          black_keywords = ["盗源", "全家", "QQ", "Q群", "进群", "扫码", "免费", "安卓", "打赏"]
           
           try:
               req = urllib.request.Request(url, headers={'User-Agent': 'Mozilla/5.0'})
