@@ -23,10 +23,8 @@ jobs:
           url = "https://raw.githubusercontent.com/fafa002/yf2025/refs/heads/main/yiyifafa.txt"
           output_file = "lives.txt"
           
-          # 1. 分类黑名单：杀掉各类色情、广告引流分类
           black_categories = ["易發", "私密", "JAV", "随机点播"]
           
-          # 2. 关键字黑名单：杀掉频道名里的牛皮癣广告
           black_keywords = ["盗源", "si全家", "全家下地狱", "QQ群", "扫码进群", "永久免费", "换安卓", "打赏"]
           
           try:
@@ -43,7 +41,6 @@ jobs:
                   if not line_str:
                       continue
                   
-                  # 核心修复 1：处理分类行，强制剥离原作者加的 ",DE=3" 这种干扰尾巴
                   if ",#genre#" in line_str:
                       category_name = line_str.split(',#genre#')[0].strip()
                       
@@ -51,7 +48,6 @@ jobs:
                           skip_current_category = True
                       else:
                           skip_current_category = False
-                          # 重新输出为最标准纯净的 TVBox 分类格式
                           result.append(category_name + ",#genre#")
                       continue
                   
@@ -61,12 +57,10 @@ jobs:
                   if any(bk in line_str for bk in black_keywords):
                       continue
                       
-                  # 核心修复 2：过滤没有有效直播源的公告假频道（例如 "请勿打赏,1"）
                   if "," in line_str:
                       parts = line_str.split(',', 1)
                       if len(parts) == 2:
                           channel_url = parts[1].strip()
-                          # 正常的直播流必然以这些主流协议开头
                           valid_prefixes = ("http", "rtmp", "rtsp", "p2p", "mitv", "tvbus")
                           if not channel_url.lower().startswith(valid_prefixes):
                               continue
