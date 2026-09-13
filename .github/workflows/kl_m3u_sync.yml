@@ -1,0 +1,26 @@
+name: Sync Live M3U
+
+on:
+  schedule:
+    - cron: '0 */2 * * *' # 每 2 小时运行一次
+  workflow_dispatch: # 允许手动触发
+
+jobs:
+  update-m3u:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v3
+
+      - name: Download M3U File
+        run: |
+          # 增加重试机制，下载文件并保存到仓库根目录为 live.m3u
+          curl -k --retry 3 --retry-delay 5 -o live.m3u "http://Live.445569.xyz/live.m3u"
+          
+      - name: Commit and Push
+        run: |
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git add live.m3u
+          git commit -m "Auto sync live.m3u" || exit 0
+          git push
