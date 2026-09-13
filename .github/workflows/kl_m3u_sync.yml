@@ -2,19 +2,22 @@ name: Sync Live M3U
 
 on:
   schedule:
-    - cron: '0 */2 * * *' # 每 2 小时运行一次
-  workflow_dispatch: # 允许手动触发
+    - cron: '0 */2 * * *'
+  workflow_dispatch:
+
+# 核心修改：明确声明给这个脚本写入代码仓库的权限
+permissions:
+  contents: write
 
 jobs:
   update-m3u:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout Repository
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
       - name: Download M3U File
         run: |
-          # 下载文件并保存为 kl_lives.m3u
           curl -k --retry 3 --retry-delay 5 -o kl_lives.m3u "http://Live.445569.xyz/live.m3u"
           
       - name: Commit and Push
