@@ -1,4 +1,4 @@
-name: Sync Live M3U
+name: Sync KL_Live M3U
 
 on:
   schedule:
