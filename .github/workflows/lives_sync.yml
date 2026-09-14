@@ -1,75 +1,81 @@
-name: Update lives_sync
-
-on:
-  schedule:
-    - cron: '0 */2 * * *'
-  workflow_dispatch:
-
-permissions:
-  contents: write
-
-jobs:
-  update-lives:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout repository
-        uses: actions/checkout@v3
-
-      - name: Process data sync
+- name: Process data sync
         run: |
           cat << 'EOF' > sync.py
           import urllib.request
-          
+
           url = "https://raw.githubusercontent.com/fafa002/yf2025/refs/heads/main/yiyifafa.txt"
           output_file = "lives.txt"
-          
+
           black_categories = ["易發", "私密", "JAV", "随机点播"]
-          
           black_keywords = ["盗源", "全家", "QQ", "Q群", "进群", "扫码", "免费", "安卓", "打赏"]
-          
+
           try:
               req = urllib.request.Request(url, headers={'User-Agent': 'Mozilla/5.0'})
               with urllib.request.urlopen(req) as response:
                   content = response.read().decode('utf-8')
-              
+
               lines = content.split('\n')
               result = []
               skip_current_category = False
-              
+
               for line in lines:
                   line_str = line.strip()
                   if not line_str:
                       continue
-                  
+
+                  # 1. 过滤黑名单关键词
+                  if any(bk in line_str for bk in black_keywords):
+                      continue
+
+                  # 2. 处理分类行
                   if ",#genre#" in line_str:
-                      category_name = line_str.split(',#genre#')[0].strip()
-                      
+                      parts = line_str.split(',#genre#', 1)
+                      category_name = parts[0].strip()
+
                       if any(bc in category_name for bc in black_categories):
                           skip_current_category = True
                       else:
                           skip_current_category = False
                           result.append(category_name + ",#genre#")
+                      
+                      # 修复逻辑 Bug：抢救跟在 #genre# 同一行的频道数据 (如: 广东电信,#genre#,CCTV1,rtsp://...)
+                      if len(parts) > 1 and parts[1].strip():
+                          channel_str = parts[1].strip()
+                          if channel_str.startswith(','):
+                              channel_str = channel_str[1:].strip()
+                          
+                          if channel_str and not skip_current_category:
+                              if "," in channel_str:
+                                  c_parts = channel_str.split(',', 1)
+                                  if len(c_parts) == 2 and c_parts[1].strip().lower().startswith(("http", "rtmp", "rtsp", "p2p", "mitv", "tvbus")):
+                                      result.append(channel_str)
                       continue
-                  
+
                   if skip_current_category:
                       continue
-                      
-                  if any(bk in line_str for bk in black_keywords):
-                      continue
-                      
+
+                  # 3. 处理正常的频道行
                   if "," in line_str:
                       parts = line_str.split(',', 1)
                       if len(parts) == 2:
                           channel_url = parts[1].strip()
                           valid_prefixes = ("http", "rtmp", "rtsp", "p2p", "mitv", "tvbus")
-                          if not channel_url.lower().startswith(valid_prefixes):
-                              continue
-                              
-                  result.append(line_str)
-                  
-              if result:
+                          if channel_url.lower().startswith(valid_prefixes):
+                              result.append(line_str)
+                  # 注意：如果没有逗号，则直接丢弃，不再追加垃圾文本
+
+              # 4. 体验优化：清理没有任何频道的空壳分类
+              final_result = []
+              for i in range(len(result)):
+                  is_genre = ",#genre#" in result[i]
+                  # 如果当前行是分类，且是最后一行，或者紧接着的下一行也是分类，说明它是空分类，直接剔除
+                  if is_genre and (i == len(result) - 1 or ",#genre#" in result[i+1]):
+                      continue
+                  final_result.append(result[i])
+
+              if final_result:
                   with open(output_file, "w", encoding="utf-8") as f:
-                      f.write("\n".join(result))
+                      f.write("\n".join(final_result))
                   print(f"Sync success, saved as {output_file}")
           except Exception as e:
               print(f"Process failed: {e}")
@@ -77,11 +83,3 @@ jobs:
           
           python3 sync.py
           rm sync.py
-
-      - name: Commit and push changes
-        run: |
-          git config --local user.email "github-actions[bot]@users.noreply.github.com"
-          git config --local user.name "github-actions[bot]"
-          git add lives.txt
-          git commit -m "Update lives.txt" || echo "No changes to commit"
-          git push
