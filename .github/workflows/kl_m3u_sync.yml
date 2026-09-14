@@ -15,15 +15,37 @@ jobs:
       - name: Checkout Repository
         uses: actions/checkout@v4
 
-      - name: Download M3U File
+      - name: Download M3U File (With Fault Tolerance)
         run: |
-          # 源地址改为 https 开头，直接获取真实文件
-          curl -k -L --retry 3 --retry-delay 5 -o kl_lives.m3u "https://Live.445569.xyz/live.m3u"
+          echo "开始尝试从源站下载..."
+          
+          # -f: 遇到 502 等 HTTP 错误直接判定为失败，不保存假网页
+          # -m 120: 允许最长 120 秒的缓慢下载时间
+          # --connect-timeout 20: 建立连接最长等待 20 秒
+          # --retry 5: 失败后重试 5 次
+          # --retry-delay 10: 每次重试间隔 10 秒
+          if curl -k -L -f -s -S --connect-timeout 20 -m 120 --retry 5 --retry-delay 10 -o temp_lives.m3u "https://iptv.445569.xyz/live.m3u"; then
+            
+            # 容错校验：检查下载下来的文件大小是否大于 1KB
+            # 如果源站崩溃吐出一个极短的空白页，这里会将其拦截
+            FILE_SIZE=$(wc -c < temp_lives.m3u)
+            if [ "$FILE_SIZE" -gt 1000 ]; then
+              mv temp_lives.m3u kl_lives.m3u
+              echo "下载成功，且文件大小校验通过 ($FILE_SIZE bytes)。"
+            else
+              echo "警告: 下载的文件过小 ($FILE_SIZE bytes)，疑似源站异常。本次放弃更新，保留原文件。"
+              rm temp_lives.m3u
+            fi
+            
+          else
+            echo "警告: 源服务器完全无法访问或多次重试均超时。本次放弃更新，保留原文件。"
+          fi
           
       - name: Commit and Push
         run: |
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
           git add kl_lives.m3u
-          git commit -m "Auto sync kl_lives.m3u" || exit 0
+          # 使用 echo 防止在没有文件更新时 git commit 报错导致流程显示红叉
+          git commit -m "Auto sync kl_lives.m3u" || echo "No changes to commit"
           git push
