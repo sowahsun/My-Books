@@ -16,86 +16,73 @@ jobs:
         uses: actions/checkout@v3
 
       - name: Process data sync
+        shell: python
         run: |
-          cat << 'EOF' > sync.py
-import urllib.request
-import re
+          import urllib.request
+          import re
 
-url = "https://raw.githubusercontent.com/fafa002/yf2025/refs/heads/main/yiyifafa.txt"
-output_file = "lives.txt"
+          url = "https://raw.githubusercontent.com/fafa002/yf2025/refs/heads/main/yiyifafa.txt"
+          output_file = "lives.txt"
 
-# 优化了黑名单，移除容易误杀合法 URL Token 的 "QQ" 和 "免费"
-black_categories = ["易發", "私密", "JAV", "随机点播"]
-black_keywords = ["盗源", "全家", "Q群", "进群", "扫码", "打赏"]
+          black_categories = ["易發", "私密", "JAV", "随机点播"]
+          black_keywords = ["盗源", "全家", "Q群", "进群", "扫码", "打赏"]
 
-try:
-    req = urllib.request.Request(url, headers={'User-Agent': 'Mozilla/5.0'})
-    with urllib.request.urlopen(req) as response:
-        content = response.read().decode('utf-8')
+          try:
+              req = urllib.request.Request(url, headers={'User-Agent': 'Mozilla/5.0'})
+              with urllib.request.urlopen(req) as response:
+                  content = response.read().decode('utf-8')
 
-    lines = content.split('\n')
-    result = []
-    skip_current_category = False
+              lines = content.split('\n')
+              result = []
+              skip_current_category = False
+              pattern = r'([^,]+?),((?:http|rtmp|rtsp|p2p|mitv|tvbus)\S+)'
 
-    # 万能解析正则：匹配 "频道名,播放链接"
-    # 完美解决上游把多个频道用空格强行塞在同一行的毒瘤格式
-    pattern = r'([^,]+?),((?:http|rtmp|rtsp|p2p|mitv|tvbus)\S+)'
+              for line in lines:
+                  line_str = line.strip()
+                  if not line_str:
+                      continue
 
-    for line in lines:
-        line_str = line.strip()
-        if not line_str:
-            continue
+                  text_to_check = line_str.split('http')[0].split('rtsp')[0]
+                  if any(bk in text_to_check for bk in black_keywords):
+                      continue
 
-        # 1. 拦截黑名单广告（只检查前半段，防止误杀URL密文）
-        text_to_check = line_str.split('http')[0].split('rtsp')[0]
-        if any(bk in text_to_check for bk in black_keywords):
-            continue
+                  if ",#genre#" in line_str:
+                      parts = line_str.split(',#genre#', 1)
+                      category_name = parts[0].strip()
 
-        # 2. 处理分类行
-        if ",#genre#" in line_str:
-            parts = line_str.split(',#genre#', 1)
-            category_name = parts[0].strip()
+                      if any(bc in category_name for bc in black_categories):
+                          skip_current_category = True
+                      else:
+                          skip_current_category = False
+                          result.append(category_name + ",#genre#")
+                      
+                      if len(parts) > 1 and parts[1].strip() and not skip_current_category:
+                          matches = re.findall(pattern, parts[1], flags=re.IGNORECASE)
+                          for name, curl in matches:
+                              result.append(f"{name.strip()},{curl.strip()}")
+                      continue
 
-            if any(bc in category_name for bc in black_categories):
-                skip_current_category = True
-            else:
-                skip_current_category = False
-                result.append(category_name + ",#genre#")
-            
-            # 抢救跟在分类背后的隐藏频道，用正则强行切开提取
-            if len(parts) > 1 and parts[1].strip() and not skip_current_category:
-                matches = re.findall(pattern, parts[1], flags=re.IGNORECASE)
-                for name, curl in matches:
-                    result.append(f"{name.strip()},{curl.strip()}")
-            continue
+                  if skip_current_category:
+                      continue
 
-        if skip_current_category:
-            continue
+                  if "," in line_str:
+                      matches = re.findall(pattern, line_str, flags=re.IGNORECASE)
+                      for name, curl in matches:
+                          result.append(f"{name.strip()},{curl.strip()}")
 
-        # 3. 处理常规频道行（不管上游一行塞了几个，正则全部强行拆分并换行）
-        if "," in line_str:
-            matches = re.findall(pattern, line_str, flags=re.IGNORECASE)
-            for name, curl in matches:
-                result.append(f"{name.strip()},{curl.strip()}")
+              final_result = []
+              for i in range(len(result)):
+                  is_genre = ",#genre#" in result[i]
+                  if is_genre and (i == len(result) - 1 or ",#genre#" in result[i+1]):
+                      continue
+                  final_result.append(result[i])
 
-    # 4. 清理没有任何频道的空壳分类
-    final_result = []
-    for i in range(len(result)):
-        is_genre = ",#genre#" in result[i]
-        if is_genre and (i == len(result) - 1 or ",#genre#" in result[i+1]):
-            continue
-        final_result.append(result[i])
-
-    if final_result:
-        with open(output_file, "w", encoding="utf-8") as f:
-            f.write("\n".join(final_result))
-        print(f"Sync success, saved as {output_file}")
-except Exception as e:
-    print(f"Process failed: {e}")
-EOF
-          
-          python3 sync.py
-          rm sync.py
+              if final_result:
+                  with open(output_file, "w", encoding="utf-8") as f:
+                      f.write("\n".join(final_result))
+                  print(f"Sync success, saved as {output_file}")
+          except Exception as e:
+              print(f"Process failed: {e}")
 
       - name: Commit and push changes
         run: |
