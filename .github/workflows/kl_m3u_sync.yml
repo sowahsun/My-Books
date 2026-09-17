@@ -47,13 +47,13 @@ jobs:
           output_file = "kl_lives.m3u"
 
           # ================= 配置区 =================
-          black_categories = ["TikTok"]
+          # 统一使用小写，代码在比对时会自动忽略大小写
+          black_categories = ["tiktok", "tg频道@stymei", "cloudflare直播"]
           # ==========================================
 
           # 智能排序权重：采用多词组合强力匹配，无视错别字和国旗符号
           def get_rank(cat_name):
               c = cat_name.replace(" ", "")
-              # 只要包含"1"且包含"央卫"或"央视"就排第一
               if "1" in c and ("央卫" in c or "央视" in c): return 1
               if "2" in c and ("央卫" in c or "央视" in c): return 2
               if "地方台" in c: return 3
@@ -71,23 +71,21 @@ jobs:
               # 1. 遍历 M3U 文件，通过 group-title 归类频道
               for line in lines:
                   line_str = line.strip()
-                  # 跳过空行和文件头
                   if not line_str or line_str.startswith("#EXTM3U"):
                       continue
 
                   if line_str.startswith("#EXTINF"):
                       current_extinf = line_str
                   elif not line_str.startswith("#") and current_extinf:
-                      # 提取 M3U 格式中的分类名称
                       match = re.search(r'group-title="([^"]+)"', current_extinf, re.IGNORECASE)
                       group_title = match.group(1) if match else "未分类"
 
-                      # 拦截黑名单分类（如 TikTok）
-                      if not any(bc in group_title for bc in black_categories):
+                      # 将分类名转为小写后进行黑名单拦截，彻底解决 CloudFlare 大小写漏网问题
+                      lower_group_title = group_title.lower()
+                      if not any(bc in lower_group_title for bc in black_categories):
                           if group_title not in original_order:
                               original_order.append(group_title)
                               categories_dict[group_title] = []
-                          # 绑定存入
                           categories_dict[group_title].append((current_extinf, line_str))
                       
                       current_extinf = None
@@ -102,7 +100,6 @@ jobs:
                       final_result.append(extinf)
                       final_result.append(url)
 
-              # 输出替换旧文件
               if len(final_result) > 1:
                   with open(output_file, "w", encoding="utf-8") as f:
                       f.write("\n".join(final_result))
