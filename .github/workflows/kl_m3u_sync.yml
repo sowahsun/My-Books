@@ -20,9 +20,7 @@ jobs:
         run: |
           echo "开始尝试从源站下载..."
           
-          # -f: 遇到 502 等 HTTP 错误直接判定为失败
           if curl -k -L -f -s -S --connect-timeout 20 -m 120 --retry 5 --retry-delay 10 -o temp_lives.m3u "https://iptv.445569.xyz/live.m3u"; then
-            
             FILE_SIZE=$(wc -c < temp_lives.m3u)
             if [ "$FILE_SIZE" -gt 1000 ]; then
               echo "下载成功 ($FILE_SIZE bytes)，准备进行黑名单过滤与排序..."
@@ -32,7 +30,6 @@ jobs:
               rm -f temp_lives.m3u
               echo "status=failed" >> "$GITHUB_OUTPUT"
             fi
-            
           else
             echo "警告: 源服务器完全无法访问或多次重试均超时。本次放弃更新，保留原文件。"
             rm -f temp_lives.m3u
@@ -51,16 +48,16 @@ jobs:
 
           # ================= 配置区 =================
           black_categories = ["TikTok"]
-          top_categories = ["央视直播1", "央视直播2", "地方台直播", "港澳台直播"]
           # ==========================================
 
-          # 智能排序权重：包含关键字即命中，无视国旗、Emoji或空格
+          # 智能排序权重：采用多词组合强力匹配，无视错别字和国旗符号
           def get_rank(cat_name):
               c = cat_name.replace(" ", "")
-              if "央视直播1" in c: return 1
-              if "央视直播2" in c: return 2
-              if "地方台直播" in c: return 3
-              if "港澳台直播" in c: return 4
+              # 只要包含"1"且包含"央卫"或"央视"就排第一
+              if "1" in c and ("央卫" in c or "央视" in c): return 1
+              if "2" in c and ("央卫" in c or "央视" in c): return 2
+              if "地方台" in c: return 3
+              if "港澳台" in c: return 4
               return 999
 
           try:
@@ -90,7 +87,7 @@ jobs:
                           if group_title not in original_order:
                               original_order.append(group_title)
                               categories_dict[group_title] = []
-                          # 将 '#EXTINF信息行' 和 'URL播放链接行' 作为一组绑定存入
+                          # 绑定存入
                           categories_dict[group_title].append((current_extinf, line_str))
                       
                       current_extinf = None
