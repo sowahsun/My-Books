@@ -2,7 +2,6 @@ name: Sync Custom Lives M3U
 
 on:
   schedule:
-    # 与其他任务错开，设定为每两小时的第45分钟运行
     - cron: '45 */2 * * *'
   workflow_dispatch:
 
@@ -17,26 +16,91 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Download M3U File (With Fault Tolerance)
+        id: dl
         run: |
           echo "开始尝试从源站拉取 m3u 文件..."
           
-          # 下载为临时文件 temp_custom_lives.m3u
           if curl -k -L -f -s -S --connect-timeout 20 -m 120 --retry 5 --retry-delay 10 -o temp_custom_lives.m3u "https://lytvs.top/py/custom_lives.m3u"; then
-            
             FILE_SIZE=$(wc -c < temp_custom_lives.m3u)
-            # 校验文件大小，防止源站崩溃吐出极小的错误提示页
             if [ "$FILE_SIZE" -gt 1000 ]; then
-              mv temp_custom_lives.m3u custom_lives.m3u
               echo "下载并覆盖成功，文件大小 ($FILE_SIZE bytes)。"
+              echo "status=success" >> "$GITHUB_OUTPUT"
             else
               echo "警告: 下载的文件过小 ($FILE_SIZE bytes)，疑似源站异常。本次放弃更新，保留原文件。"
               rm -f temp_custom_lives.m3u
+              echo "status=failed" >> "$GITHUB_OUTPUT"
             fi
-            
           else
             echo "警告: 源服务器完全无法访问或多次重试均超时。本次放弃更新，保留原文件。"
             rm -f temp_custom_lives.m3u
+            echo "status=failed" >> "$GITHUB_OUTPUT"
           fi
+
+      - name: Process and Natural Sort Channels
+        if: steps.dl.outputs.status == 'success'
+        shell: python
+        run: |
+          import os
+          import re
+
+          input_file = "temp_custom_lives.m3u"
+          output_file = "custom_lives.m3u"
+
+          # 核心规则：自然排序键提取函数
+          # 将 "CCTV-10" 拆分为 ["cctv-", 10] 并按真实数值排序，避免 "10" 排在 "2" 前面
+          def natural_sort_key(item):
+              extinf = item[0]
+              return [int(text) if text.isdigit() else text.lower() for text in re.split(r'(\d+)', extinf)]
+
+          try:
+              with open(input_file, 'r', encoding='utf-8', errors='ignore') as f:
+                  lines = f.readlines()
+
+              categories_dict = {}
+              original_order = []
+              current_extinf = None
+
+              # 1. 遍历 M3U 文件，通过 group-title 归类频道
+              for line in lines:
+                  line_str = line.strip()
+                  if not line_str or line_str.startswith("#EXTM3U"):
+                      continue
+
+                  if line_str.startswith("#EXTINF"):
+                      current_extinf = line_str
+                  elif not line_str.startswith("#") and current_extinf:
+                      # 提取分类名称
+                      match = re.search(r'group-title="([^"]+)"', current_extinf, re.IGNORECASE)
+                      group_title = match.group(1) if match else "未分类"
+
+                      # 严格保持源文件原本的分类顺序，不做人为置顶或过滤
+                      if group_title not in original_order:
+                          original_order.append(group_title)
+                          categories_dict[group_title] = []
+                      
+                      categories_dict[group_title].append((current_extinf, line_str))
+                      current_extinf = None
+
+              # 2. 拼装最终结果：保持分类顺序不变，仅对分类内部的频道执行自然排序
+              final_result = ["#EXTM3U"]
+              for cat in original_order:
+                  # 在这里触发自然排序
+                  sorted_channels = sorted(categories_dict[cat], key=natural_sort_key)
+                  for extinf, url in sorted_channels:
+                      final_result.append(extinf)
+                      final_result.append(url)
+
+              if len(final_result) > 1:
+                  with open(output_file, "w", encoding="utf-8") as f:
+                      f.write("\n".join(final_result))
+                  print("M3U 频道内部自然排序完成。")
+              
+              os.remove(input_file)
+
+          except Exception as e:
+              print(f"处理数据时出错: {e}")
+              if os.path.exists(input_file):
+                  os.rename(input_file, output_file)
 
       - name: Commit and Push
         run: |
