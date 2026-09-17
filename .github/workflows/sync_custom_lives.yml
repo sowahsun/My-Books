@@ -47,10 +47,11 @@ jobs:
           output_file = "custom_lives.m3u"
 
           # 核心规则：自然排序键提取函数
-          # 将 "CCTV-10" 拆分为 ["cctv-", 10] 并按真实数值排序，避免 "10" 排在 "2" 前面
           def natural_sort_key(item):
               extinf = item[0]
-              return [int(text) if text.isdigit() else text.lower() for text in re.split(r'(\d+)', extinf)]
+              # 修正点：将 "-" 去掉，使得 "CCTV-1" 变成 "CCTV1"，从而其文字部分 "cctv" 优先于 "cctv+"
+              clean_name = extinf.replace("-", "")
+              return [int(text) if text.isdigit() else text.lower() for text in re.split(r'(\d+)', clean_name)]
 
           try:
               with open(input_file, 'r', encoding='utf-8', errors='ignore') as f:
@@ -60,7 +61,6 @@ jobs:
               original_order = []
               current_extinf = None
 
-              # 1. 遍历 M3U 文件，通过 group-title 归类频道
               for line in lines:
                   line_str = line.strip()
                   if not line_str or line_str.startswith("#EXTM3U"):
@@ -69,7 +69,6 @@ jobs:
                   if line_str.startswith("#EXTINF"):
                       current_extinf = line_str
                   elif not line_str.startswith("#") and current_extinf:
-                      # 提取分类名称
                       match = re.search(r'group-title="([^"]+)"', current_extinf, re.IGNORECASE)
                       group_title = match.group(1) if match else "未分类"
 
@@ -81,10 +80,9 @@ jobs:
                       categories_dict[group_title].append((current_extinf, line_str))
                       current_extinf = None
 
-              # 2. 拼装最终结果：保持分类顺序不变，仅对分类内部的频道执行自然排序
+              # 拼装最终结果：保持分类顺序不变，仅对分类内部的频道执行修正后的自然排序
               final_result = ["#EXTM3U"]
               for cat in original_order:
-                  # 在这里触发自然排序
                   sorted_channels = sorted(categories_dict[cat], key=natural_sort_key)
                   for extinf, url in sorted_channels:
                       final_result.append(extinf)
