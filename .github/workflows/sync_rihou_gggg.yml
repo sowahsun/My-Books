@@ -1,0 +1,126 @@
+name: Sync Rihou gggg TXT
+
+on:
+  schedule:
+    - cron: '30 */2 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  update-txt:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Download NZK
+        id: dl
+        run: |
+          echo "开始尝试从源站拉取 nzk 文件..."
+          
+          # 容错下载机制
+          if curl -k -L -f -s -S --connect-timeout 20 -m 120 --retry 5 --retry-delay 10 -o temp_gggg.txt "http://rihou.cc:555/gggg.nzk"; then
+            FILE_SIZE=$(wc -c < temp_gggg.txt)
+            if [ "$FILE_SIZE" -gt 1000 ]; then
+              echo "下载成功 ($FILE_SIZE bytes)，准备进行数据处理..."
+              echo "status=success" >> "$GITHUB_OUTPUT"
+            else
+              echo "警告: 下载的文件过小 ($FILE_SIZE bytes)，疑似源站异常。本次放弃更新，保留原文件。"
+              rm -f temp_gggg.txt
+              echo "status=failed" >> "$GITHUB_OUTPUT"
+            fi
+          else
+            echo "警告: 源服务器完全无法访问或多次重试均超时。本次放弃更新，保留原文件。"
+            rm -f temp_gggg.txt
+            echo "status=failed" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Process, Filter and Sort
+        if: steps.dl.outputs.status == 'success'
+        shell: python
+        run: |
+          import os
+
+          input_file = "temp_gggg.txt"
+          output_file = "gggg.txt"
+
+          # ================= 配置区 =================
+          black_categories = ["猫"] 
+          # 需要置顶排在最前面的分类（支持模糊或精准匹配）
+          top_categories = ["央卫咪咕", "欣赏频道", "广州电信"]
+          # ==========================================
+
+          try:
+              with open(input_file, 'r', encoding='utf-8', errors='ignore') as f:
+                  lines = f.readlines()
+
+              categories_dict = {}
+              original_order = []
+              current_cat = None
+
+              # 1. 遍历读取，将频道按分类装入字典
+              for line in lines:
+                  line_str = line.strip()
+                  if not line_str:
+                      continue
+
+                  if ",#genre#" in line_str:
+                      cat_name = line_str.split(',#genre#')[0].strip()
+                      
+                      # 遇到黑名单分类，将 current_cat 置空，直接丢弃其下所有频道
+                      if any(bc in cat_name for bc in black_categories):
+                          current_cat = None
+                      else:
+                          current_cat = cat_name
+                          if current_cat not in original_order:
+                              original_order.append(current_cat)
+                              categories_dict[current_cat] = []
+                  else:
+                      # 如果当前分类有效，则将频道追加进该分类列表中
+                      if current_cat is not None:
+                          categories_dict[current_cat].append(line_str)
+
+              # 2. 执行排序逻辑
+              sorted_order = []
+              
+              # 先提取需要置顶的优先分类
+              for top_key in top_categories:
+                  for cat in original_order:
+                      if top_key in cat and cat not in sorted_order:
+                          sorted_order.append(cat)
+              
+              # 再按原顺序追加剩余的其他分类
+              for cat in original_order:
+                  if cat not in sorted_order:
+                      sorted_order.append(cat)
+
+              # 3. 重新拼装为最终的文本列表
+              final_result = []
+              for cat in sorted_order:
+                  channels = categories_dict.get(cat, [])
+                  # 仅当分类下确实存在频道时，才写入分类头和频道（自动解决空壳分类问题）
+                  if len(channels) > 0:
+                      final_result.append(f"{cat},#genre#")
+                      final_result.extend(channels)
+
+              # 写入最终文件
+              with open(output_file, "w", encoding="utf-8") as f:
+                  f.write("\n".join(final_result))
+              
+              print("分类排序、黑名单过滤与文件输出完成。")
+              os.remove(input_file)
+
+          except Exception as e:
+              print(f"处理数据时出错: {e}")
+              if os.path.exists(input_file):
+                  os.rename(input_file, output_file)
+
+      - name: Commit and Push
+        run: |
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git add gggg.txt
+          git commit -m "Auto sync gggg.txt" || echo "No changes to commit"
+          git push
