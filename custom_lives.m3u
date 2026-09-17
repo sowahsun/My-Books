@@ -1,4 +1,4 @@
-#EXTM3U x-tvg-url="https://material.yang-1989.xyz/epg.xml.gz,http://epg.51zmt.top:8000/e.xml.gz"
+#EXTM3U
 #EXTINF:-1 tvg-name="4K南国都市 [1080P] [1080P] [1080P]" group-title="4K/8K专区",4K南国都市 [1080P] [1080P] [1080P] [1080P]
 https://tencentplaywebsite.gztv.com/live/nanguodushi.m3u8?txSecret=daf0738d94787ac64d25644076012591&txTime=1956eaafce4
 #EXTINF:-1 tvg-name="东方4K [1080P] [1080P] [1080P]" group-title="4K/8K专区",东方4K [1080P] [1080P] [1080P] [1080P]
@@ -19,20 +19,20 @@ https://event.pull.hebtv.com:443/live/live101.m3u8
 https://ls.qingting.fm/live/1650/64k.m3u8#http://ls.qingting.fm/live/1650.m3u8#https://jwcdnqx.hebyun.com.cn/live/clzhpd/1500k/tzwj_video.m3u8
 #EXTINF:-1 tvg-name="浙江4K [2160P/HEVC] [2160P/HEVC] [2160P/HEVC]" group-title="4K/8K专区",浙江4K [2160P/HEVC] [2160P/HEVC] [2160P/HEVC] [2160P/HEVC]
 http://rihou.cc:555/tv/浙江卫视4K
-#EXTINF:-1 tvg-name="浙江卫视4K [2160P/HEVC] [2160P/HEVC]" group-title="4K/8K专区",浙江卫视4K [2160P/HEVC] [2160P/HEVC] [2160P/HEVC]
-https://bd-xwl.cztv.com/live/channel4k2160p.m3u8#http://ali-xwl.cztv.com/live/channel4k2160p.m3u8
 #EXTINF:-1 tvg-name="浙江卫视4K [2160P/HEVC] [2160P/HEVC] [2160P/HEVC]" group-title="4K/8K专区",浙江卫视4K [2160P/HEVC] [2160P/HEVC] [2160P/HEVC] [2160P/HEVC]
 http://ali-xwl.cztv.com/live/channel4k2160p.m3u8
 #EXTINF:-1 tvg-name="浙江卫视4K [2160P/HEVC] [2160P/HEVC] [2160P/HEVC]" group-title="4K/8K专区",浙江卫视4K [2160P/HEVC] [2160P/HEVC] [2160P/HEVC] [2160P/HEVC]
 https://bd-xwl.cztv.com/live/channel4k2160p.m3u8
+#EXTINF:-1 tvg-name="浙江卫视4K [2160P/HEVC] [2160P/HEVC]" group-title="4K/8K专区",浙江卫视4K [2160P/HEVC] [2160P/HEVC] [2160P/HEVC]
+https://bd-xwl.cztv.com/live/channel4k2160p.m3u8#http://ali-xwl.cztv.com/live/channel4k2160p.m3u8
 #EXTINF:-1 tvg-name="深圳4K [1080P] [1080P] [1080P]" group-title="4K/8K专区",深圳4K [1080P] [1080P] [1080P] [1080P]
 http://rihou.cc:555/tv/szws
-#EXTINF:-1 tvg-name="湖南卫视4K [2160P/HEVC] [2160P/HEVC]" group-title="4K/8K专区",湖南卫视4K [2160P/HEVC] [2160P/HEVC] [2160P/HEVC]
-http://hlsal-ldvt.qing.mgtv.com/nn_live/nn_x64/dWlwPTEyNy4wLjAuMSZ1aWQ9cWluZy1jbXMmbm5fdGltZXpvbmU9OCZjZG5leF9pZD1hbF9obHNfbGR2dCZ1dWlkPTliODY4NmU5ZTM2YzYwMmMmZT02OTE0NjA0JnY9MSZpZD1ITldTWkdTVCZzPTcwN2RiYTc2YzJjNmJmMTQ4MmUyZGYzOWU2NWM3YWFi/HNWSZGST.m3u8#http://hlsal-ldvt.qing.mgtv.com/nn_live/nn_x64/Y2RuZXhfaWQ9YWxfaGxzX2xkdnQmZT02OTE0NjA0JnY9MSZpZD1ITldTWkdTVCZzPTcwN2RiYTc2YzJjNmJmMTQ4MmUyZGYzOWU2NWM3YWFi/HNWSZGST.m3u8
 #EXTINF:-1 tvg-name="湖南卫视4K [2160P/HEVC] [2160P/HEVC] [2160P/HEVC]" group-title="4K/8K专区",湖南卫视4K [2160P/HEVC] [2160P/HEVC] [2160P/HEVC] [2160P/HEVC]
 http://hlsal-ldvt.qing.mgtv.com/nn_live/nn_x64/dWlwPTEyNy4wLjAuMSZ1aWQ9cWluZy1jbXMmbm5fdGltZXpvbmU9OCZjZG5leF9pZD1hbF9obHNfbGR2dCZ1dWlkPTliODY4NmU5ZTM2YzYwMmMmZT02OTE0NjA0JnY9MSZpZD1ITldTWkdTVCZzPTcwN2RiYTc2YzJjNmJmMTQ4MmUyZGYzOWU2NWM3YWFi/HNWSZGST.m3u8
 #EXTINF:-1 tvg-name="湖南卫视4K [2160P/HEVC] [2160P/HEVC] [2160P/HEVC]" group-title="4K/8K专区",湖南卫视4K [2160P/HEVC] [2160P/HEVC] [2160P/HEVC] [2160P/HEVC]
 http://hlsal-ldvt.qing.mgtv.com/nn_live/nn_x64/Y2RuZXhfaWQ9YWxfaGxzX2xkdnQmZT02OTE0NjA0JnY9MSZpZD1ITldTWkdTVCZzPTcwN2RiYTc2YzJjNmJmMTQ4MmUyZGYzOWU2NWM3YWFi/HNWSZGST.m3u8
+#EXTINF:-1 tvg-name="湖南卫视4K [2160P/HEVC] [2160P/HEVC]" group-title="4K/8K专区",湖南卫视4K [2160P/HEVC] [2160P/HEVC] [2160P/HEVC]
+http://hlsal-ldvt.qing.mgtv.com/nn_live/nn_x64/dWlwPTEyNy4wLjAuMSZ1aWQ9cWluZy1jbXMmbm5fdGltZXpvbmU9OCZjZG5leF9pZD1hbF9obHNfbGR2dCZ1dWlkPTliODY4NmU5ZTM2YzYwMmMmZT02OTE0NjA0JnY9MSZpZD1ITldTWkdTVCZzPTcwN2RiYTc2YzJjNmJmMTQ4MmUyZGYzOWU2NWM3YWFi/HNWSZGST.m3u8#http://hlsal-ldvt.qing.mgtv.com/nn_live/nn_x64/Y2RuZXhfaWQ9YWxfaGxzX2xkdnQmZT02OTE0NjA0JnY9MSZpZD1ITldTWkdTVCZzPTcwN2RiYTc2YzJjNmJmMTQ4MmUyZGYzOWU2NWM3YWFi/HNWSZGST.m3u8
 #EXTINF:-1 tvg-name="翡翠台 [1080P] [1080P]" group-title="4K/8K专区",翡翠台 [1080P] [1080P] [1080P]
 http://222.128.55.152:9080/live/gdfc.m3u8#http://120.198.95.220:9901/tsfile/live/1004_1.m3u8?key=txiptv#http://116.77.33.98:44330/tsfile/live/1008_1.m3u8?key=txiptv&playlive=0&authid=0#http://r.jdshipin.com/qrfbg#http://r.jdshipin.com/n90gt#https://epg.pw/stream/b1bedc34e0cd84c712106b10fa7bd2055a46898678c37e35aebe43290c2c8a1f.m3u8#http://o11.163189.xyz/stream/tvb/fct4k/#https://o11.163189.xyz/stream/tvb/fct4k/#https://php.jdshipin.com:2096/TVOD/iptv.php?id=fct#https://php.jdshipin.com:2096/TVOD/iptv.php?id=fct2#https://o11.163189.xyz/stream/tvb/fct/#https://cdn10.163189.xyz/163189/fct/
 #EXTINF:-1 tvg-name="苏州4K [720P] [720P] [720P]" group-title="4K/8K专区",苏州4K [720P] [720P] [720P] [720P]
@@ -55,38 +55,6 @@ https://cd-live-stream.news.cctvplus.com/live/smil:CHANNEL1.smil/playlist.m3u8
 http://221.7.175.154:8445/tsfile/live/1000_1.m3u8?key=txiptv&playlive=1&authid=0
 #EXTINF:-1 tvg-name="CCTV-1" group-title="央视频道",CCTV-1 [1080P]
 http://113.26.202.52:1299/tsfile/live/0001_1.m3u8?key=txiptv&playlive=1&authid=0
-#EXTINF:-1 tvg-name="CCTV-10" group-title="央视频道",CCTV-10 [1080P]
-http://183.129.255.66:8480/hls/11/index.m3u8
-#EXTINF:-1 tvg-name="CCTV-10" group-title="央视频道",CCTV-10 [1080P]
-http://221.7.175.154:8445/tsfile/live/1008_1.m3u8?key=txiptv&playlive=1&authid=0
-#EXTINF:-1 tvg-name="CCTV-10" group-title="央视频道",CCTV-10 [1080P]
-http://113.26.202.52:1299/tsfile/live/0010_1.m3u8?key=txiptv&playlive=1&authid=0
-#EXTINF:-1 tvg-name="CCTV-11" group-title="央视频道",CCTV-11 [1080P]
-http://yjj888.f3322.net:9901/tsfile/live/0011_2.m3u8?key=txiptv&playlive=0&authid=0
-#EXTINF:-1 tvg-name="CCTV-11" group-title="央视频道",CCTV-11 [1080P]
-http://112.27.235.94:8000/hls/12/index.m3u8
-#EXTINF:-1 tvg-name="CCTV-11" group-title="央视频道",CCTV-11 [576P]
-http://113.26.202.52:1299/tsfile/live/0011_1.m3u8?key=txiptv&playlive=1&authid=0
-#EXTINF:-1 tvg-name="CCTV-12" group-title="央视频道",CCTV-12 [1080P]
-http://113.26.202.52:1299/tsfile/live/0012_1.m3u8?key=txiptv&playlive=1&authid=0
-#EXTINF:-1 tvg-name="CCTV-12" group-title="央视频道",CCTV-12 [1080P]
-http://221.7.175.154:8445/tsfile/live/1010_1.m3u8?key=txiptv&playlive=1&authid=0
-#EXTINF:-1 tvg-name="CCTV-13" group-title="央视频道",CCTV-13 [1080P]
-http://221.7.175.154:8445/tsfile/live/1011_1.m3u8?key=txiptv&playlive=1&authid=0
-#EXTINF:-1 tvg-name="CCTV-14" group-title="央视频道",CCTV-14 [1080P]
-http://113.26.202.52:1299/tsfile/live/0014_1.m3u8?key=txiptv&playlive=1&authid=0
-#EXTINF:-1 tvg-name="CCTV-14" group-title="央视频道",CCTV-14 [1080P]
-https://event.pull.hebtv.com/jishi/cp2.m3u8#rtsp://103.251.96.71/PLTV/88888888/224/3221225783/10000100000000060000000000726027_0.smil?icpid=SSPID&accounttype=1&limitflux=-1&limitdur=-1&accountinfo=:20240213104135#https://gcalic.v.myalicdn.com/gc/wgw05_1/index.m3u8#http://39.165.39.49:19901/tsfile/live/1085_1.m3u8?key=txiptv&playlive=0&authid=0
-#EXTINF:-1 tvg-name="CCTV-15" group-title="央视频道",CCTV-15 [1080P]
-http://183.129.255.66:8480/hls/16/index.m3u8
-#EXTINF:-1 tvg-name="CCTV-16" group-title="央视频道",CCTV-16 [2160P/HEVC]
-http://youngx.top:4022/rtp/233.18.204.215:5140
-#EXTINF:-1 tvg-name="CCTV-16" group-title="央视频道",CCTV-16 [1080P]
-http://183.129.255.66:8480/hls/17/index.m3u8
-#EXTINF:-1 tvg-name="CCTV-17" group-title="央视频道",CCTV-17 [1080P]
-http://221.7.175.154:8445/tsfile/live/1009_1.m3u8?key=txiptv&playlive=1&authid=0
-#EXTINF:-1 tvg-name="CCTV-17" group-title="央视频道",CCTV-17 [1080P]
-http://183.129.255.66:8480/hls/18/index.m3u8
 #EXTINF:-1 tvg-name="CCTV-2" group-title="央视频道",CCTV-2 [1080P]
 http://221.7.175.154:8445/tsfile/live/1001_1.m3u8?key=txiptv&playlive=1&authid=0
 #EXTINF:-1 tvg-name="CCTV-2" group-title="央视频道",CCTV-2 [1080P]
@@ -97,12 +65,12 @@ http://221.7.175.154:8445/tsfile/live/1002_1.m3u8?key=txiptv&playlive=1&authid=0
 http://yjj888.f3322.net:9901/tsfile/live/0003_1.m3u8?key=txiptv&playlive=0&authid=0
 #EXTINF:-1 tvg-name="CCTV-3" group-title="央视频道",CCTV-3 [1080P]
 http://113.26.202.52:1299/tsfile/live/0003_1.m3u8?key=txiptv&playlive=1&authid=0
+#EXTINF:-1 tvg-name="CCTV-4" group-title="央视频道",CCTV-4 [1080P]
+http://221.7.175.154:8445/tsfile/live/1003_1.m3u8?key=txiptv&playlive=1&authid=0
 #EXTINF:-1 tvg-name="CCTV-4" group-title="央视频道",CCTV-4 [2160P/HEVC]
 http://home.amucn.net:8800/udp/239.49.0.82:8000
 #EXTINF:-1 tvg-name="CCTV-4" group-title="央视频道",CCTV-4 [HEVC]
 http://218.81.49.34:10010/rtp/233.18.204.204:5140
-#EXTINF:-1 tvg-name="CCTV-4" group-title="央视频道",CCTV-4 [1080P]
-http://221.7.175.154:8445/tsfile/live/1003_1.m3u8?key=txiptv&playlive=1&authid=0
 #EXTINF:-1 tvg-name="CCTV-5" group-title="央视频道",CCTV-5 [1080P]
 http://221.7.175.154:8445/tsfile/live/0113_1.m3u8?key=txiptv&playlive=1&authid=0
 #EXTINF:-1 tvg-name="CCTV-5" group-title="央视频道",CCTV-5 [1080P]
@@ -129,12 +97,44 @@ http://222.214.208.34:59901/tsfile/live/0009_1.m3u8
 http://221.7.175.154:8445/tsfile/live/1007_1.m3u8?key=txiptv&playlive=1&authid=0
 #EXTINF:-1 tvg-name="CCTV-9" group-title="央视频道",CCTV-9 [1080P]
 http://183.129.255.66:8480/hls/10/index.m3u8
+#EXTINF:-1 tvg-name="CCTV-10" group-title="央视频道",CCTV-10 [1080P]
+http://183.129.255.66:8480/hls/11/index.m3u8
+#EXTINF:-1 tvg-name="CCTV-10" group-title="央视频道",CCTV-10 [1080P]
+http://221.7.175.154:8445/tsfile/live/1008_1.m3u8?key=txiptv&playlive=1&authid=0
+#EXTINF:-1 tvg-name="CCTV-10" group-title="央视频道",CCTV-10 [1080P]
+http://113.26.202.52:1299/tsfile/live/0010_1.m3u8?key=txiptv&playlive=1&authid=0
+#EXTINF:-1 tvg-name="CCTV-11" group-title="央视频道",CCTV-11 [576P]
+http://113.26.202.52:1299/tsfile/live/0011_1.m3u8?key=txiptv&playlive=1&authid=0
+#EXTINF:-1 tvg-name="CCTV-11" group-title="央视频道",CCTV-11 [1080P]
+http://yjj888.f3322.net:9901/tsfile/live/0011_2.m3u8?key=txiptv&playlive=0&authid=0
+#EXTINF:-1 tvg-name="CCTV-11" group-title="央视频道",CCTV-11 [1080P]
+http://112.27.235.94:8000/hls/12/index.m3u8
+#EXTINF:-1 tvg-name="CCTV-12" group-title="央视频道",CCTV-12 [1080P]
+http://113.26.202.52:1299/tsfile/live/0012_1.m3u8?key=txiptv&playlive=1&authid=0
+#EXTINF:-1 tvg-name="CCTV-12" group-title="央视频道",CCTV-12 [1080P]
+http://221.7.175.154:8445/tsfile/live/1010_1.m3u8?key=txiptv&playlive=1&authid=0
+#EXTINF:-1 tvg-name="CCTV-13" group-title="央视频道",CCTV-13 [1080P]
+http://221.7.175.154:8445/tsfile/live/1011_1.m3u8?key=txiptv&playlive=1&authid=0
+#EXTINF:-1 tvg-name="CCTV-14" group-title="央视频道",CCTV-14 [1080P]
+http://113.26.202.52:1299/tsfile/live/0014_1.m3u8?key=txiptv&playlive=1&authid=0
+#EXTINF:-1 tvg-name="CCTV-14" group-title="央视频道",CCTV-14 [1080P]
+https://event.pull.hebtv.com/jishi/cp2.m3u8#rtsp://103.251.96.71/PLTV/88888888/224/3221225783/10000100000000060000000000726027_0.smil?icpid=SSPID&accounttype=1&limitflux=-1&limitdur=-1&accountinfo=:20240213104135#https://gcalic.v.myalicdn.com/gc/wgw05_1/index.m3u8#http://39.165.39.49:19901/tsfile/live/1085_1.m3u8?key=txiptv&playlive=0&authid=0
+#EXTINF:-1 tvg-name="CCTV-15" group-title="央视频道",CCTV-15 [1080P]
+http://183.129.255.66:8480/hls/16/index.m3u8
+#EXTINF:-1 tvg-name="CCTV-16" group-title="央视频道",CCTV-16 [1080P]
+http://183.129.255.66:8480/hls/17/index.m3u8
+#EXTINF:-1 tvg-name="CCTV-16" group-title="央视频道",CCTV-16 [2160P/HEVC]
+http://youngx.top:4022/rtp/233.18.204.215:5140
+#EXTINF:-1 tvg-name="CCTV-17" group-title="央视频道",CCTV-17 [1080P]
+http://221.7.175.154:8445/tsfile/live/1009_1.m3u8?key=txiptv&playlive=1&authid=0
+#EXTINF:-1 tvg-name="CCTV-17" group-title="央视频道",CCTV-17 [1080P]
+http://183.129.255.66:8480/hls/18/index.m3u8
 #EXTINF:-1 tvg-name="CCTV-央视文化精品 [1080P] [1080P] [1080P]" group-title="央视频道",CCTV-央视文化精品 [1080P] [1080P] [1080P] [1080P]
 http://198.204.228.26/live/ysjp.m3u8
-#EXTINF:-1 tvg-name="CCTV-女性时尚 [576P] [576P] [1080P]" group-title="央视频道",CCTV-女性时尚 [576P] [576P] [1080P] [1080P]
-http://198.204.228.26/live/nxss.m3u8
 #EXTINF:-1 tvg-name="CCTV-女性时尚 [576P] [576P] [720P]" group-title="央视频道",CCTV-女性时尚 [576P] [576P] [720P] [1080P]
 http://192.151.150.154/live/nxss.m3u8
+#EXTINF:-1 tvg-name="CCTV-女性时尚 [576P] [576P] [1080P]" group-title="央视频道",CCTV-女性时尚 [576P] [576P] [1080P] [1080P]
+http://198.204.228.26/live/nxss.m3u8
 #EXTINF:-1 tvg-name="CCTV-风云足球 [1080P] [1080P] [1080P]" group-title="央视频道",CCTV-风云足球 [1080P] [1080P] [1080P] [1080P]
 http://198.204.228.26/live/fyzq.m3u8
 #EXTINF:-1 tvg-name="CCTV发现之旅 [576P] [576P]" group-title="央视频道",CCTV发现之旅 [576P] [576P] [1080P]
@@ -159,38 +159,38 @@ https://hlscdn.liangtv.cn/live/ddb2ee1aa1134ac591230352a121aa22/bc359bd2e13b4cb9
 https://hlscdn.liangtv.cn/live/3f29b81206fe4d229e1522d59aae8e75/15a4a13dbf624ab9ac7cca5df100e985.m3u8#https://hlscdn.liangtv.cn/live/3f29b81206fe4d229e1522d59aae8e75/15a4a13dbf624ab9ac7cca5df100e985-1.m3u8
 #EXTINF:-1 tvg-name="CETV4职业教育 [1080P] [1080P]" group-title="央视频道",CETV4职业教育 [1080P] [1080P] [1080P]
 https://hlscdn.liangtv.cn/live/63f3fd7d8cf44a3e9719eec310c86fa5/b96f8fd6d5424ad4862d054172f616e4.m3u8#https://hlscdn.liangtv.cn/live/63f3fd7d8cf44a3e9719eec310c86fa5/b96f8fd6d5424ad4862d054172f616e4-1.m3u8
-#EXTINF:-1 tvg-name="CGTN [1080P] [1080P] [1080P]" group-title="央视频道",CGTN [1080P] [1080P] [1080P] [1080P]
-https://english-livebkali.cgtn.com/live/encgtn_0.m3u8
 #EXTINF:-1 tvg-name="CGTN [720P] [720P] [720P]" group-title="央视频道",CGTN [720P] [720P] [720P] [720P]
 https://0472.org/hls/cgtn.m3u8
-#EXTINF:-1 tvg-name="CGTN俄语 [1080P] [1080P]" group-title="央视频道",CGTN俄语 [1080P] [1080P] [1080P]
-https://0472.org/hls/cgtne.m3u8#https://0472.org/hls/cgtne.m3u8?3.24.170:5140#https://russian-livews.cgtn.com/hls/LSvexABhNipibK5KRuUkvHZ7220802LSTeze9o8tdFXMHsb1VosgoT220802cd/playlist.m3u8
+#EXTINF:-1 tvg-name="CGTN [1080P] [1080P] [1080P]" group-title="央视频道",CGTN [1080P] [1080P] [1080P] [1080P]
+https://english-livebkali.cgtn.com/live/encgtn_0.m3u8
 #EXTINF:-1 tvg-name="CGTN俄语 [1080P] [1080P] [1080P]" group-title="央视频道",CGTN俄语 [1080P] [1080P] [1080P] [1080P]
 https://0472.org/hls/cgtne.m3u8
-#EXTINF:-1 tvg-name="CGTN法语 [1080P] [1080P]" group-title="央视频道",CGTN法语 [1080P] [1080P] [1080P]
-https://0472.org/hls/cgtnf.m3u8#https://francais-livews.cgtn.com/hls/LSvev95OuFZtKLc6CeKEFYXj220802LSTeV6PO0Ut9r71Uq3k5goCA220802cd/playlist.m3u8
+#EXTINF:-1 tvg-name="CGTN俄语 [1080P] [1080P]" group-title="央视频道",CGTN俄语 [1080P] [1080P] [1080P]
+https://0472.org/hls/cgtne.m3u8#https://0472.org/hls/cgtne.m3u8?3.24.170:5140#https://russian-livews.cgtn.com/hls/LSvexABhNipibK5KRuUkvHZ7220802LSTeze9o8tdFXMHsb1VosgoT220802cd/playlist.m3u8
 #EXTINF:-1 tvg-name="CGTN法语 [1080P] [1080P] [1080P]" group-title="央视频道",CGTN法语 [1080P] [1080P] [1080P] [1080P]
 https://0472.org/hls/cgtnf.m3u8
+#EXTINF:-1 tvg-name="CGTN法语 [1080P] [1080P]" group-title="央视频道",CGTN法语 [1080P] [1080P] [1080P]
+https://0472.org/hls/cgtnf.m3u8#https://francais-livews.cgtn.com/hls/LSvev95OuFZtKLc6CeKEFYXj220802LSTeV6PO0Ut9r71Uq3k5goCA220802cd/playlist.m3u8
 #EXTINF:-1 tvg-name="CGTN纪录 [720P] [720P] [720P]" group-title="央视频道",CGTN纪录 [720P] [720P] [720P] [720P]
 https://english-livetx.cgtn.com/hls/yypdjlctzb_hd.m3u8
-#EXTINF:-1 tvg-name="CGTN西语 [1080P] [1080P]" group-title="央视频道",CGTN西语 [1080P] [1080P] [1080P]
-https://0472.org/hls/cgtnx.m3u8#https://espanol-liveali.cgtn.com/hls/LSveOGBaBw41Ea7ukkVAUdKQ220802LSTexu6xAuFH8VZNBLE1ZNEa220802cd/playlist.m3u8
 #EXTINF:-1 tvg-name="CGTN西语 [1080P] [1080P] [1080P]" group-title="央视频道",CGTN西语 [1080P] [1080P] [1080P] [1080P]
 https://espanol-liveali.cgtn.com/hls/LSveOGBaBw41Ea7ukkVAUdKQ220802LSTexu6xAuFH8VZNBLE1ZNEa220802cd/playlist.m3u8
 #EXTINF:-1 tvg-name="CGTN西语 [1080P] [1080P] [1080P]" group-title="央视频道",CGTN西语 [1080P] [1080P] [1080P] [1080P]
 https://0472.org/hls/cgtnx.m3u8
-#EXTINF:-1 tvg-name="CGTN记录 [1080P] [1080P] [1080P]" group-title="央视频道",CGTN记录 [1080P] [1080P] [1080P] [1080P]
-https://english-livebkali.cgtn.com/live/doccgtn_0.m3u8
-#EXTINF:-1 tvg-name="CGTN记录 [720P] [720P]" group-title="央视频道",CGTN记录 [720P] [720P] [720P]
-https://0472.org/hls/cgtnd.m3u8?3.24.120:5140#https://0472.org/hls/cgtnd.m3u8
+#EXTINF:-1 tvg-name="CGTN西语 [1080P] [1080P]" group-title="央视频道",CGTN西语 [1080P] [1080P] [1080P]
+https://0472.org/hls/cgtnx.m3u8#https://espanol-liveali.cgtn.com/hls/LSveOGBaBw41Ea7ukkVAUdKQ220802LSTexu6xAuFH8VZNBLE1ZNEa220802cd/playlist.m3u8
 #EXTINF:-1 tvg-name="CGTN记录 [720P] [720P] [720P]" group-title="央视频道",CGTN记录 [720P] [720P] [720P] [720P]
 https://0472.org/hls/cgtnd.m3u8?3.24.120:5140
+#EXTINF:-1 tvg-name="CGTN记录 [720P] [720P]" group-title="央视频道",CGTN记录 [720P] [720P] [720P]
+https://0472.org/hls/cgtnd.m3u8?3.24.120:5140#https://0472.org/hls/cgtnd.m3u8
+#EXTINF:-1 tvg-name="CGTN记录 [1080P] [1080P] [1080P]" group-title="央视频道",CGTN记录 [1080P] [1080P] [1080P] [1080P]
+https://english-livebkali.cgtn.com/live/doccgtn_0.m3u8
+#EXTINF:-1 tvg-name="CGTN阿语 [1080P] [1080P] [1080P]" group-title="央视频道",CGTN阿语 [1080P] [1080P] [1080P] [1080P]
+https://arabic-liveali.cgtn.com/hls/LSveq57bErWLinBnxosqjisZ220802LSTefTAS9zc9mpU08y3np9TH220802cd/playlist.m3u8
 #EXTINF:-1 tvg-name="CGTN阿语 [1080P] [1080P]" group-title="央视频道",CGTN阿语 [1080P] [1080P] [1080P]
 https://0472.org/hls/cgtna.m3u8?3.24.160:5140#https://0472.org/hls/cgtna.m3u8#https://arabic-liveali.cgtn.com/hls/LSveq57bErWLinBnxosqjisZ220802LSTefTAS9zc9mpU08y3np9TH220802cd/playlist.m3u8
 #EXTINF:-1 tvg-name="CGTN阿语 [1080P] [1080P]" group-title="央视频道",CGTN阿语 [1080P] [1080P] [1080P]
 https://0472.org/hls/cgtna.m3u8?3.24.160:5140#https://0472.org/hls/cgtna.m3u8
-#EXTINF:-1 tvg-name="CGTN阿语 [1080P] [1080P] [1080P]" group-title="央视频道",CGTN阿语 [1080P] [1080P] [1080P] [1080P]
-https://arabic-liveali.cgtn.com/hls/LSveq57bErWLinBnxosqjisZ220802LSTefTAS9zc9mpU08y3np9TH220802cd/playlist.m3u8
 #EXTINF:-1 tvg-name="中央新影-发现之旅 [576P] [576P] [1080P]" group-title="央视频道",中央新影-发现之旅 [576P] [576P] [1080P] [1080P]
 http://192.151.150.154/live/fxzl.m3u8
 #EXTINF:-1 tvg-name="中央新影-老故事 [576P] [576P] [576P]" group-title="央视频道",中央新影-老故事 [576P] [576P] [576P] [576P]
@@ -217,278 +217,278 @@ http://192.151.150.154/live/dnwshd.m3u8
 http://198.204.228.26/live/dnwshd.m3u8
 #EXTINF:-1 tvg-name="东南卫视HD [1080P] [1080P] [1080P]" group-title="卫视频道",东南卫视HD [1080P] [1080P] [1080P] [1080P]
 http://107.150.60.122/live/dnwshd.m3u8
-#EXTINF:-1 tvg-name="东方卫视" group-title="卫视频道",东方卫视 [1080P]
-http://221.7.175.154:8445/tsfile/live/0107_1.m3u8?key=txiptv&playlive=1&authid=0
-#EXTINF:-1 tvg-name="东方卫视 [1080P] [1080P]" group-title="卫视频道",东方卫视 [1080P] [1080P] [1080P]
-http://120.40.39.246:352/newlive/live/hls/20/live.m3u8
 #EXTINF:-1 tvg-name="东方卫视 [720P] [720P]" group-title="卫视频道",东方卫视 [720P] [720P] [720P]
 http://116.76.254.170:44330/tsfile/live/0107_1.m3u8?key=txiptv&playlive=0&authid=0#http://39.165.39.49:19901/tsfile/live/1128_1.m3u8?key=txiptv&playlive=0&authid=0
-#EXTINF:-1 tvg-name="东方卫视HD [1080P] [1080P]" group-title="卫视频道",东方卫视HD [1080P] [1080P] [1080P]
-http://38.75.136.137:98/gslb/dsdqpub/dfwshd.m3u8?auth=testpub
+#EXTINF:-1 tvg-name="东方卫视 [1080P] [1080P]" group-title="卫视频道",东方卫视 [1080P] [1080P] [1080P]
+http://120.40.39.246:352/newlive/live/hls/20/live.m3u8
+#EXTINF:-1 tvg-name="东方卫视" group-title="卫视频道",东方卫视 [1080P]
+http://221.7.175.154:8445/tsfile/live/0107_1.m3u8?key=txiptv&playlive=1&authid=0
 #EXTINF:-1 tvg-name="东方卫视HD [1080P] [1080P] [1080P]" group-title="卫视频道",东方卫视HD [1080P] [1080P] [1080P] [1080P]
 http://198.204.228.26/live/dfwshd.m3u8
 #EXTINF:-1 tvg-name="东方卫视HD [1080P] [1080P] [1080P]" group-title="卫视频道",东方卫视HD [1080P] [1080P] [1080P] [1080P]
 http://192.151.150.154/live/dfwshd.m3u8
 #EXTINF:-1 tvg-name="东方卫视HD [1080P] [1080P] [1080P]" group-title="卫视频道",东方卫视HD [1080P] [1080P] [1080P] [1080P]
 http://107.150.60.122/live/dfwshd.m3u8
-#EXTINF:-1 tvg-name="云南卫视" group-title="卫视频道",云南卫视 [576P]
-http://113.26.202.52:1299/tsfile/live/0119_1.m3u8?key=txiptv&playlive=1&authid=0
+#EXTINF:-1 tvg-name="东方卫视HD [1080P] [1080P]" group-title="卫视频道",东方卫视HD [1080P] [1080P] [1080P]
+http://38.75.136.137:98/gslb/dsdqpub/dfwshd.m3u8?auth=testpub
 #EXTINF:-1 tvg-name="云南卫视 [1080P] [1080P]" group-title="卫视频道",云南卫视 [1080P] [1080P] [1080P]
 http://yjj888.f3322.net:9901/tsfile/live/0119_2.m3u8?key=txiptv&playlive=0&authid=0
 #EXTINF:-1 tvg-name="云南卫视 [1080P] [1080P]" group-title="卫视频道",云南卫视 [1080P] [1080P] [1080P]
 http://112.27.235.94:8000/hls/40/index.m3u8
+#EXTINF:-1 tvg-name="云南卫视" group-title="卫视频道",云南卫视 [576P]
+http://113.26.202.52:1299/tsfile/live/0119_1.m3u8?key=txiptv&playlive=1&authid=0
 #EXTINF:-1 tvg-name="云南卫视HD [1080P] [1080P] [1080P]" group-title="卫视频道",云南卫视HD [1080P] [1080P] [1080P] [1080P]
 http://107.150.60.122/live/ynwshd.m3u8
-#EXTINF:-1 tvg-name="兵团卫视" group-title="卫视频道",兵团卫视 [1080P]
-http://221.7.175.154:8445/tsfile/live/0115_1.m3u8?key=txiptv&playlive=1&authid=0
-#EXTINF:-1 tvg-name="兵团卫视" group-title="卫视频道",兵团卫视 [576P]
-http://113.26.202.52:1299/tsfile/live/0115_1.m3u8?key=txiptv&playlive=1&authid=0
 #EXTINF:-1 tvg-name="兵团卫视 [576P] [1080P]" group-title="卫视频道",兵团卫视 [576P] [1080P] [1080P]
 http://38.75.136.137:98/gslb/dsdqpub/btws.m3u8?auth=testpub
-#EXTINF:-1 tvg-name="内蒙古卫视" group-title="卫视频道",内蒙古卫视 [576P]
-http://113.26.202.52:1299/tsfile/live/0109_1.m3u8?key=txiptv&playlive=1&authid=0
+#EXTINF:-1 tvg-name="兵团卫视" group-title="卫视频道",兵团卫视 [576P]
+http://113.26.202.52:1299/tsfile/live/0115_1.m3u8?key=txiptv&playlive=1&authid=0
+#EXTINF:-1 tvg-name="兵团卫视" group-title="卫视频道",兵团卫视 [1080P]
+http://221.7.175.154:8445/tsfile/live/0115_1.m3u8?key=txiptv&playlive=1&authid=0
 #EXTINF:-1 tvg-name="内蒙古卫视 [576P] [576P]" group-title="卫视频道",内蒙古卫视 [576P] [576P] [576P]
 http://yjj888.f3322.net:9901/tsfile/live/0109_2.m3u8?key=txiptv&playlive=0&authid=0
 #EXTINF:-1 tvg-name="内蒙古卫视 [720P] [1080P]" group-title="卫视频道",内蒙古卫视 [720P] [1080P] [1080P]
 http://38.75.136.137:98/gslb/dsdqpub/nmgws.m3u8?auth=testpub
+#EXTINF:-1 tvg-name="内蒙古卫视" group-title="卫视频道",内蒙古卫视 [576P]
+http://113.26.202.52:1299/tsfile/live/0109_1.m3u8?key=txiptv&playlive=1&authid=0
 #EXTINF:-1 tvg-name="农林卫视 [404P] [404P]" group-title="卫视频道",农林卫视 [404P] [404P] [404P]
 http://gxlive.snrtv.com/nlws-SD.m3u8
-#EXTINF:-1 tvg-name="北京卫视" group-title="卫视频道",北京卫视 [1080P]
-http://113.26.202.52:1299/tsfile/live/0122_1.m3u8?key=txiptv&playlive=1&authid=0
-#EXTINF:-1 tvg-name="北京卫视 [1080P] [1080P]" group-title="卫视频道",北京卫视 [1080P] [1080P] [1080P]
-http://112.27.235.94:8000/hls/27/index.m3u8
-#EXTINF:-1 tvg-name="北京卫视 [1080P] [1080P] [1080P]" group-title="卫视频道",北京卫视 [1080P] [1080P] [1080P] [1080P]
-http://103.72.172.253:8041/hls/345649569/index.m3u8
 #EXTINF:-1 tvg-name="北京卫视 [720P] [720P]" group-title="卫视频道",北京卫视 [720P] [720P] [720P]
 http://116.76.254.170:44330/tsfile/live/0122_1.m3u8?key=txiptv&playlive=0&authid=0#http://112.27.235.94:8000/hls/27/index.m3u8#http://39.165.39.49:19901/tsfile/live/1130_1.m3u8?key=txiptv&playlive=0&authid=0
+#EXTINF:-1 tvg-name="北京卫视 [1080P] [1080P] [1080P]" group-title="卫视频道",北京卫视 [1080P] [1080P] [1080P] [1080P]
+http://103.72.172.253:8041/hls/345649569/index.m3u8
+#EXTINF:-1 tvg-name="北京卫视 [1080P] [1080P]" group-title="卫视频道",北京卫视 [1080P] [1080P] [1080P]
+http://112.27.235.94:8000/hls/27/index.m3u8
+#EXTINF:-1 tvg-name="北京卫视" group-title="卫视频道",北京卫视 [1080P]
+http://113.26.202.52:1299/tsfile/live/0122_1.m3u8?key=txiptv&playlive=1&authid=0
+#EXTINF:-1 tvg-name="北京卫视HD [1080P] [720P] [1080P]" group-title="卫视频道",北京卫视HD [1080P] [720P] [1080P] [1080P]
+http://192.151.150.154/live/bjwshd.m3u8
 #EXTINF:-1 tvg-name="北京卫视HD [1080P] [1080P] [1080P]" group-title="卫视频道",北京卫视HD [1080P] [1080P] [1080P] [1080P]
 http://198.204.228.26/live/bjwshd.m3u8
 #EXTINF:-1 tvg-name="北京卫视HD [1080P] [1080P] [1080P]" group-title="卫视频道",北京卫视HD [1080P] [1080P] [1080P] [1080P]
 http://107.150.60.122/live/bjwshd.m3u8
-#EXTINF:-1 tvg-name="北京卫视HD [1080P] [720P] [1080P]" group-title="卫视频道",北京卫视HD [1080P] [720P] [1080P] [1080P]
-http://192.151.150.154/live/bjwshd.m3u8
-#EXTINF:-1 tvg-name="吉林卫视" group-title="卫视频道",吉林卫视 [1080P]
-http://221.7.175.154:8445/tsfile/live/1014_1.m3u8?key=txiptv&playlive=1&authid=0
 #EXTINF:-1 tvg-name="吉林卫视" group-title="卫视频道",吉林卫视 [576P]
 http://113.26.202.52:1299/tsfile/live/0116_1.m3u8?key=txiptv&playlive=1&authid=0
+#EXTINF:-1 tvg-name="吉林卫视" group-title="卫视频道",吉林卫视 [1080P]
+http://221.7.175.154:8445/tsfile/live/1014_1.m3u8?key=txiptv&playlive=1&authid=0
 #EXTINF:-1 tvg-name="吉林卫视HD [1080P] [1080P] [1080P]" group-title="卫视频道",吉林卫视HD [1080P] [1080P] [1080P] [1080P]
 http://198.204.228.26/live/jlwshd.m3u8
-#EXTINF:-1 tvg-name="四川卫视" group-title="卫视频道",四川卫视 [1080P]
-http://221.7.175.154:8445/tsfile/live/0123_1.m3u8?key=txiptv&playlive=1&authid=0
-#EXTINF:-1 tvg-name="四川卫视" group-title="卫视频道",四川卫视 [576P]
-http://113.26.202.52:1299/tsfile/live/0123_1.m3u8?key=txiptv&playlive=1&authid=0
 #EXTINF:-1 tvg-name="四川卫视 [1080P] [1080P]" group-title="卫视频道",四川卫视 [1080P] [1080P] [1080P]
 http://175.154.151.98:808/hls/26/index.m3u8
+#EXTINF:-1 tvg-name="四川卫视" group-title="卫视频道",四川卫视 [576P]
+http://113.26.202.52:1299/tsfile/live/0123_1.m3u8?key=txiptv&playlive=1&authid=0
+#EXTINF:-1 tvg-name="四川卫视" group-title="卫视频道",四川卫视 [1080P]
+http://221.7.175.154:8445/tsfile/live/0123_1.m3u8?key=txiptv&playlive=1&authid=0
 #EXTINF:-1 tvg-name="四川卫视HD [1080P] [1080P] [1080P]" group-title="卫视频道",四川卫视HD [1080P] [1080P] [1080P] [1080P]
 http://192.151.150.154/live/scwshd.m3u8
 #EXTINF:-1 tvg-name="四川卫视HD [1080P] [1080P] [1080P]" group-title="卫视频道",四川卫视HD [1080P] [1080P] [1080P] [1080P]
 http://198.204.228.26/live/scwshd.m3u8
+#EXTINF:-1 tvg-name="天津卫视 [1080P] [1080P]" group-title="卫视频道",天津卫视 [1080P] [1080P] [1080P]
+http://yjj888.f3322.net:9901/tsfile/live/0135_2.m3u8?key=txiptv&playlive=0&authid=0
 #EXTINF:-1 tvg-name="天津卫视" group-title="卫视频道",天津卫视 [1080P]
 http://221.7.175.154:8445/tsfile/live/0135_1.m3u8?key=txiptv&playlive=1&authid=0
 #EXTINF:-1 tvg-name="天津卫视" group-title="卫视频道",天津卫视 [1080P]
 http://113.26.202.52:1299/tsfile/live/0135_1.m3u8?key=txiptv&playlive=1&authid=0
-#EXTINF:-1 tvg-name="天津卫视 [1080P] [1080P]" group-title="卫视频道",天津卫视 [1080P] [1080P] [1080P]
-http://yjj888.f3322.net:9901/tsfile/live/0135_2.m3u8?key=txiptv&playlive=0&authid=0
-#EXTINF:-1 tvg-name="天津卫视HD [1080P] [1080P]" group-title="卫视频道",天津卫视HD [1080P] [1080P] [1080P]
-http://38.75.136.137:98/gslb/dsdqpub/tjwshd.m3u8?auth=testpub
 #EXTINF:-1 tvg-name="天津卫视HD [1080P] [1080P] [1080P]" group-title="卫视频道",天津卫视HD [1080P] [1080P] [1080P] [1080P]
 http://107.150.60.122/live/tjwshd.m3u8
-#EXTINF:-1 tvg-name="宁夏卫视" group-title="卫视频道",宁夏卫视 [576P]
-http://113.26.202.52:1299/tsfile/live/0112_1.m3u8?key=txiptv&playlive=1&authid=0
-#EXTINF:-1 tvg-name="宁夏卫视 [1080P] [1080P]" group-title="卫视频道",宁夏卫视 [1080P] [1080P] [1080P]
-http://yjj888.f3322.net:9901/tsfile/live/0112_2.m3u8?key=txiptv&playlive=0&authid=0
+#EXTINF:-1 tvg-name="天津卫视HD [1080P] [1080P]" group-title="卫视频道",天津卫视HD [1080P] [1080P] [1080P]
+http://38.75.136.137:98/gslb/dsdqpub/tjwshd.m3u8?auth=testpub
 #EXTINF:-1 tvg-name="宁夏卫视 [576P] [1080P]" group-title="卫视频道",宁夏卫视 [576P] [1080P] [720P]
 http://38.75.136.137:98/gslb/dsdqpub/nxws.m3u8?auth=testpub
+#EXTINF:-1 tvg-name="宁夏卫视 [1080P] [1080P]" group-title="卫视频道",宁夏卫视 [1080P] [1080P] [1080P]
+http://yjj888.f3322.net:9901/tsfile/live/0112_2.m3u8?key=txiptv&playlive=0&authid=0
+#EXTINF:-1 tvg-name="宁夏卫视" group-title="卫视频道",宁夏卫视 [576P]
+http://113.26.202.52:1299/tsfile/live/0112_1.m3u8?key=txiptv&playlive=1&authid=0
 #EXTINF:-1 tvg-name="安多卫视 [1080P] [1080P]" group-title="卫视频道",安多卫视 [1080P] [1080P] [1080P]
 https://liveout.xntv.tv/a65jur/96iln2.m3u8#@http://cm-wshls.homecdn.com/live/5a296.dlv#@http://dtrmlive.qhdtrm.cn/xnds/sd/live.m3u8#@http://cm-wshls.homecdn.com/live/5a296.m3u8#rtmp://liveout.xntv.tv/a65jur/96iln2
 #EXTINF:-1 tvg-name="安多卫视 [1080P] [1080P]" group-title="卫视频道",安多卫视 [1080P] [1080P] [1080P]
 https://liveout.xntv.tv/a65jur/96iln2.m3u8#rtmp://liveout.xntv.tv/a65jur/96iln2
+#EXTINF:-1 tvg-name="安徽卫视 [720P] [720P]" group-title="卫视频道",安徽卫视 [720P] [720P] [720P]
+http://116.76.254.170:44330/tsfile/live/0130_1.m3u8?key=txiptv&playlive=0&authid=0
 #EXTINF:-1 tvg-name="安徽卫视" group-title="卫视频道",安徽卫视 [1080P]
 http://221.7.175.154:8445/tsfile/live/0130_1.m3u8?key=txiptv&playlive=1&authid=0
 #EXTINF:-1 tvg-name="安徽卫视" group-title="卫视频道",安徽卫视 [1080P]
 http://113.26.202.52:1299/tsfile/live/0130_1.m3u8?key=txiptv&playlive=1&authid=0
-#EXTINF:-1 tvg-name="安徽卫视 [720P] [720P]" group-title="卫视频道",安徽卫视 [720P] [720P] [720P]
-http://116.76.254.170:44330/tsfile/live/0130_1.m3u8?key=txiptv&playlive=0&authid=0
 #EXTINF:-1 tvg-name="安徽卫视HD [720P] [1080P]" group-title="卫视频道",安徽卫视HD [720P] [1080P] [720P]
 http://38.75.136.137:98/gslb/dsdqpub/ahwshd.m3u8?auth=testpub
-#EXTINF:-1 tvg-name="山东卫视" group-title="卫视频道",山东卫视 [1080P]
-http://113.26.202.52:1299/tsfile/live/0131_1.m3u8?key=txiptv&playlive=1&authid=0
 #EXTINF:-1 tvg-name="山东卫视 [720P] [720P]" group-title="卫视频道",山东卫视 [720P] [720P] [720P]
 http://116.76.254.170:44330/tsfile/live/0131_1.m3u8?key=txiptv&playlive=0&authid=0
 #EXTINF:-1 tvg-name="山东卫视 [720P] [720P]" group-title="卫视频道",山东卫视 [720P] [720P] [720P]
 http://116.76.254.170:44330/tsfile/live/0131_1.m3u8?key=txiptv&playlive=0&authid=0#http://112.27.235.94:8000/hls/34/index.m3u8#http://39.165.39.49:19901/tsfile/live/1133_1.m3u8?key=txiptv&playlive=0&authid=0
+#EXTINF:-1 tvg-name="山东卫视" group-title="卫视频道",山东卫视 [1080P]
+http://113.26.202.52:1299/tsfile/live/0131_1.m3u8?key=txiptv&playlive=1&authid=0
 #EXTINF:-1 tvg-name="山东卫视HD [1080P] [1080P] [1080P]" group-title="卫视频道",山东卫视HD [1080P] [1080P] [1080P] [1080P]
 http://192.151.150.154/live/sdwshd.m3u8
-#EXTINF:-1 tvg-name="山西卫视" group-title="卫视频道",山西卫视 [1080P]
-http://221.7.175.154:8445/tsfile/live/0118_1.m3u8?key=txiptv&playlive=1&authid=0
-#EXTINF:-1 tvg-name="山西卫视" group-title="卫视频道",山西卫视 [576P]
-http://113.26.202.52:1299/tsfile/live/0118_1.m3u8?key=txiptv&playlive=1&authid=0
 #EXTINF:-1 tvg-name="山西卫视 [1080P] [1080P]" group-title="卫视频道",山西卫视 [1080P] [1080P] [1080P]
 http://yjj888.f3322.net:9901/tsfile/live/0118_2.m3u8?key=txiptv&playlive=0&authid=0
+#EXTINF:-1 tvg-name="山西卫视" group-title="卫视频道",山西卫视 [576P]
+http://113.26.202.52:1299/tsfile/live/0118_1.m3u8?key=txiptv&playlive=1&authid=0
+#EXTINF:-1 tvg-name="山西卫视" group-title="卫视频道",山西卫视 [1080P]
+http://221.7.175.154:8445/tsfile/live/0118_1.m3u8?key=txiptv&playlive=1&authid=0
 #EXTINF:-1 tvg-name="山西卫视HD [576P] [576P] [1080P]" group-title="卫视频道",山西卫视HD [576P] [576P] [1080P] [1080P]
 http://198.204.228.26/live/sxwshd.m3u8
 #EXTINF:-1 tvg-name="山西卫视HD [576P] [576P] [1080P]" group-title="卫视频道",山西卫视HD [576P] [576P] [1080P] [1080P]
 http://192.151.150.154/live/sxwshd.m3u8
+#EXTINF:-1 tvg-name="广东卫视 [1080P] [1080P]" group-title="卫视频道",广东卫视 [1080P] [1080P] [1080P]
+http://120.40.39.246:352/newlive/live/hls/25/live.m3u8
 #EXTINF:-1 tvg-name="广东卫视" group-title="卫视频道",广东卫视 [1080P]
 http://221.7.175.154:8445/tsfile/live/0125_1.m3u8?key=txiptv&playlive=1&authid=0
 #EXTINF:-1 tvg-name="广东卫视" group-title="卫视频道",广东卫视 [1080P]
 http://113.26.202.52:1299/tsfile/live/0125_1.m3u8?key=txiptv&playlive=1&authid=0
-#EXTINF:-1 tvg-name="广东卫视 [1080P] [1080P]" group-title="卫视频道",广东卫视 [1080P] [1080P] [1080P]
-http://120.40.39.246:352/newlive/live/hls/25/live.m3u8
 #EXTINF:-1 tvg-name="广东卫视HD [1080P] [1080P] [1080P]" group-title="卫视频道",广东卫视HD [1080P] [1080P] [1080P] [1080P]
 http://107.150.60.122/live/gdwshd.m3u8
-#EXTINF:-1 tvg-name="广西卫视" group-title="卫视频道",广西卫视 [1080P]
-http://221.7.175.154:8445/tsfile/live/0113_2.m3u8?key=txiptv&playlive=1&authid=0
-#EXTINF:-1 tvg-name="广西卫视" group-title="卫视频道",广西卫视 [576P]
-http://113.26.202.52:1299/tsfile/live/0113_1.m3u8?key=txiptv&playlive=1&authid=0
 #EXTINF:-1 tvg-name="广西卫视 [1080P] [1080P]" group-title="卫视频道",广西卫视 [1080P] [1080P] [1080P]
 https://hlscdn.liangtv.cn/live/de0f97348eb84f62aa6b7d8cf0430770/dd505d87880c478f901f38560ca4d4e6.m3u8#https://hlscdn.liangtv.cn/live/0c4ef3a44b934cacb8b47121dfada66c/d7e04258157b480dae53883cc6f8123b.m3u8
 #EXTINF:-1 tvg-name="广西卫视 [1080P] [1080P]" group-title="卫视频道",广西卫视 [1080P] [1080P] [1080P]
 https://hlscdn.liangtv.cn/live/0c4ef3a44b934cacb8b47121dfada66c/d7e04258157b480dae53883cc6f8123b-1.m3u8
 #EXTINF:-1 tvg-name="广西卫视 [1080P] [1080P]" group-title="卫视频道",广西卫视 [1080P] [1080P] [1080P]
 http://yjj888.f3322.net:9901/tsfile/live/0113_2.m3u8?key=txiptv&playlive=0&authid=0
+#EXTINF:-1 tvg-name="广西卫视" group-title="卫视频道",广西卫视 [576P]
+http://113.26.202.52:1299/tsfile/live/0113_1.m3u8?key=txiptv&playlive=1&authid=0
+#EXTINF:-1 tvg-name="广西卫视" group-title="卫视频道",广西卫视 [1080P]
+http://221.7.175.154:8445/tsfile/live/0113_2.m3u8?key=txiptv&playlive=1&authid=0
 #EXTINF:-1 tvg-name="广西卫视HD [1080P] [1080P] [1080P]" group-title="卫视频道",广西卫视HD [1080P] [1080P] [1080P] [1080P]
 http://198.204.228.26/live/gxwshd.m3u8
-#EXTINF:-1 tvg-name="延边卫视 [1080P] [1080P]" group-title="卫视频道",延边卫视 [1080P] [1080P] [1080P]
-http://l.cztvcloud.com/channels/lantian/SXxinchang2/720p.m3u8##https://srs.iyb983.cn/video/CYS/index.m3u8
 #EXTINF:-1 tvg-name="延边卫视 [720P] [720P] [720P]" group-title="卫视频道",延边卫视 [720P] [720P] [720P] [1080P]
 https://srs.iyb983.cn:443/video/CYS/index.m3u8
-#EXTINF:-1 tvg-name="新疆卫视" group-title="卫视频道",新疆卫视 [576P]
-http://113.26.202.52:1299/tsfile/live/0110_1.m3u8?key=txiptv&playlive=1&authid=0
-#EXTINF:-1 tvg-name="新疆卫视 [1080P] [1080P]" group-title="卫视频道",新疆卫视 [1080P] [1080P] [1080P]
-http://yjj888.f3322.net:9901/tsfile/live/0110_2.m3u8?key=txiptv&playlive=0&authid=0
+#EXTINF:-1 tvg-name="延边卫视 [1080P] [1080P]" group-title="卫视频道",延边卫视 [1080P] [1080P] [1080P]
+http://l.cztvcloud.com/channels/lantian/SXxinchang2/720p.m3u8##https://srs.iyb983.cn/video/CYS/index.m3u8
+#EXTINF:-1 tvg-name="新疆卫视 [720P] [576P] [1080P]" group-title="卫视频道",新疆卫视 [720P] [576P] [1080P] [1080P]
+http://192.151.150.154/live/xjws.m3u8
 #EXTINF:-1 tvg-name="新疆卫视 [1080P] [1080P]" group-title="卫视频道",新疆卫视 [1080P] [1080P]
 http://218.84.12.186:8001/hls/main/playlist.m3u8#http://satellitepull.cnr.cn/live/wxxjws/playlist.m3u8
 #EXTINF:-1 tvg-name="新疆卫视 [1080P] [1080P]" group-title="卫视频道",新疆卫视 [1080P] [1080P] [1080P]
+http://yjj888.f3322.net:9901/tsfile/live/0110_2.m3u8?key=txiptv&playlive=0&authid=0
+#EXTINF:-1 tvg-name="新疆卫视 [1080P] [1080P]" group-title="卫视频道",新疆卫视 [1080P] [1080P] [1080P]
 http://38.75.136.137:98/gslb/dsdqpub/xjws.m3u8?auth=testpub
-#EXTINF:-1 tvg-name="新疆卫视 [720P] [576P] [1080P]" group-title="卫视频道",新疆卫视 [720P] [576P] [1080P] [1080P]
-http://192.151.150.154/live/xjws.m3u8
+#EXTINF:-1 tvg-name="新疆卫视" group-title="卫视频道",新疆卫视 [576P]
+http://113.26.202.52:1299/tsfile/live/0110_1.m3u8?key=txiptv&playlive=1&authid=0
+#EXTINF:-1 tvg-name="江苏卫视 [720P] [720P] [720P]" group-title="卫视频道",江苏卫视 [720P] [720P] [720P] [720P]
+http://116.76.254.170:44330/tsfile/live/0127_1.m3u8?key=txiptv&playlive=0&authid=0
+#EXTINF:-1 tvg-name="江苏卫视 [1080P] [1080P]" group-title="卫视频道",江苏卫视 [1080P] [1080P] [1080P]
+http://120.40.39.246:352/newlive/live/hls/22/live.m3u8
 #EXTINF:-1 tvg-name="江苏卫视" group-title="卫视频道",江苏卫视 [1080P]
 http://221.7.175.154:8445/tsfile/live/0127_1.m3u8?key=txiptv&playlive=1&authid=0
 #EXTINF:-1 tvg-name="江苏卫视" group-title="卫视频道",江苏卫视 [1080P]
 http://113.26.202.52:1299/tsfile/live/0127_1.m3u8?key=txiptv&playlive=1&authid=0
-#EXTINF:-1 tvg-name="江苏卫视 [1080P] [1080P]" group-title="卫视频道",江苏卫视 [1080P] [1080P] [1080P]
-http://120.40.39.246:352/newlive/live/hls/22/live.m3u8
-#EXTINF:-1 tvg-name="江苏卫视 [720P] [720P] [720P]" group-title="卫视频道",江苏卫视 [720P] [720P] [720P] [720P]
-http://116.76.254.170:44330/tsfile/live/0127_1.m3u8?key=txiptv&playlive=0&authid=0
-#EXTINF:-1 tvg-name="江西卫视" group-title="卫视频道",江西卫视 [1080P]
-http://221.7.175.154:8445/tsfile/live/0010_1.m3u8?key=txiptv&playlive=1&authid=0
-#EXTINF:-1 tvg-name="江西卫视" group-title="卫视频道",江西卫视 [576P]
-http://113.26.202.52:1299/tsfile/live/0138_1.m3u8?key=txiptv&playlive=1&authid=0
-#EXTINF:-1 tvg-name="江西卫视 [1080P] [1080P]" group-title="卫视频道",江西卫视 [1080P] [1080P] [1080P]
-http://112.27.235.94:8000/hls/44/index.m3u8
 #EXTINF:-1 tvg-name="江西卫视 [720P] [720P]" group-title="卫视频道",江西卫视 [720P] [720P] [720P]
 http://116.76.254.170:44330/tsfile/live/0138_1.m3u8?key=txiptv&playlive=0&authid=0#http://112.27.235.94:8000/hls/44/index.m3u8
+#EXTINF:-1 tvg-name="江西卫视 [1080P] [1080P]" group-title="卫视频道",江西卫视 [1080P] [1080P] [1080P]
+http://112.27.235.94:8000/hls/44/index.m3u8
+#EXTINF:-1 tvg-name="江西卫视" group-title="卫视频道",江西卫视 [576P]
+http://113.26.202.52:1299/tsfile/live/0138_1.m3u8?key=txiptv&playlive=1&authid=0
+#EXTINF:-1 tvg-name="江西卫视" group-title="卫视频道",江西卫视 [1080P]
+http://221.7.175.154:8445/tsfile/live/0010_1.m3u8?key=txiptv&playlive=1&authid=0
 #EXTINF:-1 tvg-name="江西卫视HD [1080P] [1080P] [1080P]" group-title="卫视频道",江西卫视HD [1080P] [1080P] [1080P] [1080P]
 http://198.204.228.26/live/jxwshd.m3u8
 #EXTINF:-1 tvg-name="江西卫视HD [1080P] [1080P] [1080P]" group-title="卫视频道",江西卫视HD [1080P] [1080P] [1080P] [1080P]
 http://192.151.150.154/live/jxwshd.m3u8
-#EXTINF:-1 tvg-name="河北卫视" group-title="卫视频道",河北卫视 [1080P]
-http://221.7.175.154:8445/tsfile/live/0117_1.m3u8?key=txiptv&playlive=1&authid=0
 #EXTINF:-1 tvg-name="河北卫视 [540P] [540P]" group-title="卫视频道",河北卫视 [540P] [540P] [540P]
 http://event.pull.hebtv.com/jishi/weishi_tingyun.m3u8
-#EXTINF:-1 tvg-name="河北卫视HD [1080P] [1080P]" group-title="卫视频道",河北卫视HD [1080P] [1080P] [1080P]
-http://38.75.136.137:98/gslb/dsdqpub/hewshd.m3u8?auth=testpub
+#EXTINF:-1 tvg-name="河北卫视" group-title="卫视频道",河北卫视 [1080P]
+http://221.7.175.154:8445/tsfile/live/0117_1.m3u8?key=txiptv&playlive=1&authid=0
 #EXTINF:-1 tvg-name="河北卫视HD [1080P] [1080P] [1080P]" group-title="卫视频道",河北卫视HD [1080P] [1080P] [1080P] [1080P]
 http://198.204.228.26/live/hewshd.m3u8
-#EXTINF:-1 tvg-name="河南卫视" group-title="卫视频道",河南卫视 [1080P]
-http://221.7.175.154:8445/tsfile/live/0139_1.m3u8?key=txiptv&playlive=1&authid=0
-#EXTINF:-1 tvg-name="河南卫视" group-title="卫视频道",河南卫视 [576P]
-http://113.26.202.52:1299/tsfile/live/0139_1.m3u8?key=txiptv&playlive=1&authid=0
+#EXTINF:-1 tvg-name="河北卫视HD [1080P] [1080P]" group-title="卫视频道",河北卫视HD [1080P] [1080P] [1080P]
+http://38.75.136.137:98/gslb/dsdqpub/hewshd.m3u8?auth=testpub
 #EXTINF:-1 tvg-name="河南卫视 [720P] [720P]" group-title="卫视频道",河南卫视 [720P] [720P] [720P]
 http://112.30.73.119:9901/tsfile/live/1404_1.m3u8?key=txiptv&playlive=0&authid=0
-#EXTINF:-1 tvg-name="浙江卫视" group-title="卫视频道",浙江卫视 [1080P]
-http://221.7.175.154:8445/tsfile/live/0124_1.m3u8?key=txiptv&playlive=1&authid=0
-#EXTINF:-1 tvg-name="浙江卫视" group-title="卫视频道",浙江卫视 [1080P]
-http://113.26.202.52:1299/tsfile/live/0124_1.m3u8?key=txiptv&playlive=1&authid=0
+#EXTINF:-1 tvg-name="河南卫视" group-title="卫视频道",河南卫视 [576P]
+http://113.26.202.52:1299/tsfile/live/0139_1.m3u8?key=txiptv&playlive=1&authid=0
+#EXTINF:-1 tvg-name="河南卫视" group-title="卫视频道",河南卫视 [1080P]
+http://221.7.175.154:8445/tsfile/live/0139_1.m3u8?key=txiptv&playlive=1&authid=0
+#EXTINF:-1 tvg-name="浙江卫视 [1080P] [1080P] [1080P]" group-title="卫视频道",浙江卫视 [1080P] [1080P] [1080P] [1080P]
+http://ali-m-l.cztv.com:80/channels/lantian/channel001/1080p.m3u8
+#EXTINF:-1 tvg-name="浙江卫视 [1080P] [1080P] [1080P]" group-title="卫视频道",浙江卫视 [1080P] [1080P] [1080P] [1080P]
+http://ali-m-l.cztv.com:80/channels/lantian/channel001/1080p.m3u8#http://ali-m-l.cztv.com/channels/lantian/channel001/1080p.m3u8#https://ali-m-l.cztv.com/channels/lantian/channel001/1080p.m3u8#https://ali-m-l.cztv.com/channels/lantian/channel001/1080p.m3u8?#http://ali-m-l.cztv.com:80/channels/lantian/channel001/1080p.m3u8
 #EXTINF:-1 tvg-name="浙江卫视 [1080P] [1080P]" group-title="卫视频道",浙江卫视 [1080P] [1080P] [1080P]
 https://ali-m-l.cztv.com/channels/lantian/channel001/1080p.m3u8
 #EXTINF:-1 tvg-name="浙江卫视 [1080P] [1080P]" group-title="卫视频道",浙江卫视 [1080P] [1080P] [1080P]
 https://ali-m-l.cztv.com/channels/lantian/channel001/1080p.m3u8#http://ali-m-l.cztv.com/channels/lantian/channel001/1080p.m3u8
 #EXTINF:-1 tvg-name="浙江卫视 [1080P] [1080P]" group-title="卫视频道",浙江卫视 [1080P] [1080P] [1080P]
 https://ali-xwl.cztv.com/live/channel011080Plxw.m3u8
-#EXTINF:-1 tvg-name="浙江卫视 [1080P] [1080P] [1080P]" group-title="卫视频道",浙江卫视 [1080P] [1080P] [1080P] [1080P]
-http://ali-m-l.cztv.com:80/channels/lantian/channel001/1080p.m3u8
-#EXTINF:-1 tvg-name="浙江卫视 [1080P] [1080P] [1080P]" group-title="卫视频道",浙江卫视 [1080P] [1080P] [1080P] [1080P]
-http://ali-m-l.cztv.com:80/channels/lantian/channel001/1080p.m3u8#http://ali-m-l.cztv.com/channels/lantian/channel001/1080p.m3u8#https://ali-m-l.cztv.com/channels/lantian/channel001/1080p.m3u8#https://ali-m-l.cztv.com/channels/lantian/channel001/1080p.m3u8?#http://ali-m-l.cztv.com:80/channels/lantian/channel001/1080p.m3u8
+#EXTINF:-1 tvg-name="浙江卫视" group-title="卫视频道",浙江卫视 [1080P]
+http://221.7.175.154:8445/tsfile/live/0124_1.m3u8?key=txiptv&playlive=1&authid=0
+#EXTINF:-1 tvg-name="浙江卫视" group-title="卫视频道",浙江卫视 [1080P]
+http://113.26.202.52:1299/tsfile/live/0124_1.m3u8?key=txiptv&playlive=1&authid=0
 #EXTINF:-1 tvg-name="浙江卫视HD [1080P] [1080P] [720P]" group-title="卫视频道",浙江卫视HD [1080P] [1080P] [720P] [1080P]
 http://107.150.60.122/live/zjwshd.m3u8
-#EXTINF:-1 tvg-name="浙江卫视超清 [1080P] [1080P]" group-title="卫视频道",浙江卫视超清 [1080P] [1080P] [1080P]
-http://ali-xwl.cztv.com/live/channel011080Plxw.m3u8
 #EXTINF:-1 tvg-name="浙江卫视超清 [720P] [720P]" group-title="卫视频道",浙江卫视超清 [720P] [720P] [720P]
 http://ali-xwl.cztv.com/live/channel01720Plxw.m3u8
+#EXTINF:-1 tvg-name="浙江卫视超清 [1080P] [1080P]" group-title="卫视频道",浙江卫视超清 [1080P] [1080P] [1080P]
+http://ali-xwl.cztv.com/live/channel011080Plxw.m3u8
 #EXTINF:-1 tvg-name="海南卫视 [1080P] [1080P]" group-title="卫视频道",海南卫视 [1080P] [1080P] [1080P]
 https://kavencat01.kodview.com/live/hnntv.php?id=hnws
 #EXTINF:-1 tvg-name="海南卫视 [1080P] [1080P]" group-title="卫视频道",海南卫视 [1080P] [1080P] [1080P]
 http://yjj888.f3322.net:9901/tsfile/live/1023_1.m3u8?key=txiptv&playlive=0&authid=0
-#EXTINF:-1 tvg-name="深圳卫视" group-title="卫视频道",深圳卫视 [1080P]
-http://221.7.175.154:8445/tsfile/live/0126_1.m3u8?key=txiptv&playlive=1&authid=0
 #EXTINF:-1 tvg-name="深圳卫视 [1080P] [1080P]" group-title="卫视频道",深圳卫视 [1080P] [1080P] [1080P]
 http://112.27.235.94:8000/hls/33/index.m3u8
+#EXTINF:-1 tvg-name="深圳卫视" group-title="卫视频道",深圳卫视 [1080P]
+http://221.7.175.154:8445/tsfile/live/0126_1.m3u8?key=txiptv&playlive=1&authid=0
 #EXTINF:-1 tvg-name="深圳卫视超清 [1080P] [1080P]" group-title="卫视频道",深圳卫视超清 [1080P] [1080P] [1080P]
 http://182.150.112.112:2025/hls/59/index.m3u8
+#EXTINF:-1 tvg-name="湖北卫视 [1080P] [1080P]" group-title="卫视频道",湖北卫视 [1080P] [1080P] [1080P]
+http://112.27.235.94:8000/hls/41/index.m3u8
 #EXTINF:-1 tvg-name="湖北卫视" group-title="卫视频道",湖北卫视 [1080P]
 http://221.7.175.154:8445/tsfile/live/0132_1.m3u8?key=txiptv&playlive=1&authid=0
 #EXTINF:-1 tvg-name="湖北卫视" group-title="卫视频道",湖北卫视 [1080P]
 http://113.26.202.52:1299/tsfile/live/0132_1.m3u8?key=txiptv&playlive=1&authid=0
-#EXTINF:-1 tvg-name="湖北卫视 [1080P] [1080P]" group-title="卫视频道",湖北卫视 [1080P] [1080P] [1080P]
-http://112.27.235.94:8000/hls/41/index.m3u8
-#EXTINF:-1 tvg-name="湖北卫视HD [1080P] [1080P]" group-title="卫视频道",湖北卫视HD [1080P] [1080P] [1080P]
-http://38.75.136.137:98/gslb/dsdqpub/hbwshd.m3u8?auth=testpub
 #EXTINF:-1 tvg-name="湖北卫视HD [1080P] [1080P] [1080P]" group-title="卫视频道",湖北卫视HD [1080P] [1080P] [1080P] [1080P]
 http://107.150.60.122/live/hbwshd.m3u8
+#EXTINF:-1 tvg-name="湖北卫视HD [1080P] [1080P]" group-title="卫视频道",湖北卫视HD [1080P] [1080P] [1080P]
+http://38.75.136.137:98/gslb/dsdqpub/hbwshd.m3u8?auth=testpub
 #EXTINF:-1 tvg-name="湖南卫视" group-title="卫视频道",湖南卫视 [1080P]
 http://221.7.175.154:8445/tsfile/live/0128_1.m3u8?key=txiptv&playlive=1&authid=0
 #EXTINF:-1 tvg-name="湖南卫视" group-title="卫视频道",湖南卫视 [1080P]
 http://113.26.202.52:1299/tsfile/live/0128_1.m3u8?key=txiptv&playlive=1&authid=0
 #EXTINF:-1 tvg-name="湖南卫视HD [1080P] [1080P]" group-title="卫视频道",湖南卫视HD [1080P] [1080P] [1080P]
 http://38.75.136.137:98/gslb/dsdqpub/hnwshd.m3u8?auth=testpub
-#EXTINF:-1 tvg-name="甘肃卫视" group-title="卫视频道",甘肃卫视 [576P]
-http://113.26.202.52:1299/tsfile/live/0141_1.m3u8?key=txiptv&playlive=1&authid=0
 #EXTINF:-1 tvg-name="甘肃卫视 [1080P] [1080P]" group-title="卫视频道",甘肃卫视 [1080P] [1080P] [1080P]
 http://yjj888.f3322.net:9901/tsfile/live/0141_2.m3u8?key=txiptv&playlive=0&authid=0
+#EXTINF:-1 tvg-name="甘肃卫视" group-title="卫视频道",甘肃卫视 [576P]
+http://113.26.202.52:1299/tsfile/live/0141_1.m3u8?key=txiptv&playlive=1&authid=0
 #EXTINF:-1 tvg-name="甘肃卫视HD [576P] [576P]" group-title="卫视频道",甘肃卫视HD [576P] [576P] [576P]
 http://38.75.136.137:98/gslb/dsdqpub/gswshd.m3u8?auth=testpub
 #EXTINF:-1 tvg-name="藏语卫视 [1080P] [1080P]" group-title="卫视频道",藏语卫视 [1080P] [1080P] [1080P]
 http://123.207.224.130:123/xizang/xizang.php?id=xzzy
-#EXTINF:-1 tvg-name="西藏卫视" group-title="卫视频道",西藏卫视 [1080P]
-http://221.7.175.154:8445/tsfile/live/1017_1.m3u8?key=txiptv&playlive=1&authid=0
-#EXTINF:-1 tvg-name="西藏卫视" group-title="卫视频道",西藏卫视 [576P]
-http://113.26.202.52:1299/tsfile/live/0111_1.m3u8?key=txiptv&playlive=1&authid=0
 #EXTINF:-1 tvg-name="西藏卫视 [1080P] [1080P]" group-title="卫视频道",西藏卫视 [1080P] [1080P] [1080P]
 http://yjj888.f3322.net:9901/tsfile/live/0111_2.m3u8?key=txiptv&playlive=0&authid=0
-#EXTINF:-1 tvg-name="贵州卫视" group-title="卫视频道",贵州卫视 [1080P]
-http://221.7.175.154:8445/tsfile/live/0120_1.m3u8?key=txiptv&playlive=1&authid=0
+#EXTINF:-1 tvg-name="西藏卫视" group-title="卫视频道",西藏卫视 [576P]
+http://113.26.202.52:1299/tsfile/live/0111_1.m3u8?key=txiptv&playlive=1&authid=0
+#EXTINF:-1 tvg-name="西藏卫视" group-title="卫视频道",西藏卫视 [1080P]
+http://221.7.175.154:8445/tsfile/live/1017_1.m3u8?key=txiptv&playlive=1&authid=0
 #EXTINF:-1 tvg-name="贵州卫视 [1080P] [1080P]" group-title="卫视频道",贵州卫视 [1080P] [1080P] [1080P]
 http://120.40.39.246:352/newlive/live/hls/30/live.m3u8
 #EXTINF:-1 tvg-name="贵州卫视 [1080P] [1080P]" group-title="卫视频道",贵州卫视 [1080P] [1080P] [1080P]
 http://112.27.235.94:8000/hls/46/index.m3u8
+#EXTINF:-1 tvg-name="贵州卫视" group-title="卫视频道",贵州卫视 [1080P]
+http://221.7.175.154:8445/tsfile/live/0120_1.m3u8?key=txiptv&playlive=1&authid=0
+#EXTINF:-1 tvg-name="辽宁卫视 [1080P] [1080P]" group-title="卫视频道",辽宁卫视 [1080P] [1080P] [1080P]
+http://112.27.235.94:8000/hls/47/index.m3u8
 #EXTINF:-1 tvg-name="辽宁卫视" group-title="卫视频道",辽宁卫视 [1080P]
 http://221.7.175.154:8445/tsfile/live/0121_1.m3u8?key=txiptv&playlive=1&authid=0
 #EXTINF:-1 tvg-name="辽宁卫视" group-title="卫视频道",辽宁卫视 [1080P]
 http://113.26.202.52:1299/tsfile/live/0121_1.m3u8?key=txiptv&playlive=1&authid=0
-#EXTINF:-1 tvg-name="辽宁卫视 [1080P] [1080P]" group-title="卫视频道",辽宁卫视 [1080P] [1080P] [1080P]
-http://112.27.235.94:8000/hls/47/index.m3u8
 #EXTINF:-1 tvg-name="辽宁卫视HD [720P] [1080P] [1080P]" group-title="卫视频道",辽宁卫视HD [720P] [1080P] [1080P] [720P]
 http://107.150.60.122/live/lnwshd.m3u8
-#EXTINF:-1 tvg-name="重庆卫视" group-title="卫视频道",重庆卫视 [1080P]
-http://221.7.175.154:8445/tsfile/live/0142_1.m3u8?key=txiptv&playlive=1&authid=0
 #EXTINF:-1 tvg-name="重庆卫视" group-title="卫视频道",重庆卫视 [576P]
 http://113.26.202.52:1299/tsfile/live/0142_1.m3u8?key=txiptv&playlive=1&authid=0
+#EXTINF:-1 tvg-name="重庆卫视" group-title="卫视频道",重庆卫视 [1080P]
+http://221.7.175.154:8445/tsfile/live/0142_1.m3u8?key=txiptv&playlive=1&authid=0
 #EXTINF:-1 tvg-name="重庆卫视HD [720P] [1080P] [1080P]" group-title="卫视频道",重庆卫视HD [720P] [1080P] [1080P] [720P]
 http://107.150.60.122/live/cqwshd.m3u8
 #EXTINF:-1 tvg-name="陕西卫视" group-title="卫视频道",陕西卫视 [576P]
 http://113.26.202.52:1299/tsfile/live/0136_1.m3u8?key=txiptv&playlive=1&authid=0
 #EXTINF:-1 tvg-name="青海卫视 [1080P] [1080P]" group-title="卫视频道",青海卫视 [1080P] [1080P] [1080P]
 http://yjj888.f3322.net:9901/tsfile/live/0140_2.m3u8?key=txiptv&playlive=0&authid=0
+#EXTINF:-1 tvg-name="黑龙江卫视 [576P] [576P]" group-title="卫视频道",黑龙江卫视 [576P] [576P] [576P]
+http://l.cztvcloud.com/channels/lantian/SXyuyao3/720p.m3u8#http://satellitepull.cnr.cn/live/wx32hljws/playlist.m3u8
+#EXTINF:-1 tvg-name="黑龙江卫视 [1080P] [1080P]" group-title="卫视频道",黑龙江卫视 [1080P] [1080P] [1080P]
+http://112.27.235.94:8000/hls/48/index.m3u8
 #EXTINF:-1 tvg-name="黑龙江卫视" group-title="卫视频道",黑龙江卫视 [1080P]
 http://221.7.175.154:8445/tsfile/live/0131_1.m3u8?key=txiptv&playlive=1&authid=0
 #EXTINF:-1 tvg-name="黑龙江卫视" group-title="卫视频道",黑龙江卫视 [1080P]
 http://113.26.202.52:1299/tsfile/live/0143_1.m3u8?key=txiptv&playlive=1&authid=0
-#EXTINF:-1 tvg-name="黑龙江卫视 [1080P] [1080P]" group-title="卫视频道",黑龙江卫视 [1080P] [1080P] [1080P]
-http://112.27.235.94:8000/hls/48/index.m3u8
-#EXTINF:-1 tvg-name="黑龙江卫视 [576P] [576P]" group-title="卫视频道",黑龙江卫视 [576P] [576P] [576P]
-http://l.cztvcloud.com/channels/lantian/SXyuyao3/720p.m3u8#http://satellitepull.cnr.cn/live/wx32hljws/playlist.m3u8
 #EXTINF:-1 tvg-name="黑龙江卫视超清 [1080P] [1080P]" group-title="卫视频道",黑龙江卫视超清 [1080P] [1080P] [1080P]
 http://112.123.243.37:50085/tsfile/live/0142_1.m3u8?key=txiptv&playlive=0&authid=0
 #EXTINF:-1 tvg-name="一代枭雄频道 [720P] [720P]" group-title="影视频道 ",一代枭雄频道 [720P] [720P] [720P]
@@ -611,42 +611,42 @@ http://cfss.cc/cdn/huya/21059612.flv
 http://cfss.cc/cdn/huya/29465863.flv
 #EXTINF:-1 tvg-name="(国)大湾区卫视 [720P] [720P]" group-title="港台/国际",(国)大湾区卫视 [720P] [720P] [1080P]
 http://38.75.136.137:98/gslb/dsdqpub/nfws.m3u8?auth=testpub
-#EXTINF:-1 tvg-name="EBS+2 [360P] [360P] [360P]" group-title="港台/国际",EBS+2 [360P] [360P] [360P] [360P]
-http://ebsonairios.ebs.co.kr/plus2tablet500k/tablet500k/plus2tablet500k.index.m3u8
-#EXTINF:-1 tvg-name="EBS-KIDS [360P] [360P] [360P]" group-title="港台/国际",EBS-KIDS [360P] [360P] [360P] [360P]
-http://ebsonairios.ebs.co.kr/ebsutablet500k/_definst_/tablet500k/playlist.m3u8
-#EXTINF:-1 tvg-name="EBS1 [360P] [360P]" group-title="港台/国际",EBS1 [360P] [360P] [360P]
-http://ebsonairios.ebs.co.kr/groundwavetablet500k/tablet500k/playlist.m3u8
 #EXTINF:-1 tvg-name="EBS1 [360P] [360P] [360P]" group-title="港台/国际",EBS1 [360P] [360P] [360P] [360P]
 http://ebsonairios.ebs.co.kr/groundwavetablet500k/tablet500k/groundwavetablet500k.m3u8
 #EXTINF:-1 tvg-name="EBS1 [360P] [360P] [360P]" group-title="港台/国际",EBS1 [360P] [360P] [360P] [360P]
 http://ebsonairios.ebs.co.kr/ebsutablet500k/tablet500k/playlist.m3u8
+#EXTINF:-1 tvg-name="EBS1 [360P] [360P]" group-title="港台/国际",EBS1 [360P] [360P] [360P]
+http://ebsonairios.ebs.co.kr/groundwavetablet500k/tablet500k/playlist.m3u8
 #EXTINF:-1 tvg-name="EBS1 [400P] [400P] [400P]" group-title="港台/国际",EBS1 [400P] [400P] [400P] [400P]
 http://ebsonairios.ebs.co.kr/groundwavefamilypc/familypc1m/playlist.m3u8
 #EXTINF:-1 tvg-name="EBS2 [360P] [360P] [360P]" group-title="港台/国际",EBS2 [360P] [360P] [360P] [360P]
 http://ebsonairios.ebs.co.kr/ebs2tablet500k/tablet500k/ebs2tablet500k.index.m3u8
 #EXTINF:-1 tvg-name="EBS2 [400P] [400P] [400P]" group-title="港台/国际",EBS2 [400P] [400P] [400P] [400P]
 http://ebsonairios.ebs.co.kr/ebs2familypc/familypc1m/playlist.m3u8
+#EXTINF:-1 tvg-name="EBS+2 [360P] [360P] [360P]" group-title="港台/国际",EBS+2 [360P] [360P] [360P] [360P]
+http://ebsonairios.ebs.co.kr/plus2tablet500k/tablet500k/plus2tablet500k.index.m3u8
+#EXTINF:-1 tvg-name="EBS-KIDS [360P] [360P] [360P]" group-title="港台/国际",EBS-KIDS [360P] [360P] [360P] [360P]
+http://ebsonairios.ebs.co.kr/ebsutablet500k/_definst_/tablet500k/playlist.m3u8
 #EXTINF:-1 tvg-name="EBSe [360P] [360P] [360P]" group-title="港台/国际",EBSe [360P] [360P] [360P] [360P]
 http://ebsonairios.ebs.co.kr/plus3tablet500k/tablet500k/plus3tablet500k.index.m3u8
-#EXTINF:-1 tvg-name="TVBS新闻 [1080P] [1080P] [1080P]" group-title="港台/国际",TVBS新闻 [1080P] [1080P] [1080P] [1080P]
-http://jnzq.ohoyee.com:9080/live/332123-tvbsxw.m3u8
 #EXTINF:-1 tvg-name="TVBS新闻 [480P] [480P] [480P]" group-title="港台/国际",TVBS新闻 [480P] [480P] [480P] [480P]
 http://jnzq.ohoyee.com:9080/live/xingjiaoge-tvbsxw.m3u8
+#EXTINF:-1 tvg-name="TVBS新闻 [1080P] [1080P] [1080P]" group-title="港台/国际",TVBS新闻 [1080P] [1080P] [1080P] [1080P]
+http://jnzq.ohoyee.com:9080/live/332123-tvbsxw.m3u8
 #EXTINF:-1 tvg-name="万辉翡翠台庆 [1080P] [1080P]" group-title="港台/国际",万辉翡翠台庆 [1080P] [1080P] [1080P]
 http://rihou.cc:555/tv/[mv]翡翠台庆
-#EXTINF:-1 tvg-name="三沙卫视 [1080P] [1080P] [1080P]" group-title="港台/国际",三沙卫视 [1080P] [1080P] [1080P] [1080P]
-http://198.204.228.26/live/ssws.m3u8
 #EXTINF:-1 tvg-name="三沙卫视 [720P] [720P]" group-title="港台/国际",三沙卫视 [720P] [720P] [720P]
 https://tv1288.xyz/hainantv.php?proxy=1&id=ssws#https://kavencat01.kodview.com/live/hnntv.php?id=ssws
+#EXTINF:-1 tvg-name="三沙卫视 [1080P] [1080P] [1080P]" group-title="港台/国际",三沙卫视 [1080P] [1080P] [1080P] [1080P]
+http://198.204.228.26/live/ssws.m3u8
 #EXTINF:-1 tvg-name="三立戏剧频道 [720P] [720P] [720P]" group-title="港台/国际",三立戏剧频道 [720P] [720P] [720P] [720P]
 http://61.221.215.25:8800/hls/41/index.m3u8
+#EXTINF:-1 tvg-name="中天新闻 [480P] [480P] [480P]" group-title="港台/国际",中天新闻 [480P] [480P] [480P] [480P]
+http://jnzq.ohoyee.com:9080/live/xingjiaoge-ztxw2.m3u8
 #EXTINF:-1 tvg-name="中天新闻 [1080P] [1080P] [1080P]" group-title="港台/国际",中天新闻 [1080P] [1080P] [1080P] [1080P]
 http://jnzq.ohoyee.com:9080/live/332123-ztxw2.m3u8
 #EXTINF:-1 tvg-name="中天新闻 [1080P] [1080P] [1080P]" group-title="港台/国际",中天新闻 [1080P] [1080P] [1080P] [1080P]
 http://38.76.205.104:660/cdnlive.php?mode=play;id=800e215cf4d45a5b8e2bd2f4b9997ee9;token=8JHJbFjSVWW1yh6v2QmA7Ef59GdgVZmJ
-#EXTINF:-1 tvg-name="中天新闻 [480P] [480P] [480P]" group-title="港台/国际",中天新闻 [480P] [480P] [480P] [480P]
-http://jnzq.ohoyee.com:9080/live/xingjiaoge-ztxw2.m3u8
 #EXTINF:-1 tvg-name="中天新闻台 [1080P] [1080P] [1080P]" group-title="港台/国际",中天新闻台 [1080P] [1080P] [1080P] [1080P]
 http://222.128.55.152:9080/live/fc.m3u8
 #EXTINF:-1 tvg-name="中视 [720P] [720P] [720P]" group-title="港台/国际",中视 [720P] [720P] [720P] [720P]
@@ -667,18 +667,18 @@ http://74.91.26.218:82/live/ptsty.m3u8
 http://rihou.cc:555/tv/[mn]公视综合
 #EXTINF:-1 tvg-name="公视闽南地波 [720P] [720P]" group-title="港台/国际",公视闽南地波 [720P] [720P] [720P]
 http://rihou.cc:555/tv/[mn]公视闽南
-#EXTINF:-1 tvg-name="凤凰中文 [1080P] [1080P]" group-title="港台/国际",凤凰中文 [1080P] [1080P] [1080P]
-http://zmgd.zyrnet.com:8888/hls/110/index.m3u8
 #EXTINF:-1 tvg-name="凤凰中文 [576P] [576P]" group-title="港台/国际",凤凰中文 [576P] [576P] [576P]
 http://219.145.93.74:10000/tsfile/live/1002_1.m3u8?key=txiptv&playlive=1&authid=0
+#EXTINF:-1 tvg-name="凤凰中文 [1080P] [1080P]" group-title="港台/国际",凤凰中文 [1080P] [1080P] [1080P]
+http://zmgd.zyrnet.com:8888/hls/110/index.m3u8
 #EXTINF:-1 tvg-name="凤凰卫视" group-title="港台/国际",凤凰卫视 [1080P]
 http://221.7.175.154:8445/tsfile/live/1020_1.m3u8?key=txiptv&playlive=1&authid=0
 #EXTINF:-1 tvg-name="凤凰影视" group-title="港台/国际",凤凰影视 [1080P]
 http://221.7.175.154:8445/tsfile/live/1022_1.m3u8?key=txiptv&playlive=1&authid=0
-#EXTINF:-1 tvg-name="凤凰资讯" group-title="港台/国际",凤凰资讯 [1080P]
-http://221.7.175.154:8445/tsfile/live/1021_1.m3u8?key=txiptv&playlive=1&authid=0
 #EXTINF:-1 tvg-name="凤凰资讯 [1080P] [1080P] [1080P]" group-title="港台/国际",凤凰资讯 [1080P] [1080P] [1080P] [1080P]
 http://zmgd.zyrnet.com:8888/hls/109/index.m3u8
+#EXTINF:-1 tvg-name="凤凰资讯" group-title="港台/国际",凤凰资讯 [1080P]
+http://221.7.175.154:8445/tsfile/live/1021_1.m3u8?key=txiptv&playlive=1&authid=0
 #EXTINF:-1 tvg-name="北京国际 [1080P] [1080P] [1080P]" group-title="港台/国际",北京国际 [1080P] [1080P] [1080P] [1080P]
 http://114.242.62.109:888/hls/27/index.m3u8
 #EXTINF:-1 tvg-name="华视 [720P] [720P] [720P]" group-title="港台/国际",华视 [720P] [720P] [720P] [720P]
@@ -709,16 +709,16 @@ http://rihou.cc:555/tv/[mn]台视闽南
 http://jnzq.ohoyee.com:9080/live/332123-hyxw.m3u8#http://222.128.55.152:9080/live/hy.m3u8
 #EXTINF:-1 tvg-name="寰宇新聞台湾 [1080P] [1080P] [1080P]" group-title="港台/国际",寰宇新聞台湾 [1080P] [1080P] [1080P] [1080P]
 http://rihou.cc:555/tv/寰宇台湾
-#EXTINF:-1 tvg-name="寰宇新闻 [1080P] [1080P] [1080P]" group-title="港台/国际",寰宇新闻 [1080P] [1080P] [1080P] [1080P]
-http://jnzq.ohoyee.com:9080/live/332123-hyxw.m3u8
 #EXTINF:-1 tvg-name="寰宇新闻 [480P] [480P] [480P]" group-title="港台/国际",寰宇新闻 [480P] [480P] [480P] [480P]
 http://jnzq.ohoyee.com:9080/live/xiangjiaoge-hyxw.m3u8
+#EXTINF:-1 tvg-name="寰宇新闻 [1080P] [1080P] [1080P]" group-title="港台/国际",寰宇新闻 [1080P] [1080P] [1080P] [1080P]
+http://jnzq.ohoyee.com:9080/live/332123-hyxw.m3u8
 #EXTINF:-1 tvg-name="小公视 [720P] [720P] [720P]" group-title="港台/国际",小公视 [720P] [720P] [720P] [720P]
 http://74.91.26.218:82/live/ptsse.m3u8
-#EXTINF:-1 tvg-name="广西国际 [1080P] [1080P]" group-title="港台/国际",广西国际 [1080P] [1080P] [1080P]
-http://hlscdn.liangtv.cn/live/0234c48e0bc24fe1b41b9999a253e581/1075ee38e04f490690f6a36a16e09c79.m3u8
 #EXTINF:-1 tvg-name="广西国际 [1080P] [1080P] [1080P]" group-title="港台/国际",广西国际 [1080P] [1080P] [1080P] [1080P]
 http://38.75.136.137:98/gslb/dsdqpub/gxgj.m3u8?auth=testpub
+#EXTINF:-1 tvg-name="广西国际 [1080P] [1080P]" group-title="港台/国际",广西国际 [1080P] [1080P] [1080P]
+http://hlscdn.liangtv.cn/live/0234c48e0bc24fe1b41b9999a253e581/1075ee38e04f490690f6a36a16e09c79.m3u8
 #EXTINF:-1 tvg-name="广西国际频道 [1080P] [1080P]" group-title="港台/国际",广西国际频道 [1080P] [1080P] [1080P]
 https://hlscdn.liangtv.cn/live/0234c48e0bc24fe1b41b9999a253e581/1075ee38e04f490690f6a36a16e09c79.m3u8#https://hlscdn.liangtv.cn/live/0234c48e0bc24fe1b41b9999a253e581/1075ee38e04f490690f6a36a16e09c79-1.m3u8
 #EXTINF:-1 tvg-name="星空卫视频道 [1080P] [1080P] [1080P]" group-title="港台/国际",星空卫视频道 [1080P] [1080P] [1080P] [1080P]
@@ -749,10 +749,10 @@ http://ali-m-l.cztv.com/channels/lantian/channel010/1080p.m3u8
 https://phoneal.qing.mgtv.com/nn_live/nn_x64/Y2RuZXhfaWQ9YWxfaGxzX2xkdnQmZT02OTE0NjA0JnY9MSZpZD1ITldTWkdTVCZzPTcwN2RiYTc2YzJjNmJmMTQ4MmUyZGYzOWU2NWM3YWFi/HNGJMPP360.m3u8
 #EXTINF:-1 tvg-name="纬来精彩频道 [720P] [720P] [720P]" group-title="港台/国际",纬来精彩频道 [720P] [720P] [720P] [720P]
 http://61.221.215.25:8800/hls/48/index.m3u8
-#EXTINF:-1 tvg-name="翡翠台 [1080P] [1080P] [1080P]" group-title="港台/国际",翡翠台 [1080P] [1080P] [1080P] [1080P]
-http://222.128.55.152:9080/live/gdfc.m3u8
 #EXTINF:-1 tvg-name="翡翠台 [576P] [576P] [576P]" group-title="港台/国际",翡翠台 [576P] [576P] [576P] [576P]
 http://120.198.95.220:9901/tsfile/live/1004_1.m3u8?key=txiptv
+#EXTINF:-1 tvg-name="翡翠台 [1080P] [1080P] [1080P]" group-title="港台/国际",翡翠台 [1080P] [1080P] [1080P] [1080P]
+http://222.128.55.152:9080/live/gdfc.m3u8
 #EXTINF:-1 tvg-name="靖天戏剧 [1080P] [1080P]" group-title="港台/国际",靖天戏剧 [1080P] [1080P] [1080P]
 http://serv00.bkpcp.top/litv3.php?id=4gtv-4gtv058
 #EXTINF:-1 tvg-name="韩国EBS+1 [360P] [360P] [360P]" group-title="港台/国际",韩国EBS+1 [360P] [360P] [360P] [360P]
@@ -767,12 +767,12 @@ http://webcast.hkstv.tv/livestream/mutfysrq/playlist.m3u8
 https://xn--vusr00g.v.nxog.top/m/tv/xjj.php?id=0
 #EXTINF:-1 tvg-name="北京体育休闲 [1080P] [1080P] [1080P]" group-title="北京频道",北京体育休闲 [1080P] [1080P] [1080P] [1080P]
 http://114.242.62.109:888/hls/22/index.m3u8
-#EXTINF:-1 tvg-name="北京卡酷少儿 [1080P] [1080P] [576P]" group-title="北京频道",北京卡酷少儿 [1080P] [1080P] [576P] [576P]
-http://107.150.60.122/live/btvkk.m3u8
 #EXTINF:-1 tvg-name="北京卡酷少儿 [1080P] [576P]" group-title="北京频道",北京卡酷少儿 [1080P] [576P] [576P]
 http://38.75.136.137:98/gslb/dsdqpub/btvkk.m3u8?auth=testpub
 #EXTINF:-1 tvg-name="北京卡酷少儿 [1080P] [720P] [576P]" group-title="北京频道",北京卡酷少儿 [1080P] [720P] [576P] [576P]
 http://192.151.150.154/live/btvkk.m3u8
+#EXTINF:-1 tvg-name="北京卡酷少儿 [1080P] [1080P] [576P]" group-title="北京频道",北京卡酷少儿 [1080P] [1080P] [576P] [576P]
+http://107.150.60.122/live/btvkk.m3u8
 #EXTINF:-1 tvg-name="北京影视 [1080P] [1080P] [1080P]" group-title="北京频道",北京影视 [1080P] [1080P] [1080P] [1080P]
 http://114.242.62.109:888/hls/20/index.m3u8
 #EXTINF:-1 tvg-name="北京新闻 [1080P] [1080P] [1080P]" group-title="北京频道",北京新闻 [1080P] [1080P] [1080P] [1080P]
@@ -801,26 +801,26 @@ https://vip.ffzy-play.com/20221209/31648_db33ff93/index.m3u8
 http://pili-live-hls.wdit.com.cn/wditlive/8818dfe5f4df45ba9a3f32964d172fb2b6d3.m3u8
 #EXTINF:-1 tvg-name="天津体育 [720P] [720P]" group-title="天津频道",天津体育 [720P] [720P] [720P]
 http://192.151.150.154/live/tjtv5.m3u8#http://lanfenggood.cn:4022/udp/225.1.1.122:5002
-#EXTINF:-1 tvg-name="天津影视 [720P] [720P]" group-title="天津频道",天津影视 [720P] [720P] [720P]
-http://192.151.150.154/live/tjtv3.m3u8
 #EXTINF:-1 tvg-name="天津影视 [720P] [720P] [720P]" group-title="天津频道",天津影视 [720P] [720P] [720P] [720P]
 http://38.75.136.137:98/gslb/dsdqpub/tjtv3.m3u8?auth=testpub
-#EXTINF:-1 tvg-name="天津教育 [720P] [720P]" group-title="天津频道",天津教育 [720P] [720P] [720P]
-http://192.151.150.154/live/tjtv6.m3u8
+#EXTINF:-1 tvg-name="天津影视 [720P] [720P]" group-title="天津频道",天津影视 [720P] [720P] [720P]
+http://192.151.150.154/live/tjtv3.m3u8
 #EXTINF:-1 tvg-name="天津教育 [720P] [720P] [720P]" group-title="天津频道",天津教育 [720P] [720P] [720P] [720P]
 http://38.75.136.137:98/gslb/dsdqpub/tjtv6.m3u8?auth=testpub
-#EXTINF:-1 tvg-name="天津文艺 [720P] [720P]" group-title="天津频道",天津文艺 [720P] [720P] [720P]
-http://192.151.150.154/live/tjtv2.m3u8
+#EXTINF:-1 tvg-name="天津教育 [720P] [720P]" group-title="天津频道",天津教育 [720P] [720P] [720P]
+http://192.151.150.154/live/tjtv6.m3u8
 #EXTINF:-1 tvg-name="天津文艺 [720P] [720P] [720P]" group-title="天津频道",天津文艺 [720P] [720P] [720P] [720P]
 http://38.75.136.137:98/gslb/dsdqpub/tjtv2.m3u8?auth=testpub
-#EXTINF:-1 tvg-name="天津新闻 [720P] [720P]" group-title="天津频道",天津新闻 [720P] [720P] [720P]
-http://192.151.150.154/live/tjtv1.m3u8
+#EXTINF:-1 tvg-name="天津文艺 [720P] [720P]" group-title="天津频道",天津文艺 [720P] [720P] [720P]
+http://192.151.150.154/live/tjtv2.m3u8
 #EXTINF:-1 tvg-name="天津新闻 [720P] [720P] [720P]" group-title="天津频道",天津新闻 [720P] [720P] [720P] [720P]
 http://38.75.136.137:98/gslb/dsdqpub/tjtv1.m3u8?auth=testpub
-#EXTINF:-1 tvg-name="天津都市 [720P] [720P]" group-title="天津频道",天津都市 [720P] [720P] [720P]
-http://192.151.150.154/live/tjtv4.m3u8
+#EXTINF:-1 tvg-name="天津新闻 [720P] [720P]" group-title="天津频道",天津新闻 [720P] [720P] [720P]
+http://192.151.150.154/live/tjtv1.m3u8
 #EXTINF:-1 tvg-name="天津都市 [720P] [720P] [720P]" group-title="天津频道",天津都市 [720P] [720P] [720P] [720P]
 http://38.75.136.137:98/gslb/dsdqpub/tjtv4.m3u8?auth=testpub
+#EXTINF:-1 tvg-name="天津都市 [720P] [720P]" group-title="天津频道",天津都市 [720P] [720P] [720P]
+http://192.151.150.154/live/tjtv4.m3u8
 #EXTINF:-1 tvg-name="合川综合 [1080P] [1080P] [1080P]" group-title="重庆频道",合川综合 [1080P] [1080P] [1080P] [1080P]
 http://125.62.24.72:8030/ch0.m3u8?zzhongqd
 #EXTINF:-1 tvg-name="永川综合 [1080P] [1080P]" group-title="重庆频道",永川综合 [1080P] [1080P] [1080P]
@@ -837,38 +837,38 @@ http://tv.pull.hebtv.com:80/jishi/nongminpindao.m3u8?t=1893427200&k=f07ae1d5be12
 http://1.94.31.214/php/hebei.php?id=hbgg
 #EXTINF:-1 tvg-name="河北农民 [540P] [540P]" group-title="河北频道",河北农民 [540P] [540P] [540P]
 http://1.94.31.214/php/hebei.php?id=nmpd
+#EXTINF:-1 tvg-name="河北少儿 [540P] [540P] [540P]" group-title="河北频道",河北少儿 [540P] [540P] [540P] [540P]
+http://tv.pull.hebtv.com:80/jishi/shaoerkejiao.m3u8?t=1893427200&k=d4a455b288ebbc0f53903f4750372b0f
 #EXTINF:-1 tvg-name="河北少儿 [540P] [540P]" group-title="河北频道",河北少儿 [540P] [540P] [540P]
 http://1.94.31.214/php/hebei.php?id=sekj#http://tv.pull.hebtv.com:80/jishi/shaoerkejiao.m3u8?t=1893427200&k=d4a455b288ebbc0f53903f4750372b0f
 #EXTINF:-1 tvg-name="河北少儿 [540P] [540P]" group-title="河北频道",河北少儿 [540P] [540P] [540P]
 http://1.94.31.214/php/hebei.php?id=sekj
-#EXTINF:-1 tvg-name="河北少儿 [540P] [540P] [540P]" group-title="河北频道",河北少儿 [540P] [540P] [540P] [540P]
-http://tv.pull.hebtv.com:80/jishi/shaoerkejiao.m3u8?t=1893427200&k=d4a455b288ebbc0f53903f4750372b0f
 #EXTINF:-1 tvg-name="河北少儿科教 [540P] [540P]" group-title="河北频道",河北少儿科教 [540P] [540P] [540P]
 http://tv.pull.hebtv.com/jishi/shaoerkejiao.m3u8?t=1893427200&k=d4a455b288ebbc0f53903f4750372b0f#http://60.10.139.113:8801/hls/43/index.m3u8
+#EXTINF:-1 tvg-name="河北影视 [540P] [540P] [540P]" group-title="河北频道",河北影视 [540P] [540P] [540P] [540P]
+http://tv.pull.hebtv.com:80/jishi/yingshijupindao.m3u8?t=1893427200&k=2bbbb53c494c02c044ed8805c541df4e
 #EXTINF:-1 tvg-name="河北影视 [540P] [540P]" group-title="河北频道",河北影视 [540P] [540P] [540P]
 http://tv.pull.hebtv.com/jishi/yingshijupindao.m3u8?t=1893427200&k=2bbbb53c494c02c044ed8805c541df4e#http://1.94.31.214/php/hebei.php?id=hbys#http://120.211.62.180:8000/hls/22/index.m3u8#http://tv.pull.hebtv.com:80/jishi/yingshijupindao.m3u8?t=1893427200&k=2bbbb53c494c02c044ed8805c541df4e
 #EXTINF:-1 tvg-name="河北影视 [540P] [540P]" group-title="河北频道",河北影视 [540P] [540P] [540P]
 http://tv.pull.hebtv.com/jishi/yingshijupindao.m3u8?t=1893427200&k=2bbbb53c494c02c044ed8805c541df4e
 #EXTINF:-1 tvg-name="河北影视 [540P] [540P]" group-title="河北频道",河北影视 [540P] [540P] [540P]
 http://1.94.31.214/php/hebei.php?id=hbys
-#EXTINF:-1 tvg-name="河北影视 [540P] [540P] [540P]" group-title="河北频道",河北影视 [540P] [540P] [540P] [540P]
-http://tv.pull.hebtv.com:80/jishi/yingshijupindao.m3u8?t=1893427200&k=2bbbb53c494c02c044ed8805c541df4e
 #EXTINF:-1 tvg-name="河北影视剧 [540P] [540P]" group-title="河北频道",河北影视剧 [540P] [540P] [540P]
 https://tv1288.xyz/hbws.php?id=hbysj#https://tv1288.xyz/hbws.php?id=10516510​#http://60.10.139.113:8801/hls/42/index.m3u8
+#EXTINF:-1 tvg-name="河北经济 [540P] [540P] [540P]" group-title="河北频道",河北经济 [540P] [540P] [540P] [540P]
+http://tv.pull.hebtv.com:80/jishi/jingjishenghuo.m3u8?t=1893427200&k=ad907331c90d847d7e7ae51764d8a09a
 #EXTINF:-1 tvg-name="河北经济 [540P] [540P]" group-title="河北频道",河北经济 [540P] [540P] [540P]
 http://1.94.31.214/php/hebei.php?id=jjsh#http://120.211.62.180:8000/hls/20/index.m3u8#http://tv.pull.hebtv.com:80/jishi/jingjishenghuo.m3u8?t=1893427200&k=ad907331c90d847d7e7ae51764d8a09a
 #EXTINF:-1 tvg-name="河北经济 [540P] [540P]" group-title="河北频道",河北经济 [540P] [540P] [540P]
 http://1.94.31.214/php/hebei.php?id=jjsh
-#EXTINF:-1 tvg-name="河北经济 [540P] [540P] [540P]" group-title="河北频道",河北经济 [540P] [540P] [540P] [540P]
-http://tv.pull.hebtv.com:80/jishi/jingjishenghuo.m3u8?t=1893427200&k=ad907331c90d847d7e7ae51764d8a09a
 #EXTINF:-1 tvg-name="河北经济生活 [540P] [540P]" group-title="河北频道",河北经济生活 [540P] [540P] [540P]
 http://tv.pull.hebtv.com/jishi/jingjishenghuo.m3u8?t=1893427200&k=ad907331c90d847d7e7ae51764d8a09a#http://60.10.139.113:8801/hls/40/index.m3u8
+#EXTINF:-1 tvg-name="河北都市 [540P] [540P] [540P]" group-title="河北频道",河北都市 [540P] [540P] [540P] [540P]
+http://tv.pull.hebtv.com:80/jishi/dushipindao.m3u8?t=1893427200&k=49867ab5d80a7564abaf8ee18868992f
 #EXTINF:-1 tvg-name="河北都市 [540P] [540P]" group-title="河北频道",河北都市 [540P] [540P] [540P]
 http://1.94.31.214/php/hebei.php?id=hbds
 #EXTINF:-1 tvg-name="河北都市 [540P] [540P]" group-title="河北频道",河北都市 [540P] [540P] [540P]
 https://tv1288.xyz/hbws.php?id=hbds#https://tv1288.xyz/hbws.php?id=10516509​#http://tv.pull.hebtv.com/jishi/dushipindao.m3u8?t=1893427200&k=49867ab5d80a7564abaf8ee18868992f#http://1.94.31.214/php/hebei.php?id=hbds#http://120.211.62.180:8000/hls/21/index.m3u8#http://60.10.139.113:8801/hls/41/index.m3u8#http://tv.pull.hebtv.com:80/jishi/dushipindao.m3u8?t=1893427200&k=49867ab5d80a7564abaf8ee18868992f
-#EXTINF:-1 tvg-name="河北都市 [540P] [540P] [540P]" group-title="河北频道",河北都市 [540P] [540P] [540P] [540P]
-http://tv.pull.hebtv.com:80/jishi/dushipindao.m3u8?t=1893427200&k=49867ab5d80a7564abaf8ee18868992f
 #EXTINF:-1 tvg-name="衡水新闻综合[1920*1080] [1080P] [1080P]" group-title="河北频道",衡水新闻综合[1920*1080] [1080P] [1080P] [1080P]
 https://tvfile.hscmw.cn:443/live/hshstv1.m3u8
 #EXTINF:-1 tvg-name="衡水经济科教[1920*1080] [1080P] [1080P]" group-title="河北频道",衡水经济科教[1920*1080] [1080P] [1080P] [1080P]
@@ -919,12 +919,12 @@ https://srs.beijihainews.com.cn/video/jinzhou1/index.m3u8
 https://srs.beijihainews.com.cn/video/jinzhou2/index.m3u8
 #EXTINF:-1 tvg-name="吉林市综合 [576P] [576P]" group-title="吉林频道",吉林市综合 [576P] [576P] [576P]
 http://stream2.jlntv.cn:80/jilin1/sd/live.m3u8
-#EXTINF:-1 tvg-name="吉林生活 [576P] [576P]" group-title="吉林频道",吉林生活 [576P] [576P] [576P]
-http://63.141.230.178:82/gslb/zbdq5.m3u8?id=jlsh
 #EXTINF:-1 tvg-name="吉林生活 [576P] [576P] [576P]" group-title="吉林频道",吉林生活 [576P] [576P] [576P] [576P]
 http://192.151.150.154/live/jlsh.m3u8
 #EXTINF:-1 tvg-name="吉林生活 [576P] [576P] [576P]" group-title="吉林频道",吉林生活 [576P] [576P] [576P] [576P]
 http://198.204.228.26/live/jlsh.m3u8
+#EXTINF:-1 tvg-name="吉林生活 [576P] [576P]" group-title="吉林频道",吉林生活 [576P] [576P] [576P]
+http://63.141.230.178:82/gslb/zbdq5.m3u8?id=jlsh
 #EXTINF:-1 tvg-name="吉林纪录片轮播 [1080P] [1080P] [1080P]" group-title="吉林频道",吉林纪录片轮播 [1080P] [1080P] [1080P] [1080P]
 http://lsfb.avap.jilintv.cn/zqvk7vpj/channel/da805d8d77a24db8aaa62328eb6d874e/index.m3u8
 #EXTINF:-1 tvg-name="吉林综艺文化 [576P] [576P] [576P]" group-title="吉林频道",吉林综艺文化 [576P] [576P] [576P] [576P]
@@ -941,24 +941,24 @@ https://srs.iyb983.cn/video/ybtv2/index.m3u8
 http://stream8.jlntv.cn/dhtv/playlist.m3u8
 #EXTINF:-1 tvg-name="松原公共频道 [576P] [720P]" group-title="吉林频道",松原公共频道 [576P] [720P] [720P]
 http://stream8.jlntv.cn/sytv2/sd/live.m3u8
-#EXTINF:-1 tvg-name="桦甸综合 [576P] [576P]" group-title="吉林频道",桦甸综合 [576P] [576P] [576P]
-http://stream10.jlntv.cn/huadian/sd/live.m3u8#http://stream9.jlntv.cn:80/aac_huadiangb/playlist.m3u8
 #EXTINF:-1 tvg-name="桦甸综合 [576P] [576P] [576P]" group-title="吉林频道",桦甸综合 [576P] [576P] [576P] [576P]
 http://stream10.jlntv.cn/huadian/sd/live.m3u8
 #EXTINF:-1 tvg-name="桦甸综合 [576P] [576P] [576P]" group-title="吉林频道",桦甸综合 [576P] [576P] [576P] [576P]
 http://stream10.jlntv.cn/huadian/playlist.m3u8
+#EXTINF:-1 tvg-name="桦甸综合 [576P] [576P]" group-title="吉林频道",桦甸综合 [576P] [576P] [576P]
+http://stream10.jlntv.cn/huadian/sd/live.m3u8#http://stream9.jlntv.cn:80/aac_huadiangb/playlist.m3u8
 #EXTINF:-1 tvg-name="白城 [576P] [576P]" group-title="吉林频道",白城 [576P] [576P] [576P]
 https://stream2.jlntv.cn/baicheng1/sd/live.m3u8
 #EXTINF:-1 tvg-name="白山 [576P] [576P]" group-title="吉林频道",白山 [576P] [576P] [576P]
 https://stream2.jlntv.cn/baishan1/sd/live.m3u8
 #EXTINF:-1 tvg-name="白山公共 [576P] [576P] [576P]" group-title="吉林频道",白山公共 [576P] [576P] [576P] [576P]
 http://stream8.jlntv.cn/baishan2/playlist.m3u8?zjild
-#EXTINF:-1 tvg-name="磐石综合 [576P] [576P]" group-title="吉林频道",磐石综合 [576P] [576P] [576P]
-http://stream5.jlntv.cn/ps/sd/live.m3u8#http://stream3.jlntv.cn:80/aac_psgb/sd/live.m3u8
 #EXTINF:-1 tvg-name="磐石综合 [576P] [576P] [576P]" group-title="吉林频道",磐石综合 [576P] [576P] [576P] [576P]
 http://stream5.jlntv.cn/ps/sd/live.m3u8
 #EXTINF:-1 tvg-name="磐石综合 [576P] [576P] [576P]" group-title="吉林频道",磐石综合 [576P] [576P] [576P] [576P]
 http://stream5.jlntv.cn/ps/playlist.m3u8
+#EXTINF:-1 tvg-name="磐石综合 [576P] [576P]" group-title="吉林频道",磐石综合 [576P] [576P] [576P]
+http://stream5.jlntv.cn/ps/sd/live.m3u8#http://stream3.jlntv.cn:80/aac_psgb/sd/live.m3u8
 #EXTINF:-1 tvg-name="舒兰综合 [576P] [576P] [576P]" group-title="吉林频道",舒兰综合 [576P] [576P] [576P] [576P]
 http://stream8.jlntv.cn/shulan/sd/live.m3u8
 #EXTINF:-1 tvg-name="舒兰综合 [576P] [576P] [576P]" group-title="吉林频道",舒兰综合 [576P] [576P] [576P] [576P]
@@ -967,10 +967,10 @@ http://stream8.jlntv.cn/shulan/playlist.m3u8
 https://lsfb.avap.jilintv.cn/zqvk7vpj/channel/43ea5771aa44421591f9dfd2b71f1b9b/index.m3u8#https://stream2.jlntv.cn/tonghua1/sd/live.m3u8
 #EXTINF:-1 tvg-name="通化县综合 [240P] [240P] [240P]" group-title="吉林频道",通化县综合 [240P] [240P] [240P] [240P]
 http://stream5.jlntv.cn/thx/playlist.m3u8
-#EXTINF:-1 tvg-name="通化综合 [240P] [240P]" group-title="吉林频道",通化综合 [240P] [240P] [240P]
-http://stream5.jlntv.cn/thx/sd/live.m3u8#http://stream5.jlntv.cn/thx/sd/live.m3u8?zjild
 #EXTINF:-1 tvg-name="通化综合 [240P] [240P] [240P]" group-title="吉林频道",通化综合 [240P] [240P] [240P] [240P]
 http://stream5.jlntv.cn/thx/sd/live.m3u8
+#EXTINF:-1 tvg-name="通化综合 [240P] [240P]" group-title="吉林频道",通化综合 [240P] [240P] [240P]
+http://stream5.jlntv.cn/thx/sd/live.m3u8#http://stream5.jlntv.cn/thx/sd/live.m3u8?zjild
 #EXTINF:-1 tvg-name="长春 [576P] [576P]" group-title="吉林频道",长春 [576P] [576P] [576P]
 https://stream2.jlntv.cn/jlcc/sd/live.m3u8
 #EXTINF:-1 tvg-name="长春九台区 [576P] [576P]" group-title="吉林频道",长春九台区 [576P] [576P] [576P]
@@ -985,10 +985,10 @@ http://stream2.jlntv.cn/jlcc/sd/live.m3u8
 https://p2hs.vzan.com/slowlive/164981377219303011/live.m3u8
 #EXTINF:-1 tvg-name="长白山综合 [240P] [240P] [240P]" group-title="吉林频道",长白山综合 [240P] [240P] [240P] [240P]
 http://stream8.jlntv.cn/cbstv/playlist.m3u8
-#EXTINF:-1 tvg-name="七台河新闻综合 [720P] [720P]" group-title="黑龙江频道",七台河新闻综合 [720P] [720P] [720P]
-http://live.qthnews.org.cn:1935/live/live1/800k/tzwj_video.m3u8
 #EXTINF:-1 tvg-name="七台河新闻综合 [720P] [720P] [720P]" group-title="黑龙江频道",七台河新闻综合 [720P] [720P] [720P] [720P]
 https://masterpull.hljtv.com/live/9FZ7k2XF.m3u8
+#EXTINF:-1 tvg-name="七台河新闻综合 [720P] [720P]" group-title="黑龙江频道",七台河新闻综合 [720P] [720P] [720P]
+http://live.qthnews.org.cn:1935/live/live1/800k/tzwj_video.m3u8
 #EXTINF:-1 tvg-name="七台河社教 [720P] [720P]" group-title="黑龙江频道",七台河社教 [720P] [720P] [720P]
 http://live.qthnews.org.cn:1935/live/live2/800k/tzwj_video.m3u8
 #EXTINF:-1 tvg-name="哈尔滨 [480P] [480P]" group-title="黑龙江频道",哈尔滨 [480P] [480P] [480P]
@@ -997,12 +997,12 @@ https://stream.hrbtv.net/xwzh/playlist.m3u8?_upt=ef41dd531755913594
 https://stream.hrbtv.net/ylpd/sd/live.m3u8#http://stream.hrbtv.net/ylpd/sd/live.m3u8
 #EXTINF:-1 tvg-name="哈尔滨娱乐频道 [480P] [480P] [480P]" group-title="黑龙江频道",哈尔滨娱乐频道 [480P] [480P] [480P] [480P]
 http://stream.hrbtv.net/ylpd/sd/live.m3u8
+#EXTINF:-1 tvg-name="哈尔滨影视 [480P] [480P] [480P]" group-title="黑龙江频道",哈尔滨影视 [480P] [480P] [480P] [480P]
+https://stream.hrbtv.net/yspd/sd/live.m3u8
 #EXTINF:-1 tvg-name="哈尔滨影视 [480P] [480P]" group-title="黑龙江频道",哈尔滨影视 [480P] [480P] [480P]
 https://stream.hrbtv.net/yspd/playlist.m3u8#https://stream.hrbtv.net/yspd/sd/live.m3u8
 #EXTINF:-1 tvg-name="哈尔滨影视 [480P] [480P]" group-title="黑龙江频道",哈尔滨影视 [480P] [480P] [480P]
 https://stream.hrbtv.net/yspd/playlist.m3u8
-#EXTINF:-1 tvg-name="哈尔滨影视 [480P] [480P] [480P]" group-title="黑龙江频道",哈尔滨影视 [480P] [480P] [480P] [480P]
-https://stream.hrbtv.net/yspd/sd/live.m3u8
 #EXTINF:-1 tvg-name="哈尔滨影视频道 [480P] [480P] [480P]" group-title="黑龙江频道",哈尔滨影视频道 [480P] [480P] [480P] [480P]
 http://stream.hrbtv.net/yspd/sd/live.m3u8
 #EXTINF:-1 tvg-name="哈尔滨新闻综合频道 [480P] [480P] [480P]" group-title="黑龙江频道",哈尔滨新闻综合频道 [480P] [480P] [480P] [480P]
@@ -1021,64 +1021,64 @@ http://stream.hrbtv.net/zxpd/sd/live.m3u8?zheild
 http://cstvplay.21cs.cn/cstv1/cstv1.flv
 #EXTINF:-1 tvg-name="张家港民生 [720P] [720P]" group-title="江苏频道",张家港民生 [720P] [720P] [720P]
 http://3gvod.zjgonline.com.cn:1935/live/_definst_/shehuishenghuo_app/chunklist.m3u8
-#EXTINF:-1 tvg-name="无锡娱乐 [720P] [720P]" group-title="江苏频道",无锡娱乐 [720P] [720P] [720P]
-http://stream.thmz.com/wxtv2/sd/live.m3u8?_upt=978cd8731706199708
-#EXTINF:-1 tvg-name="无锡娱乐 [720P] [720P]" group-title="江苏频道",无锡娱乐 [720P] [720P] [720P]
-http://stream.thmz.com/wxtv2/sd/live.m3u8?_upt=081040171706199780#http://stream.thmz.com/wxtv2/playlist.m3u8#http://stream.thmz.com/wxtv2/sd/live.m3u8?_upt=acffe97a1704940314#http://stream.thmz.com/wxtv2/sd/live.m3u8?zjiangsd
 #EXTINF:-1 tvg-name="无锡娱乐 [720P] [720P] [720P]" group-title="江苏频道",无锡娱乐 [720P] [720P] [720P] [720P]
 http://stream.thmz.com/wxtv2/sd/live.m3u8?_upt=081040171706199780
 #EXTINF:-1 tvg-name="无锡娱乐 [720P] [720P] [720P]" group-title="江苏频道",无锡娱乐 [720P] [720P] [720P] [720P]
 http://stream.thmz.com/wxtv2/sd/live.m3u8?_upt=acffe97a1704940314
 #EXTINF:-1 tvg-name="无锡娱乐 [720P] [720P] [720P]" group-title="江苏频道",无锡娱乐 [720P] [720P] [720P] [720P]
 http://stream.thmz.com/wxtv2/sd/live.m3u8?zjiangsd
+#EXTINF:-1 tvg-name="无锡娱乐 [720P] [720P]" group-title="江苏频道",无锡娱乐 [720P] [720P] [720P]
+http://stream.thmz.com/wxtv2/sd/live.m3u8?_upt=978cd8731706199708
+#EXTINF:-1 tvg-name="无锡娱乐 [720P] [720P]" group-title="江苏频道",无锡娱乐 [720P] [720P] [720P]
+http://stream.thmz.com/wxtv2/sd/live.m3u8?_upt=081040171706199780#http://stream.thmz.com/wxtv2/playlist.m3u8#http://stream.thmz.com/wxtv2/sd/live.m3u8?_upt=acffe97a1704940314#http://stream.thmz.com/wxtv2/sd/live.m3u8?zjiangsd
 #EXTINF:-1 tvg-name="无锡娱乐频道 [720P] [720P] [720P]" group-title="江苏频道",无锡娱乐频道 [720P] [720P] [720P] [720P]
 http://stream.thmz.com/wxtv2/playlist.m3u8?_upt=22c8ae641707368797
-#EXTINF:-1 tvg-name="无锡新闻综合 [1080P] [1080P]" group-title="江苏频道",无锡新闻综合 [1080P] [1080P] [1080P]
-http://stream.thmz.com/wxtv1/playlist.m3u8?_upt=156143371706166361
 #EXTINF:-1 tvg-name="无锡新闻综合 [1080P] [1080P] [1080P]" group-title="江苏频道",无锡新闻综合 [1080P] [1080P] [1080P] [1080P]
 http://stream.thmz.com/wxtv1/sd/live.m3u8?zjiangsd
 #EXTINF:-1 tvg-name="无锡新闻综合 [1080P] [1080P] [1080P]" group-title="江苏频道",无锡新闻综合 [1080P] [1080P] [1080P] [1080P]
 http://stream.thmz.com/wxtv1/playlist.m3u8
+#EXTINF:-1 tvg-name="无锡新闻综合 [1080P] [1080P]" group-title="江苏频道",无锡新闻综合 [1080P] [1080P] [1080P]
+http://stream.thmz.com/wxtv1/playlist.m3u8?_upt=156143371706166361
 #EXTINF:-1 tvg-name="无锡新闻综合频道 [1080P] [1080P] [1080P]" group-title="江苏频道",无锡新闻综合频道 [1080P] [1080P] [1080P] [1080P]
 http://stream.thmz.com/wxtv1/playlist.m3u8?_upt=b27ac8431707368778
-#EXTINF:-1 tvg-name="无锡生活 [720P] [720P]" group-title="江苏频道",无锡生活 [720P] [720P] [1080P]
-http://stream.thmz.com/wxtv4/sd/live.m3u8?_upt=95a5f0d51706199864#http://stream.thmz.com/wxtv4/sd/live.m3u8?_upt=968c13b81704871272#http://stream.thmz.com/wxtv4/sd/live.m3u8#http://stream.thmz.com/wxtv4/sd/live.m3u8?zjiangsd
-#EXTINF:-1 tvg-name="无锡生活 [720P] [720P]" group-title="江苏频道",无锡生活 [720P] [720P] [1080P]
-http://stream.thmz.com/wxtv4/playlist.m3u8
 #EXTINF:-1 tvg-name="无锡生活 [720P] [720P] [720P]" group-title="江苏频道",无锡生活 [720P] [720P] [720P] [1080P]
 http://stream.thmz.com/wxtv4/sd/live.m3u8?_upt=968c13b81704871272
 #EXTINF:-1 tvg-name="无锡生活 [720P] [720P] [720P]" group-title="江苏频道",无锡生活 [720P] [720P] [720P] [1080P]
 http://stream.thmz.com/wxtv4/sd/live.m3u8?zjiangsd
 #EXTINF:-1 tvg-name="无锡生活 [720P] [720P] [720P]" group-title="江苏频道",无锡生活 [720P] [720P] [720P] [1080P]
 http://stream.thmz.com/wxtv4/sd/live.m3u8?_upt=95a5f0d51706199864
-#EXTINF:-1 tvg-name="无锡生活频道 [720P] [720P]" group-title="江苏频道",无锡生活频道 [720P] [720P] [1080P]
-https://stream.thmz.com/wxtv4/playlist.m3u8
+#EXTINF:-1 tvg-name="无锡生活 [720P] [720P]" group-title="江苏频道",无锡生活 [720P] [720P] [1080P]
+http://stream.thmz.com/wxtv4/sd/live.m3u8?_upt=95a5f0d51706199864#http://stream.thmz.com/wxtv4/sd/live.m3u8?_upt=968c13b81704871272#http://stream.thmz.com/wxtv4/sd/live.m3u8#http://stream.thmz.com/wxtv4/sd/live.m3u8?zjiangsd
+#EXTINF:-1 tvg-name="无锡生活 [720P] [720P]" group-title="江苏频道",无锡生活 [720P] [720P] [1080P]
+http://stream.thmz.com/wxtv4/playlist.m3u8
 #EXTINF:-1 tvg-name="无锡生活频道 [720P] [720P] [720P]" group-title="江苏频道",无锡生活频道 [720P] [720P] [720P] [1080P]
 http://stream.thmz.com/wxtv4/playlist.m3u8?_upt=8c51357c1707362770
+#EXTINF:-1 tvg-name="无锡生活频道 [720P] [720P]" group-title="江苏频道",无锡生活频道 [720P] [720P] [1080P]
+https://stream.thmz.com/wxtv4/playlist.m3u8
 #EXTINF:-1 tvg-name="无锡移动 [576P] [576P] [576P]" group-title="江苏频道",无锡移动 [576P] [576P] [576P] [576P]
 http://m.m3u8.wifiwx.com/live/wifiwx-494.m3u8
-#EXTINF:-1 tvg-name="无锡经济 [720P] [720P]" group-title="江苏频道",无锡经济 [720P] [720P] [720P]
-http://stream.thmz.com/wxtv5/sd/live.m3u8?_upt=31414f601706199828#http://stream.thmz.com/wxtv5/playlist.m3u8#http://stream.thmz.com/wxtv5/sd/live.m3u8?_upt=cfacd5221704890772#http://stream.thmz.com/wxtv5/sd/live.m3u8?zjiangsd
-#EXTINF:-1 tvg-name="无锡经济 [720P] [720P]" group-title="江苏频道",无锡经济 [720P] [720P] [720P]
-http://stream.thmz.com/wxtv5/sd/live.m3u8?zjiangsd#http://stream.thmz.com/wxtv5/playlist.m3u8?_upt=10155d141706166867
 #EXTINF:-1 tvg-name="无锡经济 [720P] [720P] [720P]" group-title="江苏频道",无锡经济 [720P] [720P] [720P] [720P]
 http://stream.thmz.com/wxtv5/sd/live.m3u8?zjiangsd
 #EXTINF:-1 tvg-name="无锡经济 [720P] [720P] [720P]" group-title="江苏频道",无锡经济 [720P] [720P] [720P] [720P]
 http://stream.thmz.com/wxtv5/sd/live.m3u8?_upt=31414f601706199828
 #EXTINF:-1 tvg-name="无锡经济 [720P] [720P] [720P]" group-title="江苏频道",无锡经济 [720P] [720P] [720P] [720P]
 http://stream.thmz.com/wxtv5/sd/live.m3u8?_upt=cfacd5221704890772
-#EXTINF:-1 tvg-name="无锡经济频道 [720P] [720P]" group-title="江苏频道",无锡经济频道 [720P] [720P] [720P]
-https://stream.thmz.com/wxtv5/playlist.m3u8
+#EXTINF:-1 tvg-name="无锡经济 [720P] [720P]" group-title="江苏频道",无锡经济 [720P] [720P] [720P]
+http://stream.thmz.com/wxtv5/sd/live.m3u8?_upt=31414f601706199828#http://stream.thmz.com/wxtv5/playlist.m3u8#http://stream.thmz.com/wxtv5/sd/live.m3u8?_upt=cfacd5221704890772#http://stream.thmz.com/wxtv5/sd/live.m3u8?zjiangsd
+#EXTINF:-1 tvg-name="无锡经济 [720P] [720P]" group-title="江苏频道",无锡经济 [720P] [720P] [720P]
+http://stream.thmz.com/wxtv5/sd/live.m3u8?zjiangsd#http://stream.thmz.com/wxtv5/playlist.m3u8?_upt=10155d141706166867
 #EXTINF:-1 tvg-name="无锡经济频道 [720P] [720P] [720P]" group-title="江苏频道",无锡经济频道 [720P] [720P] [720P] [720P]
 http://stream.thmz.com/wxtv5/playlist.m3u8?_upt=2e07387a1707368071
+#EXTINF:-1 tvg-name="无锡经济频道 [720P] [720P]" group-title="江苏频道",无锡经济频道 [720P] [720P] [720P]
+https://stream.thmz.com/wxtv5/playlist.m3u8
 #EXTINF:-1 tvg-name="无锡综合 [1080P] [1080P] [1080P]" group-title="江苏频道",无锡综合 [1080P] [1080P] [1080P] [1080P]
 http://stream.thmz.com/wxtv1/playlist.m3u8?_upt=df50c8ad1706195780
-#EXTINF:-1 tvg-name="无锡都市 [720P] [720P]" group-title="江苏频道",无锡都市 [720P] [720P] [720P]
-http://stream.thmz.com/wxtv3/playlist.m3u8#http://stream.thmz.com/wxtv3/sd/live.m3u8?zjiangsd#http://stream.thmz.com/wxtv3/sd/live.m3u8?_upt=978cd8731706199708
 #EXTINF:-1 tvg-name="无锡都市 [720P] [720P] [720P]" group-title="江苏频道",无锡都市 [720P] [720P] [720P] [720P]
 http://stream.thmz.com/wxtv3/sd/live.m3u8?_upt=978cd8731706199708
 #EXTINF:-1 tvg-name="无锡都市 [720P] [720P] [720P]" group-title="江苏频道",无锡都市 [720P] [720P] [720P] [720P]
 http://stream.thmz.com/wxtv3/sd/live.m3u8?zjiangsd
+#EXTINF:-1 tvg-name="无锡都市 [720P] [720P]" group-title="江苏频道",无锡都市 [720P] [720P] [720P]
+http://stream.thmz.com/wxtv3/playlist.m3u8#http://stream.thmz.com/wxtv3/sd/live.m3u8?zjiangsd#http://stream.thmz.com/wxtv3/sd/live.m3u8?_upt=978cd8731706199708
 #EXTINF:-1 tvg-name="无锡都市资讯 [720P] [720P] [720P]" group-title="江苏频道",无锡都市资讯 [720P] [720P] [720P] [720P]
 http://stream.thmz.com/wxtv3/playlist.m3u8
 #EXTINF:-1 tvg-name="无锡都市资讯频道 [720P] [720P] [720P]" group-title="江苏频道",无锡都市资讯频道 [720P] [720P] [720P] [720P]
@@ -1105,10 +1105,10 @@ https://live-auth.51kandianshi.com/szgd/csztv5.m3u8
 http://zjtv-wshls.homecdn.com/live/2aa50.m3u8?wsSession=6db346fad039327b1223d983-171280258830822&wsIPSercert=0f540f265a90d9637de4bfc98dba8554
 #EXTINF:-1 tvg-name="镇江2套 [1080P] [1080P]" group-title="江苏频道",镇江2套 [1080P] [1080P] [1080P]
 http://zjtv-wshls.homecdn.com/live/2aa16.m3u8?wsSession=7525bc2371fef9193fbdbeb8-171280267129975&wsIPSercert=0f540f265a90d9637de4bfc98dba8554
-#EXTINF:-1 tvg-name="镇江新闻综合 [1080P] [1080P]" group-title="江苏频道",镇江新闻综合 [1080P] [1080P] [1080P]
-http://cm-wshls.homecdn.com/live/2aa50.m3u8#http://zjtv-wshls.homecdn.com/live/2aa50.m3u8
 #EXTINF:-1 tvg-name="镇江新闻综合 [1080P] [1080P] [1080P]" group-title="江苏频道",镇江新闻综合 [1080P] [1080P] [1080P] [1080P]
 http://zjtv-wshls.homecdn.com/live/2aa50.m3u8
+#EXTINF:-1 tvg-name="镇江新闻综合 [1080P] [1080P]" group-title="江苏频道",镇江新闻综合 [1080P] [1080P] [1080P]
+http://cm-wshls.homecdn.com/live/2aa50.m3u8#http://zjtv-wshls.homecdn.com/live/2aa50.m3u8
 #EXTINF:-1 tvg-name="镇江民生 [1080P] [1080P] [1080P]" group-title="江苏频道",镇江民生 [1080P] [1080P] [1080P] [1080P]
 http://zjtv-wshls.homecdn.com/live/2aa16.m3u8?wsSession=25eac7fcbe9d822bf028ffc8-170493717234726&wsIPSercert=f56bd6194d219a5172dbed60eca6e9b0
 #EXTINF:-1 tvg-name="镇江民生 [1080P] [1080P] [1080P]" group-title="江苏频道",镇江民生 [1080P] [1080P] [1080P] [1080P]
@@ -1117,10 +1117,10 @@ http://zjtv-wshls.homecdn.com/live/2aa16.m3u8
 http://zjtv-wshls.homecdn.com/live/2aa50.m3u8?wsSession=a263bdc5a26cd01b57a80359-170493712215358&wsIPSercert=f56bd6194d219a5172dbed60eca6e9b0
 #EXTINF:-1 tvg-name="上虞文化影视频道 [1080P] [1080P] [1080P]" group-title="浙江频道",上虞文化影视频道 [1080P] [1080P] [1080P] [1080P]
 http://l.cztvcloud.com/channels/lantian/SXshangyu2/720p.m3u8
-#EXTINF:-1 tvg-name="上虞新商都 [1080P] [1080P]" group-title="浙江频道",上虞新商都 [1080P] [1080P] [1080P]
-http://l.cztvcloud.com/channels/lantian/SXshangyu3/720p.m3u8?zzhed#http://l.cztvcloud.com/channels/lantian/SXshangyu3/720p.m3u8
 #EXTINF:-1 tvg-name="上虞新商都 [1080P] [1080P] [1080P]" group-title="浙江频道",上虞新商都 [1080P] [1080P] [1080P] [1080P]
 http://l.cztvcloud.com/channels/lantian/SXshangyu3/720p.m3u8?zzhed
+#EXTINF:-1 tvg-name="上虞新商都 [1080P] [1080P]" group-title="浙江频道",上虞新商都 [1080P] [1080P] [1080P]
+http://l.cztvcloud.com/channels/lantian/SXshangyu3/720p.m3u8?zzhed#http://l.cztvcloud.com/channels/lantian/SXshangyu3/720p.m3u8
 #EXTINF:-1 tvg-name="上虞新闻综合 [1080P] [1080P] [1080P]" group-title="浙江频道",上虞新闻综合 [1080P] [1080P] [1080P] [1080P]
 http://l.cztvcloud.com/channels/lantian/SXshangyu1/720p.m3u8?zzhed
 #EXTINF:-1 tvg-name="临平新闻综合频道 [720P] [720P] [720P]" group-title="浙江频道",临平新闻综合频道 [720P] [720P] [720P] [720P]
@@ -1129,10 +1129,10 @@ http://l.cztvcloud.com/channels/lantian/SXyuhang2/720p.m3u8
 https://ali-xwl.cztv.com:443/live/lishuids.m3u8
 #EXTINF:-1 tvg-name="丽水遂昌综合 [1080P] [1080P] [1080P]" group-title="浙江频道",丽水遂昌综合 [1080P] [1080P] [1080P] [1080P]
 http://l.cztvcloud.com/channels/lantian/SXsuichang1/720p.m3u8
-#EXTINF:-1 tvg-name="余姚姚江文化 [1080P] [1080P] [1080P]" group-title="浙江频道",余姚姚江文化 [1080P] [1080P] [1080P] [1080P]
-https://l.cztvcloud.com/channels/lantian/SXyuyao2/720p.m3u8
 #EXTINF:-1 tvg-name="余姚姚江文化 [576P] [576P]" group-title="浙江频道",余姚姚江文化 [576P] [576P] [576P]
 https://l.cztvcloud.com/channels/lantian/SXyuyao3/720p.m3u8#https://l.cztvcloud.com/channels/lantian/SXyuyao2/720p.m3u8#http://l.cztvcloud.com/channels/lantian/SXyuyao3/720p.m3u8zzhed
+#EXTINF:-1 tvg-name="余姚姚江文化 [1080P] [1080P] [1080P]" group-title="浙江频道",余姚姚江文化 [1080P] [1080P] [1080P] [1080P]
+https://l.cztvcloud.com/channels/lantian/SXyuyao2/720p.m3u8
 #EXTINF:-1 tvg-name="余姚姚江文化频道 [576P] [576P] [576P]" group-title="浙江频道",余姚姚江文化频道 [576P] [576P] [576P] [576P]
 http://l.cztvcloud.com/channels/lantian/SXyuyao3/720p.m3u8
 #EXTINF:-1 tvg-name="余姚新闻综合 [1080P] [1080P] [1080P]" group-title="浙江频道",余姚新闻综合 [1080P] [1080P] [1080P] [1080P]
@@ -1159,18 +1159,18 @@ https://ali-xwl.cztv.com/live/channel121080Plxw.m3u8
 http://ali-m-l.cztv.com/channels/lantian/channel006/720p.m3u8
 #EXTINF:-1 tvg-name="浙江公共新闻 [1080P] [1080P]" group-title="浙江频道",浙江公共新闻 [1080P] [1080P] [1080P]
 http://ali-m-l.cztv.com/channels/lantian/channel07/1080p.m3u8
-#EXTINF:-1 tvg-name="浙江少儿 [1080P] [1080P]" group-title="浙江频道",浙江少儿 [1080P] [1080P] [1080P]
-http://ali-m-l.cztv.com/channels/lantian/channel008/1080p.m3u8?fbl=#migu5://611318244#https://ali-m-l.cztv.com/channels/lantian/channel008/1080p.m3u8?#http://ali-vl.cztv.com/channels/lantian/channel008/360p.m3u8#http://ali-m-l.cztv.com/channels/lantian/channel008/1080p.m3u8?fbl=
-#EXTINF:-1 tvg-name="浙江少儿 [1080P] [1080P]" group-title="浙江频道",浙江少儿 [1080P] [1080P] [1080P]
-https://ali-m-l.cztv.com/channels/lantian/channel008/1080p.m3u8#http://ali-m-l.cztv.com/channels/lantian/channel008/1080p.m3u8#http://ali-vl.cztv.com/channels/lantian/channel008/360p.m3u8#https://ali-m-l.cztv.com/channels/lantian/channel008/1080p.m3u8?
-#EXTINF:-1 tvg-name="浙江少儿 [1080P] [1080P]" group-title="浙江频道",浙江少儿 [1080P] [1080P] [1080P]
-https://ali-xwl.cztv.com/live/channel081080Plxw.m3u8#https://zwebl02.cztv.com/live/channel081080Pnew.m3u8?auth_key=2524708799-ca798ce95dda85537a46f2eb5be537be-0-668e5a5a00e74f14f426cc55210a4ff9
 #EXTINF:-1 tvg-name="浙江少儿 [1080P] [1080P] [1080P]" group-title="浙江频道",浙江少儿 [1080P] [1080P] [1080P] [1080P]
 http://ali-m-l.cztv.com/channels/lantian/channel008/1080p.m3u8
 #EXTINF:-1 tvg-name="浙江少儿 [1080P] [1080P] [1080P]" group-title="浙江频道",浙江少儿 [1080P] [1080P] [1080P] [1080P]
 https://ali-m-l.cztv.com/channels/lantian/channel008/1080p.m3u8
 #EXTINF:-1 tvg-name="浙江少儿 [1080P] [1080P] [1080P]" group-title="浙江频道",浙江少儿 [1080P] [1080P] [1080P] [1080P]
 https://ali-m-l.cztv.com/channels/lantian/channel008/1080p.m3u8?
+#EXTINF:-1 tvg-name="浙江少儿 [1080P] [1080P]" group-title="浙江频道",浙江少儿 [1080P] [1080P] [1080P]
+http://ali-m-l.cztv.com/channels/lantian/channel008/1080p.m3u8?fbl=#migu5://611318244#https://ali-m-l.cztv.com/channels/lantian/channel008/1080p.m3u8?#http://ali-vl.cztv.com/channels/lantian/channel008/360p.m3u8#http://ali-m-l.cztv.com/channels/lantian/channel008/1080p.m3u8?fbl=
+#EXTINF:-1 tvg-name="浙江少儿 [1080P] [1080P]" group-title="浙江频道",浙江少儿 [1080P] [1080P] [1080P]
+https://ali-m-l.cztv.com/channels/lantian/channel008/1080p.m3u8#http://ali-m-l.cztv.com/channels/lantian/channel008/1080p.m3u8#http://ali-vl.cztv.com/channels/lantian/channel008/360p.m3u8#https://ali-m-l.cztv.com/channels/lantian/channel008/1080p.m3u8?
+#EXTINF:-1 tvg-name="浙江少儿 [1080P] [1080P]" group-title="浙江频道",浙江少儿 [1080P] [1080P] [1080P]
+https://ali-xwl.cztv.com/live/channel081080Plxw.m3u8#https://zwebl02.cztv.com/live/channel081080Pnew.m3u8?auth_key=2524708799-ca798ce95dda85537a46f2eb5be537be-0-668e5a5a00e74f14f426cc55210a4ff9
 #EXTINF:-1 tvg-name="浙江影视娱乐频道 [1080P] [1080P] [1080P]" group-title="浙江频道",浙江影视娱乐频道 [1080P] [1080P] [1080P] [1080P]
 http://ali-m-l.cztv.com/channels/lantian/channel005/1080p.m3u8
 #EXTINF:-1 tvg-name="浙江教科 [1080P] [1080P]" group-title="浙江频道",浙江教科 [1080P] [1080P] [1080P]
@@ -1211,24 +1211,24 @@ http://ali-vl.cztv.com/channels/lantian/channel009/360p.m3u8
 https://ali-m-l.cztv.com/channels/lantian/channel003/1080p.m3u8
 #EXTINF:-1 tvg-name="浙江经济 [1080P] [1080P]" group-title="浙江频道",浙江经济 [1080P] [1080P] [1080P]
 https://zwebl02.cztv.com/live/channel031080Pnew.m3u8?auth_key=2524708799-ca798ce95dda85537a46f2eb5be537be-0-b4fe6682a137b6739ec212c93c5a8def
+#EXTINF:-1 tvg-name="浙江经济生活 [360P] [360P]" group-title="浙江频道",浙江经济生活 [360P] [360P] [360P]
+http://ali-vl.cztv.com/channels/lantian/channel003/360p.m3u8
+#EXTINF:-1 tvg-name="浙江经济生活 [1080P] [1080P] [1080P]" group-title="浙江频道",浙江经济生活 [1080P] [1080P] [1080P] [1080P]
+http://ali-m-l.cztv.com/channels/lantian/channel003/1080p.m3u8
 #EXTINF:-1 tvg-name="浙江经济生活 [1080P] [1080P]" group-title="浙江频道",浙江经济生活 [1080P] [1080P] [1080P]
 http://ali-m-l.cztv.com/channels/lantian/channel003/1080p.m3u8#http://ali-m-l.cztv.com/channels/lantian/channel03/1080p.m3u8
 #EXTINF:-1 tvg-name="浙江经济生活 [1080P] [1080P]" group-title="浙江频道",浙江经济生活 [1080P] [1080P] [1080P]
 https://ali-xwl.cztv.com/live/channel031080Plxw.m3u8
-#EXTINF:-1 tvg-name="浙江经济生活 [1080P] [1080P] [1080P]" group-title="浙江频道",浙江经济生活 [1080P] [1080P] [1080P] [1080P]
-http://ali-m-l.cztv.com/channels/lantian/channel003/1080p.m3u8
-#EXTINF:-1 tvg-name="浙江经济生活 [360P] [360P]" group-title="浙江频道",浙江经济生活 [360P] [360P] [360P]
-http://ali-vl.cztv.com/channels/lantian/channel003/360p.m3u8
 #EXTINF:-1 tvg-name="浙江钱江 [1080P] [1080P]" group-title="浙江频道",浙江钱江 [1080P] [1080P] [1080P]
 http://ali-m-l.cztv.com/channels/lantian/channel002/1080p.m3u8?fbl=#http://ali-m-l.cztv.com/channels/lantian/channel02/1080p.m3u8#http://ali-m-l.cztv.com/channels/lantian/channel002/1080p.m3u8?zzhed
 #EXTINF:-1 tvg-name="浙江钱江 [1080P] [1080P]" group-title="浙江频道",浙江钱江 [1080P] [1080P] [1080P]
 https://ali-m-l.cztv.com/channels/lantian/channel002/1080p.m3u8
 #EXTINF:-1 tvg-name="浙江钱江 [1080P] [1080P]" group-title="浙江频道",浙江钱江 [1080P] [1080P] [1080P]
 https://ali-xwl.cztv.com/live/channel021080Plxw.m3u8#https://zwebl02.cztv.com/live/channel021080Pnew.m3u8?auth_key=2524708799-ca798ce95dda85537a46f2eb5be537be-0-00cc26403bae15d2d0ef1c4380e4664f
-#EXTINF:-1 tvg-name="温州 [1080P] [1080P]" group-title="浙江频道",温州 [1080P] [1080P] [1080P]
-https://l.cztvcloud.com/channels/lantian/sxchannel03/1080p.m3u8
 #EXTINF:-1 tvg-name="温州 [720P] [720P]" group-title="浙江频道",温州 [720P] [720P] [720P]
 http://play-qk.wzrb.com.cn/live/1728463192330572.m3u8?auth_key=2044351793-fa66d1d33e3d426ca3dccb94845595d7-0-4bc36ce83dfac0c77ddd501ffe397bcc
+#EXTINF:-1 tvg-name="温州 [1080P] [1080P]" group-title="浙江频道",温州 [1080P] [1080P] [1080P]
+https://l.cztvcloud.com/channels/lantian/sxchannel03/1080p.m3u8
 #EXTINF:-1 tvg-name="温州新闻综合频道 [1080P] [1080P]" group-title="浙江频道",温州新闻综合频道 [1080P] [1080P] [1080P]
 https://ali-xwl.cztv.com:443/live/wenzhouds.m3u8
 #EXTINF:-1 tvg-name="湖州公共民生频道 [720P] [720P]" group-title="浙江频道",湖州公共民生频道 [720P] [720P] [720P]
@@ -1243,10 +1243,10 @@ http://hzcm-live.media.hugd.com/3f5fa7d64c7c46a38c6bd8ad35e836cc/65128273761b473
 http://play-sh-21.quklive.com/live/1681269183807252.m3u8?auth_key=2033114999-67ff99bfbe1b4577b013750618ffce6b-0-454401c27452e83159ca9466ef742db2
 #EXTINF:-1 tvg-name="绍兴新闻综合 [576P] [576P]" group-title="浙江频道",绍兴新闻综合 [576P] [576P] [576P]
 http://live.shaoxing.com.cn/video/s10001-sxtv1/index.m3u8?zzhed#http://live.shaoxing.com.cn/video/s10001-sxhb/index.m3u8?zzhed
-#EXTINF:-1 tvg-name="绍兴新闻综合 [720P] [720P]" group-title="浙江频道",绍兴新闻综合 [720P] [720P] [720P]
-http://live.shaoxing.com.cn/video/s10001-sxhb/index.m3u8?zzhed#http://live.shaoxing.com.cn/video/s10001-sxtv1/index.m3u8?zzhed
 #EXTINF:-1 tvg-name="绍兴新闻综合 [720P] [720P] [720P]" group-title="浙江频道",绍兴新闻综合 [720P] [720P] [720P] [720P]
 http://live.shaoxing.com.cn/video/s10001-sxhb/index.m3u8
+#EXTINF:-1 tvg-name="绍兴新闻综合 [720P] [720P]" group-title="浙江频道",绍兴新闻综合 [720P] [720P] [720P]
+http://live.shaoxing.com.cn/video/s10001-sxhb/index.m3u8?zzhed#http://live.shaoxing.com.cn/video/s10001-sxtv1/index.m3u8?zzhed
 #EXTINF:-1 tvg-name="绍兴新闻综合频道 [576P] [576P] [576P]" group-title="浙江频道",绍兴新闻综合频道 [576P] [576P] [576P] [576P]
 http://live.shaoxing.com.cn/video/s10001-sxtv1/index.m3u8
 #EXTINF:-1 tvg-name="绍兴电视台公共频道 [720P] [720P] [720P]" group-title="浙江频道",绍兴电视台公共频道 [720P] [720P] [720P] [720P]
@@ -1257,10 +1257,10 @@ https://ali-xwl.cztv.com:443/live/zhoushands.m3u8
 http://l.cztvcloud.com/channels/lantian/SXxiaoshan2/720p.m3u8
 #EXTINF:-1 tvg-name="萧山电视台 [720P] [720P] [720P]" group-title="浙江频道",萧山电视台 [720P] [720P] [720P] [720P]
 https://l.cztvcloud.com/channels/lantian/SXxiaoshan2/720p.m3u8
-#EXTINF:-1 tvg-name="萧山综合 [720P] [720P]" group-title="浙江频道",萧山综合 [720P] [720P] [720P]
-https://l.cztvcloud.com/channels/lantian/SXxiaoshan1/720p.m3u8#https://l.cztvcloud.com/channels/lantian/SXxiaoshan2/720p.m3u8
 #EXTINF:-1 tvg-name="萧山综合 [720P] [720P] [720P]" group-title="浙江频道",萧山综合 [720P] [720P] [720P] [720P]
 https://l.cztvcloud.com/channels/lantian/SXxiaoshan1/720p.m3u8
+#EXTINF:-1 tvg-name="萧山综合 [720P] [720P]" group-title="浙江频道",萧山综合 [720P] [720P] [720P]
+https://l.cztvcloud.com/channels/lantian/SXxiaoshan1/720p.m3u8#https://l.cztvcloud.com/channels/lantian/SXxiaoshan2/720p.m3u8
 #EXTINF:-1 tvg-name="萧山综合频道 [720P] [720P] [720P]" group-title="浙江频道",萧山综合频道 [720P] [720P] [720P] [720P]
 http://l.cztvcloud.com/channels/lantian/SXxiaoshan1/720p.m3u8
 #EXTINF:-1 tvg-name="衢州开化综合 [720P] [720P] [720P]" group-title="浙江频道",衢州开化综合 [720P] [720P] [720P] [720P]
@@ -1271,10 +1271,10 @@ https://ali-xwl.cztv.com:443/live/quzhouds.m3u8
 http://l.cztvcloud.com/channels/lantian/SXqujiang1/720p.m3u8
 #EXTINF:-1 tvg-name="衢州龙游生活 [720P] [720P] [720P]" group-title="浙江频道",衢州龙游生活 [720P] [720P] [720P] [720P]
 https://l.cztvcloud.com/channels/lantian/SXlongyou2/720p.m3u8
-#EXTINF:-1 tvg-name="诸暨新闻综合 [1080P] [1080P]" group-title="浙江频道",诸暨新闻综合 [1080P] [1080P] [1080P]
-https://l.cztvcloud.com/channels/lantian/SXzhuji3/720p.m3u8#http://l.cztvcloud.com/channels/lantian/SXzhuji3/720p.m3u8?zzhed#EXTINF:-1%20group-title=%22%E2%80%A2%E9%9F%B3%E4%B9%90%22
 #EXTINF:-1 tvg-name="诸暨新闻综合 [1080P] [1080P] [1080P]" group-title="浙江频道",诸暨新闻综合 [1080P] [1080P] [1080P] [1080P]
 http://l.cztvcloud.com/channels/lantian/SXzhuji3/720p.m3u8?zzhed
+#EXTINF:-1 tvg-name="诸暨新闻综合 [1080P] [1080P]" group-title="浙江频道",诸暨新闻综合 [1080P] [1080P] [1080P]
+https://l.cztvcloud.com/channels/lantian/SXzhuji3/720p.m3u8#http://l.cztvcloud.com/channels/lantian/SXzhuji3/720p.m3u8?zzhed#EXTINF:-1%20group-title=%22%E2%80%A2%E9%9F%B3%E4%B9%90%22
 #EXTINF:-1 tvg-name="金华新闻综合频道 [1080P] [1080P]" group-title="浙江频道",金华新闻综合频道 [1080P] [1080P] [1080P]
 https://ali-xwl.cztv.com:443/live/jinhuads.m3u8
 #EXTINF:-1 tvg-name="青田电视台 [1080P] [1080P] [1080P]" group-title="浙江频道",青田电视台 [1080P] [1080P] [1080P] [1080P]
@@ -1323,10 +1323,10 @@ http://fjnhdb.chinashadt.com:2036/live/stream:nh2.stream/playlist.m3u8?zfud
 http://live.zohi.tv/video/s10001-fztv-4/index.m3u8
 #EXTINF:-1 tvg-name="福州新闻 [1080P] [1080P] [1080P]" group-title="福建频道",福州新闻 [1080P] [1080P] [1080P] [1080P]
 http://live.zohi.tv/video/s10001-fztv-1/index.m3u8
-#EXTINF:-1 tvg-name="福州生活 [1080P] [1080P]" group-title="福建频道",福州生活 [1080P] [1080P] [1080P]
-http://live.zohi.tv:80/video/s10001-fztv-3/index.m3u8
 #EXTINF:-1 tvg-name="福州生活 [1080P] [1080P] [1080P]" group-title="福建频道",福州生活 [1080P] [1080P] [1080P] [1080P]
 http://live.zohi.tv/video/s10001-fztv-3/index.m3u8
+#EXTINF:-1 tvg-name="福州生活 [1080P] [1080P]" group-title="福建频道",福州生活 [1080P] [1080P] [1080P]
+http://live.zohi.tv:80/video/s10001-fztv-3/index.m3u8
 #EXTINF:-1 tvg-name="福州电视台 [1080P] [1080P]" group-title="福建频道",福州电视台 [1080P] [1080P] [1080P]
 http://live.zohi.tv/video/s10001-fztv-1/index.m3u8#http://live.zohi.tv/video/s10001-fztv-4/index.m3u8
 #EXTINF:-1 tvg-name="福建综合 [1080P] [1080P]" group-title="福建频道",福建综合 [1080P] [1080P] [1080P]
@@ -1365,10 +1365,10 @@ http://1.94.31.214/php/qilu.php?id=dyxwzh
 http://1.94.31.214/php/qilu.php?id=whxwzh
 #EXTINF:-1 tvg-name="威海环翠综合 [1080P] [1080P]" group-title="山东频道",威海环翠综合 [1080P] [1080P] [1080P]
 http://1.94.31.214/php/qilu.php?id=whhczh
-#EXTINF:-1 tvg-name="山东教育 [720P] [720P]" group-title="山东频道",山东教育 [720P] [720P] [720P]
-https://test1.live.sdetv.com.cn/live/dianshizhibo/playlist.m3u8
 #EXTINF:-1 tvg-name="山东教育 [720P] [720P] [720P]" group-title="山东频道",山东教育 [720P] [720P] [720P] [720P]
 http://test1.live.sdetv.com.cn/live/dianshizhibo/playlist.m3u8
+#EXTINF:-1 tvg-name="山东教育 [720P] [720P]" group-title="山东频道",山东教育 [720P] [720P] [720P]
+https://test1.live.sdetv.com.cn/live/dianshizhibo/playlist.m3u8
 #EXTINF:-1 tvg-name="德州图文 [1080P] [1080P]" group-title="山东频道",德州图文 [1080P] [1080P] [1080P]
 http://1.94.31.214/php/qilu.php?id=dztw
 #EXTINF:-1 tvg-name="德州新闻综合 [1080P] [1080P]" group-title="山东频道",德州新闻综合 [1080P] [1080P] [1080P]
@@ -1461,10 +1461,10 @@ http://107.150.60.122/live/hnjy.m3u8
 http://8.138.7.223/tv/mgtv.php?id=261
 #EXTINF:-1 tvg-name="湖南爱晚 [360P] [360P]" group-title="湖南频道",湖南爱晚 [360P] [360P] [360P]
 https://phoneal.qing.mgtv.com/nn_live/nn_x64/Y2RuZXhfaWQ9YWxfaGxzX2xkdnQmZT02OTE0NjA0JnY9MSZpZD1ITldTWkdTVCZzPTcwN2RiYTc2YzJjNmJmMTQ4MmUyZGYzOWU2NWM3YWFi/HNGGMPP360.m3u8
-#EXTINF:-1 tvg-name="湖南电影 [1080P] [1080P] [1080P]" group-title="湖南频道",湖南电影 [1080P] [1080P] [1080P] [1080P]
-http://218.77.84.102:85/tsfile/live/149/2005_1.m3u8?key=txiptv
 #EXTINF:-1 tvg-name="湖南电影 [360P] [360P]" group-title="湖南频道",湖南电影 [360P] [360P] [360P]
 https://phoneal.qing.mgtv.com/nn_live/nn_x64/Y2RuZXhfaWQ9YWxfaGxzX2xkdnQmZT02OTE0NjA0JnY9MSZpZD1ITldTWkdTVCZzPTcwN2RiYTc2YzJjNmJmMTQ4MmUyZGYzOWU2NWM3YWFi/HNDYMPP360.m3u8
+#EXTINF:-1 tvg-name="湖南电影 [1080P] [1080P] [1080P]" group-title="湖南频道",湖南电影 [1080P] [1080P] [1080P] [1080P]
+http://218.77.84.102:85/tsfile/live/149/2005_1.m3u8?key=txiptv
 #EXTINF:-1 tvg-name="湖南电视剧 [360P] [360P]" group-title="湖南频道",湖南电视剧 [360P] [360P] [360P]
 http://8.138.7.223/tv/mgtv.php?id=484
 #EXTINF:-1 tvg-name="湖南电视剧 [360P] [360P]" group-title="湖南频道",湖南电视剧 [360P] [360P] [360P]
@@ -1487,100 +1487,100 @@ http://8.138.7.223/tv/mgtv.php?id=269
 http://cfss.cc/cdn/huya/11602075.flv
 #EXTINF:-1 tvg-name="-汕尾综合 [1080P] [1080P]" group-title="广东频道",-汕尾综合 [1080P] [1080P] [1080P]
 https://iswtv.swrtv.com/live/xwzhpd.m3u8
-#EXTINF:-1 tvg-name="东莞新闻综合 [720P] [720P]" group-title="广东频道",东莞新闻综合 [720P] [720P] [720P]
-https://stream.sun0769.com/dgrtv1/mp4tv1_800/index.m3u8
 #EXTINF:-1 tvg-name="东莞新闻综合 [720P] [720P] [720P]" group-title="广东频道",东莞新闻综合 [720P] [720P] [720P] [720P]
 https://stream.sun0769.com/dgrtv1/mp4tv1_1500/index.m3u8
+#EXTINF:-1 tvg-name="东莞新闻综合 [720P] [720P]" group-title="广东频道",东莞新闻综合 [720P] [720P] [720P]
+https://stream.sun0769.com/dgrtv1/mp4tv1_800/index.m3u8
 #EXTINF:-1 tvg-name="东莞新闻频道 [720P] [720P] [720P]" group-title="广东频道",东莞新闻频道 [720P] [720P] [720P] [720P]
 https://stream.sun0769.com/dgrtv1/mp4tv1_1500/index.m3u8?channel=1&t=1727365957&ttl=3600&key=427e13368d7e4211bb3f1f6432084b3f
-#EXTINF:-1 tvg-name="东莞生活资讯 [720P] [720P]" group-title="广东频道",东莞生活资讯 [720P] [720P] [720P]
-https://stream.sun0769.com/dgrtv1/mp4tv2_1500/index.m3u8#https://stream.sun0769.com/dgrtv1/mp4tv2_800/index.m3u8
 #EXTINF:-1 tvg-name="东莞生活资讯 [720P] [720P] [720P]" group-title="广东频道",东莞生活资讯 [720P] [720P] [720P] [720P]
 https://stream.sun0769.com/dgrtv1/mp4tv2_1500/index.m3u8?channel=1&t=1727366013&ttl=3600&key=2fad2b96c81c38c8e6b189c552c0f8ca
 #EXTINF:-1 tvg-name="东莞生活资讯 [720P] [720P] [720P]" group-title="广东频道",东莞生活资讯 [720P] [720P] [720P] [720P]
 https://stream.sun0769.com/dgrtv1/mp4tv2_1500/index.m3u8
+#EXTINF:-1 tvg-name="东莞生活资讯 [720P] [720P]" group-title="广东频道",东莞生活资讯 [720P] [720P] [720P]
+https://stream.sun0769.com/dgrtv1/mp4tv2_1500/index.m3u8#https://stream.sun0769.com/dgrtv1/mp4tv2_800/index.m3u8
 #EXTINF:-1 tvg-name="中山综合 [1080P] [1080P] [1080P]" group-title="广东频道",中山综合 [1080P] [1080P] [1080P] [1080P]
 http://v.zsbtv.com.cn/lsdream/qTl38me/1000/live.m3u8
-#EXTINF:-1 tvg-name="广东体育 [720P] [720P]" group-title="广东频道",广东体育 [720P] [720P] [720P]
-http://63.141.230.178:82/gslb/zbdq5.m3u8?id=gdty
 #EXTINF:-1 tvg-name="广东体育 [720P] [720P] [720P]" group-title="广东频道",广东体育 [720P] [720P] [720P] [720P]
 http://38.75.136.137:98/gslb/dsdqpub/gdty.m3u8?auth=testpub
 #EXTINF:-1 tvg-name="广东体育 [720P] [720P] [720P]" group-title="广东频道",广东体育 [720P] [720P] [720P] [720P]
 http://198.204.228.26/live/gdty.m3u8
-#EXTINF:-1 tvg-name="广东新闻 [720P] [720P]" group-title="广东频道",广东新闻 [720P] [720P] [720P]
-http://38.75.136.137:98/gslb/dsdqpub/gdxw.m3u8?auth=testpub#http://38.75.136.137:98/gslb/dsdqpub/gdxwa.m3u8?auth=testpub
-#EXTINF:-1 tvg-name="广东新闻 [720P] [720P]" group-title="广东频道",广东新闻 [720P] [720P] [720P]
-http://63.141.230.178:82/gslb/zbdq5.m3u8?id=gdxw
+#EXTINF:-1 tvg-name="广东体育 [720P] [720P]" group-title="广东频道",广东体育 [720P] [720P] [720P]
+http://63.141.230.178:82/gslb/zbdq5.m3u8?id=gdty
 #EXTINF:-1 tvg-name="广东新闻 [720P] [720P] [720P]" group-title="广东频道",广东新闻 [720P] [720P] [720P] [720P]
 http://38.75.136.137:98/gslb/dsdqpub/gdxw.m3u8?auth=testpub
 #EXTINF:-1 tvg-name="广东新闻 [720P] [720P] [720P]" group-title="广东频道",广东新闻 [720P] [720P] [720P] [720P]
 http://198.204.228.26/live/gdxwa.m3u8
-#EXTINF:-1 tvg-name="广东珠江 [720P] [720P]" group-title="广东频道",广东珠江 [720P] [720P] [1080P]
-http://63.141.230.178:82/gslb/zbdq5.m3u8?id=gdzj
+#EXTINF:-1 tvg-name="广东新闻 [720P] [720P]" group-title="广东频道",广东新闻 [720P] [720P] [720P]
+http://38.75.136.137:98/gslb/dsdqpub/gdxw.m3u8?auth=testpub#http://38.75.136.137:98/gslb/dsdqpub/gdxwa.m3u8?auth=testpub
+#EXTINF:-1 tvg-name="广东新闻 [720P] [720P]" group-title="广东频道",广东新闻 [720P] [720P] [720P]
+http://63.141.230.178:82/gslb/zbdq5.m3u8?id=gdxw
 #EXTINF:-1 tvg-name="广东珠江 [720P] [720P] [720P]" group-title="广东频道",广东珠江 [720P] [720P] [720P] [1080P]
 http://198.204.228.26/live/gdzj.m3u8
 #EXTINF:-1 tvg-name="广东珠江 [720P] [720P] [720P]" group-title="广东频道",广东珠江 [720P] [720P] [720P] [1080P]
 http://192.151.150.154/live/gdzj.m3u8
+#EXTINF:-1 tvg-name="广东珠江 [720P] [720P]" group-title="广东频道",广东珠江 [720P] [720P] [1080P]
+http://63.141.230.178:82/gslb/zbdq5.m3u8?id=gdzj
 #EXTINF:-1 tvg-name="广州南国都市 [1080P] [1080P] [1080P]" group-title="广东频道",广州南国都市 [1080P] [1080P] [1080P] [1080P]
 https://tencentplay.gztv.com/live/nanguodushi.m3u8?txSecret=550af55c0ea34ce492748481415b6dfa&txTime=1903e7b17de
 #EXTINF:-1 tvg-name="广州南国都市 [1080P] [1080P] [1080P]" group-title="广东频道",广州南国都市 [1080P] [1080P] [1080P] [1080P]
 http://r.jdshipin.com/nWaZO
 #EXTINF:-1 tvg-name="广州南国都市频道 [1080P] [1080P] [1080P]" group-title="广东频道",广州南国都市频道 [1080P] [1080P] [1080P] [1080P]
 https://tencentplay.gztv.com/live/nanguodushi.m3u8?txSecret=7a9302751803950aa7bee6994f477b11&txTime=19182c0a3f6
-#EXTINF:-1 tvg-name="广州新闻 [720P] [720P]" group-title="广东频道",广州新闻 [720P] [720P] [720P]
-http://tencentplay.gztv.com/live/xinwen.m3u8?txSecret=d2c2db0b598c02ec1b5623728434d367&txTime=18d57929bd3
-#EXTINF:-1 tvg-name="广州新闻 [720P] [720P]" group-title="广东频道",广州新闻 [720P] [720P] [720P]
-https://tencentplay.gztv.com/live/xinwen.m3u8?txSecret=6f73647cae387d01a3c2132074132a83&txTime=18d00acf487
-#EXTINF:-1 tvg-name="广州新闻 [720P] [720P]" group-title="广东频道",广州新闻 [720P] [720P] [720P]
-https://tencentplay.gztv.com/live/xinwen.m3u8?txSecret=520177bc9dd6916a7d6fa86bdb3f8830&txTime=191b5f5b230#http://zb.hmysapp.cn:802/dft/guangdong/guangzhou.php?id=xinwen#https://tencentplay.gztv.com/live/xinwen.m3u8?txSecret=6f73647cae387d01a3c2132074132a83&txTime=18d00acf487
 #EXTINF:-1 tvg-name="广州新闻 [720P] [720P] [720P]" group-title="广东频道",广州新闻 [720P] [720P] [720P] [720P]
 https://tencentplay.gztv.com/live/xinwen.m3u8?txSecret=4c09e8c2d093bcb692e036ae54ff87c7&txTime=1903e37cd8a
 #EXTINF:-1 tvg-name="广州新闻 [720P] [720P] [720P]" group-title="广东频道",广州新闻 [720P] [720P] [720P] [720P]
 https://tencentplay.gztv.com/live/xinwen.m3u8?txSecret=520177bc9dd6916a7d6fa86bdb3f8830&txTime=191b5f5b230
 #EXTINF:-1 tvg-name="广州新闻 [720P] [720P] [720P]" group-title="广东频道",广州新闻 [720P] [720P] [720P] [720P]
 http://8.138.7.223/tv/gzxw.m3u8
+#EXTINF:-1 tvg-name="广州新闻 [720P] [720P]" group-title="广东频道",广州新闻 [720P] [720P] [720P]
+http://tencentplay.gztv.com/live/xinwen.m3u8?txSecret=d2c2db0b598c02ec1b5623728434d367&txTime=18d57929bd3
+#EXTINF:-1 tvg-name="广州新闻 [720P] [720P]" group-title="广东频道",广州新闻 [720P] [720P] [720P]
+https://tencentplay.gztv.com/live/xinwen.m3u8?txSecret=6f73647cae387d01a3c2132074132a83&txTime=18d00acf487
+#EXTINF:-1 tvg-name="广州新闻 [720P] [720P]" group-title="广东频道",广州新闻 [720P] [720P] [720P]
+https://tencentplay.gztv.com/live/xinwen.m3u8?txSecret=520177bc9dd6916a7d6fa86bdb3f8830&txTime=191b5f5b230#http://zb.hmysapp.cn:802/dft/guangdong/guangzhou.php?id=xinwen#https://tencentplay.gztv.com/live/xinwen.m3u8?txSecret=6f73647cae387d01a3c2132074132a83&txTime=18d00acf487
 #EXTINF:-1 tvg-name="广州新闻欣赏 [720P] [720P]" group-title="广东频道",广州新闻欣赏 [720P] [720P] [720P]
 http://rihou.cc:555/tv/[Cx]广州新闻
 #EXTINF:-1 tvg-name="广州电视台新闻频道 [720P] [720P] [720P]" group-title="广东频道",广州电视台新闻频道 [720P] [720P] [720P] [720P]
 https://tencentplay.gztv.com/live/xinwen.m3u8?txSecret=0901a0ee80ee6b60f0731399e0de6c5d&txTime=191825f0639
 #EXTINF:-1 tvg-name="广州电视台综合频道 [720P] [720P] [720P]" group-title="广东频道",广州电视台综合频道 [720P] [720P] [720P] [720P]
 https://tencentplay.gztv.com/live/zonghes.m3u8?txSecret=234cace79a853922dd89c29a3823c470&txTime=191825e8b1d
-#EXTINF:-1 tvg-name="广州综合 [720P] [720P]" group-title="广东频道",广州综合 [720P] [720P] [720P]
-http://tencentplay.gztv.com/live/zonghes.m3u8?txSecret=c8dbe86d6f86eb1a21999ab479fd5667&txTime=18d3c4690e8
-#EXTINF:-1 tvg-name="广州综合 [720P] [720P]" group-title="广东频道",广州综合 [720P] [720P] [720P]
-https://tencentplay.gztv.com/live/zonghes.m3u8?txSecret=f0147ae6453a80f5989f382368b72aad&txTime=18d00acf487
-#EXTINF:-1 tvg-name="广州综合 [720P] [720P]" group-title="广东频道",广州综合 [720P] [720P] [720P]
-https://tencentplay.gztv.com/live/zonghes.m3u8?txSecret=dce137597806f62ae6fdfc40328a336e&txTime=191b5fc1c86#https://tencentplaywebsite.gztv.com/live/zonghes.m3u8?txSecret=b12257737dcebc4227bca82b77af650c&txTime=1956eaafce4#http://zb.hmysapp.cn:802/dft/guangdong/guangzhou.php?id=zhonghe#https://tencentplay.gztv.com/live/zonghes.m3u8?txSecret=f0147ae6453a80f5989f382368b72aad&txTime=18d00acf487
 #EXTINF:-1 tvg-name="广州综合 [720P] [720P] [720P]" group-title="广东频道",广州综合 [720P] [720P] [720P] [720P]
 https://tencentplaywebsite.gztv.com/live/zonghes.m3u8?txSecret=b12257737dcebc4227bca82b77af650c&txTime=1956eaafce4
 #EXTINF:-1 tvg-name="广州综合 [720P] [720P] [720P]" group-title="广东频道",广州综合 [720P] [720P] [720P] [720P]
 https://tencentplay.gztv.com/live/zonghes.m3u8?txSecret=dce137597806f62ae6fdfc40328a336e&txTime=191b5fc1c86
 #EXTINF:-1 tvg-name="广州综合 [720P] [720P] [720P]" group-title="广东频道",广州综合 [720P] [720P] [720P] [720P]
 https://tencentplay.gztv.com/live/zonghes.m3u8?txSecret=9e5008d4b91944fa76a957a93ae54870&txTime=1903e5f1cfd
+#EXTINF:-1 tvg-name="广州综合 [720P] [720P]" group-title="广东频道",广州综合 [720P] [720P] [720P]
+http://tencentplay.gztv.com/live/zonghes.m3u8?txSecret=c8dbe86d6f86eb1a21999ab479fd5667&txTime=18d3c4690e8
+#EXTINF:-1 tvg-name="广州综合 [720P] [720P]" group-title="广东频道",广州综合 [720P] [720P] [720P]
+https://tencentplay.gztv.com/live/zonghes.m3u8?txSecret=f0147ae6453a80f5989f382368b72aad&txTime=18d00acf487
+#EXTINF:-1 tvg-name="广州综合 [720P] [720P]" group-title="广东频道",广州综合 [720P] [720P] [720P]
+https://tencentplay.gztv.com/live/zonghes.m3u8?txSecret=dce137597806f62ae6fdfc40328a336e&txTime=191b5fc1c86#https://tencentplaywebsite.gztv.com/live/zonghes.m3u8?txSecret=b12257737dcebc4227bca82b77af650c&txTime=1956eaafce4#http://zb.hmysapp.cn:802/dft/guangdong/guangzhou.php?id=zhonghe#https://tencentplay.gztv.com/live/zonghes.m3u8?txSecret=f0147ae6453a80f5989f382368b72aad&txTime=18d00acf487
 #EXTINF:-1 tvg-name="广州综合欣赏 [720P] [720P]" group-title="广东频道",广州综合欣赏 [720P] [720P] [720P]
 http://rihou.cc:555/tv/[Cx]广州综合
+#EXTINF:-1 tvg-name="广州都市 [1080P] [1080P] [1080P]" group-title="广东频道",广州都市 [1080P] [1080P] [1080P] [1080P]
+https://tencentplay.gztv.com/live/nanguodushi.m3u8?txSecret=babbcbacdbcf13a3311a264e4dd66b8d&txTime=191b60b41a7
 #EXTINF:-1 tvg-name="广州都市 [1080P] [1080P]" group-title="广东频道",广州都市 [1080P] [1080P] [1080P]
 https://tencentplay.gztv.com/live/nanguodushi.m3u8?txSecret=babbcbacdbcf13a3311a264e4dd66b8d&txTime=191b60b41a7#http://47.108.20.161:8866/guangdong/guangzhou.php?id=shenghuo
 #EXTINF:-1 tvg-name="广州都市 [1080P] [1080P]" group-title="广东频道",广州都市 [1080P] [1080P] [1080P]
 http://47.108.20.161:8866/guangdong/guangzhou.php?id=shenghuo
-#EXTINF:-1 tvg-name="广州都市 [1080P] [1080P] [1080P]" group-title="广东频道",广州都市 [1080P] [1080P] [1080P] [1080P]
-https://tencentplay.gztv.com/live/nanguodushi.m3u8?txSecret=babbcbacdbcf13a3311a264e4dd66b8d&txTime=191b60b41a7
 #EXTINF:-1 tvg-name="河源公共 [540P] [540P] [540P]" group-title="广东频道",河源公共 [540P] [540P] [540P] [540P]
 http://tmpstream.hyrtv.cn/hygg/sd/live.m3u8
 #EXTINF:-1 tvg-name="河源公共 [540P] [540P] [540P]" group-title="广东频道",河源公共 [540P] [540P] [540P] [540P]
 https://tmpstream.hyrtv.cn/hygg/sd/live.m3u8
-#EXTINF:-1 tvg-name="河源综合 [540P] [540P]" group-title="广东频道",河源综合 [540P] [540P] [540P]
-http://tmpstream.hyrtv.cn/xwzh/sd/live.m3u8#https://tmpstream.hyrtv.cn/xwzh/sd/live.m3u8
-#EXTINF:-1 tvg-name="河源综合 [540P] [540P]" group-title="广东频道",河源综合 [540P] [540P] [540P]
-https://tmpstream.hyrtv.cn/xwzh/sd/live.m3u8#https://tmpstream.hyrtv.cn/xwzh/sd/live.m3u8?_upt=f767206b1671099007
-#EXTINF:-1 tvg-name="河源综合 [540P] [540P]" group-title="广东频道",河源综合 [540P] [540P] [540P]
-https://tmpstream.hyrtv.cn/xwzh/sd/live.m3u8?_upt=f767206b1671099007#http://tmpstream.hyrtv.cn/xwzh/sd/live.m3u8?zguangd#http://tmpstream.hyrtv.cn/xwzh/playlist.m3u8?_upt=407e01941606112151?zguangd
 #EXTINF:-1 tvg-name="河源综合 [540P] [540P] [540P]" group-title="广东频道",河源综合 [540P] [540P] [540P] [540P]
 http://tmpstream.hyrtv.cn/xwzh/sd/live.m3u8
 #EXTINF:-1 tvg-name="河源综合 [540P] [540P] [540P]" group-title="广东频道",河源综合 [540P] [540P] [540P] [540P]
 https://tmpstream.hyrtv.cn/xwzh/sd/live.m3u8?_upt=f767206b1671099007
 #EXTINF:-1 tvg-name="河源综合 [540P] [540P] [540P]" group-title="广东频道",河源综合 [540P] [540P] [540P] [540P]
 https://tmpstream.hyrtv.cn/xwzh/sd/live.m3u8
+#EXTINF:-1 tvg-name="河源综合 [540P] [540P]" group-title="广东频道",河源综合 [540P] [540P] [540P]
+http://tmpstream.hyrtv.cn/xwzh/sd/live.m3u8#https://tmpstream.hyrtv.cn/xwzh/sd/live.m3u8
+#EXTINF:-1 tvg-name="河源综合 [540P] [540P]" group-title="广东频道",河源综合 [540P] [540P] [540P]
+https://tmpstream.hyrtv.cn/xwzh/sd/live.m3u8#https://tmpstream.hyrtv.cn/xwzh/sd/live.m3u8?_upt=f767206b1671099007
+#EXTINF:-1 tvg-name="河源综合 [540P] [540P]" group-title="广东频道",河源综合 [540P] [540P] [540P]
+https://tmpstream.hyrtv.cn/xwzh/sd/live.m3u8?_upt=f767206b1671099007#http://tmpstream.hyrtv.cn/xwzh/sd/live.m3u8?zguangd#http://tmpstream.hyrtv.cn/xwzh/playlist.m3u8?_upt=407e01941606112151?zguangd
 #EXTINF:-1 tvg-name="肇庆综合 [1080P] [1080P]" group-title="广东频道",肇庆综合 [1080P] [1080P] [1080P]
 https://zqvlivestream.xjrb.com/zqLiveSlow/209.m3u8
 #EXTINF:-1 tvg-name="韶关综合 [1080P] [1080P] [1080P]" group-title="广东频道",韶关综合 [1080P] [1080P] [1080P] [1080P]
@@ -1615,14 +1615,14 @@ https://live2.hkbtv.cn/live/tv2502.m3u8
 http://pwpull.leshan.cn/live/216e177701911000eb46902c00000000.flv
 #EXTINF:-1 tvg-name="内江 [720P] [720P] [720P]" group-title="四川频道",内江 [720P] [720P] [720P] [720P]
 https://njzb.scnj.tv/hls_njtv_direct/1.m3u8
-#EXTINF:-1 tvg-name="内江科教 [720P] [720P]" group-title="四川频道",内江科教 [720P] [720P] [720P]
-https://njzb.scnj.tv/hls_njtv_direct/9.m3u8#http://112.19.88.97:8899/udp/239.10.0.73:5140
 #EXTINF:-1 tvg-name="内江科教 [720P] [720P] [720P]" group-title="四川频道",内江科教 [720P] [720P] [720P] [720P]
 https://njzb.scnj.tv/hls_njtv_direct/9.m3u8
-#EXTINF:-1 tvg-name="凉山新闻综合 [404P] [404P]" group-title="四川频道",凉山新闻综合 [404P] [404P] [404P]
-http://file.yizu.tv/nmip-media/channellive/channel106606/playlist.m3u8#rtmp://tv.drs.i0834.cn/channellive/ch1?zsicd
+#EXTINF:-1 tvg-name="内江科教 [720P] [720P]" group-title="四川频道",内江科教 [720P] [720P] [720P]
+https://njzb.scnj.tv/hls_njtv_direct/9.m3u8#http://112.19.88.97:8899/udp/239.10.0.73:5140
 #EXTINF:-1 tvg-name="凉山新闻综合 [404P] [404P] [404P]" group-title="四川频道",凉山新闻综合 [404P] [404P] [404P] [404P]
 http://file.yizu.tv/nmip-media/channellive/channel106606/playlist.m3u8
+#EXTINF:-1 tvg-name="凉山新闻综合 [404P] [404P]" group-title="四川频道",凉山新闻综合 [404P] [404P] [404P]
+http://file.yizu.tv/nmip-media/channellive/channel106606/playlist.m3u8#rtmp://tv.drs.i0834.cn/channellive/ch1?zsicd
 #EXTINF:-1 tvg-name="凉山语 [404P] [404P] [404P]" group-title="四川频道",凉山语 [404P] [404P] [404P] [404P]
 http://file.yizu.tv/nmip-media/channellive/channel107323/playlist.m3u8
 #EXTINF:-1 tvg-name="四川七台 [1080P] [1080P]" group-title="四川频道",四川七台 [1080P] [1080P] [1080P]
@@ -1675,10 +1675,10 @@ https://m3u8channel-yc.yunxya.com/nmip-media/channellive/channel100103/playlist.
 http://rihou.cc:555/tv/t
 #EXTINF:-1 tvg-name="商洛 [1080P] [1080P]" group-title="陕西频道",商洛 [1080P] [1080P] [1080P]
 https://player4.juyun.tv/camera/171844138.m3u8
-#EXTINF:-1 tvg-name="延安 [720P] [720P]" group-title="陕西频道",延安 [720P] [720P] [720P]
-https://srs.yanews.cn/video/YATV-1/index.m3u8
 #EXTINF:-1 tvg-name="延安2 [720P] [720P]" group-title="陕西频道",延安2 [720P] [720P] [720P]
 https://srs.yanews.cn/video/YATV-2/index.m3u8
+#EXTINF:-1 tvg-name="延安 [720P] [720P]" group-title="陕西频道",延安 [720P] [720P] [720P]
+https://srs.yanews.cn/video/YATV-1/index.m3u8
 #EXTINF:-1 tvg-name="榆林公共频道[1920*1080] [1080P] [1080P]" group-title="陕西频道",榆林公共频道[1920*1080] [1080P] [1080P] [1080P]
 https://hplayer1.juyun.tv/camera/186022194.m3u8
 #EXTINF:-1 tvg-name="榆林综合频道[1920*1080] [1080P] [1080P]" group-title="陕西频道",榆林综合频道[1920*1080] [1080P] [1080P] [1080P]
@@ -1741,10 +1741,10 @@ http://221.7.175.154:8445/tsfile/live/1026_1.m3u8?key=txiptv&playlive=1&authid=0
 http://hls.nntv.cn/nnlive/YSYL_244.m3u8
 #EXTINF:-1 tvg-name="南宁影视娱乐频道 [720P] [720P] [720P]" group-title="广西频道",南宁影视娱乐频道 [720P] [720P] [720P] [720P]
 https://hls.nntv.cn/nnlive/YSYL_244.m3u8
-#EXTINF:-1 tvg-name="南宁文旅 [720P] [720P]" group-title="广西频道",南宁文旅 [720P] [720P] [720P]
-http://hls.nntv.cn/nnlive/WLSH_24.m3u8#https://hls.nntv.cn/nnlive/WLSH_24.m3u8
 #EXTINF:-1 tvg-name="南宁文旅 [720P] [720P] [720P]" group-title="广西频道",南宁文旅 [720P] [720P] [720P] [720P]
 http://hls.nntv.cn/nnlive/WLSH_24.m3u8
+#EXTINF:-1 tvg-name="南宁文旅 [720P] [720P]" group-title="广西频道",南宁文旅 [720P] [720P] [720P]
+http://hls.nntv.cn/nnlive/WLSH_24.m3u8#https://hls.nntv.cn/nnlive/WLSH_24.m3u8
 #EXTINF:-1 tvg-name="南宁新闻HD [720P] [720P]" group-title="广西频道",南宁新闻HD [720P] [720P] [720P]
 https://hls.nntv.cn/nnlive/XWZH_24.m3u8
 #EXTINF:-1 tvg-name="南宁新闻综合频道 [720P] [720P] [720P]" group-title="广西频道",南宁新闻综合频道 [720P] [720P] [720P] [720P]
@@ -1753,28 +1753,28 @@ http://hls.nntv.cn/nnlive/XWZH_24.m3u8
 http://615bbf179ba53515dccad7b1da5d1ad9.livehwc3.cn/hls.nntv.cn/nnlive/WLSH_24.m3u8
 #EXTINF:-1 tvg-name="广西乐思购频道 [1080P] [1080P]" group-title="广西频道",广西乐思购频道 [1080P] [1080P] [1080P]
 https://hlscdn.liangtv.cn/live/2cb851292fd14014a6558343872899e6/0820054f3fcc4ee5b4d17198bd7eddd6.m3u8#https://hlscdn.liangtv.cn/live/2cb851292fd14014a6558343872899e6/0820054f3fcc4ee5b4d17198bd7eddd6-1.m3u8
-#EXTINF:-1 tvg-name="广西影视" group-title="广西频道",广西影视 [1080P]
-http://221.7.175.154:8445/tsfile/live/1024_1.m3u8?key=txiptv&playlive=1&authid=0
 #EXTINF:-1 tvg-name="广西影视 [1080P] [1080P] [1080P]" group-title="广西频道",广西影视 [1080P] [1080P] [1080P] [1080P]
 http://198.204.228.26/live/gxys.m3u8
+#EXTINF:-1 tvg-name="广西影视" group-title="广西频道",广西影视 [1080P]
+http://221.7.175.154:8445/tsfile/live/1024_1.m3u8?key=txiptv&playlive=1&authid=0
 #EXTINF:-1 tvg-name="广西影视频道 [1080P] [1080P]" group-title="广西频道",广西影视频道 [1080P] [1080P] [1080P]
 https://hlscdn.liangtv.cn/live/a84182dabc5147afbd3d90ddbb5a9404/d097f6c24c53463e897de496b32c7d2b.m3u8#https://hlscdn.liangtv.cn/live/a84182dabc5147afbd3d90ddbb5a9404/d097f6c24c53463e897de496b32c7d2b-1.m3u8
-#EXTINF:-1 tvg-name="广西新闻" group-title="广西频道",广西新闻 [1080P]
-http://221.7.175.154:8445/tsfile/live/1025_1.m3u8?key=txiptv&playlive=1&authid=0
 #EXTINF:-1 tvg-name="广西新闻 [1080P] [1080P] [1080P]" group-title="广西频道",广西新闻 [1080P] [1080P] [1080P] [1080P]
 http://38.75.136.137:98/gslb/dsdqpub/gxxw.m3u8?auth=testpub
+#EXTINF:-1 tvg-name="广西新闻" group-title="广西频道",广西新闻 [1080P]
+http://221.7.175.154:8445/tsfile/live/1025_1.m3u8?key=txiptv&playlive=1&authid=0
 #EXTINF:-1 tvg-name="广西移动 [1080P] [1080P] [1080P]" group-title="广西频道",广西移动 [1080P] [1080P] [1080P] [1080P]
 http://38.75.136.137:98/gslb/dsdqpub/gxyd.m3u8?auth=testpub
-#EXTINF:-1 tvg-name="广西综艺" group-title="广西频道",广西综艺 [1080P]
-http://221.7.175.154:8445/tsfile/live/1023_1.m3u8?key=txiptv&playlive=1&authid=0
 #EXTINF:-1 tvg-name="广西综艺 [1080P] [1080P]" group-title="广西频道",广西综艺 [1080P] [1080P] [1080P]
 http://63.141.230.178:82/gslb/zbdq5.m3u8?id=gxzy
-#EXTINF:-1 tvg-name="广西都市" group-title="广西频道",广西都市 [1080P]
-http://221.7.175.154:8445/tsfile/live/1013_1.m3u8?key=txiptv&playlive=1&authid=0
-#EXTINF:-1 tvg-name="广西都市 [1080P] [1080P]" group-title="广西频道",广西都市 [1080P] [1080P] [1080P]
-http://63.141.230.178:82/gslb/zbdq5.m3u8?id=gxds
+#EXTINF:-1 tvg-name="广西综艺" group-title="广西频道",广西综艺 [1080P]
+http://221.7.175.154:8445/tsfile/live/1023_1.m3u8?key=txiptv&playlive=1&authid=0
 #EXTINF:-1 tvg-name="广西都市 [1080P] [1080P] [1080P]" group-title="广西频道",广西都市 [1080P] [1080P] [1080P] [1080P]
 http://198.204.228.26/live/gxds.m3u8
+#EXTINF:-1 tvg-name="广西都市 [1080P] [1080P]" group-title="广西频道",广西都市 [1080P] [1080P] [1080P]
+http://63.141.230.178:82/gslb/zbdq5.m3u8?id=gxds
+#EXTINF:-1 tvg-name="广西都市" group-title="广西频道",广西都市 [1080P]
+http://221.7.175.154:8445/tsfile/live/1013_1.m3u8?key=txiptv&playlive=1&authid=0
 #EXTINF:-1 tvg-name="梧州新闻 [1080P] [1080P]" group-title="广西频道",梧州新闻 [1080P] [1080P] [1080P]
 http://live.wuzhourm.cn:80/xwzh/index.m3u8
 #EXTINF:-1 tvg-name="梧州生活 [1080P] [1080P]" group-title="广西频道",梧州生活 [1080P] [1080P] [1080P]
@@ -1817,12 +1817,12 @@ http://103.72.172.253:8041/hls/385413834/index.m3u8
 https://isus.cc/php/huya.php?id=11601966
 #EXTINF:-1 tvg-name="中华小当家动漫 [432P] [432P] [432P]" group-title="动漫/少儿直播",中华小当家动漫 [432P] [432P] [432P] [432P]
 http://cfss.cc/cdn/huya/11342413.flv
+#EXTINF:-1 tvg-name="优漫卡通 [576P] [576P] [576P]" group-title="动漫/少儿直播",优漫卡通 [576P] [576P] [576P] [576P]
+http://192.151.150.154/live/ymkt.m3u8
 #EXTINF:-1 tvg-name="优漫卡通 [576P] [576P]" group-title="动漫/少儿直播",优漫卡通 [576P] [576P] [576P]
 http://yjj888.f3322.net:9901/tsfile/live/1027_1.m3u8?key=txiptv&playlive=0&authid=0
 #EXTINF:-1 tvg-name="优漫卡通 [576P] [576P]" group-title="动漫/少儿直播",优漫卡通 [576P] [576P] [576P]
 http://38.75.136.137:98/gslb/dsdqpub/ymkt.m3u8?auth=testpub
-#EXTINF:-1 tvg-name="优漫卡通 [576P] [576P] [576P]" group-title="动漫/少儿直播",优漫卡通 [576P] [576P] [576P] [576P]
-http://192.151.150.154/live/ymkt.m3u8
 #EXTINF:-1 tvg-name="内蒙少儿 [1080P] [1080P]" group-title="动漫/少儿直播",内蒙少儿 [1080P] [1080P] [1080P]
 http://play1-qk.nmtv.cn/live/2318general.m3u8
 #EXTINF:-1 tvg-name="动漫秀场 [1080P] [1080P]" group-title="动漫/少儿直播",动漫秀场 [1080P] [1080P] [1080P]
@@ -1833,10 +1833,10 @@ http://yjj888.f3322.net:9901/tsfile/live/1025_1.m3u8?key=txiptv&playlive=0&authi
 http://221.7.175.154:8445/tsfile/live/1015_1.m3u8?key=txiptv&playlive=1&authid=0
 #EXTINF:-1 tvg-name="名侦探柯南 [576P] [576P] [576P]" group-title="动漫/少儿直播",名侦探柯南 [576P] [576P] [576P] [540P]
 https://isus.cc/php/huya.php?id=30080236
-#EXTINF:-1 tvg-name="嘉佳卡通 [576P] [576P]" group-title="动漫/少儿直播",嘉佳卡通 [576P] [576P] [576P]
-http://yjj888.f3322.net:9901/tsfile/live/1026_1.m3u8?key=txiptv&playlive=0&authid=0
 #EXTINF:-1 tvg-name="嘉佳卡通 [576P] [576P] [576P]" group-title="动漫/少儿直播",嘉佳卡通 [576P] [576P] [576P] [576P]
 http://38.75.136.137:98/gslb/dsdqpub/gdjjkt.m3u8?auth=testpub
+#EXTINF:-1 tvg-name="嘉佳卡通 [576P] [576P]" group-title="动漫/少儿直播",嘉佳卡通 [576P] [576P] [576P]
+http://yjj888.f3322.net:9901/tsfile/live/1026_1.m3u8?key=txiptv&playlive=0&authid=0
 #EXTINF:-1 tvg-name="国产动漫系列 [720P] [720P] [720P]" group-title="动漫/少儿直播",国产动漫系列 [720P] [720P] [720P] [720P]
 http://cfss.cc/cdn/huya/11352869.flv
 #EXTINF:-1 tvg-name="少儿科教 [540P] [540P]" group-title="动漫/少儿直播",少儿科教 [540P] [540P] [540P]
@@ -1851,38 +1851,38 @@ https://isus.cc/php/huya.php?id=11352879
 http://cfss.cc/cdn/huya/11352879.flv
 #EXTINF:-1 tvg-name="猫和老鼠轮播 [480P] [720P]" group-title="动漫/少儿直播",猫和老鼠轮播 [480P] [720P] [480P]
 https://live20.bozztv.com/giatvplayout7/giatv-208314/tracks-v1a1/mono.ts.m3u8
-#EXTINF:-1 tvg-name="瑞克与莫蒂 [480P] [480P]" group-title="动漫/少儿直播",瑞克与莫蒂 [480P] [480P] [480P]
-https://isus.cc/php/huya.php?id=29982655
 #EXTINF:-1 tvg-name="瑞克与莫蒂 [480P] [480P] [480P]" group-title="动漫/少儿直播",瑞克与莫蒂 [480P] [480P] [480P] [480P]
 http://cfss.cc/cdn/huya/29982655.flv
+#EXTINF:-1 tvg-name="瑞克与莫蒂 [480P] [480P]" group-title="动漫/少儿直播",瑞克与莫蒂 [480P] [480P] [480P]
+https://isus.cc/php/huya.php?id=29982655
 #EXTINF:-1 tvg-name="蜡笔小新 [992P] [976P] [784P]" group-title="动漫/少儿直播",蜡笔小新 [992P] [976P] [784P] [976P]
 https://isus.cc/php/huya.php?id=11352970
-#EXTINF:-1 tvg-name="金鹰卡通" group-title="动漫/少儿直播",金鹰卡通 [1080P]
-http://221.7.175.154:8445/tsfile/live/1016_1.m3u8?key=txiptv&playlive=1&authid=0
-#EXTINF:-1 tvg-name="金鹰卡通 [1080P] [1080P]" group-title="动漫/少儿直播",金鹰卡通 [1080P] [1080P] [1080P]
-http://yjj888.f3322.net:9901/tsfile/live/1024_1.m3u8?key=txiptv&playlive=0&authid=0
 #EXTINF:-1 tvg-name="金鹰卡通 [360P] [360P]" group-title="动漫/少儿直播",金鹰卡通 [360P] [360P] [360P]
 http://8.138.7.223/tv/mgtv.php?id=287
+#EXTINF:-1 tvg-name="金鹰卡通 [1080P] [1080P]" group-title="动漫/少儿直播",金鹰卡通 [1080P] [1080P] [1080P]
+http://yjj888.f3322.net:9901/tsfile/live/1024_1.m3u8?key=txiptv&playlive=0&authid=0
+#EXTINF:-1 tvg-name="金鹰卡通" group-title="动漫/少儿直播",金鹰卡通 [1080P]
+http://221.7.175.154:8445/tsfile/live/1016_1.m3u8?key=txiptv&playlive=1&authid=0
 #EXTINF:-1 tvg-name="12道锋味专场 [720P] [720P] [720P]" group-title="电影/影剧直播",12道锋味专场 [720P] [720P] [720P] [720P]
 http://cfss.cc/cdn/huya/30080162.flv
 #EXTINF:-1 tvg-name="Big3专场 [1080P] [1080P]" group-title="电影/影剧直播",Big3专场 [1080P] [1080P] [1080P]
 https://isus.cc/php/huya.php?id=30847442
-#EXTINF:-1 tvg-name="CHC动作电影 [1080P] [1080P]" group-title="电影/影剧直播",CHC动作电影 [1080P] [1080P] [1080P]
-http://63.141.230.178:82/gslb/zbdq5.m3u8?id=chcdz
 #EXTINF:-1 tvg-name="CHC动作电影 [1080P] [1080P] [1080P]" group-title="电影/影剧直播",CHC动作电影 [1080P] [1080P] [1080P] [1080P]
 http://192.151.150.154/live/chcdz.m3u8
 #EXTINF:-1 tvg-name="CHC动作电影 [1080P] [1080P] [1080P]" group-title="电影/影剧直播",CHC动作电影 [1080P] [1080P] [1080P] [1080P]
 http://38.75.136.137:98/gslb/dsdqpub/chcdz.m3u8?auth=testpub
+#EXTINF:-1 tvg-name="CHC动作电影 [1080P] [1080P]" group-title="电影/影剧直播",CHC动作电影 [1080P] [1080P] [1080P]
+http://63.141.230.178:82/gslb/zbdq5.m3u8?id=chcdz
 #EXTINF:-1 tvg-name="CHC家庭影院 [1080P] [1080P] [1080P]" group-title="电影/影剧直播",CHC家庭影院 [1080P] [1080P] [1080P] [1080P]
 http://192.151.150.154/live/chcjt.m3u8
 #EXTINF:-1 tvg-name="CHC家庭影院 [1080P] [1080P] [1080P]" group-title="电影/影剧直播",CHC家庭影院 [1080P] [1080P] [1080P] [1080P]
 http://107.150.60.122/live/chcjt.m3u8
-#EXTINF:-1 tvg-name="CHC影迷电影 [1080P] [1080P]" group-title="电影/影剧直播",CHC影迷电影 [1080P] [1080P] [1080P]
-http://63.141.230.178:82/gslb/zbdq5.m3u8?id=chchd
 #EXTINF:-1 tvg-name="CHC影迷电影 [1080P] [1080P] [1080P]" group-title="电影/影剧直播",CHC影迷电影 [1080P] [1080P] [1080P] [1080P]
 http://38.75.136.137:98/gslb/dsdqpub/chchd.m3u8?auth=testpub
 #EXTINF:-1 tvg-name="CHC影迷电影 [1080P] [1080P] [1080P]" group-title="电影/影剧直播",CHC影迷电影 [1080P] [1080P] [1080P] [1080P]
 http://107.150.60.122/live/chchd.m3u8
+#EXTINF:-1 tvg-name="CHC影迷电影 [1080P] [1080P]" group-title="电影/影剧直播",CHC影迷电影 [1080P] [1080P] [1080P]
+http://63.141.230.178:82/gslb/zbdq5.m3u8?id=chchd
 #EXTINF:-1 tvg-name="不挤影院频道 [720P] [720P] [720P]" group-title="电影/影剧直播",不挤影院频道 [720P] [720P] [720P] [720P]
 http://cfss.cc/cdn/huya/11352897.flv
 #EXTINF:-1 tvg-name="二十四小时专场 [720P] [720P] [720P]" group-title="电影/影剧直播",二十四小时专场 [720P] [720P] [720P] [720P]
@@ -1915,16 +1915,16 @@ http://198.204.228.26/live/lbzxc.m3u8
 http://192.151.150.154/live/lbzxc.m3u8
 #EXTINF:-1 tvg-name="周润发专场 [720P] [432P]" group-title="电影/影剧直播",周润发专场 [720P] [432P] [560P]
 https://isus.cc/php/huya.php?id=11342387
+#EXTINF:-1 tvg-name="周润发电影 [480P] [480P] [480P]" group-title="电影/影剧直播",周润发电影 [480P] [480P] [480P] [720P]
+http://192.151.150.154/live/lbzrf.m3u8
 #EXTINF:-1 tvg-name="周润发电影 [480P] [480P] [480P]" group-title="电影/影剧直播",周润发电影 [480P] [480P] [480P] [1080P]
 http://38.75.136.137:98/gslb/dsdqpub/lbzrf.m3u8?auth=testpub
 #EXTINF:-1 tvg-name="周润发电影 [480P] [480P] [480P]" group-title="电影/影剧直播",周润发电影 [480P] [480P] [480P] [1080P]
 http://198.204.228.26/live/lbzrf.m3u8
-#EXTINF:-1 tvg-name="周润发电影 [480P] [480P] [480P]" group-title="电影/影剧直播",周润发电影 [480P] [480P] [480P] [720P]
-http://192.151.150.154/live/lbzrf.m3u8
-#EXTINF:-1 tvg-name="咱们穿越吧专场 [720P] [720P]" group-title="电影/影剧直播",咱们穿越吧专场 [720P] [720P] [720P]
-https://isus.cc/php/huya.php?id=11352907
 #EXTINF:-1 tvg-name="咱们穿越吧专场 [720P] [720P] [720P]" group-title="电影/影剧直播",咱们穿越吧专场 [720P] [720P] [720P] [720P]
 http://cfss.cc/cdn/huya/11352907.flv
+#EXTINF:-1 tvg-name="咱们穿越吧专场 [720P] [720P]" group-title="电影/影剧直播",咱们穿越吧专场 [720P] [720P] [720P]
+https://isus.cc/php/huya.php?id=11352907
 #EXTINF:-1 tvg-name="喜乐影院频道 [1080P] [1080P] [1080P]" group-title="电影/影剧直播",喜乐影院频道 [1080P] [1080P] [1080P] [1080P]
 http://cfss.cc/cdn/huya/21059580.flv
 #EXTINF:-1 tvg-name="喜剧专场 [720P] [576P] [720P]" group-title="电影/影剧直播",喜剧专场 [720P] [576P] [720P] [576P]
@@ -1933,10 +1933,10 @@ http://cfss.cc/cdn/huya/11602044.flv
 https://isus.cc/php/huya.php?id=29982645
 #EXTINF:-1 tvg-name="奔跑吧兄弟专场 [1080P] [1080P]" group-title="电影/影剧直播",奔跑吧兄弟专场 [1080P] [1080P] [1080P]
 https://isus.cc/php/huya.php?id=29465870
-#EXTINF:-1 tvg-name="峨眉电影 [1080P]" group-title="电影/影剧直播",峨眉电影 [1080P] [1080P]
-http://183.220.20.17:4321/udp/239.11.0.11:5140
 #EXTINF:-1 tvg-name="峨眉电影 [1080P] [1080P] [1080P]" group-title="电影/影剧直播",峨眉电影 [1080P] [1080P] [1080P] [1080P]
 http://118.122.144.115:8888/newlive/live/hls/32/live.m3u8
+#EXTINF:-1 tvg-name="峨眉电影 [1080P]" group-title="电影/影剧直播",峨眉电影 [1080P] [1080P]
+http://183.220.20.17:4321/udp/239.11.0.11:5140
 #EXTINF:-1 tvg-name="张卫健专场 [688P] [440P]" group-title="电影/影剧直播",张卫健专场 [688P] [440P] [720P]
 https://isus.cc/php/huya.php?id=11342423
 #EXTINF:-1 tvg-name="强森电影 [720P] [720P] [720P]" group-title="电影/影剧直播",强森电影 [720P] [720P] [720P] [720P]
@@ -2095,16 +2095,16 @@ https://isus.cc/php/huya.php?id=11602081
 http://cfss.cc/cdn/huya/29982659.flv
 #EXTINF:-1 tvg-name="西游记2 [476P] [476P] [476P]" group-title="电视/电视剧轮播",西游记2 [476P] [476P] [476P] [476P]
 http://cfss.cc/cdn/huya/29465859.flv
-#EXTINF:-1 tvg-name="重温经典" group-title="电视/电视剧轮播",重温经典 [1080P]
-http://221.7.175.154:8445/tsfile/live/0136_1.m3u8?key=txiptv&playlive=1&authid=0
+#EXTINF:-1 tvg-name="重温经典 [1080P] [1080P] [1080P]" group-title="电视/电视剧轮播",重温经典 [1080P] [1080P] [1080P] [1080P]
+http://8.138.7.223/tv/cwjd.php
+#EXTINF:-1 tvg-name="重温经典 [1080P] [1080P]" group-title="电视/电视剧轮播",重温经典 [1080P] [1080P] [576P]
+http://63.141.230.178:82/gslb/zbdq5.m3u8?id=cwjd
 #EXTINF:-1 tvg-name="重温经典 [1080P] [1080P]" group-title="电视/电视剧轮播",重温经典 [1080P] [1080P] [1080P]
 http://8.138.7.223/tv/cwjd.php#http://38.75.136.137:98/gslb/dsdqpub/cwjd.m3u8?auth=testpub
 #EXTINF:-1 tvg-name="重温经典 [1080P] [1080P]" group-title="电视/电视剧轮播",重温经典 [1080P] [1080P] [1080P]
 http://112.27.235.94:8000/hls/50/index.m3u8
-#EXTINF:-1 tvg-name="重温经典 [1080P] [1080P]" group-title="电视/电视剧轮播",重温经典 [1080P] [1080P] [576P]
-http://63.141.230.178:82/gslb/zbdq5.m3u8?id=cwjd
-#EXTINF:-1 tvg-name="重温经典 [1080P] [1080P] [1080P]" group-title="电视/电视剧轮播",重温经典 [1080P] [1080P] [1080P] [1080P]
-http://8.138.7.223/tv/cwjd.php
+#EXTINF:-1 tvg-name="重温经典" group-title="电视/电视剧轮播",重温经典 [1080P]
+http://221.7.175.154:8445/tsfile/live/0136_1.m3u8?key=txiptv&playlive=1&authid=0
 #EXTINF:-1 tvg-name="雍正王朝频道 [480P] [480P] [480P]" group-title="电视/电视剧轮播",雍正王朝频道 [480P] [480P] [480P] [480P]
 http://cfss.cc/cdn/huya/11342439.flv
 #EXTINF:-1 tvg-name="乐陵综艺 [1080P] [1080P]" group-title="综艺/短剧直播",乐陵综艺 [1080P] [1080P] [1080P]
@@ -2133,10 +2133,10 @@ http://1.94.31.214/php/qilu.php?id=lcgtzy
 https://isus.cc/php/huya.php?id=25261191
 #EXTINF:-1 tvg-name="小舞点歌台 [480P] [480P] [480P]" group-title="音乐/DJ点歌台",小舞点歌台 [480P] [480P] [480P] [480P]
 http://cfss.cc/cdn/huya/15590571.flv
-#EXTINF:-1 tvg-name="风云音乐 [1080P] [1080P] [1080P]" group-title="音乐/DJ点歌台",风云音乐 [1080P] [1080P] [1080P] [1080P]
-http://hmfs.f3322.net:3388/hls/29/index.m3u8
 #EXTINF:-1 tvg-name="风云音乐 [720P] [1080P]" group-title="音乐/DJ点歌台",风云音乐 [720P] [1080P] [1080P]
 http://107.150.60.122/live/fyyy.m3u8#http://hmfs.f3322.net:3388/hls/29/index.m3u8
+#EXTINF:-1 tvg-name="风云音乐 [1080P] [1080P] [1080P]" group-title="音乐/DJ点歌台",风云音乐 [1080P] [1080P] [1080P] [1080P]
+http://hmfs.f3322.net:3388/hls/29/index.m3u8
 #EXTINF:-1 tvg-name="18:30忠诚村足球队🆚寿洞村足球队 [1080P] [1080P]" group-title="体育/竞技直播",18:30忠诚村足球队🆚寿洞村足球队 [1080P] [1080P] [1080P]
 http://rihou.cc:555/tv/v
 #EXTINF:-1 tvg-name="BTV体育 [1080P] [1080P] [1080P]" group-title="体育/竞技直播",BTV体育 [1080P] [1080P] [1080P] [1080P]
@@ -2157,10 +2157,10 @@ http://107.150.60.122/live/gefwq.m3u8
 http://cfss.cc/cdn/huya/30080253.flv
 #EXTINF:-1 tvg-name="BTV财经 [1080P] [1080P] [1080P]" group-title="老年/戏曲/财经",BTV财经 [1080P] [1080P] [1080P] [1080P]
 http://103.72.172.253:8041/hls/358948176/index.m3u8
-#EXTINF:-1 tvg-name="岭南戏曲 [540P] [540P] [540P]" group-title="老年/戏曲/财经",岭南戏曲 [540P] [540P] [540P] [720P]
-http://38.75.136.137:98/gslb/dsdqpub/gdlnxq.m3u8?auth=testpub
 #EXTINF:-1 tvg-name="岭南戏曲 [540P] [540P] [540P]" group-title="老年/戏曲/财经",岭南戏曲 [540P] [540P] [540P] [540P]
 http://198.204.228.26/live/gdlnxq.m3u8
+#EXTINF:-1 tvg-name="岭南戏曲 [540P] [540P] [540P]" group-title="老年/戏曲/财经",岭南戏曲 [540P] [540P] [540P] [720P]
+http://38.75.136.137:98/gslb/dsdqpub/gdlnxq.m3u8?auth=testpub
 #EXTINF:-1 tvg-name="岭南戏曲 [720P] [540P] [540P]" group-title="老年/戏曲/财经",岭南戏曲 [720P] [540P] [540P] [540P]
 http://192.151.150.154/live/gdlnxq.m3u8
 #EXTINF:-1 tvg-name="点掌财经 [720P] [720P] [720P]" group-title="老年/戏曲/财经",点掌财经 [720P] [720P] [720P] [720P]
@@ -2179,12 +2179,12 @@ https://yypull.cbg.cn/applive/wslive01/playlist.m3u8
 http://60.222.246.220:19433/hls1.m3u8
 #EXTINF:-1 tvg-name="上街电视台 [1080P] [1080P] [1080P]" group-title="地方特色",上街电视台 [1080P] [1080P] [1080P] [1080P]
 http://tvpull.dxhmt.cn:9081/tv/10106-1.m3u8
-#EXTINF:-1 tvg-name="东丰综合 [576P] [576P]" group-title="地方特色",东丰综合 [576P] [576P] [576P]
-http://stream5.jlntv.cn/df/sd/live.m3u8#http://stream3.jlntv.cn:80/aac_dfgb/playlist.m3u8
 #EXTINF:-1 tvg-name="东丰综合 [576P] [576P] [576P]" group-title="地方特色",东丰综合 [576P] [576P] [576P] [576P]
 http://stream5.jlntv.cn/df/sd/live.m3u8
 #EXTINF:-1 tvg-name="东丰综合 [576P] [576P] [576P]" group-title="地方特色",东丰综合 [576P] [576P] [576P] [576P]
 http://stream5.jlntv.cn/df/playlist.m3u8
+#EXTINF:-1 tvg-name="东丰综合 [576P] [576P]" group-title="地方特色",东丰综合 [576P] [576P] [576P]
+http://stream5.jlntv.cn/df/sd/live.m3u8#http://stream3.jlntv.cn:80/aac_dfgb/playlist.m3u8
 #EXTINF:-1 tvg-name="东平综合 [1080P] [1080P]" group-title="地方特色",东平综合 [1080P] [1080P] [1080P]
 http://1.94.31.214/php/qilu.php?id=tadpzh
 #EXTINF:-1 tvg-name="东昌综合 [1080P] [1080P]" group-title="地方特色",东昌综合 [1080P] [1080P] [1080P]
@@ -2219,20 +2219,20 @@ http://1.94.31.214/php/qilu.php?id=zblzsh
 http://1.94.31.214/php/qilu.php?id=lclqzh
 #EXTINF:-1 tvg-name="义马电视台 [HEVC] [2160P/HEVC]" group-title="地方特色",义马电视台 [HEVC] [2160P/HEVC] [2160P/HEVC]
 http://sdray.gicp.net:8822/rtp/239.16.20.109:11090
-#EXTINF:-1 tvg-name="乐至综合 [1080P] [1080P]" group-title="地方特色",乐至综合 [1080P] [1080P] [1080P]
-http://175.155.106.72:89/live1/live1.m3u8#http://175.155.106.72:89/live1/live1.m3u8?zsicd
 #EXTINF:-1 tvg-name="乐至综合 [1080P] [1080P] [1080P]" group-title="地方特色",乐至综合 [1080P] [1080P] [1080P] [1080P]
 http://175.155.106.72:89/live1/live1.m3u8
+#EXTINF:-1 tvg-name="乐至综合 [1080P] [1080P]" group-title="地方特色",乐至综合 [1080P] [1080P] [1080P]
+http://175.155.106.72:89/live1/live1.m3u8#http://175.155.106.72:89/live1/live1.m3u8?zsicd
 #EXTINF:-1 tvg-name="乐陵综合 [1080P] [1080P]" group-title="地方特色",乐陵综合 [1080P] [1080P] [1080P]
 http://1.94.31.214/php/qilu.php?id=dzllxw
 #EXTINF:-1 tvg-name="九台综合 [576P] [576P] [576P]" group-title="地方特色",九台综合 [576P] [576P] [576P] [576P]
 http://stream10.jlntv.cn/jiutaitv/sd/live.m3u8
 #EXTINF:-1 tvg-name="乾安综合 [576P] [576P] [576P]" group-title="地方特色",乾安综合 [576P] [576P] [576P] [576P]
 http://stream6.jlntv.cn/qa/playlist.m3u8
-#EXTINF:-1 tvg-name="云霄综合 [1080P] [1080P]" group-title="地方特色",云霄综合 [1080P] [1080P] [1080P]
-https://live.zzyxxw.com:2443/live/xwzh.m3u8#http://live.zzyxxw.com:85/live/xwzh.m3u8
 #EXTINF:-1 tvg-name="云霄综合 [1080P] [1080P] [1080P]" group-title="地方特色",云霄综合 [1080P] [1080P] [1080P] [1080P]
 http://live.zzyxxw.com:85/live/xwzh.m3u8?fujian
+#EXTINF:-1 tvg-name="云霄综合 [1080P] [1080P]" group-title="地方特色",云霄综合 [1080P] [1080P] [1080P]
+https://live.zzyxxw.com:2443/live/xwzh.m3u8#http://live.zzyxxw.com:85/live/xwzh.m3u8
 #EXTINF:-1 tvg-name="五家渠综合频道 [404P] [404P] [404P]" group-title="地方特色",五家渠综合频道 [404P] [404P] [404P] [404P]
 https://liveout.btzx.com.cn/62ds9e/d9vi5g.m3u8
 #EXTINF:-1 tvg-name="五师综合 [576P] [576P] [576P]" group-title="地方特色",五师综合 [576P] [576P] [576P] [576P]
@@ -2247,12 +2247,12 @@ http://1.94.31.214/php/qilu.php?id=jircxw
 http://stream6.jlntv.cn/yt/playlist.m3u8
 #EXTINF:-1 tvg-name="余杭综合频道 [1080P] [1080P]" group-title="地方特色",余杭综合频道 [1080P] [1080P] [1080P]
 https://29371.hlsplay.aodianyun.com/lms_29371/slow_channel_master_seat_1445826801.m3u8?auth_key=3300411293-0-0-273f15e1d217965ba192be222ea38b2d&extra_key=V8uEmh_EXr1eVHhCsqQdCb2KQpy3kbF4Lfrf1S8rAZfBbea83rMZ6uqfZL74iDr9sfX_YL2E_25HrvU_mbtZh3ifdtd3R0IP_tWpo
-#EXTINF:-1 tvg-name="依安综合 [720P] [720P]" group-title="地方特色",依安综合 [720P] [720P] [720P]
-https://masterpull.hljtv.com/live/4hhgo1mX.m3u8#https://rmplive.hljtv.com/live/yian.m3u8
 #EXTINF:-1 tvg-name="依安综合 [720P] [720P] [720P]" group-title="地方特色",依安综合 [720P] [720P] [720P] [720P]
 https://masterpull.hljtv.com/live/4hhgo1mX.m3u8
 #EXTINF:-1 tvg-name="依安综合 [720P] [720P] [720P]" group-title="地方特色",依安综合 [720P] [720P] [720P] [720P]
 https://rmplive.hljtv.com/live/yian.m3u8
+#EXTINF:-1 tvg-name="依安综合 [720P] [720P]" group-title="地方特色",依安综合 [720P] [720P] [720P]
+https://masterpull.hljtv.com/live/4hhgo1mX.m3u8#https://rmplive.hljtv.com/live/yian.m3u8
 #EXTINF:-1 tvg-name="兖州新闻 [360P] [360P]" group-title="地方特色",兖州新闻 [360P] [360P] [360P]
 http://1.94.31.214/php/qilu.php?id=jiyzxw
 #EXTINF:-1 tvg-name="兖州生活 [360P] [360P]" group-title="地方特色",兖州生活 [360P] [360P] [360P]
@@ -2297,12 +2297,12 @@ http://1.94.31.214/php/qilu.php?id=qdjmzh
 http://liveout.btzx.com.cn/62ds9e/6o77s4.m3u8
 #EXTINF:-1 tvg-name="双滦综合 [1080P] [1080P]" group-title="地方特色",双滦综合 [1080P] [1080P] [1080P]
 https://jwcdnqx.hebyun.com.cn/live/slxw/1500k/tzwj_video.m3u8
-#EXTINF:-1 tvg-name="双辽综合 [240P] [240P]" group-title="地方特色",双辽综合 [240P] [240P] [240P]
-http://stream5.jlntv.cn/sl/sd/live.m3u8#http://stream5.jlntv.cn/sl/sd/live.m3u8?zjild
 #EXTINF:-1 tvg-name="双辽综合 [240P] [240P] [240P]" group-title="地方特色",双辽综合 [240P] [240P] [240P] [240P]
 http://stream5.jlntv.cn/sl/sd/live.m3u8
 #EXTINF:-1 tvg-name="双辽综合 [240P] [240P] [240P]" group-title="地方特色",双辽综合 [240P] [240P] [240P] [240P]
 http://stream5.jlntv.cn/sl/playlist.m3u8
+#EXTINF:-1 tvg-name="双辽综合 [240P] [240P]" group-title="地方特色",双辽综合 [240P] [240P] [240P]
+http://stream5.jlntv.cn/sl/sd/live.m3u8#http://stream5.jlntv.cn/sl/sd/live.m3u8?zjild
 #EXTINF:-1 tvg-name="双阳综合 [576P] [576P] [576P]" group-title="地方特色",双阳综合 [576P] [576P] [576P] [576P]
 http://stream11.jlntv.cn/shuangyang/sd/live.m3u8
 #EXTINF:-1 tvg-name="双阳综合 [576P] [576P] [576P]" group-title="地方特色",双阳综合 [576P] [576P] [576P] [576P]
@@ -2367,14 +2367,14 @@ http://218.84.12.186:8001/hls/main/playlist.m3u8
 http://1.94.31.214/php/qilu.php?id=wfkwtv
 #EXTINF:-1 tvg-name="威远综合 [1080P] [1080P]" group-title="地方特色",威远综合 [1080P] [1080P] [1080P]
 https://wy-live-pull.thecover.cn/rmtlive/fmzb1710746907096.m3u8
-#EXTINF:-1 tvg-name="孙吴综合 [1080P] [1080P]" group-title="地方特色",孙吴综合 [1080P] [1080P] [1080P]
-https://masterpull.hljtv.com/live/eXFjvNaf.m3u8#https://rmplive.hljtv.com/live/sunwu.m3u8
-#EXTINF:-1 tvg-name="孙吴综合 [1080P] [1080P]" group-title="地方特色",孙吴综合 [1080P] [1080P] [1080P]
-https://rmplive.hljtv.com/live/sunwu.m3u8#https://masterpull.hljtv.com/live/eXFjvNaf.m3u8
 #EXTINF:-1 tvg-name="孙吴综合 [1080P] [1080P] [1080P]" group-title="地方特色",孙吴综合 [1080P] [1080P] [1080P] [1080P]
 https://rmplive.hljtv.com/live/sunwu.m3u8
 #EXTINF:-1 tvg-name="孙吴综合 [1080P] [1080P] [1080P]" group-title="地方特色",孙吴综合 [1080P] [1080P] [1080P] [1080P]
 https://masterpull.hljtv.com/live/eXFjvNaf.m3u8
+#EXTINF:-1 tvg-name="孙吴综合 [1080P] [1080P]" group-title="地方特色",孙吴综合 [1080P] [1080P] [1080P]
+https://masterpull.hljtv.com/live/eXFjvNaf.m3u8#https://rmplive.hljtv.com/live/sunwu.m3u8
+#EXTINF:-1 tvg-name="孙吴综合 [1080P] [1080P]" group-title="地方特色",孙吴综合 [1080P] [1080P] [1080P]
+https://rmplive.hljtv.com/live/sunwu.m3u8#https://masterpull.hljtv.com/live/eXFjvNaf.m3u8
 #EXTINF:-1 tvg-name="孝义综合频道 [1080P] [1080P]" group-title="地方特色",孝义综合频道 [1080P] [1080P] [1080P]
 https://p2hs.vzan.com/slowlive/739908540076758903/live.m3u8
 #EXTINF:-1 tvg-name="宁化综合 [576P] [576P] [576P]" group-title="地方特色",宁化综合 [576P] [576P] [576P] [576P]
@@ -2447,10 +2447,10 @@ http://1.94.31.214/php/qilu.php?id=zbzd1
 https://ali-m-l.cztv.com/channels/lantian/channel005/1080p.m3u8#http://ali-m-l.cztv.com/channels/lantian/channel005/1080p.m3u8
 #EXTINF:-1 tvg-name="影视文化 [1080P] [1080P]" group-title="地方特色",影视文化 [1080P] [1080P] [1080P]
 http://123.207.224.130:123/xizang/xizang.php?id=xzys
-#EXTINF:-1 tvg-name="德惠综合 [576P] [576P]" group-title="地方特色",德惠综合 [576P] [576P] [576P]
-http://stream11.jlntv.cn/dehuitv/sd/live.m3u8
 #EXTINF:-1 tvg-name="德惠综合 [576P] [576P] [576P]" group-title="地方特色",德惠综合 [576P] [576P] [576P] [576P]
 http://stream11.jlntv.cn/dehuitv/playlist.m3u8
+#EXTINF:-1 tvg-name="德惠综合 [576P] [576P]" group-title="地方特色",德惠综合 [576P] [576P] [576P]
+http://stream11.jlntv.cn/dehuitv/sd/live.m3u8
 #EXTINF:-1 tvg-name="德格综合频道 [720P] [720P]" group-title="地方特色",德格综合频道 [720P] [720P] [720P]
 http://dgfile.ganzitv.com:80/nmip-media/channellive/channel101955/playlist.m3u8
 #EXTINF:-1 tvg-name="忠县综合 [1080P] [1080P]" group-title="地方特色",忠县综合 [1080P] [1080P] [1080P]
@@ -2485,10 +2485,10 @@ http://42483.hlsplay.aodianyun.com/tv_radio_42483/tv_channel_1362.m3u8?auth_key=
 http://l.cztvcloud.com/channels/lantian/SXxinchang2/720p.m3u8
 #EXTINF:-1 tvg-name="新野新闻综合频道 [1080P] [1080P] [1080P]" group-title="地方特色",新野新闻综合频道 [1080P] [1080P] [1080P] [1080P]
 http://live.dxhmt.cn:9081/tv/11329-1.m3u8
-#EXTINF:-1 tvg-name="新野综合 [1080P] [1080P]" group-title="地方特色",新野综合 [1080P] [1080P] [1080P]
-http://tvpull.dxhmt.cn:9081/tv/11329-1.m3u8#http://tvpull.dxhmt.cn:9081/tv/11329-1.m3u8?zhend
 #EXTINF:-1 tvg-name="新野综合 [1080P] [1080P] [1080P]" group-title="地方特色",新野综合 [1080P] [1080P] [1080P] [1080P]
 http://tvpull.dxhmt.cn:9081/tv/11329-1.m3u8
+#EXTINF:-1 tvg-name="新野综合 [1080P] [1080P]" group-title="地方特色",新野综合 [1080P] [1080P] [1080P]
+http://tvpull.dxhmt.cn:9081/tv/11329-1.m3u8#http://tvpull.dxhmt.cn:9081/tv/11329-1.m3u8?zhend
 #EXTINF:-1 tvg-name="新闻咨询 [576P] [576P]" group-title="地方特色",新闻咨询 [576P] [576P] [576P]
 http://112.46.105.20:8009/hls/18/index.m3u8
 #EXTINF:-1 tvg-name="新闻综合 [768P] [768P]" group-title="地方特色",新闻综合 [768P] [768P] [768P]
@@ -2519,12 +2519,12 @@ http://cfss.cc/cdn/huya/11602085.flv
 http://38.64.72.148/hls/modn/list/2003/chunklist1.m3u8
 #EXTINF:-1 tvg-name="松潘新闻综合 [1080P] [1080P] [1080P]" group-title="地方特色",松潘新闻综合 [1080P] [1080P] [1080P] [1080P]
 http://live.spccmc.com:90/live/spxwzh.m3u8
-#EXTINF:-1 tvg-name="柳河综合 [576P] [576P]" group-title="地方特色",柳河综合 [576P] [576P] [576P]
-http://stream5.jlntv.cn/lh/sd/live.m3u8#http://stream3.jlntv.cn:80/aac_lhgb/sd/live.m3u8
 #EXTINF:-1 tvg-name="柳河综合 [576P] [576P] [576P]" group-title="地方特色",柳河综合 [576P] [576P] [576P] [576P]
 http://stream5.jlntv.cn/lh/sd/live.m3u8
 #EXTINF:-1 tvg-name="柳河综合 [576P] [576P] [576P]" group-title="地方特色",柳河综合 [576P] [576P] [576P] [576P]
 http://stream5.jlntv.cn/lh/playlist.m3u8
+#EXTINF:-1 tvg-name="柳河综合 [576P] [576P]" group-title="地方特色",柳河综合 [576P] [576P] [576P]
+http://stream5.jlntv.cn/lh/sd/live.m3u8#http://stream3.jlntv.cn:80/aac_lhgb/sd/live.m3u8
 #EXTINF:-1 tvg-name="栖霞综合 [720P] [720P]" group-title="地方特色",栖霞综合 [720P] [720P] [720P]
 http://1.94.31.214/php/qilu.php?id=ytqxzh
 #EXTINF:-1 tvg-name="桓台影视 [600P] [600P]" group-title="地方特色",桓台影视 [600P] [600P] [600P]
@@ -2551,12 +2551,12 @@ http://1.94.31.214/php/qilu.php?id=dzwczh
 http://live.wjyanghu.com/live/CH1.m3u8
 #EXTINF:-1 tvg-name="武进新闻频道 [576P] [576P] [576P]" group-title="地方特色",武进新闻频道 [576P] [576P] [576P] [576P]
 https://live.wjyanghu.com/live/CH1.m3u8?zjiangsd
+#EXTINF:-1 tvg-name="武进生活 [576P] [576P] [576P]" group-title="地方特色",武进生活 [576P] [576P] [576P] [576P]
+https://live.wjyanghu.com/live/CH2.m3u8?zjiangsd
 #EXTINF:-1 tvg-name="武进生活 [576P] [576P]" group-title="地方特色",武进生活 [576P] [576P] [576P]
 https://live.wjyanghu.com/live/CH2.m3u8#https://live.wjyanghu.com/live/CH2.m3u8?zjiangsd
 #EXTINF:-1 tvg-name="武进生活 [576P] [576P]" group-title="地方特色",武进生活 [576P] [576P] [576P]
 http://live.wjyanghu.com/live/CH2.m3u8
-#EXTINF:-1 tvg-name="武进生活 [576P] [576P] [576P]" group-title="地方特色",武进生活 [576P] [576P] [576P] [576P]
-https://live.wjyanghu.com/live/CH2.m3u8?zjiangsd
 #EXTINF:-1 tvg-name="永吉综合 [576P] [576P] [576P]" group-title="地方特色",永吉综合 [576P] [576P] [576P] [576P]
 http://stream10.jlntv.cn/yongji/playlist.m3u8
 #EXTINF:-1 tvg-name="永吉综合频道 [576P] [576P]" group-title="地方特色",永吉综合频道 [576P] [576P] [576P]
@@ -2577,12 +2577,12 @@ http://222.179.155.21:1935/ch1.m3u8?zzhongqd
 http://stream10.jlntv.cn/jiangyuantv/sd/live.m3u8
 #EXTINF:-1 tvg-name="江源综合 [576P] [576P] [576P]" group-title="地方特色",江源综合 [576P] [576P] [576P] [576P]
 http://stream10.jlntv.cn/jiangyuantv/playlist.m3u8
-#EXTINF:-1 tvg-name="汪清综合 [240P] [240P]" group-title="地方特色",汪清综合 [240P] [240P] [240P]
-http://stream5.jlntv.cn/wq/sd/live.m3u8#http://stream5.jlntv.cn/wq/sd/live.m3u8?zjild
 #EXTINF:-1 tvg-name="汪清综合 [240P] [240P] [240P]" group-title="地方特色",汪清综合 [240P] [240P] [240P] [240P]
 http://stream5.jlntv.cn/wq/sd/live.m3u8
 #EXTINF:-1 tvg-name="汪清综合 [240P] [240P] [240P]" group-title="地方特色",汪清综合 [240P] [240P] [240P] [240P]
 http://stream5.jlntv.cn/wq/playlist.m3u8
+#EXTINF:-1 tvg-name="汪清综合 [240P] [240P]" group-title="地方特色",汪清综合 [240P] [240P] [240P]
+http://stream5.jlntv.cn/wq/sd/live.m3u8#http://stream5.jlntv.cn/wq/sd/live.m3u8?zjild
 #EXTINF:-1 tvg-name="汶上综合 [1080P] [1080P]" group-title="地方特色",汶上综合 [1080P] [1080P] [1080P]
 http://1.94.31.214/php/qilu.php?id=jiwszh
 #EXTINF:-1 tvg-name="汶川新闻综合 [720P] [720P] [720P]" group-title="地方特色",汶川新闻综合 [720P] [720P] [720P] [720P]
@@ -2609,12 +2609,12 @@ http://1.94.31.214/php/qilu.php?id=lyhdzh
 http://1.94.31.214/php/qilu.php?id=jisswh
 #EXTINF:-1 tvg-name="泗水新闻综合 [360P] [360P]" group-title="地方特色",泗水新闻综合 [360P] [360P] [360P]
 http://1.94.31.214/php/qilu.php?id=jissxw
+#EXTINF:-1 tvg-name="泸县新闻综合 [1080P] [1080P] [1080P]" group-title="地方特色",泸县新闻综合 [1080P] [1080P] [1080P] [1080P]
+http://lxfile.lxxcb.cn/nmip-media/channellive/channel103799/playlist.m3u8?zsicd
 #EXTINF:-1 tvg-name="泸县新闻综合 [1080P] [1080P]" group-title="地方特色",泸县新闻综合 [1080P] [1080P] [1080P]
 http://lxfile.lxxcb.cn/nmip-media/channellive/channel103799/playlist.m3u8#https://m3u8channel.ganzitv.com/nmip-media/channellive/channel1/playlist.m3u8
 #EXTINF:-1 tvg-name="泸县新闻综合 [1080P] [1080P]" group-title="地方特色",泸县新闻综合 [1080P] [1080P] [1080P]
 http://lxfile.lxxcb.cn:80/nmip-media/channellive/channel103799/playlist.m3u8#http://lxfile.lxxcb.cn/nmip-media/channellive/channel103799/playlist.m3u8?zsicd
-#EXTINF:-1 tvg-name="泸县新闻综合 [1080P] [1080P] [1080P]" group-title="地方特色",泸县新闻综合 [1080P] [1080P] [1080P] [1080P]
-http://lxfile.lxxcb.cn/nmip-media/channellive/channel103799/playlist.m3u8?zsicd
 #EXTINF:-1 tvg-name="泾县新闻 [1080P] [1080P]" group-title="地方特色",泾县新闻 [1080P] [1080P] [1080P]
 https://apisave.jxnn.cn/hls/xwzonhe/playlist.m3u8
 #EXTINF:-1 tvg-name="洞头综合频道 [540P] [540P] [540P]" group-title="地方特色",洞头综合频道 [540P] [540P] [540P] [540P]
@@ -2695,10 +2695,10 @@ http://1.94.31.214/php/qilu.php?id=tafcsh
 http://1.94.31.214/php/qilu.php?id=qdjzsh
 #EXTINF:-1 tvg-name="胶州综合 [1080P] [1080P]" group-title="地方特色",胶州综合 [1080P] [1080P] [1080P]
 http://1.94.31.214/php/qilu.php?id=qdjzzh
-#EXTINF:-1 tvg-name="苍南新闻综合 [1080P] [1080P]" group-title="地方特色",苍南新闻综合 [1080P] [1080P] [1080P]
-https://l.cztvcloud.com/channels/lantian/SXcangnan1/720p.m3u8
 #EXTINF:-1 tvg-name="苍南新闻综合 [1080P] [1080P] [1080P]" group-title="地方特色",苍南新闻综合 [1080P] [1080P] [1080P] [1080P]
 http://l.cztvcloud.com/channels/lantian/SXcangnan1/720p.m3u8?zzhed
+#EXTINF:-1 tvg-name="苍南新闻综合 [1080P] [1080P]" group-title="地方特色",苍南新闻综合 [1080P] [1080P] [1080P]
+https://l.cztvcloud.com/channels/lantian/SXcangnan1/720p.m3u8
 #EXTINF:-1 tvg-name="范县新闻综合 [270P] [270P] [270P]" group-title="地方特色",范县新闻综合 [270P] [270P] [270P] [270P]
 http://live.dxhmt.cn:9080/13603832636/13abd3089d9c47058fe34c49a6182981.m3u8
 #EXTINF:-1 tvg-name="茌平生活 [404P] [404P]" group-title="地方特色",茌平生活 [404P] [404P] [404P]
@@ -2715,12 +2715,12 @@ http://183.64.181.25:40023/rongchang01.m3u8
 https://m3u8channel-yj.yunxya.com/nmip-media/channellive/channel101140/playlist.m3u8#http://file.ysxtv.cn/cms/videos/nmip-media/channellive/channel4/playlist.m3u8#rtmp://tv.yunxya.com:1937/channellive/yingjing#https://file.ysxtv.cn/nmip-media/channellive/channel101492/playlist.m3u8
 #EXTINF:-1 tvg-name="荥阳新闻综合频道 [1080P] [1080P] [1080P]" group-title="地方特色",荥阳新闻综合频道 [1080P] [1080P] [1080P] [1080P]
 http://live.dxhmt.cn:9081/tv/10182-1.m3u8
+#EXTINF:-1 tvg-name="荥阳综合 [1080P] [1080P] [1080P]" group-title="地方特色",荥阳综合 [1080P] [1080P] [1080P] [1080P]
+http://tvpull.dxhmt.cn:9081/tv/10182-1.m3u8?zhend
 #EXTINF:-1 tvg-name="荥阳综合 [1080P] [1080P]" group-title="地方特色",荥阳综合 [1080P] [1080P] [1080P]
 http://tvpull.dxhmt.cn:9081/tv/10182-1.m3u8?zhend#http://tvpull.dxhmt.cn:9081/tv/10182-1.m3u8
 #EXTINF:-1 tvg-name="荥阳综合 [1080P] [1080P]" group-title="地方特色",荥阳综合 [1080P] [1080P] [1080P]
 http://tvpull.dxhmt.cn:9081/tv/10182-1.m3u8?zhend#http://tvpull.dxhmt.cn:9081/tv/10182-1.m3u8?wsSecret=df15530a0abec41b14bca00fc96270d1&amp;wsTime=1654956569
-#EXTINF:-1 tvg-name="荥阳综合 [1080P] [1080P] [1080P]" group-title="地方特色",荥阳综合 [1080P] [1080P] [1080P] [1080P]
-http://tvpull.dxhmt.cn:9081/tv/10182-1.m3u8?zhend
 #EXTINF:-1 tvg-name="莒南影视 [480P] [480P]" group-title="地方特色",莒南影视 [480P] [480P] [480P]
 http://1.94.31.214/php/qilu.php?id=lyjnys
 #EXTINF:-1 tvg-name="莒南综合 [480P] [480P]" group-title="地方特色",莒南综合 [480P] [480P] [480P]
@@ -2779,10 +2779,10 @@ http://1.94.31.214/php/qilu.php?id=jijxsh
 http://1.94.31.214/php/qilu.php?id=jijxzh
 #EXTINF:-1 tvg-name="金堂电视台 [720P] [720P]" group-title="地方特色",金堂电视台 [720P] [720P] [720P]
 http://live.jtxwzx.com.cn:80/jtdst/hd/live.m3u8
-#EXTINF:-1 tvg-name="金川新闻综合 [1080P] [1080P]" group-title="地方特色",金川新闻综合 [1080P] [1080P] [1080P]
-http://live.jinchuanrmt.com:90/live/zhxw.m3u8#http://live.jinchuanrmt.com:90/live/zhxw.m3u8?zsicd
 #EXTINF:-1 tvg-name="金川新闻综合 [1080P] [1080P] [1080P]" group-title="地方特色",金川新闻综合 [1080P] [1080P] [1080P] [1080P]
 http://live.jinchuanrmt.com:90/live/zhxw.m3u8
+#EXTINF:-1 tvg-name="金川新闻综合 [1080P] [1080P]" group-title="地方特色",金川新闻综合 [1080P] [1080P] [1080P]
+http://live.jinchuanrmt.com:90/live/zhxw.m3u8#http://live.jinchuanrmt.com:90/live/zhxw.m3u8?zsicd
 #EXTINF:-1 tvg-name="铜梁综合 [576P] [576P] [576P]" group-title="地方特色",铜梁综合 [576P] [576P] [576P] [576P]
 http://183.64.174.171:40123/ch1.m3u8
 #EXTINF:-1 tvg-name="镇赉综合 [576P] [576P] [576P]" group-title="地方特色",镇赉综合 [576P] [576P] [576P] [576P]
@@ -2807,10 +2807,10 @@ http://qcfile.qcrmt.com/nmip-media/channellive/channel100933/playlist.m3u8
 http://1.94.31.214/php/qilu.php?id=wfqzzh
 #EXTINF:-1 tvg-name="靖宇综合 [576P] [576P] [576P]" group-title="地方特色",靖宇综合 [576P] [576P] [576P] [576P]
 http://stream8.jlntv.cn/jytv/playlist.m3u8
-#EXTINF:-1 tvg-name="靖江新闻综合 [720P] [720P]" group-title="地方特色",靖江新闻综合 [720P] [720P] [720P]
-http://visit.jjbctv.com:1935/live/xwzhmb/playlist.m3u8?zjiangsd#http://visit.jjbctv.com:1935/live/xwzhmb/playlist.m3u8
 #EXTINF:-1 tvg-name="靖江新闻综合 [720P] [720P] [720P]" group-title="地方特色",靖江新闻综合 [720P] [720P] [720P] [720P]
 http://visit.jjbctv.com:1935/live/xwzhmb/playlist.m3u8?zjiangsd
+#EXTINF:-1 tvg-name="靖江新闻综合 [720P] [720P]" group-title="地方特色",靖江新闻综合 [720P] [720P] [720P]
+http://visit.jjbctv.com:1935/live/xwzhmb/playlist.m3u8?zjiangsd#http://visit.jjbctv.com:1935/live/xwzhmb/playlist.m3u8
 #EXTINF:-1 tvg-name="高唐综合 [720P] [720P]" group-title="地方特色",高唐综合 [720P] [720P] [720P]
 http://1.94.31.214/php/qilu.php?id=lcgtzh
 #EXTINF:-1 tvg-name="高平综合频道 [480P] [480P]" group-title="地方特色",高平综合频道 [480P] [480P] [480P]
@@ -2831,10 +2831,10 @@ https://rmplive.hljtv.com/live/jidong.m3u8
 https://video.yscxy.cn:8888/mctv1.m3u8
 #EXTINF:-1 tvg-name="黑水新闻综合 [1080P] [1080P] [1080P]" group-title="地方特色",黑水新闻综合 [1080P] [1080P] [1080P] [1080P]
 http://live.schstv.com:90/live/xwzh.m3u8
-#EXTINF:-1 tvg-name="龙井综合 [576P] [576P]" group-title="地方特色",龙井综合 [576P] [576P] [576P]
-http://stream8.jlntv.cn/ljtv/sd/live.m3u8?zjild#http://stream8.jlntv.cn/ljtv/sd/live.m3u8
 #EXTINF:-1 tvg-name="龙井综合 [576P] [576P] [576P]" group-title="地方特色",龙井综合 [576P] [576P] [576P] [576P]
 http://stream8.jlntv.cn/ljtv/playlist.m3u8
+#EXTINF:-1 tvg-name="龙井综合 [576P] [576P]" group-title="地方特色",龙井综合 [576P] [576P] [576P]
+http://stream8.jlntv.cn/ljtv/sd/live.m3u8?zjild#http://stream8.jlntv.cn/ljtv/sd/live.m3u8
 #EXTINF:-1 tvg-name="龙口生活 [1080P] [1080P]" group-title="地方特色",龙口生活 [1080P] [1080P] [1080P]
 http://1.94.31.214/php/qilu.php?id=ytlksh
 #EXTINF:-1 tvg-name="龙口综合 [1080P] [1080P]" group-title="地方特色",龙口综合 [1080P] [1080P] [1080P]
@@ -2853,10 +2853,10 @@ http://btn.nowcdn.co.kr/btn/btnlive01/playlist.m3u8
 http://103.72.172.253:8041/hls/346478234/index.m3u8
 #EXTINF:-1 tvg-name="BTV科教 [1080P] [1080P] [1080P]" group-title="其他精选",BTV科教 [1080P] [1080P] [1080P] [1080P]
 http://103.72.172.253:8041/hls/347295318/index.m3u8
-#EXTINF:-1 tvg-name="CMT[1920x1080] [1080P] [1080P]" group-title="其他精选",CMT[1920x1080] [1080P] [1080P] [1080P]
-http://23.237.104.106:8080/USA_CMT/index.m3u8
 #EXTINF:-1 tvg-name="Cinemax经典 [576P] [576P]" group-title="其他精选",Cinemax经典 [576P] [576P] [1080P]
 http://23.237.104.106:8080/USA_5STARMAX/tracks-v1a1/mono.m3u8
+#EXTINF:-1 tvg-name="CMT[1920x1080] [1080P] [1080P]" group-title="其他精选",CMT[1920x1080] [1080P] [1080P] [1080P]
+http://23.237.104.106:8080/USA_CMT/index.m3u8
 #EXTINF:-1 tvg-name="FX[1280x720] [720P] [720P]" group-title="其他精选",FX[1280x720] [720P] [720P] [720P]
 http://23.237.104.106:8080/USA_FX/index.m3u8
 #EXTINF:-1 tvg-name="HLN[1920x1080] [1080P] [1080P]" group-title="其他精选",HLN[1920x1080] [1080P] [1080P] [1080P]
@@ -2879,14 +2879,14 @@ http://175.154.151.98:808/hls/23/index.m3u8
 http://175.154.151.98:808/hls/25/index.m3u8
 #EXTINF:-1 tvg-name="SCTV-科教 [1080P] [1080P]" group-title="其他精选",SCTV-科教 [1080P] [1080P] [1080P]
 http://175.154.151.98:808/hls/24/index.m3u8
-#EXTINF:-1 tvg-name="SYTV [1080P] [1080P] [1080P]" group-title="其他精选",SYTV [1080P] [1080P] [1080P] [1080P]
-http://l.cztvcloud.com/channels/lantian/SXsongyang1/720p.m3u8
 #EXTINF:-1 tvg-name="Syfy[1920x1080] [1080P] [1080P]" group-title="其他精选",Syfy[1920x1080] [1080P] [1080P] [1080P]
 http://23.237.104.106:8080/USA_SYFY/index.m3u8
-#EXTINF:-1 tvg-name="VICE[1920x1080] [1080P] [1080P]" group-title="其他精选",VICE[1920x1080] [1080P] [1080P] [1080P]
-http://23.237.104.106:8080/USA_VICETV/index.m3u8
+#EXTINF:-1 tvg-name="SYTV [1080P] [1080P] [1080P]" group-title="其他精选",SYTV [1080P] [1080P] [1080P] [1080P]
+http://l.cztvcloud.com/channels/lantian/SXsongyang1/720p.m3u8
 #EXTINF:-1 tvg-name="tvbs闽南频道 [720P] [720P] [720P]" group-title="其他精选",tvbs闽南频道 [720P] [720P] [720P] [720P]
 http://61.221.215.25:8800/hls/9/index.m3u8
+#EXTINF:-1 tvg-name="VICE[1920x1080] [1080P] [1080P]" group-title="其他精选",VICE[1920x1080] [1080P] [1080P] [1080P]
+http://23.237.104.106:8080/USA_VICETV/index.m3u8
 #EXTINF:-1 tvg-name="➡️抖舞陪看⬅️ [852P] [720P]" group-title="其他精选",➡️抖舞陪看⬅️ [852P] [720P] [720P]
 http://rihou.cc:555/tv/[mv]抖舞陪看
 #EXTINF:-1 tvg-name="一人之上 [1080P] [1080P] [1080P]" group-title="其他精选",一人之上 [1080P] [1080P] [1080P] [1080P]
@@ -2925,10 +2925,10 @@ http://jwcdnqx.hebyun.com.cn/live/fengningzonghe/1500k/tzwj_video.m3u8
 http://1.94.31.214/php/qilu.php?id=lclqjj
 #EXTINF:-1 tvg-name="为她情狂 [852P] [852P]" group-title="其他精选",为她情狂 [852P] [852P] [852P]
 https://vip15.play-cdn15.com/20230916/24702_972962ab/index.m3u8
-#EXTINF:-1 tvg-name="之江纪录 [1080P] [1080P]" group-title="其他精选",之江纪录 [1080P] [1080P] [1080P]
-http://ali-m-l.cztv.com/channels/lantian/channel12/1080p.m3u8#https://ali-m-l.cztv.com/channels/lantian/channel12/720p.m3u8
 #EXTINF:-1 tvg-name="之江纪录 [720P] [720P] [720P]" group-title="其他精选",之江纪录 [720P] [720P] [720P] [720P]
 https://ali-m-l.cztv.com/channels/lantian/channel12/720p.m3u8
+#EXTINF:-1 tvg-name="之江纪录 [1080P] [1080P]" group-title="其他精选",之江纪录 [1080P] [1080P] [1080P]
+http://ali-m-l.cztv.com/channels/lantian/channel12/1080p.m3u8#https://ali-m-l.cztv.com/channels/lantian/channel12/720p.m3u8
 #EXTINF:-1 tvg-name="之江记录 [1080P] [1080P] [1080P]" group-title="其他精选",之江记录 [1080P] [1080P] [1080P] [1080P]
 https://ali-m-l.cztv.com/channels/lantian/channel012/1080p.m3u8
 #EXTINF:-1 tvg-name="乌兰察布 [1080P] [1080P]" group-title="其他精选",乌兰察布 [1080P] [1080P] [1080P]
@@ -3029,20 +3029,20 @@ https://p2hs.vzan.com/slowlive/371673471833525863/live.m3u8
 http://1.94.31.214/php/qilu.php?id=zbbstw
 #EXTINF:-1 tvg-name="卫生健康 [1080P] [1080P] [1080P]" group-title="其他精选",卫生健康 [1080P] [1080P] [1080P] [1080P]
 https://live.264788.xyz/channel/weishengjiankang?streamid=bc185d1ef1e528922e83efd845006277&livekey=01WgOR41rriMmMkzNsd0UoaxJRwetZdxIvtVk
-#EXTINF:-1 tvg-name="发现之旅 [576P] [576P]" group-title="其他精选",发现之旅 [576P] [576P] [1080P]
-http://107.150.60.122/live/fxzl.m3u8#http://120.76.248.139/live/bfgd/4200000151.m3u8
 #EXTINF:-1 tvg-name="发现之旅 [576P] [576P] [1080P]" group-title="其他精选",发现之旅 [576P] [576P] [1080P] [1080P]
 http://107.150.60.122/live/fxzl.m3u8
+#EXTINF:-1 tvg-name="发现之旅 [576P] [576P]" group-title="其他精选",发现之旅 [576P] [576P] [1080P]
+http://107.150.60.122/live/fxzl.m3u8#http://120.76.248.139/live/bfgd/4200000151.m3u8
 #EXTINF:-1 tvg-name="古天乐 [720P] [720P] [720P]" group-title="其他精选",古天乐 [720P] [720P] [720P] [720P]
 http://cfss.cc/cdn/huya/29982675.flv
 #EXTINF:-1 tvg-name="古天乐轮播 [542P] [542P] [542P]" group-title="其他精选",古天乐轮播 [542P] [542P] [542P] [542P]
 http://cfss.cc/cdn/huya/11602041.flv
 #EXTINF:-1 tvg-name="古都惊雷粤65 [720P] [720P]" group-title="其他精选",古都惊雷粤65 [720P] [720P] [720P]
 https://vip.ffzy-play.com/20221209/31669_e1f6483c/index.m3u8
-#EXTINF:-1 tvg-name="句容党建 [576P] [576P]" group-title="其他精选",句容党建 [576P] [576P] [576P]
-http://jrlive.jrntv.com/live/_definst_/dangjians/playlist.m3u8#http://jrlive.jrntv.com/live/_definst_/dangjians/playlist.m3u8?zjiangsd
 #EXTINF:-1 tvg-name="句容党建 [576P] [576P] [576P]" group-title="其他精选",句容党建 [576P] [576P] [576P] [576P]
 http://jrlive.jrntv.com/live/_definst_/dangjians/playlist.m3u8
+#EXTINF:-1 tvg-name="句容党建 [576P] [576P]" group-title="其他精选",句容党建 [576P] [576P] [576P]
+http://jrlive.jrntv.com/live/_definst_/dangjians/playlist.m3u8#http://jrlive.jrntv.com/live/_definst_/dangjians/playlist.m3u8?zjiangsd
 #EXTINF:-1 tvg-name="叮当全集解说 [1080P] [1080P]" group-title="其他精选",叮当全集解说 [1080P] [1080P] [1080P]
 http://8.155.43.98:35455/douyu/9445279
 #EXTINF:-1 tvg-name="吉木萨尔 [1080P] [1080P]" group-title="其他精选",吉木萨尔 [1080P] [1080P] [1080P]
@@ -3121,10 +3121,10 @@ http://192.151.150.154/live/gztywq.m3u8
 http://107.150.60.122/live/gztywq.m3u8
 #EXTINF:-1 tvg-name="天祝 [1080P] [1080P]" group-title="其他精选",天祝 [1080P] [1080P] [1080P]
 https://play.kankanlive.com/live/1656487214793905.m3u8
-#EXTINF:-1 tvg-name="央视精品 [1080P] [1080P]" group-title="其他精选",央视精品 [1080P] [1080P] [1080P]
-http://107.150.60.122/live/ysjp.m3u8#http://38.75.136.137:98/gslb/dsdqpub/ysjp.m3u8?auth=testpub
 #EXTINF:-1 tvg-name="央视精品 [1080P] [1080P] [1080P]" group-title="其他精选",央视精品 [1080P] [1080P] [1080P] [1080P]
 https://live.264788.xyz/channel/yangshiwenhuajingpin?streamid=bc185d1ef1e528922e83efd845006277&livekey=01WgOR41rriMmMkzNsd0UoaxJRwetZdxIvtVk
+#EXTINF:-1 tvg-name="央视精品 [1080P] [1080P]" group-title="其他精选",央视精品 [1080P] [1080P] [1080P]
+http://107.150.60.122/live/ysjp.m3u8#http://38.75.136.137:98/gslb/dsdqpub/ysjp.m3u8?auth=testpub
 #EXTINF:-1 tvg-name="头文字D [960P] [432P] [432P]" group-title="其他精选",头文字D [960P] [432P] [432P] [432P]
 http://cfss.cc/cdn/huya/11352889.flv
 #EXTINF:-1 tvg-name="头文字D解说 [1080P] [1080P]" group-title="其他精选",头文字D解说 [1080P] [1080P] [1080P]
@@ -3141,12 +3141,12 @@ https://ali-m-l.cztv.com/channels/lantian/channel011/1080p.m3u8
 http://ali-m-l.cztv.com/channels/lantian/channel011/1080p.m3u8
 #EXTINF:-1 tvg-name="如懿传电视剧 [1080P] [1080P] [1080P]" group-title="其他精选",如懿传电视剧 [1080P] [1080P] [1080P] [1080P]
 http://cfss.cc/cdn/huya/29465868.flv
-#EXTINF:-1 tvg-name="妙手仁心 [1080P] [1080P]" group-title="其他精选",妙手仁心 [1080P] [1080P] [1080P]
-https://isus.cc/php/huya.php?id=29465853
-#EXTINF:-1 tvg-name="妙手仁心 [1080P] [1080P] [1080P]" group-title="其他精选",妙手仁心 [1080P] [1080P] [1080P] [1080P]
-http://cfss.cc/cdn/huya/29465853.flv
 #EXTINF:-1 tvg-name="妙手仁心 [720P] [720P] [720P]" group-title="其他精选",妙手仁心 [720P] [720P] [720P] [720P]
 http://cfss.cc/cdn/huya/23829543.flv
+#EXTINF:-1 tvg-name="妙手仁心 [1080P] [1080P] [1080P]" group-title="其他精选",妙手仁心 [1080P] [1080P] [1080P] [1080P]
+http://cfss.cc/cdn/huya/29465853.flv
+#EXTINF:-1 tvg-name="妙手仁心 [1080P] [1080P]" group-title="其他精选",妙手仁心 [1080P] [1080P] [1080P]
+https://isus.cc/php/huya.php?id=29465853
 #EXTINF:-1 tvg-name="娱乐扒叔轮播 [1080P] [1080P]" group-title="其他精选",娱乐扒叔轮播 [1080P] [1080P] [1080P]
 http://8.155.43.98:35455/douyu/9624581
 #EXTINF:-1 tvg-name="宁海 [1080P] [1080P]" group-title="其他精选",宁海 [1080P] [1080P] [1080P]
@@ -3209,10 +3209,10 @@ http://1.94.31.214/php/qilu.php?id=dygrkj
 http://cfss.cc/cdn/huya/11342418.flv
 #EXTINF:-1 tvg-name="延禧攻略频道 [1080P] [1080P] [1080P]" group-title="其他精选",延禧攻略频道 [1080P] [1080P] [1080P] [1080P]
 http://cfss.cc/cdn/huya/26355864.flv
-#EXTINF:-1 tvg-name="开化国家公园 [720P] [720P]" group-title="其他精选",开化国家公园 [720P] [720P] [720P]
-http://l.cztvcloud.com/channels/lantian/SXkaihua2/720p.m3u8zzhed
 #EXTINF:-1 tvg-name="开化国家公园 [720P] [720P] [720P]" group-title="其他精选",开化国家公园 [720P] [720P] [720P] [720P]
 http://l.cztvcloud.com/channels/lantian/SXkaihua2/720p.m3u8?zzhed
+#EXTINF:-1 tvg-name="开化国家公园 [720P] [720P]" group-title="其他精选",开化国家公园 [720P] [720P] [720P]
+http://l.cztvcloud.com/channels/lantian/SXkaihua2/720p.m3u8zzhed
 #EXTINF:-1 tvg-name="开端电视轮播 [814P] [814P] [814P]" group-title="其他精选",开端电视轮播 [814P] [814P] [814P] [814P]
 http://cfss.cc/cdn/huya/11342397.flv
 #EXTINF:-1 tvg-name="张店图文 [404P] [404P]" group-title="其他精选",张店图文 [404P] [404P] [404P]
@@ -3231,18 +3231,18 @@ https://jwcdnqx.hebyun.com.cn/live/jiyunxushui123/1500k/tzwj_video.m3u8
 http://cfss.cc/cdn/huya/11352948.flv
 #EXTINF:-1 tvg-name="悟道法师 [720P] [720P] [720P]" group-title="其他精选",悟道法师 [720P] [720P] [720P] [720P]
 https://tw2.amtb.de/liveedge/_definst_/smil:wdmaster.smil/playlist.m3u8
-#EXTINF:-1 tvg-name="成龙轮播 [720P] [1080P]" group-title="其他精选",成龙轮播 [720P] [1080P] [720P]
-http://63.141.230.178:82/gslb/zbdq5.m3u8?id=lbcl
 #EXTINF:-1 tvg-name="成龙轮播 [720P] [720P] [544P]" group-title="其他精选",成龙轮播 [720P] [720P] [544P] [804P]
 http://cfss.cc/cdn/huya/11342386.flv
+#EXTINF:-1 tvg-name="成龙轮播 [720P] [1080P]" group-title="其他精选",成龙轮播 [720P] [1080P] [720P]
+http://63.141.230.178:82/gslb/zbdq5.m3u8?id=lbcl
 #EXTINF:-1 tvg-name="我爱男保姆播 [720P] [720P] [720P]" group-title="其他精选",我爱男保姆播 [720P] [720P] [720P] [720P]
 http://cfss.cc/cdn/huya/29581262.flv
 #EXTINF:-1 tvg-name="战争轮播 [1080P] [1080P] [1080P]" group-title="其他精选",战争轮播 [1080P] [1080P] [1080P] [1080P]
 http://cfss.cc/cdn/huya/21059592.flv
-#EXTINF:-1 tvg-name="扫黄先锋 [1080P] [1080P] [1080P]" group-title="其他精选",扫黄先锋 [1080P] [1080P] [1080P] [1080P]
-http://cfss.cc/cdn/huya/23903196.flv
 #EXTINF:-1 tvg-name="扫黄先锋 [720P] [720P] [720P]" group-title="其他精选",扫黄先锋 [720P] [720P] [720P] [720P]
 http://cfss.cc/cdn/huya/29465855.flv
+#EXTINF:-1 tvg-name="扫黄先锋 [1080P] [1080P] [1080P]" group-title="其他精选",扫黄先锋 [1080P] [1080P] [1080P] [1080P]
+http://cfss.cc/cdn/huya/23903196.flv
 #EXTINF:-1 tvg-name="救援轮播 [504P] [504P] [504P]" group-title="其他精选",救援轮播 [504P] [504P] [504P] [504P]
 http://cfss.cc/cdn/huya/21059594.flv
 #EXTINF:-1 tvg-name="敦煌频道 [600P] [600P] [600P]" group-title="其他精选",敦煌频道 [600P] [600P] [600P] [600P]
@@ -3325,20 +3325,20 @@ http://tvfile.swrmt.cn:80/nmip-media/channellive/channel100064/playlist.m3u8
 http://cfss.cc/cdn/huya/29465861.flv
 #EXTINF:-1 tvg-name="泰兴 [576P] [576P]" group-title="其他精选",泰兴 [576P] [576P] [576P]
 https://litchi-play-encrypted.jstv.com:443/live/taixing.m3u8?txSecret=6e36a7638a59ef3c29f4eb1e7d9d7c8b&txTime=1757382486
-#EXTINF:-1 tvg-name="洗冤录 [1080P] [1080P]" group-title="其他精选",洗冤录 [1080P] [1080P] [1080P]
-https://isus.cc/php/huya.php?id=29465851
 #EXTINF:-1 tvg-name="洗冤录 [1080P] [1080P] [1080P]" group-title="其他精选",洗冤录 [1080P] [1080P] [1080P] [1080P]
 http://cfss.cc/cdn/huya/29465851.flv
+#EXTINF:-1 tvg-name="洗冤录 [1080P] [1080P]" group-title="其他精选",洗冤录 [1080P] [1080P] [1080P]
+https://isus.cc/php/huya.php?id=29465851
 #EXTINF:-1 tvg-name="洞头 [720P] [720P]" group-title="其他精选",洞头 [720P] [720P] [720P]
 https://hls.quklive.com/live/play-sh-21.quklive.com/1735612228127376.m3u8?auth_key=2076143235-cf7ae587445f46709dd7d598fb94b9d3-0-64f257e587fc4d964d6041ce4811ae14
 #EXTINF:-1 tvg-name="洪泽 [576P] [576P]" group-title="其他精选",洪泽 [576P] [576P] [576P]
 https://litchi-play-encrypted.jstv.com:443/live/hongze.m3u8?txSecret=a5839dab11fcfbd3b07ce4a6b06f4afc&txTime=1757382557
 #EXTINF:-1 tvg-name="海盗轮播 [960P] [960P] [960P]" group-title="其他精选",海盗轮播 [960P] [960P] [960P] [960P]
 http://cfss.cc/cdn/huya/21059595.flv
-#EXTINF:-1 tvg-name="海绵宝宝 [540P] [540P]" group-title="其他精选",海绵宝宝 [540P] [540P] [540P]
-https://isus.cc/php/huya.php?id=11352919
 #EXTINF:-1 tvg-name="海绵宝宝 [540P] [540P] [540P]" group-title="其他精选",海绵宝宝 [540P] [540P] [540P] [540P]
 http://cfss.cc/cdn/huya/11352919.flv
+#EXTINF:-1 tvg-name="海绵宝宝 [540P] [540P]" group-title="其他精选",海绵宝宝 [540P] [540P] [540P]
+https://isus.cc/php/huya.php?id=11352919
 #EXTINF:-1 tvg-name="海贼王 [288P] [288P] [288P]" group-title="其他精选",海贼王 [288P] [288P] [288P] [288P]
 http://cfss.cc/cdn/huya/29982634.flv
 #EXTINF:-1 tvg-name="涉县 [1080P] [1080P]" group-title="其他精选",涉县 [1080P] [1080P] [1080P]
@@ -3441,10 +3441,10 @@ http://221.7.175.154:8445/tsfile/live/1019_1.m3u8?key=txiptv&playlive=1&authid=0
 http://8.155.43.98:35455/douyu/9643264
 #EXTINF:-1 tvg-name="美女献身 [720P] [720P]" group-title="其他精选",美女献身 [720P] [720P] [720P]
 https://vip15.play-cdn15.com/20240130/26979_412f77c9/index.m3u8
-#EXTINF:-1 tvg-name="老故事 [576P] [576P]" group-title="其他精选",老故事 [576P] [576P] [576P]
-http://107.150.60.122/live/lgs.m3u8#http://120.76.248.139/live/bfgd/4200000166.m3u8
 #EXTINF:-1 tvg-name="老故事 [576P] [576P] [576P]" group-title="其他精选",老故事 [576P] [576P] [576P] [576P]
 http://107.150.60.122/live/lgs.m3u8
+#EXTINF:-1 tvg-name="老故事 [576P] [576P]" group-title="其他精选",老故事 [576P] [576P] [576P]
+http://107.150.60.122/live/lgs.m3u8#http://120.76.248.139/live/bfgd/4200000166.m3u8
 #EXTINF:-1 tvg-name="聊斋艳谭 [720P] [720P]" group-title="其他精选",聊斋艳谭 [720P] [720P] [720P]
 https://play.modujx16.com/20240828/qov5GG0W/index.m3u8
 #EXTINF:-1 tvg-name="肃宁 [720P] [720P]" group-title="其他精选",肃宁 [720P] [720P] [720P]
@@ -3513,10 +3513,10 @@ https://live.xgll.com.cn/hls/tv/dqrm-zhpd-2025.m3u8
 https://live.xgll.com.cn/hls/tv/dqrm-zypd-2025.m3u8
 #EXTINF:-1 tvg-name="通江 [1080P] [1080P]" group-title="其他精选",通江 [1080P] [1080P] [1080P]
 http://dcpull.sctvcloud.com/live/04ea69fa018910006ae9ef0600000000/playlist.m3u8
-#EXTINF:-1 tvg-name="通灵王 [480P] [480P]" group-title="其他精选",通灵王 [480P] [480P] [480P]
-https://isus.cc/php/huya.php?id=20969112
 #EXTINF:-1 tvg-name="通灵王 [480P] [480P] [480P]" group-title="其他精选",通灵王 [480P] [480P] [480P] [480P]
 http://cfss.cc/cdn/huya/20969112.flv
+#EXTINF:-1 tvg-name="通灵王 [480P] [480P]" group-title="其他精选",通灵王 [480P] [480P] [480P]
+https://isus.cc/php/huya.php?id=20969112
 #EXTINF:-1 tvg-name="遂昌 [1080P] [1080P]" group-title="其他精选",遂昌 [1080P] [1080P] [1080P]
 http://play-sh13.quklive.com/live/1708426592499070.m3u8?auth_key=2027430355-efcd95af7ff4442381b58e2df8a68ac0-0-a2b219292cf4aefa52a807463610b7df
 #EXTINF:-1 tvg-name="邳州 [576P] [576P]" group-title="其他精选",邳州 [576P] [576P] [576P]
@@ -3575,10 +3575,10 @@ https://p2hs.vzan.com/slowlive/798833473879633259/live.m3u8
 https://xhmm-new-live.media.xinhuamm.net/liveNoRecord/a42bf9ee9c224a44a393aafc33990c78_111ae5a842ff4b32ab277ed1d9e216c5.m3u8?auth_key=2017017629-3866c768f70a4b47a2352f7b746e7bc1-0-1470ba4cbd641cbe479da8838d3396da
 #EXTINF:-1 tvg-name="阿拉善 [1080P] [1080P]" group-title="其他精选",阿拉善 [1080P] [1080P] [1080P]
 http://play1-qk.nmtv.cn/live/1735547046115053.m3u8
-#EXTINF:-1 tvg-name="阿斗归来了 [1080P] [1080P]" group-title="其他精选",阿斗归来了 [1080P] [1080P] [1080P]
-https://isus.cc/php/huya.php?id=13303478
 #EXTINF:-1 tvg-name="阿斗归来了 [1080P] [1080P] [1080P]" group-title="其他精选",阿斗归来了 [1080P] [1080P] [1080P] [1080P]
 http://cfss.cc/cdn/huya/13303478.flv
+#EXTINF:-1 tvg-name="阿斗归来了 [1080P] [1080P]" group-title="其他精选",阿斗归来了 [1080P] [1080P] [1080P]
+https://isus.cc/php/huya.php?id=13303478
 #EXTINF:-1 tvg-name="陀枪师姐频道 [1080P] [1080P] [1080P]" group-title="其他精选",陀枪师姐频道 [1080P] [1080P] [1080P] [1080P]
 http://cfss.cc/cdn/huya/29465857.flv
 #EXTINF:-1 tvg-name="陇西 [1080P] [1080P]" group-title="其他精选",陇西 [1080P] [1080P] [1080P]
@@ -3615,6 +3615,14 @@ https://isus.cc/php/huya.php?id=23865086
 http://cfss.cc/cdn/huya/10279885.flv
 #EXTINF:-1 tvg-name="🔄不吃香菜[刷新就是新内容] [1280P] [1280P]" group-title="其他精选",🔄不吃香菜[刷新就是新内容] [1280P] [1280P] [1280P]
 http://xjj2.716888.xyz/fenlei/mvmn/mvmn.php
+#EXTINF:-1 tvg-name="🔄美女展示2[刷新就是新内容] [1280P] [960P]" group-title="其他精选",🔄美女展示2[刷新就是新内容] [1280P] [960P] [1280P]
+http://xjj2.716888.xyz/fenlei/zj/xuejie/xuejie.php
+#EXTINF:-1 tvg-name="🔄美女展示4[刷新就是新内容] [1280P] [1280P]" group-title="其他精选",🔄美女展示4[刷新就是新内容] [1280P] [1280P] [1282P]
+http://xjj2.716888.xyz/fenlei/zj/nennen/nennen.php
+#EXTINF:-1 tvg-name="🔄美女展示5[刷新就是新内容] [1280P] [1280P]" group-title="其他精选",🔄美女展示5[刷新就是新内容] [1280P] [1280P] [1280P]
+http://xjj2.716888.xyz/fenlei/zj/sihuawd/sihuawd.php
+#EXTINF:-1 tvg-name="🔄美女展示7[刷新就是新内容] [720P] [720P]" group-title="其他精选",🔄美女展示7[刷新就是新内容] [720P] [720P] [720P]
+http://xjj2.716888.xyz/fenlei/zj/sihuadd/sihuadd.php
 #EXTINF:-1 tvg-name="🔄美女展示10[刷新就是新内容] [1280P] [1080P]" group-title="其他精选",🔄美女展示10[刷新就是新内容] [1280P] [1080P] [1280P]
 http://xjj2.716888.xyz/fenlei/zj/heji1/heji1.php
 #EXTINF:-1 tvg-name="🔄美女展示12[刷新就是新内容] [1280P] [1280P]" group-title="其他精选",🔄美女展示12[刷新就是新内容] [1280P] [1280P] [1280P]
@@ -3629,11 +3637,3 @@ http://xjj2.716888.xyz/fenlei/zj/rewu/rewu.php
 http://xjj2.716888.xyz/fenlei/zj/jingpinsc/jingpinsc.php
 #EXTINF:-1 tvg-name="🔄美女展示23[刷新就是新内容] [1024P] [1280P]" group-title="其他精选",🔄美女展示23[刷新就是新内容] [1024P] [1280P] [1280P]
 http://xjj1.716888.xyz/fenlei/kuan2/v.php
-#EXTINF:-1 tvg-name="🔄美女展示2[刷新就是新内容] [1280P] [960P]" group-title="其他精选",🔄美女展示2[刷新就是新内容] [1280P] [960P] [1280P]
-http://xjj2.716888.xyz/fenlei/zj/xuejie/xuejie.php
-#EXTINF:-1 tvg-name="🔄美女展示4[刷新就是新内容] [1280P] [1280P]" group-title="其他精选",🔄美女展示4[刷新就是新内容] [1280P] [1280P] [1282P]
-http://xjj2.716888.xyz/fenlei/zj/nennen/nennen.php
-#EXTINF:-1 tvg-name="🔄美女展示5[刷新就是新内容] [1280P] [1280P]" group-title="其他精选",🔄美女展示5[刷新就是新内容] [1280P] [1280P] [1280P]
-http://xjj2.716888.xyz/fenlei/zj/sihuawd/sihuawd.php
-#EXTINF:-1 tvg-name="🔄美女展示7[刷新就是新内容] [720P] [720P]" group-title="其他精选",🔄美女展示7[刷新就是新内容] [720P] [720P] [720P]
-http://xjj2.716888.xyz/fenlei/zj/sihuadd/sihuadd.php
