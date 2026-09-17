@@ -1,0 +1,123 @@
+name: Sync Suale TXT
+
+on:
+  schedule:
+    # 与其他任务错开，设定为每两小时的第15分钟运行
+    - cron: '15 */2 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  update-txt:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Download TXT File (With Fault Tolerance)
+        id: dl
+        run: |
+          echo "开始尝试从源站拉取 txt 文件..."
+          
+          if curl -k -L -f -s -S --connect-timeout 20 -m 120 --retry 5 --retry-delay 10 -o temp_suale.txt "https://raw.githubusercontent.com/807080747/zv/refs/heads/main/suale.txt"; then
+            FILE_SIZE=$(wc -c < temp_suale.txt)
+            if [ "$FILE_SIZE" -gt 1000 ]; then
+              echo "下载成功 ($FILE_SIZE bytes)，准备进行黑名单过滤..."
+              echo "status=success" >> "$GITHUB_OUTPUT"
+            else
+              echo "警告: 下载的文件过小 ($FILE_SIZE bytes)，疑似源站异常。本次放弃更新，保留原文件。"
+              rm -f temp_suale.txt
+              echo "status=failed" >> "$GITHUB_OUTPUT"
+            fi
+          else
+            echo "警告: 源服务器完全无法访问或多次重试均超时。本次放弃更新，保留原文件。"
+            rm -f temp_suale.txt
+            echo "status=failed" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Process and Filter Blacklist
+        if: steps.dl.outputs.status == 'success'
+        shell: python
+        run: |
+          import os
+          import re
+
+          input_file = "temp_suale.txt"
+          output_file = "suale.txt"
+
+          # ================= 配置区 =================
+          # 黑名单分类关键词
+          black_categories = ["科技店铺"]
+          # ==========================================
+
+          try:
+              with open(input_file, 'r', encoding='utf-8', errors='ignore') as f:
+                  lines = f.readlines()
+
+              result = []
+              skip_current_category = False
+              # 万能正则提取，防备同行挤压多个频道的毒瘤排版
+              pattern = r'([^,]+?),((?:http|rtmp|rtsp|p2p|mitv|tvbus)\S+)'
+
+              for line in lines:
+                  line_str = line.strip()
+                  if not line_str:
+                      continue
+
+                  # 处理分类行
+                  if ",#genre#" in line_str:
+                      parts = line_str.split(',#genre#', 1)
+                      category_name = parts[0].strip()
+
+                      if any(bc in category_name for bc in black_categories):
+                          skip_current_category = True
+                      else:
+                          skip_current_category = False
+                          result.append(category_name + ",#genre#")
+                      
+                      # 抢救可能被挤在分类行后面的频道数据
+                      if len(parts) > 1 and parts[1].strip() and not skip_current_category:
+                          matches = re.findall(pattern, parts[1], flags=re.IGNORECASE)
+                          for name, curl in matches:
+                              result.append(f"{name.strip()},{curl.strip()}")
+                      continue
+
+                  # 当前处于黑名单分类中，直接跳过频道
+                  if skip_current_category:
+                      continue
+
+                  # 处理常规频道行
+                  if "," in line_str:
+                      matches = re.findall(pattern, line_str, flags=re.IGNORECASE)
+                      for name, curl in matches:
+                          result.append(f"{name.strip()},{curl.strip()}")
+
+              # 顺手清理没有任何频道的空壳分类
+              final_result = []
+              for i in range(len(result)):
+                  is_genre = ",#genre#" in result[i]
+                  if is_genre and (i == len(result) - 1 or ",#genre#" in result[i+1]):
+                      continue
+                  final_result.append(result[i])
+
+              if final_result:
+                  with open(output_file, "w", encoding="utf-8") as f:
+                      f.write("\n".join(final_result))
+                  print("黑名单过滤与清理完成。")
+              
+              os.remove(input_file)
+
+          except Exception as e:
+              print(f"处理数据时出错: {e}")
+              if os.path.exists(input_file):
+                  os.rename(input_file, output_file)
+
+      - name: Commit and Push
+        run: |
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git add suale.txt
+          git commit -m "Auto sync suale.txt" || echo "No changes to commit"
+          git push
