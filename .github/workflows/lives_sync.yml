@@ -27,16 +27,30 @@ jobs:
           black_categories = ["易發", "私密", "JAV", "随机点播"]
           black_keywords = ["盗源", "全家", "Q群", "进群", "扫码", "打赏"]
 
+          # 定义排序权重函数（自适应处理中英文括号及空格）
+          def get_rank(cat_name):
+              # 剔除所有空格，并将中文括号统一替换为英文括号
+              c = cat_name.replace(" ", "").replace("（", "(").replace("）", ")")
+              # 精准匹配关键字
+              if "广东移动" in c and "内网" in c: return 1
+              if "广东电信" in c and "内网" in c: return 2
+              if "广东联通" in c and "内网" in c: return 3
+              if "极速港台" in c and "挂梯" in c: return 4
+              return 999
+
           try:
               req = urllib.request.Request(url, headers={'User-Agent': 'Mozilla/5.0'})
               with urllib.request.urlopen(req) as response:
                   content = response.read().decode('utf-8')
 
               lines = content.split('\n')
-              result = []
-              skip_current_category = False
+              
+              categories_dict = {}
+              original_order = []
+              current_cat = None
               pattern = r'([^,]+?),((?:http|rtmp|rtsp|p2p|mitv|tvbus)\S+)'
 
+              # 1. 遍历读取，将频道按分类装入字典
               for line in lines:
                   line_str = line.strip()
                   if not line_str:
@@ -51,31 +65,40 @@ jobs:
                       category_name = parts[0].strip()
 
                       if any(bc in category_name for bc in black_categories):
-                          skip_current_category = True
+                          current_cat = None
                       else:
-                          skip_current_category = False
-                          result.append(category_name + ",#genre#")
+                          current_cat = category_name
+                          if current_cat not in original_order:
+                              original_order.append(current_cat)
+                              categories_dict[current_cat] = []
                       
-                      if len(parts) > 1 and parts[1].strip() and not skip_current_category:
+                      # 抢救跟在 #genre# 同一行的频道数据
+                      if len(parts) > 1 and parts[1].strip() and current_cat is not None:
                           matches = re.findall(pattern, parts[1], flags=re.IGNORECASE)
                           for name, curl in matches:
-                              result.append(f"{name.strip()},{curl.strip()}")
+                              categories_dict[current_cat].append(f"{name.strip()},{curl.strip()}")
                       continue
 
-                  if skip_current_category:
+                  if current_cat is None:
                       continue
 
+                  # 3. 处理正常的频道行
                   if "," in line_str:
                       matches = re.findall(pattern, line_str, flags=re.IGNORECASE)
                       for name, curl in matches:
-                          result.append(f"{name.strip()},{curl.strip()}")
+                          categories_dict[current_cat].append(f"{name.strip()},{curl.strip()}")
 
+              # 2. 对分类进行自定义排序
+              # key=(优先级, 原始索引)，确保指定分类置顶，其余分类保持上游原有顺序
+              sorted_order = sorted(original_order, key=lambda x: (get_rank(x), original_order.index(x)))
+
+              # 3. 拼装为最终的 M3U/TXT 格式，并自动清理空分类
               final_result = []
-              for i in range(len(result)):
-                  is_genre = ",#genre#" in result[i]
-                  if is_genre and (i == len(result) - 1 or ",#genre#" in result[i+1]):
-                      continue
-                  final_result.append(result[i])
+              for cat in sorted_order:
+                  channels = categories_dict.get(cat, [])
+                  if len(channels) > 0:
+                      final_result.append(f"{cat},#genre#")
+                      final_result.extend(channels)
 
               if final_result:
                   with open(output_file, "w", encoding="utf-8") as f:
