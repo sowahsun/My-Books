@@ -47,10 +47,6 @@ https://ls.qingting.fm/live/4972/64k.m3u8
 https://ls.qingting.fm/live/4974/64k.m3u8
 #EXTINF:-1 tvg-name="🔄4K视频[刷新就是新内容] [720P] [720P]" group-title="4K/8K专区",🔄4K视频[刷新就是新内容] [720P] [720P] [720P]
 http://xjj1.716888.xyz/fenlei/4k/4k.php
-#EXTINF:-1 tvg-name="CCTV+ [240P] [240P] [240P]" group-title="央视频道",CCTV+ [240P] [240P] [240P] [240P]
-https://cd-live-stream.news.cctvplus.com/live/smil:CHANNEL2.smil/playlist.m3u8
-#EXTINF:-1 tvg-name="CCTV+ [240P] [240P] [240P]" group-title="央视频道",CCTV+ [240P] [240P] [240P] [240P]
-https://cd-live-stream.news.cctvplus.com/live/smil:CHANNEL1.smil/playlist.m3u8
 #EXTINF:-1 tvg-name="CCTV-1" group-title="央视频道",CCTV-1 [1080P]
 http://221.7.175.154:8445/tsfile/live/1000_1.m3u8?key=txiptv&playlive=1&authid=0
 #EXTINF:-1 tvg-name="CCTV-1" group-title="央视频道",CCTV-1 [1080P]
@@ -129,20 +125,24 @@ http://youngx.top:4022/rtp/233.18.204.215:5140
 http://221.7.175.154:8445/tsfile/live/1009_1.m3u8?key=txiptv&playlive=1&authid=0
 #EXTINF:-1 tvg-name="CCTV-17" group-title="央视频道",CCTV-17 [1080P]
 http://183.129.255.66:8480/hls/18/index.m3u8
+#EXTINF:-1 tvg-name="CCTV+ [240P] [240P] [240P]" group-title="央视频道",CCTV+ [240P] [240P] [240P] [240P]
+https://cd-live-stream.news.cctvplus.com/live/smil:CHANNEL2.smil/playlist.m3u8
+#EXTINF:-1 tvg-name="CCTV+ [240P] [240P] [240P]" group-title="央视频道",CCTV+ [240P] [240P] [240P] [240P]
+https://cd-live-stream.news.cctvplus.com/live/smil:CHANNEL1.smil/playlist.m3u8
+#EXTINF:-1 tvg-name="CCTV发现之旅 [576P] [576P]" group-title="央视频道",CCTV发现之旅 [576P] [576P] [1080P]
+http://63.141.230.178:82/gslb/zbdq5.m3u8?id=fxzl
 #EXTINF:-1 tvg-name="CCTV-央视文化精品 [1080P] [1080P] [1080P]" group-title="央视频道",CCTV-央视文化精品 [1080P] [1080P] [1080P] [1080P]
 http://198.204.228.26/live/ysjp.m3u8
 #EXTINF:-1 tvg-name="CCTV-女性时尚 [576P] [576P] [720P]" group-title="央视频道",CCTV-女性时尚 [576P] [576P] [720P] [1080P]
 http://192.151.150.154/live/nxss.m3u8
 #EXTINF:-1 tvg-name="CCTV-女性时尚 [576P] [576P] [1080P]" group-title="央视频道",CCTV-女性时尚 [576P] [576P] [1080P] [1080P]
 http://198.204.228.26/live/nxss.m3u8
-#EXTINF:-1 tvg-name="CCTV-风云足球 [1080P] [1080P] [1080P]" group-title="央视频道",CCTV-风云足球 [1080P] [1080P] [1080P] [1080P]
-http://198.204.228.26/live/fyzq.m3u8
-#EXTINF:-1 tvg-name="CCTV发现之旅 [576P] [576P]" group-title="央视频道",CCTV发现之旅 [576P] [576P] [1080P]
-http://63.141.230.178:82/gslb/zbdq5.m3u8?id=fxzl
 #EXTINF:-1 tvg-name="CCTV少儿" group-title="央视频道",CCTV少儿 [1080P]
 http://221.7.175.154:8445/tsfile/live/1012_1.m3u8?key=txiptv&playlive=1&authid=0
 #EXTINF:-1 tvg-name="CCTV老故事 [576P] [576P]" group-title="央视频道",CCTV老故事 [576P] [576P] [576P]
 http://63.141.230.178:82/gslb/zbdq5.m3u8?id=lgs
+#EXTINF:-1 tvg-name="CCTV-风云足球 [1080P] [1080P] [1080P]" group-title="央视频道",CCTV-风云足球 [1080P] [1080P] [1080P] [1080P]
+http://198.204.228.26/live/fyzq.m3u8
 #EXTINF:-1 tvg-name="CCTV风云足球 [1080P] [1080P]" group-title="央视频道",CCTV风云足球 [1080P] [1080P] [1080P]
 http://63.141.230.178:82/gslb/zbdq5.m3u8?id=fyzq
 #EXTINF:-1 tvg-name="CEC国际健康 [576P] [576P] [576P]" group-title="央视频道",CEC国际健康 [576P] [576P] [576P] [576P]
@@ -199,12 +199,12 @@ http://192.151.150.154/live/lgs.m3u8
 http://198.204.228.26/live/gfjs.m3u8
 #EXTINF:-1 tvg-name="CCTV-央视台球 [1080P] [1080P] [1080P]" group-title="央视数字付费",CCTV-央视台球 [1080P] [1080P] [1080P] [1080P]
 http://192.151.150.154/live/ystq.m3u8
+#EXTINF:-1 tvg-name="CCTV怀旧剧场 [1080P] [1080P]" group-title="央视数字付费",CCTV怀旧剧场 [1080P] [1080P] [1080P]
+http://63.141.230.178:82/gslb/zbdq5.m3u8?id=hjjc
 #EXTINF:-1 tvg-name="CCTV-电视指南 [1080P] [1080P] [1080P]" group-title="央视数字付费",CCTV-电视指南 [1080P] [1080P] [1080P] [1080P]
 http://198.204.228.26/live/dszn.m3u8
 #EXTINF:-1 tvg-name="CCTV-第一剧场 [1080P] [1080P] [1080P]" group-title="央视数字付费",CCTV-第一剧场 [1080P] [1080P] [1080P] [1080P]
 http://192.151.150.154/live/dyjc.m3u8
-#EXTINF:-1 tvg-name="CCTV怀旧剧场 [1080P] [1080P]" group-title="央视数字付费",CCTV怀旧剧场 [1080P] [1080P] [1080P]
-http://63.141.230.178:82/gslb/zbdq5.m3u8?id=hjjc
 #EXTINF:-1 tvg-name="上海卫视" group-title="卫视频道",上海卫视 [1080P]
 http://113.26.202.52:1299/tsfile/live/0107_1.m3u8?key=txiptv&playlive=1&authid=0
 #EXTINF:-1 tvg-name="东南卫视 [1080P] [1080P]" group-title="卫视频道",东南卫视 [1080P] [1080P] [1080P]
@@ -625,10 +625,10 @@ http://ebsonairios.ebs.co.kr/ebs2tablet500k/tablet500k/ebs2tablet500k.index.m3u8
 http://ebsonairios.ebs.co.kr/ebs2familypc/familypc1m/playlist.m3u8
 #EXTINF:-1 tvg-name="EBS+2 [360P] [360P] [360P]" group-title="港台/国际",EBS+2 [360P] [360P] [360P] [360P]
 http://ebsonairios.ebs.co.kr/plus2tablet500k/tablet500k/plus2tablet500k.index.m3u8
-#EXTINF:-1 tvg-name="EBS-KIDS [360P] [360P] [360P]" group-title="港台/国际",EBS-KIDS [360P] [360P] [360P] [360P]
-http://ebsonairios.ebs.co.kr/ebsutablet500k/_definst_/tablet500k/playlist.m3u8
 #EXTINF:-1 tvg-name="EBSe [360P] [360P] [360P]" group-title="港台/国际",EBSe [360P] [360P] [360P] [360P]
 http://ebsonairios.ebs.co.kr/plus3tablet500k/tablet500k/plus3tablet500k.index.m3u8
+#EXTINF:-1 tvg-name="EBS-KIDS [360P] [360P] [360P]" group-title="港台/国际",EBS-KIDS [360P] [360P] [360P] [360P]
+http://ebsonairios.ebs.co.kr/ebsutablet500k/_definst_/tablet500k/playlist.m3u8
 #EXTINF:-1 tvg-name="TVBS新闻 [480P] [480P] [480P]" group-title="港台/国际",TVBS新闻 [480P] [480P] [480P] [480P]
 http://jnzq.ohoyee.com:9080/live/xingjiaoge-tvbsxw.m3u8
 #EXTINF:-1 tvg-name="TVBS新闻 [1080P] [1080P] [1080P]" group-title="港台/国际",TVBS新闻 [1080P] [1080P] [1080P] [1080P]
@@ -1485,8 +1485,6 @@ https://phoneal.qing.mgtv.com/nn_live/nn_x64/Y2RuZXhfaWQ9YWxfaGxzX2xkdnQmZT02OTE
 http://8.138.7.223/tv/mgtv.php?id=269
 #EXTINF:-1 tvg-name="鬼吹灯之怒晴湘西 [546P] [546P] [546P]" group-title="湖南频道",鬼吹灯之怒晴湘西 [546P] [546P] [546P] [546P]
 http://cfss.cc/cdn/huya/11602075.flv
-#EXTINF:-1 tvg-name="-汕尾综合 [1080P] [1080P]" group-title="广东频道",-汕尾综合 [1080P] [1080P] [1080P]
-https://iswtv.swrtv.com/live/xwzhpd.m3u8
 #EXTINF:-1 tvg-name="东莞新闻综合 [720P] [720P] [720P]" group-title="广东频道",东莞新闻综合 [720P] [720P] [720P] [720P]
 https://stream.sun0769.com/dgrtv1/mp4tv1_1500/index.m3u8
 #EXTINF:-1 tvg-name="东莞新闻综合 [720P] [720P]" group-title="广东频道",东莞新闻综合 [720P] [720P] [720P]
@@ -1565,6 +1563,8 @@ https://tencentplay.gztv.com/live/nanguodushi.m3u8?txSecret=babbcbacdbcf13a3311a
 https://tencentplay.gztv.com/live/nanguodushi.m3u8?txSecret=babbcbacdbcf13a3311a264e4dd66b8d&txTime=191b60b41a7#http://47.108.20.161:8866/guangdong/guangzhou.php?id=shenghuo
 #EXTINF:-1 tvg-name="广州都市 [1080P] [1080P]" group-title="广东频道",广州都市 [1080P] [1080P] [1080P]
 http://47.108.20.161:8866/guangdong/guangzhou.php?id=shenghuo
+#EXTINF:-1 tvg-name="-汕尾综合 [1080P] [1080P]" group-title="广东频道",-汕尾综合 [1080P] [1080P] [1080P]
+https://iswtv.swrtv.com/live/xwzhpd.m3u8
 #EXTINF:-1 tvg-name="河源公共 [540P] [540P] [540P]" group-title="广东频道",河源公共 [540P] [540P] [540P] [540P]
 http://tmpstream.hyrtv.cn/hygg/sd/live.m3u8
 #EXTINF:-1 tvg-name="河源公共 [540P] [540P] [540P]" group-title="广东频道",河源公共 [540P] [540P] [540P] [540P]
