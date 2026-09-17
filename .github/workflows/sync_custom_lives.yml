@@ -1,0 +1,47 @@
+name: Sync Custom Lives M3U
+
+on:
+  schedule:
+    # 与其他任务错开，设定为每两小时的第45分钟运行
+    - cron: '45 */2 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  update-m3u:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Download M3U File (With Fault Tolerance)
+        run: |
+          echo "开始尝试从源站拉取 m3u 文件..."
+          
+          # 下载为临时文件 temp_custom_lives.m3u
+          if curl -k -L -f -s -S --connect-timeout 20 -m 120 --retry 5 --retry-delay 10 -o temp_custom_lives.m3u "https://lytvs.top/py/custom_lives.m3u"; then
+            
+            FILE_SIZE=$(wc -c < temp_custom_lives.m3u)
+            # 校验文件大小，防止源站崩溃吐出极小的错误提示页
+            if [ "$FILE_SIZE" -gt 1000 ]; then
+              mv temp_custom_lives.m3u custom_lives.m3u
+              echo "下载并覆盖成功，文件大小 ($FILE_SIZE bytes)。"
+            else
+              echo "警告: 下载的文件过小 ($FILE_SIZE bytes)，疑似源站异常。本次放弃更新，保留原文件。"
+              rm -f temp_custom_lives.m3u
+            fi
+            
+          else
+            echo "警告: 源服务器完全无法访问或多次重试均超时。本次放弃更新，保留原文件。"
+            rm -f temp_custom_lives.m3u
+          fi
+
+      - name: Commit and Push
+        run: |
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git add custom_lives.m3u
+          git commit -m "Auto sync custom_lives.m3u" || echo "No changes to commit"
+          git push
