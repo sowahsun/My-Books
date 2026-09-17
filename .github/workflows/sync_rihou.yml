@@ -1,8 +1,7 @@
-name: Sync Rihou TXT
+name: Sync Rihou gggg TXT
 
 on:
   schedule:
-    # 建议与另外一个任务错开半小时执行，避免并发拥堵
     - cron: '30 */2 * * *'
   workflow_dispatch:
 
@@ -16,27 +15,92 @@ jobs:
       - name: Checkout Repository
         uses: actions/checkout@v4
 
-      - name: Download NZK and Save as TXT
+      - name: Download NZK
+        id: dl
         run: |
           echo "开始尝试从源站拉取 nzk 文件..."
           
-          # 直接在 -o 参数里将下载的文件强制命名为 gggg.txt
+          # 下载为临时文件 temp_gggg.txt
           if curl -k -L -f -s -S --connect-timeout 20 -m 120 --retry 5 --retry-delay 10 -o temp_gggg.txt "http://rihou.cc:555/gggg.nzk"; then
             
             FILE_SIZE=$(wc -c < temp_gggg.txt)
-            # 同样校验文件大小，防止源站 502 时下载到假网页
             if [ "$FILE_SIZE" -gt 1000 ]; then
-              mv temp_gggg.txt gggg.txt
-              echo "下载并改名成功，文件大小 ($FILE_SIZE bytes)。"
+              echo "下载成功 ($FILE_SIZE bytes)，准备进入下一步过滤..."
+              # 写入成功标记，通知下一步 Python 启动
+              echo "status=success" >> "$GITHUB_OUTPUT"
             else
               echo "警告: 下载的文件过小 ($FILE_SIZE bytes)，疑似源站异常。本次放弃更新，保留原文件。"
-              rm temp_gggg.txt
+              rm -f temp_gggg.txt
+              echo "status=failed" >> "$GITHUB_OUTPUT"
             fi
             
           else
             echo "警告: 源服务器完全无法访问或多次重试均超时。本次放弃更新，保留原文件。"
+            rm -f temp_gggg.txt
+            echo "status=failed" >> "$GITHUB_OUTPUT"
           fi
-          
+
+      - name: Filter Blacklist and Save
+        # 只有上一步下载且校验成功时，才执行此 Python 过滤脚本
+        if: steps.dl.outputs.status == 'success'
+        shell: python
+        run: |
+          import os
+
+          input_file = "temp_gggg.txt"
+          output_file = "gggg.txt"
+
+          # 黑名单分类关键词配置，支持正则或多词匹配
+          black_categories = ["猫"] 
+
+          try:
+              with open(input_file, 'r', encoding='utf-8', errors='ignore') as f:
+                  lines = f.readlines()
+
+              result = []
+              skip_current_category = False
+
+              for line in lines:
+                  line_str = line.strip()
+                  if not line_str:
+                      continue
+
+                  # 处理分类行
+                  if ",#genre#" in line_str:
+                      category_name = line_str.split(',#genre#')[0]
+                      if any(bc in category_name for bc in black_categories):
+                          skip_current_category = True
+                      else:
+                          skip_current_category = False
+                          result.append(line_str)
+                      continue
+
+                  # 处于黑名单分类中，跳过频道
+                  if skip_current_category:
+                      continue
+
+                  result.append(line_str)
+
+              # 清理空壳分类
+              final_result = []
+              for i in range(len(result)):
+                  is_genre = ",#genre#" in result[i]
+                  if is_genre and (i == len(result) - 1 or ",#genre#" in result[i+1]):
+                      continue
+                  final_result.append(result[i])
+
+              with open(output_file, "w", encoding="utf-8") as f:
+                  f.write("\n".join(final_result))
+              
+              print("黑名单过滤与文件改名完成。")
+              os.remove(input_file)
+
+          except Exception as e:
+              print(f"处理数据时出错: {e}")
+              # 若发生异常，安全兜底：直接将源文件重命名输出，避免列表清空
+              if os.path.exists(input_file):
+                  os.rename(input_file, output_file)
+
       - name: Commit and Push
         run: |
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
