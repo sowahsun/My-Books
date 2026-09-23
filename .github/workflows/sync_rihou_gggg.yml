@@ -66,6 +66,10 @@ jobs:
                   if not line_str:
                       continue
 
+                  # 清洗：屏蔽包含两个下箭头 ⬇️ 的行，如 ⬇️特闽新闻⬇️、⬇️特闽电影⬇️
+                  if line_str.count("⬇") >= 2:
+                      continue
+
                   if ",#genre#" in line_str:
                       cat_name = line_str.split(',#genre#')[0].strip()
                       
