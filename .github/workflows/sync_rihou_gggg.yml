@@ -19,20 +19,29 @@ jobs:
         id: dl
         run: |
           echo "开始尝试从源站拉取 nzk 文件..."
-          
-          # 容错下载机制
-          if curl -k -L -f -s -S --connect-timeout 20 -m 120 --retry 5 --retry-delay 10 -o temp_gggg.txt "http://rihou.cc:555/gggg.nzk"; then
+
+          # 宽松重试下载
+          if curl -k -L -f -s -S \
+            --connect-timeout 30 \
+            -m 180 \
+            --retry 10 \
+            --retry-delay 15 \
+            --retry-all-errors \
+            -o temp_gggg.txt \
+            "http://rihou.cc:555/gggg.nzk"; then
+
             FILE_SIZE=$(wc -c < temp_gggg.txt)
-            if [ "$FILE_SIZE" -gt 1000 ]; then
-              echo "下载成功 ($FILE_SIZE bytes)，准备进行数据处理..."
+
+            if [ "$FILE_SIZE" -gt 1000 ] && grep -q ",#genre#" temp_gggg.txt; then
+              echo "下载成功 ($FILE_SIZE bytes)，格式校验通过，准备进行数据处理..."
               echo "status=success" >> "$GITHUB_OUTPUT"
             else
-              echo "警告: 下载的文件过小 ($FILE_SIZE bytes)，疑似源站异常。本次放弃更新，保留原文件。"
+              echo "::warning::文件过小或未发现分类标记 (#genre#)，疑似源站异常。本次放弃更新，保留原文件。"
               rm -f temp_gggg.txt
               echo "status=failed" >> "$GITHUB_OUTPUT"
             fi
           else
-            echo "警告: 源服务器完全无法访问或多次重试均超时。本次放弃更新，保留原文件。"
+            echo "::warning::源服务器完全无法访问或多次重试均超时。本次放弃更新，保留原文件。"
             rm -f temp_gggg.txt
             echo "status=failed" >> "$GITHUB_OUTPUT"
           fi
@@ -42,12 +51,14 @@ jobs:
         shell: python
         run: |
           import os
+          import sys
 
           input_file = "temp_gggg.txt"
           output_file = "gggg.txt"
+          tmp_output = output_file + ".tmp"
 
           # ================= 配置区 =================
-          black_categories = ["猫"] 
+          black_categories = ["猫"]
           # 需要置顶排在最前面的分类（支持模糊或精准匹配）
           top_categories = ["央卫咪咕", "欣赏频道", "广州电信"]
           # ==========================================
@@ -66,13 +77,13 @@ jobs:
                   if not line_str:
                       continue
 
-                  # 清洗：屏蔽包含两个下箭头 ⬇️ 的行，如 ⬇️特闽新闻⬇️、⬇️特闽电影⬇️
+                  # 清洗：屏蔽频道名包含两个下箭头 ⬇️ 的行，如 ⬇️特闽新闻⬇️、⬇️特闽电影⬇️
                   if line_str.count("⬇") >= 2:
                       continue
 
                   if ",#genre#" in line_str:
                       cat_name = line_str.split(',#genre#')[0].strip()
-                      
+
                       # 遇到黑名单分类，将 current_cat 置空，直接丢弃其下所有频道
                       if any(bc in cat_name for bc in black_categories):
                           current_cat = None
@@ -88,13 +99,13 @@ jobs:
 
               # 2. 执行排序逻辑
               sorted_order = []
-              
+
               # 先提取需要置顶的优先分类
               for top_key in top_categories:
                   for cat in original_order:
                       if top_key in cat and cat not in sorted_order:
                           sorted_order.append(cat)
-              
+
               # 再按原顺序追加剩余的其他分类
               for cat in original_order:
                   if cat not in sorted_order:
@@ -109,19 +120,32 @@ jobs:
                       final_result.append(f"{cat},#genre#")
                       final_result.extend(channels)
 
-              # 写入最终文件
-              with open(output_file, "w", encoding="utf-8") as f:
+              # 4. 结果校验：为空则放弃更新
+              if not final_result:
+                  print("清洗结果为空，疑似源站异常，放弃更新。")
+                  sys.exit(1)
+
+              # 5. 写入临时文件，再原子替换正式文件
+              with open(tmp_output, "w", encoding="utf-8") as f:
                   f.write("\n".join(final_result))
-              
-              print("分类排序、黑名单过滤与文件输出完成。")
-              os.remove(input_file)
+
+              os.replace(tmp_output, output_file)
+              print("分类排序、黑名单过滤、箭头频道清洗与文件输出完成。")
+
+              # 清理原始下载文件
+              if os.path.exists(input_file):
+                  os.remove(input_file)
 
           except Exception as e:
               print(f"处理数据时出错: {e}")
+              if os.path.exists(tmp_output):
+                  os.remove(tmp_output)
               if os.path.exists(input_file):
-                  os.rename(input_file, output_file)
+                  os.remove(input_file)
+              sys.exit(1)
 
       - name: Commit and Push
+        if: steps.dl.outputs.status == 'success'
         run: |
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
