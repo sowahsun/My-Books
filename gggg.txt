@@ -38,7 +38,6 @@ CGTN-法咪咕,http://rihou.cc:555/tv/[mg]CGTN-法
 兵团卫视咪咕,http://rihou.cc:555/tv/[mg]兵团卫视
 黑龙江视咪咕,http://rihou.cc:555/tv/[mg]黑龙江视
 欣赏频道,#genre#
-⬇️特闽新闻⬇️,http://rihou.cc:555/tv/v
 有线新闻欣赏,http://rihou.cc:555/tv/[Pd]有线新闻
 无线新闻欣赏,http://rihou.cc:555/tv/[Pd]无线新闻
 Now新闻欣赏,http://rihou.cc:555/tv/[Cx]Now新闻
@@ -62,43 +61,35 @@ tvbS闽南欣赏,http://rihou.cc:555/tv/[Hv]tvbS闽南
 凤凰中文欣赏,http://rihou.cc:555/tv/[Pd]凤凰中文
 凤凰资讯欣赏,http://rihou.cc:555/tv/[Pd]凤凰资讯
 凤凰香港欣赏,http://rihou.cc:555/tv/[Pd]凤凰香港
-⬇️特闽电影⬇️,http://rihou.cc:555/tv/v
 重温经典欣赏,http://rihou.cc:555/tv/[Pd]重温经典
 邵氏电影欣赏,http://rihou.cc:555/tv/[FY]邵氏电影
 邵氏武侠欣赏,http://rihou.cc:555/tv/[FY]邵氏武侠
 邵氏动作欣赏,http://rihou.cc:555/tv/[FY]邵氏动作
 邵氏喜剧欣赏,http://rihou.cc:555/tv/[FY]邵氏喜剧
-⬇️特区资讯⬇️,http://rihou.cc:555/tv/v
 Plus综合欣赏,http://rihou.cc:555/tv/[Pd]Plus综合
 有线综合欣赏,http://rihou.cc:555/tv/[Pd]有线综合
 无线华丽粤赏,http://rihou.cc:555/tv/[Pd]无线华丽
 无线华丽国赏,http://rihou.cc:555/tv/[FY]无线华丽
 无线星河粤赏,http://rihou.cc:555/tv/[Pd]无线星河
 无线功夫粤赏,http://rihou.cc:555/tv/[Pd]无线功夫
-⬇️粤区资讯⬇️,http://rihou.cc:555/tv/v
 广东珠江欣赏,http://rihou.cc:555/tv/[At|]广东珠江
 广东珠江欣赏,http://rihou.cc:555/tv/[Cx]广东珠江
 广东体育欣赏,http://rihou.cc:555/tv/[At|]广东体育
 广州综合欣赏,http://rihou.cc:555/tv/[Cx]广州综合
 广州新闻欣赏,http://rihou.cc:555/tv/[Cx]广州新闻
 广州南国欣赏,http://rihou.cc:555/tv/[Cx]广州南国
-⬇️全运开闭⬇️,http://rihou.cc:555/tv/v
 全运开幕翡翠,http://rihou.cc:555/tv/[mv]开幕翡翠
 全运开幕咪咕,http://rihou.cc:555/tv/[mv]开幕咪咕
 全运闭幕咪咕,http://rihou.cc:555/tv/[mv]闭幕咪咕
-⬇️万千星辉⬇️,http://rihou.cc:555/tv/v
 万辉翡翠台庆,http://rihou.cc:555/tv/[mv]翡翠台庆
 万辉走红地毯,http://rihou.cc:555/tv/[mv]走红地毯
-⬇️万辉颁奖⬇️,http://rihou.cc:555/tv/v
 万辉颁奖典礼,http://rihou.cc:555/tv/[mv]颁奖典礼
 万辉礼红地毯,http://rihou.cc:555/tv/[mv]礼红地毯
-⬇️马年贺岁⬇️,http://rihou.cc:555/tv/v
 马年粤语贺岁,http://rihou.cc:555/tv/[mv]粤语贺岁
 马年国语贺岁,http://rihou.cc:555/tv/[mv]国语贺岁
 马年串烧贺岁,http://rihou.cc:555/tv/[mv]串烧贺岁
 马年港星贺岁,http://rihou.cc:555/tv/[mv]港星贺岁
 寻秦记电影粤,http://rihou.cc:555/tv/[mv]寻秦记粤
-⬇️欣赏频道⬇️,http://rihou.cc:555/tv/v
 凤凰电影频道,http://iot-mqqt.111yao.cn:8080/live/diyp_fhdy.m3u8
 凤凰电影频道,http://122.224.58.42:85/tsfile/live/1022_1.m3u8?key=txiptv&playlive=1&authid=0
 星空电影频道,http://iot-mqqt.111yao.cn:8080/live/diyp_starmovies.m3u8
@@ -303,24 +294,20 @@ CCTV-17广州,http://tvtj.jxwltx.com:8003/cctv17.m3u8
 山东卫视4k超,http://180.114.162.2:2380/c3.cdn.hunancatv.com/live/sdws4K.m3u8
 四川卫视4k超,http://180.114.162.2:2380/c3.cdn.hunancatv.com/live/scws4K.m3u8
 欣赏港乐,#genre#
-⬇️港乐翻唱⬇️,http://rihou.cc:555/tv/t
 林咏诗翻唱一,http://rihou.cc:555/tv/林咏诗翻唱一
 林咏诗翻唱二,http://rihou.cc:555/tv/林咏诗翻唱二
 林咏诗翻唱三,http://rihou.cc:555/tv/林咏诗翻唱三
-⬇️港乐粤翻⬇️,http://rihou.cc:555/tv/t
 嘉欣粤翻唱一,http://rihou.cc:555/tv/嘉欣粤翻唱一
 嘉欣粤翻唱二,http://rihou.cc:555/tv/嘉欣粤翻唱二
 嘉欣粤翻唱三,http://rihou.cc:555/tv/嘉欣粤翻唱三
 嘉欣粤翻唱四,http://rihou.cc:555/tv/嘉欣粤翻唱四
 嘉欣粤翻唱五,http://rihou.cc:555/tv/嘉欣粤翻唱五
-⬇️港风女声⬇️,http://rihou.cc:555/tv/t
 港风粤语女一,http://rihou.cc:555/tv/港风粤语女一
 港风粤语女二,http://rihou.cc:555/tv/港风粤语女二
 港风粤语女三,http://rihou.cc:555/tv/港风粤语女三
 港风粤语女四,http://rihou.cc:555/tv/港风粤语女四
 港风粤语女五,http://rihou.cc:555/tv/港风粤语女五
 赛事精锦,#genre#
-⬇️各大赛事精锦⬇️,http://rihou.cc:555/tv/t
 联赛赛事回放,video://https://www.bwcpxgpqt.com/live/102046
 NBA赛事回放,video://https://www.bwcpxgpqt.com/live/103576
 羽球赛事回放,video://https://www.bwcpxgpqt.com/live/105187
@@ -331,7 +318,6 @@ NBA赛事回放,video://https://www.bwcpxgpqt.com/live/103576
 格斗赛事回放,video://https://www.bwcpxgpqt.com/live/103656
 斯赛赛事回放,video://https://www.bwcpxgpqt.com/live/107337
 网页音乐,#genre#
-⬇️全天直播⬇️,video://http://rihou.cc:555/tv/网页库播
 音乐库播抖播,video://http://rihou.cc:555/tv/网页库播
 音乐播库抖播,video://http://rihou.cc:555/tv/网页播库
 翡翠音乐抖播,video://http://rihou.cc:555/tv/网页翡翠
@@ -342,10 +328,8 @@ BEYOND'抖播,video://http://rihou.cc:555/tv/网页B安
 粤语讲故抖播,video://http://rihou.cc:555/tv/网页讲故
 讲故粤语抖播,video://http://rihou.cc:555/tv/网页故讲
 粤语故事抖播,video://http://rihou.cc:555/tv/网页故事
-⬇️凯乔电台⬇️,video://http://rihou.cc:555/tv/网页电台
 [21-24]抖直播,video://http://rihou.cc:555/tv/网页电台
 欣赏音乐,#genre#
-⬇️刘德华<今日>演唱会精彩片段⬇️,http://rihou.cc:555/tv/t
 今日演唱会上,http://rihou.cc:555/tv/[mv]今日演上
 今日演唱会中,http://rihou.cc:555/tv/[mv]今日演中
 今日演唱会下,http://rihou.cc:555/tv/[mv]今日演下
@@ -355,9 +339,7 @@ BEYOND'抖播,video://http://rihou.cc:555/tv/网页B安
 今天演唱会二,http://rihou.cc:555/tv/[mv]今日演二
 今天演唱会三,http://rihou.cc:555/tv/[mv]今日演三
 今天演唱会四,http://rihou.cc:555/tv/[mv]今日演四
-⬇️湾区升明月电影音乐晚会⬇️,http://rihou.cc:555/tv/v
 湾区电影晚会,http://jx.999315.xyz/yzzy/20250929/17368_087f472a/index.m3u8
-⬇️欣赏粤韵音乐⬇️,http://rihou.cc:555/tv/v
 海阔天空绝版,https://sns-video-default.xhscdn.com/stream/1/110/258/01e8bda53107d42b010370019924cf1f9a_258.mp4
 旧日的足迹版,https://sns-video-default.xhscdn.com/stream/79/110/258/01e8c76cfbbc17c14f037001994b03cd07_258.mp4
 灌篮AI黄家驹,https://sns-video-default.xhscdn.com/stream/1/110/258/01e8c0461f072ec101037001992f147f11_258.mp4
@@ -528,7 +510,6 @@ CCTV-16FYtv,http://iptv.4666888.xyz/iptv2A.php?id=32
 山西卫视FYtv,http://iptv.4666888.xyz/iptv2A.php?id=16
 青海卫视FYtv,http://iptv.4666888.xyz/iptv2A.php?id=17
 抖音网页,#genre#
-⬇️赛事抖音网页直播⬇️,http://rihou.cc:555/tv/t
 绝嗲数码抖播,video://https://live.douyin.com/277034086130
 好波联盟抖页,video://https://live.douyin.com/125690153253
 广东体育抖页,video://https://live.douyin.com/137995681287
@@ -573,7 +554,6 @@ CCTV-16FYtv,http://iptv.4666888.xyz/iptv2A.php?id=32
 辽宁足球抖页,video://https://live.douyin.com/838385022891
 辽宁日报抖页,video://https://live.douyin.com/728163755446
 创新南山抖页,video://https://live.douyin.com/407696757602
-⬇️新闻抖音网页直播⬇️,http://rihou.cc:555/tv/t
 央视网抖直播,video://https://live.douyin.com/870887192950
 央视网抖直播,http://8.155.43.98:35455/bilibili/8178490
 央视网快看播,video://https://live.douyin.com/127453393722
@@ -640,7 +620,6 @@ dv现场抖直播,video://https://live.douyin.com/469457683016
 海南日报抖播,video://https://live.douyin.com/33068222133
 海南电视抖播,video://https://live.douyin.com/402523360291
 湖南新闻抖播,video://https://live.douyin.com/27594494041
-⬇️抖音电台直播⬇️,http://rihou.cc:555/tv/t
 梨园行戏曲播,video://https://live.douyin.com/528583488654
 HiFi-音乐直播,video://https://live.douyin.com/110229825168
 舒耳音乐直播,video://https://live.douyin.com/388913203837
@@ -924,7 +903,6 @@ Q版-三国剧集,http://120.220.76.91:2003/huya.php?id=29465871
 料理小当家集,http://8.155.43.98:35455/douyu/8231658
 柯南剧场版集,http://8.155.43.98:35455/douyu/6484910
 亮剑全集,#genre#
-⬇️亮剑全集30⬇️,http://rihou.cc:555/tv/v
 亮剑之第01集,https://vip.dytt-play.com/20250119/1_c4ca4238/index.m3u8
 亮剑之第02集,https://vip.dytt-play.com/20250119/2_c81e728d/index.m3u8
 亮剑之第03集,https://vip.dytt-play.com/20250119/3_eccbc87e/index.m3u8
@@ -956,7 +934,6 @@ Q版-三国剧集,http://120.220.76.91:2003/huya.php?id=29465871
 亮剑之第29集,https://vip.dytt-play.com/20250119/29_6ea9ab1b/index.m3u8
 亮剑之第30集,https://vip.dytt-play.com/20250119/30_34173cb3/index.m3u8
 雪豹全集,#genre#
-⬇️雪豹全集40⬇️,http://rihou.cc:555/tv/v
 雪豹之第01集,https://vip.dytt-tv.com/20250208/1775_36d75342/index.m3u8
 雪豹之第02集,https://vip.dytt-tv.com/20250208/1776_7dd0240c/index.m3u8
 雪豹之第03集,https://vip.dytt-tv.com/20250208/1777_e9b73bcc/index.m3u8
@@ -998,7 +975,6 @@ Q版-三国剧集,http://120.220.76.91:2003/huya.php?id=29465871
 雪豹之第39集,https://vip.dytt-tv.com/20250208/1813_f542eae1/index.m3u8
 雪豹之第40集,https://vip.dytt-tv.com/20250208/1814_155fa095/index.m3u8
 凡人修仙,#genre#
-⬇️凡人修仙传30⬇️,http://rihou.cc:555/tv/v
 凡人修仙传01,http://jx.999315.xyz/yzzy/20250727/16714_a69d15dc/index.m3u8
 凡人修仙传02,http://jx.999315.xyz/yzzy/20250727/16721_6226c5b0/index.m3u8
 凡人修仙传03,http://jx.999315.xyz/yzzy/20250727/16722_f9d81ff0/index.m3u8
@@ -1030,7 +1006,6 @@ Q版-三国剧集,http://120.220.76.91:2003/huya.php?id=29465871
 凡人修仙传29,https://cdn.yzzy27-play.com/20250812/16133_9db4f695/index.m3u8
 凡人修仙传30,https://cdn.yzzy28-play.com/20250812/11560_d1e7b08b/index.m3u8
 华山论剑,#genre#
-⬇️华山论剑30⬇️,http://rihou.cc:555/tv/v
 九阴真经01集,https://vip.dytt-cinema.com/20250726/28214_ef7726ba/index.m3u8
 九阴真经02集,https://vip.dytt-cinema.com/20250726/28225_66c2f73d/index.m3u8
 九阴真经03集,https://vip.dytt-cinema.com/20250726/28229_397dc71b/index.m3u8
@@ -1062,7 +1037,6 @@ Q版-三国剧集,http://120.220.76.91:2003/huya.php?id=29465871
 五绝争锋29集,https://vip.dytt-hot.com/20250810/98028_690888d9/index.m3u8
 五绝争锋30集,https://vip.dytt-hot.com/20250810/98029_68e3d1b4/index.m3u8
 Q-三国粤,#genre#
-⬇️Q版三国粤⬇️,http://rihou.cc:555/tv/v
 Q版-三国粤01,https://vip.dytt-cine.com/20250715/39352_204ed8b9/index.m3u8
 Q版-三国粤02,https://vip.dytt-cine.com/20250715/39353_2dcb2f57/index.m3u8
 Q版-三国粤03,https://vip.dytt-cine.com/20250715/39354_da740a2d/index.m3u8
@@ -1103,7 +1077,6 @@ Q版-三国粤37,https://vip.dytt-cine.com/20250715/39349_bac1729d/index.m3u8
 Q版-三国粤38,https://vip.dytt-cine.com/20250715/39350_32d73175/index.m3u8
 Q版-三国粤39,https://vip.dytt-cine.com/20250715/39351_b8e8d48c/index.m3u8
 大时代粤,#genre#
-⬇️大时代粤壹⬇️,http://rihou.cc:555/tv/v
 大时代粤壹01,https://cdn9.ryplay9.com/20240922/8086_54dac94c/index.m3u8
 大时代粤壹02,https://cdn9.ryplay9.com/20240922/8087_9e2d8c07/index.m3u8
 大时代粤壹03,https://cdn9.ryplay9.com/20240922/8088_5a0040a6/index.m3u8
@@ -1145,7 +1118,6 @@ Q版-三国粤39,https://vip.dytt-cine.com/20250715/39351_b8e8d48c/index.m3u8
 大时代粤壹39,https://cdn9.ryplay9.com/20240922/8276_546fa6ff/index.m3u8
 大时代粤壹40,https://cdn9.ryplay9.com/20240922/8275_977c5d78/index.m3u8
 流星花园,#genre#
-⬇️流星花园壹⬇️,http://rihou.cc:555/tv/v
 流星花园壹01,https://v.cdnlz20.com/20241121/20985_9d08aaaf/index.m3u8
 流星花园壹02,https://v.cdnlz20.com/20241121/20987_7f22ee90/index.m3u8
 流星花园壹03,https://v.cdnlz20.com/20241121/20988_2cecc2ac/index.m3u8
@@ -1176,7 +1148,6 @@ Q版-三国粤39,https://vip.dytt-cine.com/20250715/39351_b8e8d48c/index.m3u8
 流星花园壹28,https://v.cdnlz20.com/20241121/21013_0a152d5b/index.m3u8
 流星花园壹29,https://v.cdnlz20.com/20241121/21014_0a149cb5/index.m3u8
 还珠格格,#genre#
-⬇️还珠第一部⬇️,http://rihou.cc:555/tv/v
 还珠格格壹01,https://yzzy.play-cdn8.com/20220710/3671_314a6b1b/index.m3u8
 还珠格格壹02,https://yzzy.play-cdn8.com/20220710/3670_cdafc23f/index.m3u8
 还珠格格壹03,https://yzzy.play-cdn8.com/20220710/3669_9b81e5f9/index.m3u8
@@ -1201,7 +1172,6 @@ Q版-三国粤39,https://vip.dytt-cine.com/20250715/39351_b8e8d48c/index.m3u8
 还珠格格壹22,https://yzzy.play-cdn8.com/20220710/3650_bde9774f/index.m3u8
 还珠格格壹23,https://yzzy.play-cdn8.com/20220710/3649_95656d66/index.m3u8
 还珠格格壹24,https://yzzy.play-cdn8.com/20220710/3648_29d10de2/index.m3u8
-⬇️还珠第二部⬇️,http://rihou.cc:555/tv/v
 还珠格格贰01,https://yzzy.play-cdn8.com/20220710/3647_728f0513/index.m3u8
 还珠格格贰02,https://yzzy.play-cdn8.com/20220710/3646_f9026ae9/index.m3u8
 还珠格格贰03,https://yzzy.play-cdn8.com/20220710/3645_3082ea33/index.m3u8
@@ -1251,7 +1221,6 @@ Q版-三国粤39,https://vip.dytt-cine.com/20250715/39351_b8e8d48c/index.m3u8
 还珠格格贰47,https://yzzy.play-cdn8.com/20220710/3601_071cd762/index.m3u8
 还珠格格贰48,https://yzzy.play-cdn8.com/20220710/3600_ea939ce8/index.m3u8
 甄嬛传国,#genre#
-⬇️甄嬛传⬇️,http://rihou.cc:555/tv/v
 甄嬛传第01集,https://vip.dytt-love.com/20250701/2664_daaaf136/index.m3u8
 甄嬛传第02集,https://vip.dytt-love.com/20250701/2665_e727fa59/index.m3u8
 甄嬛传第03集,https://vip.dytt-love.com/20250701/2666_1102a326/index.m3u8
@@ -1329,7 +1298,6 @@ Q版-三国粤39,https://vip.dytt-cine.com/20250715/39351_b8e8d48c/index.m3u8
 甄嬛传第75集,https://vip.dytt-love.com/20250701/2738_a4613e8d/index.m3u8
 甄嬛传第76集,https://vip.dytt-love.com/20250701/2739_56584778/index.m3u8
 大地恩情,#genre#
-⬇️80大地恩情⬇️,http://rihou.cc:555/tv/v
 家在珠江粤01,https://vip.ffzy-play.com/20221209/31605_0706f9df/index.m3u8
 家在珠江粤02,https://vip.ffzy-play.com/20221209/31606_96fabe4f/index.m3u8
 家在珠江粤03,https://vip.ffzy-play.com/20221209/31607_cbe413e6/index.m3u8
@@ -1401,7 +1369,6 @@ Q版-三国粤39,https://vip.dytt-cine.com/20250715/39351_b8e8d48c/index.m3u8
 古都惊雷粤69,https://vip.ffzy-play.com/20221209/31673_05d48252/index.m3u8
 古都惊雷粤70,https://vip.ffzy-play.com/20221209/31674_19cdda48/index.m3u8
 粤经典剧,#genre#
-⬇️81大侠霍元甲⬇️,http://rihou.cc:555/tv/v
 霍元甲粤语01,https://vip.lz-cdn8.com/20220726/19894_ad5e9bdc/1000k/hls/mixed.m3u8
 霍元甲粤语02,https://vip.lz-cdn8.com/20220726/19895_7939dca8/1000k/hls/mixed.m3u8
 霍元甲粤语03,https://vip.lz-cdn8.com/20220726/19896_37f7153f/1000k/hls/mixed.m3u8
@@ -1422,7 +1389,6 @@ Q版-三国粤39,https://vip.dytt-cine.com/20250715/39351_b8e8d48c/index.m3u8
 霍元甲粤语18,https://vip.lz-cdn8.com/20220726/19911_e4efa3b0/1000k/hls/mixed.m3u8
 霍元甲粤语19,https://vip.lz-cdn8.com/20220726/19912_dbcbcf81/1000k/hls/mixed.m3u8
 霍元甲粤语20,https://vip.lz-cdn8.com/20220726/19913_61c2ea44/1000k/hls/mixed.m3u8
-⬇️82陈真⬇️,http://rihou.cc:555/tv/v
 陈真粤语版01,https://vip.lz-cdn8.com/20220726/19854_769355c9/index.m3u8
 陈真粤语版02,https://vip.lz-cdn8.com/20220726/19855_033f55d6/index.m3u8
 陈真粤语版03,https://vip.lz-cdn8.com/20220726/19856_f9f96648/index.m3u8
@@ -1443,7 +1409,6 @@ Q版-三国粤39,https://vip.dytt-cine.com/20250715/39351_b8e8d48c/index.m3u8
 陈真粤语版18,https://vip.lz-cdn8.com/20220726/19871_3bc8089f/index.m3u8
 陈真粤语版19,https://vip.lz-cdn8.com/20220726/19872_0dbf4e3e/index.m3u8
 陈真粤语版20,https://vip.lz-cdn8.com/20220726/19873_7f0917c1/index.m3u8
-⬇️84霍东阁⬇️,http://rihou.cc:555/tv/v
 霍东阁粤语01,https://vip.lz-cdn8.com/20220726/19944_c9253c69/index.m3u8
 霍东阁粤语02,https://vip.lz-cdn8.com/20220726/19945_f069d115/index.m3u8
 霍东阁粤语03,https://vip.lz-cdn8.com/20220726/19946_f2f479fd/index.m3u8
@@ -1475,7 +1440,6 @@ Q版-三国粤39,https://vip.dytt-cine.com/20250715/39351_b8e8d48c/index.m3u8
 霍东阁粤语29,https://vip.lz-cdn8.com/20220726/19972_364f080f/index.m3u8
 霍东阁粤语30,https://vip.lz-cdn8.com/20220726/19973_8af7d3d1/index.m3u8
 射雕英雄,#genre#
-⬇️83射雕英雄传⬇️,http://rihou.cc:555/tv/v
 热血丹心粤01,https://vip.lz-cdn8.com/20220726/19974_a291c2fd/index.m3u8
 热血丹心粤02,https://vip.lz-cdn8.com/20220726/19975_75f760a4/index.m3u8
 热血丹心粤03,https://vip.lz-cdn8.com/20220726/19976_7df1695e/index.m3u8
@@ -1536,7 +1500,6 @@ Q版-三国粤39,https://vip.dytt-cine.com/20250715/39351_b8e8d48c/index.m3u8
 华山论剑粤58,https://vip.lz-cdn8.com/20220726/20031_edc99cef/index.m3u8
 华山论剑粤59,https://vip.lz-cdn8.com/20220726/20032_51f14f2f/index.m3u8
 神雕侠侣,#genre#
-⬇️83神雕侠侣⬇️,http://rihou.cc:555/tv/v
 神雕侠侣粤01,https://vip.lz-cdn8.com/20220628/15515_27e612ff/index.m3u8
 神雕侠侣粤02,https://vip.lz-cdn8.com/20220628/15516_19259ae7/index.m3u8
 神雕侠侣粤03,https://vip.lz-cdn8.com/20220629/15645_62dfa7b9/index.m3u8
