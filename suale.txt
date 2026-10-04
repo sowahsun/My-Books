@@ -1830,6 +1830,438 @@ ASTRO欢喜台,http://o11.163189.xyz/stream/live/hxt/
 唯心电视,http://mobile.ccdntech.com/transcoder/_definst_/vod164_Live/live/chunklist_w1177047531.m3u8
 唯心电视,http://mobile.ccdntech.com/transcoder/_definst_/vod164_Live/live/playlist.m3u8
 生命电视,http://61.216.67.119:1935/lifetv/lifetv.stream/manifest.m3u8
+三立新闻,https://d2jc41c1shgcol.cloudfront.net/live/iNEWS/playlist.m3u8
+中天新闻,https://d2jc41c1shgcol.cloudfront.net/live/CtiNEWS1/playlist.m3u8
+东森新闻,https://d2jc41c1shgcol.cloudfront.net/live/EBCNews/playlist.m3u8
+中视新闻,https://d2jc41c1shgcol.cloudfront.net/live/ctvnewsqt/playlist.m3u8
+华视新闻,https://d2jc41c1shgcol.cloudfront.net/live/ctsnewsqt/playlist.m3u8
+民视新闻,https://d2jc41c1shgcol.cloudfront.net/live/ftvnewsqt/playlist.m3u8
+TVBS新闻,https://d2jc41c1shgcol.cloudfront.net/live/tvbsnewsqt/playlist.m3u8
+LIVE三立,https://d2jc41c1shgcol.cloudfront.net/live/setnewsrtmp/playlist.m3u8
+中天新闻,http://iactive-clink.com:8081/live/111ztxw.m3u8
+中天新闻,http://111.0.115.129:8081/live/000ztxw.m3u8
+中天新闻,http://safe.shanghairta.com:8081/live/000ztxw.m3u8
+中天新闻,http://hsjky.com.cn:8081/live/999ztxw.m3u8
+民視新聞,http://211.72.174.95:8117/0.ts
+台视新聞,https://live.wcetv.com/hls/m3u8/ttvnews.m3u8
+皇马RMTV,https://rmtv.akamaized.net/hls/live/2043153/rmtv-es-web/bitrate_3.m3u8
+红牛极限,http://rbmn-live.akamaized.net/hls/live/590964/BoRB-AT/master_1660.m3u8
+Trace Sports,https://lightning-tracesport-samsungau.amagi.tv/playlist1080p.m3u8
+五湖四海,#genre#
+凤凰中文,http://bobohome.ignorelist.com:20247/fengshows?id=2.m3u8#http://43.152.224.209/qctv.fengshows.cn/live/0701pcc72.flv
+凤凰资讯,http://bobohome.ignorelist.com:20247/fengshows?id=1.m3u8#http://43.152.224.209/qctv.fengshows.cn/live/0701pin72.flv
+凤凰香港,http://bobohome.ignorelist.com:20247/fengshows?id=3.m3u8#http://43.152.224.209/qctv.fengshows.cn/live/0701phk72.flv
+中天新闻,http://xiangxiws.vip:6777/qlw.php?key=qq%E7%BE%A4746405779&id=ztxw
+玫瑰园,https://voa-ingest.akamaized.net/hls/live/2033878/tvmc08/playlist.m3u8#https://voa-ingest.akamaized.net/hls/live/2033866/tvmc01/playlist.m3u8
+woa,https://voa-ingest.akamaized.net/hls/live/2033876/tvmc07/playlist.m3u8#https://voa-ingest.akamaized.net/hls/live/2033874/tvmc06/playlist.m3u8
+金砖TV,https://chibrics.mediacdn.ru/cdn/brics/chinese/playlist.m3u8
+彭博财经,https://liveprodusphoenixeast.akamaized.net/USPhx-HD/Channel-TX-USPhx-AWS-virginia-1/Source-USPhx-16k-1-s6lk2-BP-07-02-81ykIWnsMsg_live.m3u8
+BBC News,https://vs-hls-push-ww-live.akamaized.net/x=4/i=urn:bbc:pips:service:bbc_news_channel_hd/t=3840/v=pv14/b=5070016/main.m3u8
+CNA,https://d2e1asnsl7br7b.cloudfront.net/7782e205e72f43aeb4a48ec97f66ebbe/index_4.m3u8#https://d2e1asnsl7br7b.cloudfront.net/7782e205e72f43aeb4a48ec97f66ebbe/index_5.m3u8
+WionNews,https://d7x8z4yuq42qn.cloudfront.net/index_7.m3u8
+SKYNews,https://amg00663-skynews-skynewsau-samsungau-r7n40.amagi.tv/playlist1080p.m3u8#http://50.7.234.10:8278/skynews_antik/playlist.m3u8?tid=MA0A3161061431610614&ct=19249&tsum=15f8cca00a8cc3a6d2a61519b7dfeb59
+DW,https://dwamdstream110.akamaized.net/hls/live/2017971/dwstream110/index.m3u8
+FOX新闻,https://fox-foxnewsnow-vizio.amagi.tv/playlist.m3u8
+CNN,https://turnerlive.warnermediacdn.com/hls/live/586495/cnngo/cnn_slate/VIDEO_3_1464000.m3u8
+半岛新闻,http://live-hls-web-aja.getaj.net/AJA/02.m3u8
+GBnews,https://cdn-apse1-prod.tsv2.amagi.tv/linear/amg01076-lightningintern-gbnewsnz-samsungnz/playlist.m3u8
+Newsmax,http://nmxlive.akamaized.net/hls/live/529965/Live_1/index.m3u8
+RT新闻,https://rt-glb.rttv.com/dvr/rtnews/playlist_4500Kb.m3u8
+RT纪录,https://rt-rtd.rttv.com/live/rtdoc/playlist_4500Kb.m3u8
+Arirang,https://amdlive-ch01-ctnd-com.akamaized.net/arirang_1ch/smil:arirang_1ch.smil/chunklist_b3256000_sleng.m3u8
+Fashion one,https://b01c02nl.mediatriple.net/videoonlylive/mtkgeuihrlfwlive/broadcast_5c9e2ee690051.smil/playlist.m3u8
+WFC,http://cdn.wfc.tv/cdn/stream-eng-1080p.m3u8
+法国时尚,https://edge-fast3.evrideo.tv/bfdbb576-83f7-11f0-9f89-0200170e3e04_1000028043_HLS/manifest.m3u8
+FL,http://stream.mcquack.net/119/index.m3u8
+CODEF,https://cdn2.invivo.bg/Codefashion_5500/index.m3u8
+Общие,#genre#
+Первый канал FHD,http://93.113.203.152/iptv/ZBE628EP2BYBP5/2402/manifest.m3u8
+Первый канал HD orig,http://93.113.203.152/iptv/ZBE628EP2BYBP5/7253/manifest.m3u8
+Первый канал HD,http://93.113.203.152/iptv/ZBE628EP2BYBP5/204/manifest.m3u8
+Первый канал orig,http://93.113.203.152/iptv/ZBE628EP2BYBP5/9201/manifest.m3u8
+Первый канал,http://93.113.203.152/iptv/ZBE628EP2BYBP5/127/manifest.m3u8
+Первый канал +2,http://93.113.203.152/iptv/ZBE628EP2BYBP5/714/manifest.m3u8
+Первый канал +4 HD,http://93.113.203.152/iptv/ZBE628EP2BYBP5/15117/manifest.m3u8
+Первый канал +4,http://93.113.203.152/iptv/ZBE628EP2BYBP5/6021/manifest.m3u8
+Первый канал +6,http://93.113.203.152/iptv/ZBE628EP2BYBP5/6037/manifest.m3u8
+Первый канал +8,http://93.113.203.152/iptv/ZBE628EP2BYBP5/6050/manifest.m3u8
+Россия 1 FHD,http://93.113.203.152/iptv/ZBE628EP2BYBP5/2409/manifest.m3u8
+Россия 1 HD 50,http://93.113.203.152/iptv/ZBE628EP2BYBP5/15133/manifest.m3u8
+Россия 1 HD orig,http://93.113.203.152/iptv/ZBE628EP2BYBP5/7252/manifest.m3u8
+Россия 1 HD,http://93.113.203.152/iptv/ZBE628EP2BYBP5/205/manifest.m3u8
+Россия 1 orig,http://93.113.203.152/iptv/ZBE628EP2BYBP5/9202/manifest.m3u8
+Россия 1,http://93.113.203.152/iptv/ZBE628EP2BYBP5/504/manifest.m3u8
+РТР Планета,http://93.113.203.152/iptv/ZBE628EP2BYBP5/18042/manifest.m3u8
+Россия 1 +2,http://93.113.203.152/iptv/ZBE628EP2BYBP5/6011/manifest.m3u8
+Россия 1 +4,http://93.113.203.152/iptv/ZBE628EP2BYBP5/6022/manifest.m3u8
+Россия 1 +6,http://93.113.203.152/iptv/ZBE628EP2BYBP5/6038/manifest.m3u8
+Россия 1 +8,http://93.113.203.152/iptv/ZBE628EP2BYBP5/6051/manifest.m3u8
+НТВ HD,http://93.113.203.152/iptv/ZBE628EP2BYBP5/213/manifest.m3u8
+НТВ HD orig,http://93.113.203.152/iptv/ZBE628EP2BYBP5/9028/manifest.m3u8
+НТВ orig,http://93.113.203.152/iptv/ZBE628EP2BYBP5/9203/manifest.m3u8
+НТВ,http://93.113.203.152/iptv/ZBE628EP2BYBP5/501/manifest.m3u8
+НТВ Мир,http://93.113.203.152/iptv/ZBE628EP2BYBP5/14035/manifest.m3u8
+НТВ +2,http://93.113.203.152/iptv/ZBE628EP2BYBP5/713/manifest.m3u8
+НТВ +4,http://93.113.203.152/iptv/ZBE628EP2BYBP5/6024/manifest.m3u8
+НТВ +7,http://93.113.203.152/iptv/ZBE628EP2BYBP5/6039/manifest.m3u8
+НТВ +8,http://93.113.203.152/iptv/ZBE628EP2BYBP5/6053/manifest.m3u8
+ТВ Центр HD,http://93.113.203.152/iptv/ZBE628EP2BYBP5/19222/manifest.m3u8
+ТВ Центр,http://93.113.203.152/iptv/ZBE628EP2BYBP5/520/manifest.m3u8
+ТВ Центр orig,http://93.113.203.152/iptv/ZBE628EP2BYBP5/9095/manifest.m3u8
+ТВ Центр +2,http://93.113.203.152/iptv/ZBE628EP2BYBP5/716/manifest.m3u8
+ТВ Центр +4,http://93.113.203.152/iptv/ZBE628EP2BYBP5/6027/manifest.m3u8
+ТВ Центр +7,http://93.113.203.152/iptv/ZBE628EP2BYBP5/6041/manifest.m3u8
+ТВ Центр +8,http://93.113.203.152/iptv/ZBE628EP2BYBP5/6056/manifest.m3u8
+ТВ Центр International,http://93.113.203.152/iptv/ZBE628EP2BYBP5/15229/manifest.m3u8
+Пятый канал,http://93.113.203.152/iptv/ZBE628EP2BYBP5/112/manifest.m3u8
+Пятый канал orig,http://93.113.203.152/iptv/ZBE628EP2BYBP5/9096/manifest.m3u8
+Пятый канал +2,http://93.113.203.152/iptv/ZBE628EP2BYBP5/746/manifest.m3u8
+Пятый канал +4,http://93.113.203.152/iptv/ZBE628EP2BYBP5/6025/manifest.m3u8
+Пятый канал +7,http://93.113.203.152/iptv/ZBE628EP2BYBP5/6040/manifest.m3u8
+Пятый канал +8,http://93.113.203.152/iptv/ZBE628EP2BYBP5/6054/manifest.m3u8
+ТНТ FHD,http://93.113.203.152/iptv/ZBE628EP2BYBP5/2417/manifest.m3u8
+ТНТ HD orig,http://93.113.203.152/iptv/ZBE628EP2BYBP5/7251/manifest.m3u8
+ТНТ HD,http://93.113.203.152/iptv/ZBE628EP2BYBP5/237/manifest.m3u8
+ТНТ HD 50,http://93.113.203.152/iptv/ZBE628EP2BYBP5/10024/manifest.m3u8
+ТНТ,http://93.113.203.152/iptv/ZBE628EP2BYBP5/502/manifest.m3u8
+ТНТ orig,http://93.113.203.152/iptv/ZBE628EP2BYBP5/9204/manifest.m3u8
+ТНТ +2,http://93.113.203.152/iptv/ZBE628EP2BYBP5/6020/manifest.m3u8
+ТНТ +4,http://93.113.203.152/iptv/ZBE628EP2BYBP5/6035/manifest.m3u8
+ТНТ +7,http://93.113.203.152/iptv/ZBE628EP2BYBP5/6049/manifest.m3u8
+ТНТ International HD,http://93.113.203.152/iptv/ZBE628EP2BYBP5/15230/manifest.m3u8
+СТС HD,http://93.113.203.152/iptv/ZBE628EP2BYBP5/6303/manifest.m3u8
+СТС HD orig,http://93.113.203.152/iptv/ZBE628EP2BYBP5/9000/manifest.m3u8
+СТС,http://93.113.203.152/iptv/ZBE628EP2BYBP5/506/manifest.m3u8
+СТС +2,http://93.113.203.152/iptv/ZBE628EP2BYBP5/6015/manifest.m3u8
+СТС +4,http://93.113.203.152/iptv/ZBE628EP2BYBP5/6029/manifest.m3u8
+СТС +7,http://93.113.203.152/iptv/ZBE628EP2BYBP5/6043/manifest.m3u8
+СТС International,http://93.113.203.152/iptv/ZBE628EP2BYBP5/15228/manifest.m3u8
+РЕН ТВ HD,http://93.113.203.152/iptv/ZBE628EP2BYBP5/2024/manifest.m3u8
+РЕН ТВ HD orig,http://93.113.203.152/iptv/ZBE628EP2BYBP5/9002/manifest.m3u8
+РЕН ТВ orig,http://93.113.203.152/iptv/ZBE628EP2BYBP5/9205/manifest.m3u8
+РЕН ТВ,http://93.113.203.152/iptv/ZBE628EP2BYBP5/128/manifest.m3u8
+РЕН ТВ +2,http://93.113.203.152/iptv/ZBE628EP2BYBP5/747/manifest.m3u8
+РЕН ТВ +4,http://93.113.203.152/iptv/ZBE628EP2BYBP5/6028/manifest.m3u8
+РЕН ТВ +7,http://93.113.203.152/iptv/ZBE628EP2BYBP5/6042/manifest.m3u8
+Мир,http://93.113.203.152/iptv/ZBE628EP2BYBP5/113/manifest.m3u8
+Мир orig,http://93.113.203.152/iptv/ZBE628EP2BYBP5/9211/manifest.m3u8
+Мир +2,http://93.113.203.152/iptv/ZBE628EP2BYBP5/6019/manifest.m3u8
+Мир +4,http://93.113.203.152/iptv/ZBE628EP2BYBP5/6034/manifest.m3u8
+Мир +7,http://93.113.203.152/iptv/ZBE628EP2BYBP5/6048/manifest.m3u8
+Зоопарк HD,http://93.113.203.152/iptv/ZBE628EP2BYBP5/9097/manifest.m3u8
+ОТР,http://93.113.203.152/iptv/ZBE628EP2BYBP5/705/manifest.m3u8
+ОТР orig,http://93.113.203.152/iptv/ZBE628EP2BYBP5/9100/manifest.m3u8
+ОТР +2,http://93.113.203.152/iptv/ZBE628EP2BYBP5/6014/manifest.m3u8
+ОТР +4,http://93.113.203.152/iptv/ZBE628EP2BYBP5/6026/manifest.m3u8
+Звезда HD,http://93.113.203.152/iptv/ZBE628EP2BYBP5/15115/manifest.m3u8
+Звезда,http://93.113.203.152/iptv/ZBE628EP2BYBP5/544/manifest.m3u8
+Звезда orig,http://93.113.203.152/iptv/ZBE628EP2BYBP5/9098/manifest.m3u8
+Звезда Плюс,http://93.113.203.152/iptv/ZBE628EP2BYBP5/10059/manifest.m3u8
+Звезда +2,http://93.113.203.152/iptv/ZBE628EP2BYBP5/739/manifest.m3u8
+Звезда +4,http://93.113.203.152/iptv/ZBE628EP2BYBP5/6033/manifest.m3u8
+Звезда +7,http://93.113.203.152/iptv/ZBE628EP2BYBP5/6047/manifest.m3u8
+Звезда Плюс HD,http://93.113.203.152/iptv/ZBE628EP2BYBP5/19230/manifest.m3u8
+Че! orig,http://93.113.203.152/iptv/ZBE628EP2BYBP5/9101/manifest.m3u8
+Че!,http://93.113.203.152/iptv/ZBE628EP2BYBP5/513/manifest.m3u8
+Перец International,http://93.113.203.152/iptv/ZBE628EP2BYBP5/15227/manifest.m3u8
+ТВ-3 HD,http://93.113.203.152/iptv/ZBE628EP2BYBP5/5033/manifest.m3u8
+ТВ-3 orig,http://93.113.203.152/iptv/ZBE628EP2BYBP5/9206/manifest.m3u8
+ТВ-3,http://93.113.203.152/iptv/ZBE628EP2BYBP5/508/manifest.m3u8
+ТВ-3 +2,http://93.113.203.152/iptv/ZBE628EP2BYBP5/6017/manifest.m3u8
+ТВ-3 +4,http://93.113.203.152/iptv/ZBE628EP2BYBP5/6031/manifest.m3u8
+ТВ-3 +7,http://93.113.203.152/iptv/ZBE628EP2BYBP5/6045/manifest.m3u8
+Пятница! HD,http://93.113.203.152/iptv/ZBE628EP2BYBP5/5031/manifest.m3u8
+Пятница! orig,http://93.113.203.152/iptv/ZBE628EP2BYBP5/9207/manifest.m3u8
+Пятница!,http://93.113.203.152/iptv/ZBE628EP2BYBP5/503/manifest.m3u8
+Пятница! +2,http://93.113.203.152/iptv/ZBE628EP2BYBP5/6018/manifest.m3u8
+Пятница! +4,http://93.113.203.152/iptv/ZBE628EP2BYBP5/6032/manifest.m3u8
+Пятница! +7,http://93.113.203.152/iptv/ZBE628EP2BYBP5/6046/manifest.m3u8
+Домашний HD,http://93.113.203.152/iptv/ZBE628EP2BYBP5/15116/manifest.m3u8
+Домашний orig,http://93.113.203.152/iptv/ZBE628EP2BYBP5/9104/manifest.m3u8
+Домашний,http://93.113.203.152/iptv/ZBE628EP2BYBP5/514/manifest.m3u8
+Домашний +2,http://93.113.203.152/iptv/ZBE628EP2BYBP5/6016/manifest.m3u8
+Домашний +4,http://93.113.203.152/iptv/ZBE628EP2BYBP5/6030/manifest.m3u8
+Домашний +7,http://93.113.203.152/iptv/ZBE628EP2BYBP5/6044/manifest.m3u8
+Россия К,http://93.113.203.152/iptv/ZBE628EP2BYBP5/505/manifest.m3u8
+Настоящее время,http://93.113.203.152/iptv/ZBE628EP2BYBP5/986/manifest.m3u8
+360 HD,http://93.113.203.152/iptv/ZBE628EP2BYBP5/2065/manifest.m3u8
+360 orig,http://93.113.203.152/iptv/ZBE628EP2BYBP5/9209/manifest.m3u8
+360,http://93.113.203.152/iptv/ZBE628EP2BYBP5/825/manifest.m3u8
+360 HD orig,http://93.113.203.152/iptv/ZBE628EP2BYBP5/9036/manifest.m3u8
+Красная линия,http://93.113.203.152/iptv/ZBE628EP2BYBP5/2147/manifest.m3u8
+Красная линия orig,http://93.113.203.152/iptv/ZBE628EP2BYBP5/9119/manifest.m3u8
+RTVi HD orig,http://93.113.203.152/iptv/ZBE628EP2BYBP5/9102/manifest.m3u8
+RTVi,http://93.113.203.152/iptv/ZBE628EP2BYBP5/2086/manifest.m3u8
+ЛДПР ТВ,http://93.113.203.152/iptv/ZBE628EP2BYBP5/2110/manifest.m3u8
+ЛДПР ТВ orig,http://93.113.203.152/iptv/ZBE628EP2BYBP5/9120/manifest.m3u8
+Вместе-РФ,http://93.113.203.152/iptv/ZBE628EP2BYBP5/2073/manifest.m3u8
+Вместе-РФ orig,http://93.113.203.152/iptv/ZBE628EP2BYBP5/9124/manifest.m3u8
+Setanta Sports 2 HD KZ,http://93.113.203.152/iptv/ZBE628EP2BYBP5/16025/manifest.m3u8
+Кино,#genre#
+Кинопремьера HD,http://93.113.203.152/iptv/ZBE628EP2BYBP5/224/manifest.m3u8
+Кинопремьера HD orig,http://93.113.203.152/iptv/ZBE628EP2BYBP5/9020/manifest.m3u8
+Кинохит HD,http://93.113.203.152/iptv/ZBE628EP2BYBP5/7250/manifest.m3u8
+Кинохит,http://93.113.203.152/iptv/ZBE628EP2BYBP5/516/manifest.m3u8
+Кинохит orig,http://93.113.203.152/iptv/ZBE628EP2BYBP5/9128/manifest.m3u8
+Киномикс HD,http://93.113.203.152/iptv/ZBE628EP2BYBP5/7249/manifest.m3u8
+Киномикс,http://93.113.203.152/iptv/ZBE628EP2BYBP5/509/manifest.m3u8
+Киномикс orig,http://93.113.203.152/iptv/ZBE628EP2BYBP5/9126/manifest.m3u8
+Мужское Кино HD,http://93.113.203.152/iptv/ZBE628EP2BYBP5/10045/manifest.m3u8
+Мужское Кино HD orig,http://93.113.203.152/iptv/ZBE628EP2BYBP5/9138/manifest.m3u8
+Мужское Кино,http://93.113.203.152/iptv/ZBE628EP2BYBP5/164/manifest.m3u8
+Киносемья HD,http://93.113.203.152/iptv/ZBE628EP2BYBP5/7244/manifest.m3u8
+Киносемья HD orig,http://93.113.203.152/iptv/ZBE628EP2BYBP5/9228/manifest.m3u8
+Киносемья,http://93.113.203.152/iptv/ZBE628EP2BYBP5/125/manifest.m3u8
+Кинокомедия HD,http://93.113.203.152/iptv/ZBE628EP2BYBP5/7248/manifest.m3u8
+Кинокомедия orig,http://93.113.203.152/iptv/ZBE628EP2BYBP5/9231/manifest.m3u8
+Кинокомедия,http://93.113.203.152/iptv/ZBE628EP2BYBP5/145/manifest.m3u8
+Киносвидание HD,http://93.113.203.152/iptv/ZBE628EP2BYBP5/7245/manifest.m3u8
+Киносвидание orig,http://93.113.203.152/iptv/ZBE628EP2BYBP5/9238/manifest.m3u8
+Киносвидание,http://93.113.203.152/iptv/ZBE628EP2BYBP5/728/manifest.m3u8
+Наше Новое Кино HD,http://93.113.203.152/iptv/ZBE628EP2BYBP5/19231/manifest.m3u8
+Наше Новое Кино orig,http://93.113.203.152/iptv/ZBE628EP2BYBP5/9230/manifest.m3u8
+Наше Новое Кино,http://93.113.203.152/iptv/ZBE628EP2BYBP5/517/manifest.m3u8
+Киносерия HD,http://93.113.203.152/iptv/ZBE628EP2BYBP5/19229/manifest.m3u8
+Киносерия,http://93.113.203.152/iptv/ZBE628EP2BYBP5/148/manifest.m3u8
+Киносерия orig,http://93.113.203.152/iptv/ZBE628EP2BYBP5/9132/manifest.m3u8
+Киноужас HD,http://93.113.203.152/iptv/ZBE628EP2BYBP5/2056/manifest.m3u8
+Киноужас HD orig,http://93.113.203.152/iptv/ZBE628EP2BYBP5/9033/manifest.m3u8
+Шокирующее HD,http://93.113.203.152/iptv/ZBE628EP2BYBP5/6299/manifest.m3u8
+Шокирующее HD orig,http://93.113.203.152/iptv/ZBE628EP2BYBP5/9004/manifest.m3u8
+Страшное HD,http://93.113.203.152/iptv/ZBE628EP2BYBP5/7247/manifest.m3u8
+НСТ,http://93.113.203.152/iptv/ZBE628EP2BYBP5/726/manifest.m3u8
+НСТ orig,http://93.113.203.152/iptv/ZBE628EP2BYBP5/9148/manifest.m3u8
+Остросюжетное HD,http://93.113.203.152/iptv/ZBE628EP2BYBP5/904/manifest.m3u8
+Остросюжетное HD orig,http://93.113.203.152/iptv/ZBE628EP2BYBP5/9044/manifest.m3u8
+Премиальное FHD,http://93.113.203.152/iptv/ZBE628EP2BYBP5/2410/manifest.m3u8
+Премиальное HD,http://93.113.203.152/iptv/ZBE628EP2BYBP5/7222/manifest.m3u8
+Премиальное HD orig,http://93.113.203.152/iptv/ZBE628EP2BYBP5/10044/manifest.m3u8
+Премиальное HD 50,http://93.113.203.152/iptv/ZBE628EP2BYBP5/10017/manifest.m3u8
+Блокбастер HD,http://93.113.203.152/iptv/ZBE628EP2BYBP5/2436/manifest.m3u8
+Блокбастер HD orig,http://93.113.203.152/iptv/ZBE628EP2BYBP5/9087/manifest.m3u8
+Криминальное HD,http://93.113.203.152/iptv/ZBE628EP2BYBP5/14033/manifest.m3u8
+Хит HD,http://93.113.203.152/iptv/ZBE628EP2BYBP5/2438/manifest.m3u8
+Хит HD orig,http://93.113.203.152/iptv/ZBE628EP2BYBP5/9090/manifest.m3u8
+Кино ТВ HD,http://93.113.203.152/iptv/ZBE628EP2BYBP5/2097/manifest.m3u8
+Кино ТВ HD orig,http://93.113.203.152/iptv/ZBE628EP2BYBP5/9051/manifest.m3u8
+Кино ТВ,http://93.113.203.152/iptv/ZBE628EP2BYBP5/732/manifest.m3u8
+Кино ТВ orig,http://93.113.203.152/iptv/ZBE628EP2BYBP5/9244/manifest.m3u8
+Viju+ Premiere HD,http://93.113.203.152/iptv/ZBE628EP2BYBP5/202/manifest.m3u8
+Viju+ Premiere HD orig,http://93.113.203.152/iptv/ZBE628EP2BYBP5/5079/manifest.m3u8
+Viju+ Megahit HD,http://93.113.203.152/iptv/ZBE628EP2BYBP5/201/manifest.m3u8
+Viju+ Megahit HD orig,http://93.113.203.152/iptv/ZBE628EP2BYBP5/5081/manifest.m3u8
+Viju+ Comedy HD,http://93.113.203.152/iptv/ZBE628EP2BYBP5/200/manifest.m3u8
+Viju+ Comedy HD orig,http://93.113.203.152/iptv/ZBE628EP2BYBP5/5080/manifest.m3u8
+Viju+ Serial HD,http://93.113.203.152/iptv/ZBE628EP2BYBP5/2443/manifest.m3u8
+Viju+ Serial HD orig,http://93.113.203.152/iptv/ZBE628EP2BYBP5/9245/manifest.m3u8
+Viju TV1000 HD,http://93.113.203.152/iptv/ZBE628EP2BYBP5/6387/manifest.m3u8
+Viju TV1000 HD orig,http://93.113.203.152/iptv/ZBE628EP2BYBP5/9058/manifest.m3u8
+Viju TV1000,http://93.113.203.152/iptv/ZBE628EP2BYBP5/132/manifest.m3u8
+Viju TV1000 orig,http://93.113.203.152/iptv/ZBE628EP2BYBP5/9235/manifest.m3u8
+Viju TV1000 Action HD,http://93.113.203.152/iptv/ZBE628EP2BYBP5/6386/manifest.m3u8
+Viju TV1000 Action HD orig,http://93.113.203.152/iptv/ZBE628EP2BYBP5/9057/manifest.m3u8
+Viju TV1000 Action orig,http://93.113.203.152/iptv/ZBE628EP2BYBP5/9229/manifest.m3u8
+Viju TV1000 Action,http://93.113.203.152/iptv/ZBE628EP2BYBP5/131/manifest.m3u8
+Viju TV1000 Русское HD,http://93.113.203.152/iptv/ZBE628EP2BYBP5/6388/manifest.m3u8
+Viju TV1000 Русское HD orig,http://93.113.203.152/iptv/ZBE628EP2BYBP5/9059/manifest.m3u8
+Viju TV1000 Русское,http://93.113.203.152/iptv/ZBE628EP2BYBP5/101/manifest.m3u8
+Viju TV1000 Русское orig,http://93.113.203.152/iptv/ZBE628EP2BYBP5/9227/manifest.m3u8
+Viasat Kino Action,http://93.113.203.152/iptv/ZBE628EP2BYBP5/12024/manifest.m3u8
+Кинопоказ HD,http://93.113.203.152/iptv/ZBE628EP2BYBP5/2439/manifest.m3u8
+Кинопоказ HD orig,http://93.113.203.152/iptv/ZBE628EP2BYBP5/9092/manifest.m3u8
+Наш Кинопоказ HD,http://93.113.203.152/iptv/ZBE628EP2BYBP5/2434/manifest.m3u8
+Наш Кинопоказ HD orig,http://93.113.203.152/iptv/ZBE628EP2BYBP5/9086/manifest.m3u8
+Душевное HD,http://93.113.203.152/iptv/ZBE628EP2BYBP5/914/manifest.m3u8
+Душевное HD orig,http://93.113.203.152/iptv/ZBE628EP2BYBP5/10042/manifest.m3u8
+Любимое HD orig,http://93.113.203.152/iptv/ZBE628EP2BYBP5/915/manifest.m3u8
+Наше HD,http://93.113.203.152/iptv/ZBE628EP2BYBP5/9046/manifest.m3u8
+Наше Мужское HD,http://93.113.203.152/iptv/ZBE628EP2BYBP5/2440/manifest.m3u8
+Наше Мужское HD orig,http://93.113.203.152/iptv/ZBE628EP2BYBP5/9088/manifest.m3u8
+KinoJam 1 HD,http://93.113.203.152/iptv/ZBE628EP2BYBP5/7260/manifest.m3u8
+KinoJam 2 HD,http://93.113.203.152/iptv/ZBE628EP2BYBP5/7261/manifest.m3u8
+Trash HD,http://93.113.203.152/iptv/ZBE628EP2BYBP5/6396/manifest.m3u8
+Ultra HD Cinema 4K,http://93.113.203.152/iptv/ZBE628EP2BYBP5/4000/manifest.m3u8
+Кино UHD,http://93.113.203.152/iptv/ZBE628EP2BYBP5/5004/manifest.m3u8
+Дом Кино Премиум HD,http://93.113.203.152/iptv/ZBE628EP2BYBP5/911/manifest.m3u8
+Дом Кино Премиум HD orig,http://93.113.203.152/iptv/ZBE628EP2BYBP5/5082/manifest.m3u8
+Про Любовь HD,http://93.113.203.152/iptv/ZBE628EP2BYBP5/2430/manifest.m3u8
+Про Любовь HD orig,http://93.113.203.152/iptv/ZBE628EP2BYBP5/9089/manifest.m3u8
+Камеди HD,http://93.113.203.152/iptv/ZBE628EP2BYBP5/2441/manifest.m3u8
+Камеди HD orig,http://93.113.203.152/iptv/ZBE628EP2BYBP5/9091/manifest.m3u8
+Комедийное HD,http://93.113.203.152/iptv/ZBE628EP2BYBP5/912/manifest.m3u8
+Комедийное HD orig,http://93.113.203.152/iptv/ZBE628EP2BYBP5/9005/manifest.m3u8
+Романтичное HD,http://93.113.203.152/iptv/ZBE628EP2BYBP5/5053/manifest.m3u8
+Русский роман HD,http://93.113.203.152/iptv/ZBE628EP2BYBP5/2076/manifest.m3u8
+Русский роман HD orig,http://93.113.203.152/iptv/ZBE628EP2BYBP5/9041/manifest.m3u8
+Русский роман,http://93.113.203.152/iptv/ZBE628EP2BYBP5/906/manifest.m3u8
+Русский роман orig,http://93.113.203.152/iptv/ZBE628EP2BYBP5/9240/manifest.m3u8
+Русский детектив,http://93.113.203.152/iptv/ZBE628EP2BYBP5/907/manifest.m3u8
+Русский детектив orig,http://93.113.203.152/iptv/ZBE628EP2BYBP5/9142/manifest.m3u8
+Русский бестселлер orig,http://93.113.203.152/iptv/ZBE628EP2BYBP5/9141/manifest.m3u8
+Русский бестселлер,http://93.113.203.152/iptv/ZBE628EP2BYBP5/905/manifest.m3u8
+Комедия,http://93.113.203.152/iptv/ZBE628EP2BYBP5/733/manifest.m3u8
+Комедия orig,http://93.113.203.152/iptv/ZBE628EP2BYBP5/9144/manifest.m3u8
+Русский иллюзион HD,http://93.113.203.152/iptv/ZBE628EP2BYBP5/2114/manifest.m3u8
+Русский иллюзион HD orig,http://93.113.203.152/iptv/ZBE628EP2BYBP5/9080/manifest.m3u8
+Русский иллюзион,http://93.113.203.152/iptv/ZBE628EP2BYBP5/547/manifest.m3u8
+Русский иллюзион orig,http://93.113.203.152/iptv/ZBE628EP2BYBP5/9133/manifest.m3u8
+Иллюзион+ HD orig,http://93.113.203.152/iptv/ZBE628EP2BYBP5/9079/manifest.m3u8
+Иллюзион+,http://93.113.203.152/iptv/ZBE628EP2BYBP5/2038/manifest.m3u8
+Иллюзион+ orig,http://93.113.203.152/iptv/ZBE628EP2BYBP5/9241/manifest.m3u8
+VF Счастливы Вместе,http://93.113.203.152/iptv/ZBE628EP2BYBP5/9242/manifest.m3u8
+Sky Sports Action HD 50 UK,http://93.113.203.152/iptv/ZBE628EP2BYBP5/9155/manifest.m3u8
+.red HD,http://93.113.203.152/iptv/ZBE628EP2BYBP5/2062/manifest.m3u8
+.red HD orig,http://93.113.203.152/iptv/ZBE628EP2BYBP5/9035/manifest.m3u8
+.red,http://93.113.203.152/iptv/ZBE628EP2BYBP5/559/manifest.m3u8
+.red orig,http://93.113.203.152/iptv/ZBE628EP2BYBP5/9237/manifest.m3u8
+.black,http://93.113.203.152/iptv/ZBE628EP2BYBP5/708/manifest.m3u8
+.black orig,http://93.113.203.152/iptv/ZBE628EP2BYBP5/9140/manifest.m3u8
+.sci-fi orig,http://93.113.203.152/iptv/ZBE628EP2BYBP5/9125/manifest.m3u8
+.sci-fi,http://93.113.203.152/iptv/ZBE628EP2BYBP5/110/manifest.m3u8
+Amedia Premium HD,http://93.113.203.152/iptv/ZBE628EP2BYBP5/229/manifest.m3u8
+Amedia Premium HD orig,http://93.113.203.152/iptv/ZBE628EP2BYBP5/9022/manifest.m3u8
+Amedia Premium,http://93.113.203.152/iptv/ZBE628EP2BYBP5/555/manifest.m3u8
+Amedia Premium FHD orig,http://93.113.203.152/iptv/ZBE628EP2BYBP5/9233/manifest.m3u8
+Amedia Hit HD,http://93.113.203.152/iptv/ZBE628EP2BYBP5/6010/manifest.m3u8
+Amedia Hit HD orig,http://93.113.203.152/iptv/ZBE628EP2BYBP5/9070/manifest.m3u8
+Amedia Hit,http://93.113.203.152/iptv/ZBE628EP2BYBP5/556/manifest.m3u8
+Amedia Hit orig,http://93.113.203.152/iptv/ZBE628EP2BYBP5/9234/manifest.m3u8
+Amedia 1 HD orig,http://93.113.203.152/iptv/ZBE628EP2BYBP5/9069/manifest.m3u8
+Amedia 1,http://93.113.203.152/iptv/ZBE628EP2BYBP5/554/manifest.m3u8
+Amedia 1 orig,http://93.113.203.152/iptv/ZBE628EP2BYBP5/9137/manifest.m3u8
+Amedia 2 HD,http://93.113.203.152/iptv/ZBE628EP2BYBP5/2046/manifest.m3u8
+Amedia 2,http://93.113.203.152/iptv/ZBE628EP2BYBP5/510/manifest.m3u8
+Amedia 2 orig,http://93.113.203.152/iptv/ZBE628EP2BYBP5/9129/manifest.m3u8
+FX HD orig,http://93.113.203.152/iptv/ZBE628EP2BYBP5/9018/manifest.m3u8
+FX,http://93.113.203.152/iptv/ZBE628EP2BYBP5/6516/manifest.m3u8
+FX Life HD,http://93.113.203.152/iptv/ZBE628EP2BYBP5/14003/manifest.m3u8
+FX Life,http://93.113.203.152/iptv/ZBE628EP2BYBP5/9232/manifest.m3u8
+Кинеко,http://93.113.203.152/iptv/ZBE628EP2BYBP5/550/manifest.m3u8
+Кинеко HD,http://93.113.203.152/iptv/ZBE628EP2BYBP5/9135/manifest.m3u8
+Сапфир HD,http://93.113.203.152/iptv/ZBE628EP2BYBP5/6389/manifest.m3u8
+Сапфир,http://93.113.203.152/iptv/ZBE628EP2BYBP5/553/manifest.m3u8
+Hollywood HD,http://93.113.203.152/iptv/ZBE628EP2BYBP5/209/manifest.m3u8
+Hollywood HD orig,http://93.113.203.152/iptv/ZBE628EP2BYBP5/9017/manifest.m3u8
+Hollywood,http://93.113.203.152/iptv/ZBE628EP2BYBP5/557/manifest.m3u8
+Hollywood orig,http://93.113.203.152/iptv/ZBE628EP2BYBP5/9236/manifest.m3u8
+Epic Drama HD,http://93.113.203.152/iptv/ZBE628EP2BYBP5/1048/manifest.m3u8
+FilmBox,http://93.113.203.152/iptv/ZBE628EP2BYBP5/1071/manifest.m3u8
+FlixSnip HD,http://93.113.203.152/iptv/ZBE628EP2BYBP5/10060/manifest.m3u8
+FlixSnip orig,http://93.113.203.152/iptv/ZBE628EP2BYBP5/9311/manifest.m3u8
+Мосфильм. Золотая коллекция HD,http://93.113.203.152/iptv/ZBE628EP2BYBP5/7347/manifest.m3u8
+Мосфильм. Золотая коллекция,http://93.113.203.152/iptv/ZBE628EP2BYBP5/6392/manifest.m3u8
+Мосфильм. Золотая коллекция orig,http://93.113.203.152/iptv/ZBE628EP2BYBP5/9156/manifest.m3u8
+Дом Кино,http://93.113.203.152/iptv/ZBE628EP2BYBP5/154/manifest.m3u8
+Дом Кино orig,http://93.113.203.152/iptv/ZBE628EP2BYBP5/9136/manifest.m3u8
+Любимое HD,http://93.113.203.152/iptv/ZBE628EP2BYBP5/2106/manifest.m3u8
+Любимое Кино,http://93.113.203.152/iptv/ZBE628EP2BYBP5/722/manifest.m3u8
+Любимое Кино orig,http://93.113.203.152/iptv/ZBE628EP2BYBP5/9143/manifest.m3u8
+Родное Кино,http://93.113.203.152/iptv/ZBE628EP2BYBP5/126/manifest.m3u8
+Родное Кино orig,http://93.113.203.152/iptv/ZBE628EP2BYBP5/9127/manifest.m3u8
+Ретро,http://93.113.203.152/iptv/ZBE628EP2BYBP5/2018/manifest.m3u8
+Ретро orig,http://93.113.203.152/iptv/ZBE628EP2BYBP5/9152/manifest.m3u8
+Еврокино HD orig,http://93.113.203.152/iptv/ZBE628EP2BYBP5/9078/manifest.m3u8
+Еврокино,http://93.113.203.152/iptv/ZBE628EP2BYBP5/549/manifest.m3u8
+Еврокино orig,http://93.113.203.152/iptv/ZBE628EP2BYBP5/9134/manifest.m3u8
+ТВ 21,http://93.113.203.152/iptv/ZBE628EP2BYBP5/525/manifest.m3u8
+ТВ 21 orig,http://93.113.203.152/iptv/ZBE628EP2BYBP5/9130/manifest.m3u8
+День Победы HD,http://93.113.203.152/iptv/ZBE628EP2BYBP5/5054/manifest.m3u8
+Победа HD,http://93.113.203.152/iptv/ZBE628EP2BYBP5/5052/manifest.m3u8
+Победа,http://93.113.203.152/iptv/ZBE628EP2BYBP5/2003/manifest.m3u8
+Победа orig,http://93.113.203.152/iptv/ZBE628EP2BYBP5/9226/manifest.m3u8
+Арсенал HD,http://93.113.203.152/iptv/ZBE628EP2BYBP5/5044/manifest.m3u8
+Арсенал HD orig,http://93.113.203.152/iptv/ZBE628EP2BYBP5/9336/manifest.m3u8
+Cinema HD,http://93.113.203.152/iptv/ZBE628EP2BYBP5/19233/manifest.m3u8
+Cinema,http://93.113.203.152/iptv/ZBE628EP2BYBP5/5051/manifest.m3u8
+Киноман,http://93.113.203.152/iptv/ZBE628EP2BYBP5/2121/manifest.m3u8
+Киноман orig,http://93.113.203.152/iptv/ZBE628EP2BYBP5/9154/manifest.m3u8
+Феникс плюс Кино,http://93.113.203.152/iptv/ZBE628EP2BYBP5/2039/manifest.m3u8
+Феникс плюс Кино orig,http://93.113.203.152/iptv/ZBE628EP2BYBP5/9153/manifest.m3u8
+Plan_B HD,http://93.113.203.152/iptv/ZBE628EP2BYBP5/19249/manifest.m3u8
+Start Air HD,http://93.113.203.152/iptv/ZBE628EP2BYBP5/18036/manifest.m3u8
+Start World HD,http://93.113.203.152/iptv/ZBE628EP2BYBP5/19248/manifest.m3u8
+НТВ Хит,http://93.113.203.152/iptv/ZBE628EP2BYBP5/741/manifest.m3u8
+НТВ Хит orig,http://93.113.203.152/iptv/ZBE628EP2BYBP5/9146/manifest.m3u8
+НТВ Хит HD,http://93.113.203.152/iptv/ZBE628EP2BYBP5/16062/manifest.m3u8
+НТВ Сериал,http://93.113.203.152/iptv/ZBE628EP2BYBP5/744/manifest.m3u8
+НТВ Сериал orig,http://93.113.203.152/iptv/ZBE628EP2BYBP5/9147/manifest.m3u8
+Мир Сериала,http://93.113.203.152/iptv/ZBE628EP2BYBP5/856/manifest.m3u8
+Мир Сериала orig,http://93.113.203.152/iptv/ZBE628EP2BYBP5/9151/manifest.m3u8
+Shot TV,http://93.113.203.152/iptv/ZBE628EP2BYBP5/526/manifest.m3u8
+Shot TV orig,http://93.113.203.152/iptv/ZBE628EP2BYBP5/9347/manifest.m3u8
+FAN HD,http://93.113.203.152/iptv/ZBE628EP2BYBP5/16021/manifest.m3u8
+FAN,http://93.113.203.152/iptv/ZBE628EP2BYBP5/734/manifest.m3u8
+FAN orig,http://93.113.203.152/iptv/ZBE628EP2BYBP5/9145/manifest.m3u8
+VF Anime,http://93.113.203.152/iptv/ZBE628EP2BYBP5/10001/manifest.m3u8
+Liberty Аниме FHD,http://93.113.203.152/iptv/ZBE628EP2BYBP5/17029/manifest.m3u8
+Дорама HD orig,http://93.113.203.152/iptv/ZBE628EP2BYBP5/9224/manifest.m3u8
+Дорама HD,http://93.113.203.152/iptv/ZBE628EP2BYBP5/2131/manifest.m3u8
+Дорама orig,http://93.113.203.152/iptv/ZBE628EP2BYBP5/9239/manifest.m3u8
+Bollywood HD,http://93.113.203.152/iptv/ZBE628EP2BYBP5/239/manifest.m3u8
+Bollywood HD orig,http://93.113.203.152/iptv/ZBE628EP2BYBP5/9225/manifest.m3u8
+Индийское Кино,http://93.113.203.152/iptv/ZBE628EP2BYBP5/146/manifest.m3u8
+Индийское Кино orig,http://93.113.203.152/iptv/ZBE628EP2BYBP5/9131/manifest.m3u8
+VF Индия,http://93.113.203.152/iptv/ZBE628EP2BYBP5/13090/manifest.m3u8
+Liberty Индия 4K,http://93.113.203.152/iptv/ZBE628EP2BYBP5/18160/manifest.m3u8
+Индия,http://93.113.203.152/iptv/ZBE628EP2BYBP5/1001/manifest.m3u8
+Индия orig,http://93.113.203.152/iptv/ZBE628EP2BYBP5/9149/manifest.m3u8
+DetectiveJam HD,http://93.113.203.152/iptv/ZBE628EP2BYBP5/20209/manifest.m3u8
+Кион Хит HD,http://93.113.203.152/iptv/ZBE628EP2BYBP5/20211/manifest.m3u8
+Кинозалы,#genre#
+CineMan,http://93.113.203.152/iptv/ZBE628EP2BYBP5/11004/manifest.m3u8
+CineMan Top,http://93.113.203.152/iptv/ZBE628EP2BYBP5/11005/manifest.m3u8
+CineMan Premium,http://93.113.203.152/iptv/ZBE628EP2BYBP5/20112/manifest.m3u8
+CineMan Action,http://93.113.203.152/iptv/ZBE628EP2BYBP5/11006/manifest.m3u8
+CineMan Thriller,http://93.113.203.152/iptv/ZBE628EP2BYBP5/11007/manifest.m3u8
+CineMan Катастрофы,http://93.113.203.152/iptv/ZBE628EP2BYBP5/15106/manifest.m3u8
+CineMan Мелодрама,http://93.113.203.152/iptv/ZBE628EP2BYBP5/11008/manifest.m3u8
+CineMan Marvel,http://93.113.203.152/iptv/ZBE628EP2BYBP5/11009/manifest.m3u8
+CineMan Ужасы,http://93.113.203.152/iptv/ZBE628EP2BYBP5/11010/manifest.m3u8
+CineMan Комедия,http://93.113.203.152/iptv/ZBE628EP2BYBP5/11011/manifest.m3u8
+CineMan VHS,http://93.113.203.152/iptv/ZBE628EP2BYBP5/11012/manifest.m3u8
+CineMan РуКино,http://93.113.203.152/iptv/ZBE628EP2BYBP5/11013/manifest.m3u8
+CineMan Сваты,http://93.113.203.152/iptv/ZBE628EP2BYBP5/11014/manifest.m3u8
+CineMan Ментовские войны,http://93.113.203.152/iptv/ZBE628EP2BYBP5/16063/manifest.m3u8
+CineMan ПёС + Лихач,http://93.113.203.152/iptv/ZBE628EP2BYBP5/16064/manifest.m3u8
+CineMan Лесник,http://93.113.203.152/iptv/ZBE628EP2BYBP5/16065/manifest.m3u8
+CineMan Симпсоны,http://93.113.203.152/iptv/ZBE628EP2BYBP5/15101/manifest.m3u8
+CineMan Скорая Помощь,http://93.113.203.152/iptv/ZBE628EP2BYBP5/15100/manifest.m3u8
+CineMan MiniSeries,http://93.113.203.152/iptv/ZBE628EP2BYBP5/19437/manifest.m3u8
+BCU Premiere 1 HD,http://93.113.203.152/iptv/ZBE628EP2BYBP5/11015/manifest.m3u8
+BCU Premiere 2 HD,http://93.113.203.152/iptv/ZBE628EP2BYBP5/11016/manifest.m3u8
+BCU Premiere 3 HD,http://93.113.203.152/iptv/ZBE628EP2BYBP5/11017/manifest.m3u8
+BCU Premiere HD,http://93.113.203.152/iptv/ZBE628EP2BYBP5/11039/manifest.m3u8
+BCU Action HD,http://93.113.203.152/iptv/ZBE628EP2BYBP5/11027/manifest.m3u8
+BCU Catastrophe HD,http://93.113.203.152/iptv/ZBE628EP2BYBP5/11028/manifest.m3u8
+BCU Cinema HDR,http://93.113.203.152/iptv/ZBE628EP2BYBP5/11029/manifest.m3u8
+BCU Cinema+ HD,http://93.113.203.152/iptv/ZBE628EP2BYBP5/11030/manifest.m3u8
+BCU Fantastic HD,http://93.113.203.152/iptv/ZBE628EP2BYBP5/11032/manifest.m3u8
+BCU FilMystic HD,http://93.113.203.152/iptv/ZBE628EP2BYBP5/11033/manifest.m3u8
+BCU History HD,http://93.113.203.152/iptv/ZBE628EP2BYBP5/11034/manifest.m3u8
+BCU Comedy HDR,http://93.113.203.152/iptv/ZBE628EP2BYBP5/11031/manifest.m3u8
+BCU Comedy HD,http://93.113.203.152/iptv/ZBE628EP2BYBP5/15026/manifest.m3u8
+BCU Romantic HD,http://93.113.203.152/iptv/ZBE628EP2BYBP5/11040/manifest.m3u8
+BCU Romantic OLD,http://93.113.203.152/iptv/ZBE628EP2BYBP5/18052/manifest.m3u8
+BCU Kinorating HD,http://93.113.203.152/iptv/ZBE628EP2BYBP5/11037/manifest.m3u8
+BCU Criminal HD,http://93.113.203.152/iptv/ZBE628EP2BYBP5/11048/manifest.m3u8
+BCU Marvel HDR,http://93.113.203.152/iptv/ZBE628EP2BYBP5/11038/manifest.m3u8
+BCU Marvel HD,http://93.113.203.152/iptv/ZBE628EP2BYBP5/15025/manifest.m3u8
+BCU Stars HD,http://93.113.203.152/iptv/ZBE628EP2BYBP5/11044/manifest.m3u8
+BCU Media HD,http://93.113.203.152/iptv/ZBE628EP2BYBP5/11043/manifest.m3u8
+BCU Media HD OLD,http://93.113.203.152/iptv/ZBE628EP2BYBP5/15024/manifest.m3u8
+BCU Reality HD,http://93.113.203.152/iptv/ZBE628EP2BYBP5/16082/manifest.m3u8
+BCU Reality OLD,http://93.113.203.152/iptv/ZBE628EP2BYBP5/16083/manifest.m3u8
+BCU Survival HD,http://93.113.203.152/iptv/ZBE628EP2BYBP5/17019/manifest.m3u8
+BCU Survival OLD,http://93.113.203.152/iptv/ZBE628EP2BYBP5/17020/manifest.m3u8
+BCU Cosmo HD,http://93.113.203.152/iptv/ZBE628EP2BYBP5/17021/manifest.m3u8
+Мосфильм. Золотая коллекция +4 HD,http://93.113.203.152/iptv/ZBE628EP2BYBP5/17022/manifest.m3u8
+BCU TruMotion HD,http://93.113.203.152/iptv/ZBE628EP2BYBP5/17054/manifest.m3u8
+BCU Ultra 4K,http://93.113.203.152/iptv/ZBE628EP2BYBP5/11045/manifest.m3u8
+BCU Premiere Ultra 4K,http://93.113.203.152/iptv/ZBE628EP2BYBP5/15023/manifest.m3u8
+BCU VHS HD,http://93.113.203.152/iptv/ZBE628EP2BYBP5/11042/manifest.m3u8
+BCU СССР HD,http://93.113.203.152/iptv/ZBE628EP2BYBP5/11026/manifest.m3u8
+BCU Russian HD,http://93.113.203.152/iptv/ZBE628EP2BYBP5/11041/manifest.m3u8
+BCU RuSerial HD,http://93.113.203.152/iptv/ZBE628EP2BYBP5/11046/manifest.m3u8
 午夜剧场_16888,#genre#
 香蕉,http://15.204.105.50:25461/live/G2s9zK2n9m/xDtwVfWM8T/117.ts
 松1,http://15.204.105.50:25461/live/G2s9zK2n9m/xDtwVfWM8T/88.ts
@@ -1841,3 +2273,268 @@ ASTRO欢喜台,http://o11.163189.xyz/stream/live/hxt/
 精艳,http://15.204.105.50:25461/live/G2s9zK2n9m/xDtwVfWM8T/85.ts
 完美台,http://15.204.105.50:25461/live/G2s9zK2n9m/xDtwVfWM8T/86.ts
 松1,http://15.204.105.50:25461/live/G2s9zK2n9m/xDtwVfWM8T/88.ts
+松1,http://ctrl.yunshipin.bbroot.com:8080/streams/e5muhgtiwm/gc/playlist.m3u8
+松2,http://ctrl.yunshipin.bbroot.com:8080/streams/5kiecachjvk/gc/playlist.m3u8#http://15.204.105.50:25461/live/G2s9zK2n9m/xDtwVfWM8T/89.ts
+松3,http://15.204.105.50:25461/live/G2s9zK2n9m/xDtwVfWM8T/90.ts
+惊艳,rtmp://112.29.121.74/live/易發TV-jyt
+香蕉,rtmp://112.29.121.74/live/易發TV-xjt
+Erox,http://88.212.7.11/live/test_erox_hd_hevc/playlist.m3u8
+Eroxxx,http://88.212.7.11/live/test_eroxxx_hd_hevc/playlist.m3u8
+Brazze,http://88.212.7.11/live/test_brazzers_hd_hevc/playlist.m3u8
+Desire,http://88.212.7.11/live/test_desire_hd_hevc/playlist.m3u8
+Babes,http://88.212.7.11/live/test_basbes_hd_hevc/playlist.m3u8
+Extasy,http://88.212.7.11/live/test_extasy_hd_hevc/playlist.m3u8
+Dorcel,http://88.212.7.11/live/test_dorcel_hd_hevc/playlist.m3u8
+Leo HD,http://88.212.7.11/live/test_leo_hd_hevc/playlist.m3u8
+Realit,http://88.212.7.11/live/test_realitykings_sd_hevc/playlist.m3u8
+Music,http://30a-tv.com/music.m3u8?iptvm3uplaylists.m3u8&checkedby:iptvcat.com
+POWER,https://listen.powerapp.com.tr/plove/love.smil/playlist.m3u8
+music1,http://web.onair-radio.eu:1935/video/video/chunklist.m3u8
+SEXY,http://88.212.15.19/live/mb_sexy/index.m3u8
+骑兵破解RVG-238 いつでもヤラせてくれるお股ゆるゆる系お姉さん,https://t27.cdn2020.com/video/m3u8/2026/08/14/991de5da/index.m3u8
+骑兵破解GOJI-059 バイセクシャルな私 両刀セックスに乱れ狂う女たち,https://t27.cdn2020.com/video/m3u8/2026/08/14/5cd3d181/index.m3u8
+骑兵破解FTO-024 中出し追跡24時,https://t27.cdn2020.com/video/m3u8/2026/08/14/97d1ceb8/index.m3u8
+骑兵破解KTKL-135 つるぺたツンデレくそガキギャル A子,https://t27.cdn2020.com/video/m3u8/2026/08/14/cdc56731/index.m3u8
+骑兵破解PYM-518 LOVEたっぷり2人っきりの自画撮り 恋人シコシコ誘導オナニー,https://t27.cdn2020.com/video/m3u8/2026/08/14/212d05d0/index.m3u8
+骑兵破解MMPB-081 これぞ大人の色気,https://t27.cdn2020.com/video/m3u8/2026/08/14/b733dcc1/index.m3u8
+骑兵破解KSAT-094 中出しイカせまくり 巨乳妻ナンパ ドスケベ奥さん限定 5時間,https://t27.cdn2020.com/video/m3u8/2026/08/14/8b85bd5e/index.m3u8
+骑兵破解GZAP-073 パパ活とお留守番,https://t27.cdn2020.com/video/m3u8/2026/08/14/89a9a9e1/index.m3u8
+骑兵破解GYAN-023 エロ過ぎ迷惑系黒,https://t27.cdn2020.com/video/m3u8/2026/08/14/152ff036/index.m3u8
+骑兵破解GNAB-074 Hとお小遣いに興味,https://t27.cdn2020.com/video/m3u8/2026/08/14/3d309bfc/index.m3u8
+骑兵破解GBAN-022 地味にエロい家事代行妻,https://t27.cdn2020.com/video/m3u8/2026/08/14/c5dabad4/index.m3u8
+骑兵破解FTO-023 【エッチするならギャルしか勝たん！】,https://t27.cdn2020.com/video/m3u8/2026/08/14/614082ae/index.m3u8
+骑兵破解FTO-022 極上素人アイドル3名☆ 巧みな口説きで堕とした無断中出しオムニバス,https://t27.cdn2020.com/video/m3u8/2026/08/14/72d39da8/index.m3u8
+骑兵破解FTO-021 3人の裏垢女子とハメまくる！ 制服×スレンダー×爆乳のオムニバス作品,https://t27.cdn2020.com/video/m3u8/2026/08/14/ec3668f1/index.m3u8
+骑兵破解ERDM-164 普通の人妻さん寝取らせNTR映像4時間,https://t27.cdn2020.com/video/m3u8/2026/08/14/4c1c5b6d/index.m3u8
+骑兵破解DLV-004 新・絶対的美少女,https://t27.cdn2020.com/video/m3u8/2026/08/14/c51ed68c/index.m3u8
+骑兵破解DBNK-065 普通の素人w4時間,https://t27.cdn2020.com/video/m3u8/2026/08/14/b9e8d079/index.m3u8
+骑兵破解DBNK-064 「イケナイ事なのよ4時間,https://t27.cdn2020.com/video/m3u8/2026/08/14/60c5be4f/index.m3u8
+骑兵破解CVDX-651 羞恥の逸品！！熟女のアナル大鑑賞～五十路六十路含む～100人4時間,https://t27.cdn2020.com/video/m3u8/2026/08/14/5667f68f/index.m3u8
+骑兵破解BONY-143 一人暮らしの美女を狙,https://t27.cdn2020.com/video/m3u8/2026/08/14/2c708dd2/index.m3u8
+骑兵破解AKID-118 人妻さんいらっしゃい 僕の自宅,https://t27.cdn2020.com/video/m3u8/2026/08/14/d080d2b6/index.m3u8
+骑兵破解PRMJ-316 剛毛熟女4時間,https://t27.cdn2020.com/video/m3u8/2026/08/13/e83b5384/index.m3u8
+骑兵破解NGHJ-072 怒涛の連発射精,https://t27.cdn2020.com/video/m3u8/2026/08/13/99cdfc36/index.m3u8
+骑兵破解NHDTC-235 彼氏チ○ポを座席,https://t27.cdn2020.com/video/m3u8/2026/08/13/f3153915/index.m3u8
+骑兵破解MMPB-080 制服美少女限定 完全着衣 思春期,https://t27.cdn2020.com/video/m3u8/2026/08/13/d3c376b1/index.m3u8
+骑兵破解MMMB-144 汗ばむおばの下着に思わず勃起してしまい…4時間,https://t27.cdn2020.com/video/m3u8/2026/08/13/8ec49eed/index.m3u8
+骑兵破解MDTM-883 五十嵐星蘭 神スーパースター伝説Complete Memorial BEST4時間,https://t27.cdn2020.com/video/m3u8/2026/08/13/0766e1da/index.m3u8
+骑兵破解KBTK-017 「今夜は帰りたくない…。」,https://t27.cdn2020.com/video/m3u8/2026/08/13/cdcc10c6/index.m3u8
+骑兵破解JKSR-744 出せ！夫以外の精子をすべて口に出せ！口内射精人妻50人4時間,https://t27.cdn2020.com/video/m3u8/2026/08/13/55aa1987/index.m3u8
+骑兵破解DIPO-140 マル秘隠し撮り映像流出衝撃SEX映像4時間BEST20人,https://t27.cdn2020.com/video/m3u8/2026/08/13/016cf6ad/index.m3u8
+骑兵破解DSOD-013 肉の徒花、隷属の蜜,https://t27.cdn2020.com/video/m3u8/2026/08/13/46b6f266/index.m3u8
+骑兵破解CVDX-608 素人！！美顔熟女 15人4時間,https://t27.cdn2020.com/video/m3u8/2026/08/13/5927a101/index.m3u8
+骑兵破解CVDX-606 所帯染28人4時間,https://t27.cdn2020.com/video/m3u8/2026/08/13/fc103b8f/index.m3u8
+骑兵破解BDSR-535 ハメ撮り物語16人4時間,https://t27.cdn2020.com/video/m3u8/2026/08/13/6d63c556/index.m3u8
+骑兵破解YDNS-009 電車生姦制裁 ＃009,https://t27.cdn2020.com/video/m3u8/2026/08/12/bb3efbe8/index.m3u8
+骑兵破解NHDTC-236 図書館,https://t27.cdn2020.com/video/m3u8/2026/08/12/d71cfc03/index.m3u8
+骑兵破解MKMP-750 KMPの激アツ作品,https://t27.cdn2020.com/video/m3u8/2026/08/12/401a8896/index.m3u8
+骑兵破解KTRA-719 背の小さなロリ少女たちとラブラブえっち4時間,https://t27.cdn2020.com/video/m3u8/2026/08/12/e37f8ba2/index.m3u8
+骑兵破解HBLA-012 デカチン喉奥ぶち込みイラマ調教BEST 48連発OVER！！4時間,https://t27.cdn2020.com/video/m3u8/2026/08/12/096720a9/index.m3u8
+骑兵破解GZAP-061 優等生J●は全裸露出がお好き,https://t27.cdn2020.com/video/m3u8/2026/08/12/8ed3f859/index.m3u8
+骑兵破解DSDP-023 レズビアンドリーム WET ＆ WILD,https://t27.cdn2020.com/video/m3u8/2026/08/12/cc4aeefe/index.m3u8
+骑兵破解DBNK-066 人妻系風俗で知り合いの女性と出逢ってしまった…4時間,https://t27.cdn2020.com/video/m3u8/2026/08/12/df05bcba/index.m3u8
+骑兵破解STSK-236 非道精子に汚されてしまった営業職4名～,https://t27.cdn2020.com/video/m3u8/2026/08/11/0a5d6b5e/index.m3u8
+骑兵破解SODS-086 SNSで1年間約1000万人,https://t27.cdn2020.com/video/m3u8/2026/08/11/5e505923/index.m3u8
+骑兵破解SNOS-065 就職した水着メーカーは女性社員,https://t27.cdn2020.com/video/m3u8/2026/08/11/7e4fb510/index.m3u8
+刺激SKMJ-774 「本当に童貞なの,https://t27.cdn2020.com/video/m3u8/2026/08/11/989006fd/index.m3u8
+骑兵破解MISM-450 癒し。綺麗な喉奥お姉,https://t27.cdn2020.com/video/m3u8/2026/08/11/64584ecd/index.m3u8
+骑兵破解HUNTC-492,https://t27.cdn2020.com/video/m3u8/2026/08/11/5f935f94/index.m3u8
+骑兵破解HRSM-154 2026夏祭り 狙われた浴衣美女4名 つきまとい中出しレ×プ,https://t27.cdn2020.com/video/m3u8/2026/08/11/a5b68cf8/index.m3u8
+骑兵破解DSOD-021,https://t27.cdn2020.com/video/m3u8/2026/08/11/595b0952/index.m3u8
+骑兵破解SW-1061,https://t27.cdn2020.com/video/m3u8/2026/08/10/c6aa0c40/index.m3u8
+骑兵破解SW-1062,https://t27.cdn2020.com/video/m3u8/2026/08/10/587aae26/index.m3u8
+骑兵破解STSK-238 はっぴ女子 阿〇踊り 揺れる想いに負けないで,https://t27.cdn2020.com/video/m3u8/2026/08/10/64ddafd9/index.m3u8
+骑兵破解SKMJ-773,https://t27.cdn2020.com/video/m3u8/2026/08/10/04497c48/index.m3u8
+骑兵破解SDMUA-097 M性感,https://t27.cdn2020.com/video/m3u8/2026/08/10/73836c8f/index.m3u8
+骑兵破解NPJB-122 港区,https://t27.cdn2020.com/video/m3u8/2026/08/10/4cd95cee/index.m3u8
+骑兵破解ENKI-097 美女ド,https://t27.cdn2020.com/video/m3u8/2026/08/10/f6c68d50/index.m3u8
+骑兵破解刺激AGEOM-035 全身,https://t27.cdn2020.com/video/m3u8/2026/08/09/e49e2727/index.m3u8
+骑兵破解BONY-196,https://t27.cdn2020.com/video/m3u8/2026/08/09/29952dae/index.m3u8
+骑兵破解SDMM-236,https://t27.cdn2020.com/video/m3u8/2026/08/09/b0a413ad/index.m3u8
+骑兵破解VEQ-284 S級熟女,https://t27.cdn2020.com/video/m3u8/2026/08/09/e4e600de/index.m3u8
+骑兵破解HUNTC-545,https://t27.cdn2020.com/video/m3u8/2026/08/09/366bb050/index.m3u8
+骑兵破解HUNTC-439,https://t27.cdn2020.com/video/m3u8/2026/08/09/ecc6ed30/index.m3u8
+骑兵破解HSOD-001 はじめての時間停止学級。厳選傑作選,https://t27.cdn2020.com/video/m3u8/2026/08/09/c3281512/index.m3u8
+骑兵破解HODV-22093 美人,https://t27.cdn2020.com/video/m3u8/2026/08/09/ec0204d4/index.m3u8
+骑兵破解HEZ-906 極上美熟女口淫 大量精液を口内射精！！ 羞恥フェラ30連発,https://t27.cdn2020.com/video/m3u8/2026/08/09/91cbbb56/index.m3u8
+骑兵破解HEZ-902 都内某高級,https://t27.cdn2020.com/video/m3u8/2026/08/09/4ca30e47/index.m3u8
+骑兵破解BUR-652 「わたしでいっぱいシコシコ射精してっ30人4時間,https://t27.cdn2020.com/video/m3u8/2026/08/09/2a0c3831/index.m3u8
+骑兵破解AVSW-053 麻生希の世界,https://t27.cdn2020.com/video/m3u8/2026/08/09/f79b477b/index.m3u8
+骑兵破解BONY-189 一人暮らしの美女を狙う鬼畜レ〇プ集団自宅押込み中出し性交 極悪監禁編,https://t27.cdn2020.com/video/m3u8/2026/08/08/b59b8257/index.m3u8
+骑兵破解SIGL-022 しろうとがーるvol.22 えっちなしろうと娘 3名 全員ナマ中出し,https://t27.cdn2020.com/video/m3u8/2026/08/08/f087be75/index.m3u8
+骑兵破解PTS-549 「ダメ……。ずっと忘れてたのに。」 禁欲を強いられた出所直後SEX,https://t27.cdn2020.com/video/m3u8/2026/08/08/bd9a45a0/index.m3u8
+骑兵破解HOIP-001 【高嶺の花6人理性崩壊357分】,https://t27.cdn2020.com/video/m3u8/2026/08/08/3cc866c2/index.m3u8
+骑兵破解CJOB-210,https://t27.cdn2020.com/video/m3u8/2026/08/08/c3efcacd/index.m3u8
+骑兵破解CHIB-005,https://t27.cdn2020.com/video/m3u8/2026/08/08/408fb816/index.m3u8
+骑兵破解MIAA-062,https://t27.cdn2020.com/video/m3u8/2026/08/07/16ee5e30/index.m3u8
+骑兵破解MIZD-544 射精直前2分前,https://t27.cdn2020.com/video/m3u8/2026/08/07/4e6e5f38/index.m3u8
+骑兵破解SW-1037夫婦交換,https://t27.cdn2020.com/video/m3u8/2026/08/07/640d662f/index.m3u8
+骑兵破解SW-1034,https://t27.cdn2020.com/video/m3u8/2026/08/07/c42404ec/index.m3u8
+骑兵破解NSFS-499 AIリマスター版 巨乳不倫妻 ～夫には知られたくない妻の秘密～,https://t27.cdn2020.com/video/m3u8/2026/08/07/36837cc9/index.m3u8
+骑兵破解NSFS-446 夫の横でイカされまくる 寝取りファック,https://t27.cdn2020.com/video/m3u8/2026/08/07/939ee7ec/index.m3u8
+骑兵破解JERA-044 会社で噂の隠れ巨乳OL小梅,https://t27.cdn2020.com/video/m3u8/2026/08/07/cf9188a3/index.m3u8
+骑兵破解GOHM-011 GAL PARTY欲望,https://t27.cdn2020.com/video/m3u8/2026/08/07/3f993862/index.m3u8
+骑兵破解DVEH-093 三浦,https://t27.cdn2020.com/video/m3u8/2026/08/07/4f35f4ee/index.m3u8
+骑兵破解SCOP-917,https://t27.cdn2020.com/video/m3u8/2026/08/06/97fce886/index.m3u8
+骑兵破解SABA-988,https://t27.cdn2020.com/video/m3u8/2026/08/06/8d9ac528/index.m3u8
+骑兵破解SABA-987,https://t27.cdn2020.com/video/m3u8/2026/08/06/ce368aed/index.m3u8
+骑兵破解MIDA-734,https://t27.cdn2020.com/video/m3u8/2026/08/06/de10cdc4/index.m3u8
+骑兵破解GOJI-108,https://t27.cdn2020.com/video/m3u8/2026/08/06/65668861/index.m3u8
+骑兵破解GOJI-107,https://t27.cdn2020.com/video/m3u8/2026/08/06/6012110f/index.m3u8
+骑兵破解GOJI-106,https://t27.cdn2020.com/video/m3u8/2026/08/06/f9af31ed/index.m3u8
+骑兵破解SW-1048,https://t27.cdn2020.com/video/m3u8/2026/08/05/2ba72804/index.m3u8
+骑兵破解SABA-986,https://t27.cdn2020.com/video/m3u8/2026/08/05/23812ed4/index.m3u8
+骑兵破解KTRA-7924時間,https://t27.cdn2020.com/video/m3u8/2026/08/05/fed7d74a/index.m3u8
+骑兵破解KIBD-344,https://t27.cdn2020.com/video/m3u8/2026/08/05/938cbc24/index.m3u8
+骑兵破解HEZ-864 12名5時間,https://t27.cdn2020.com/video/m3u8/2026/08/05/e8def499/index.m3u8
+骑兵破解DANDYA-044,https://t27.cdn2020.com/video/m3u8/2026/08/05/f2ce26a6/index.m3u8
+骑兵破解DANDYA-042,https://t27.cdn2020.com/video/m3u8/2026/08/05/debbf96f/index.m3u8
+骑兵破解JERA-046,https://t27.cdn2020.com/video/m3u8/2026/08/07/5ff3106f/index.m3u8
+骑兵破解SGSR-377 人妻4時間 12人,https://t27.cdn2020.com/video/m3u8/2026/08/04/f5713260/index.m3u8
+骑兵破解SGKI-100,https://t27.cdn2020.com/video/m3u8/2026/08/04/28c3fe42/index.m3u8
+骑兵破解CJOB-203,https://t27.cdn2020.com/video/m3u8/2026/08/05/b188002a/index.m3u8
+骑兵破解SCPX-562  6人4時間OVER,https://t27.cdn2020.com/video/m3u8/2026/08/04/10d36017/index.m3u8
+骑兵破解JKSR-743 4時間,https://t27.cdn2020.com/video/m3u8/2026/08/04/8c3dc848/index.m3u8
+骑兵破解IPOK-006,https://t27.cdn2020.com/video/m3u8/2026/08/04/79588b2a/index.m3u8
+骑兵破解HUSR-305 国宝級金髪美女,https://t27.cdn2020.com/video/m3u8/2026/08/04/84c39f4a/index.m3u8
+骑兵破解HEZ-870 休日出勤は人妻痴女,https://t27.cdn2020.com/video/m3u8/2026/08/04/cdbcd4e0/index.m3u8
+骑兵破解HEZ-865 人妻12人,https://t27.cdn2020.com/video/m3u8/2026/08/04/c0fed639/index.m3u8
+骑兵破解GEBB-038,https://t27.cdn2020.com/video/m3u8/2026/08/04/147e7e38/index.m3u8
+骑兵破解CJOB-198,https://t27.cdn2020.com/video/m3u8/2026/08/04/6a7e8364/index.m3u8
+骑兵破解BONY-181 一人暮,https://t27.cdn2020.com/video/m3u8/2026/08/04/ffdf2f7e/index.m3u8
+骑兵破解BONY-174 一人暮,https://t27.cdn2020.com/video/m3u8/2026/08/04/7bf416f8/index.m3u8
+骑兵破解HRSM-006,https://t27.cdn2020.com/video/m3u8/2026/08/03/c1ba5163/index.m3u8
+骑兵破解MDBK-423 美少女 230分 BEST,https://t27.cdn2020.com/video/m3u8/2026/08/03/68462604/index.m3u8
+骑兵破解EMLB-092,https://t27.cdn2020.com/video/m3u8/2026/08/03/52b410a6/index.m3u8
+骑兵破解DVDMS-272,https://t27.cdn2020.com/video/m3u8/2026/08/03/2ab5885c/index.m3u8
+骑兵破解CEAD-744,https://t27.cdn2020.com/video/m3u8/2026/08/03/bf55f78e/index.m3u8
+骑兵破解ARSO-26208 舞ワイフ～セレブ倶楽部 208,https://t27.cdn2020.com/video/m3u8/2026/08/02/50306843/index.m3u8
+骑兵破解HUNTC-627,https://t27.cdn2020.com/video/m3u8/2026/08/02/0c27fddc/index.m3u8
+骑兵破解DLDSS-523 娼婦 今夜、私は最も醜い男に抱かれますー。角奈保,https://t27.cdn2020.com/video/m3u8/2026/08/02/be1695f5/index.m3u8
+骑兵破解C-2981 うちの妻を寝取ってください The BEST,https://t27.cdn2020.com/video/m3u8/2026/08/02/d7df6e8d/index.m3u8
+骑兵破解ZOOO-200 妖艶美麗の高級店 10名収録 240分,https://t27.cdn2020.com/video/m3u8/2026/08/01/e8234957/index.m3u8
+骑兵破解YMLW-047 五十路4時間20人,https://t27.cdn2020.com/video/m3u8/2026/08/01/ffe8d2d9/index.m3u8
+骑兵破解SGKI-052,https://t27.cdn2020.com/video/m3u8/2026/08/01/a9871c8e/index.m3u8
+骑兵破解EMTH-202 淫乱人妻,https://t27.cdn2020.com/video/m3u8/2026/07/29/76981beb/index.m3u8
+骑兵破解MGTD-047 スペルマッチング vol.03,https://t27.cdn2020.com/video/m3u8/2026/07/29/b8306d4d/index.m3u8
+骑兵破解XMOM-094 寝取られ淫乱妻 夫以外のデカチンが好き,https://t27.cdn2020.com/video/m3u8/2026/07/29/baae40a7/index.m3u8
+骑兵破解VSED-263 三十路・四十路・五十路の美熟女大百科 8,https://t27.cdn2020.com/video/m3u8/2026/07/29/32dd8184/index.m3u8
+骑兵破解VSED-262 売上アップのためなら枕営業だって厭わない働く熟女の性事情,https://t27.cdn2020.com/video/m3u8/2026/07/29/754cb5ab/index.m3u8
+骑兵破解VOBB-051 いっぱいのチ〇ポに囲まれて理性崩壊性交34連発4時間ベスト,https://t27.cdn2020.com/video/m3u8/2026/07/29/b5e2cea2/index.m3u8
+骑兵破解USAG-076 快感に悶える素人娘たち 5時間17人,https://t27.cdn2020.com/video/m3u8/2026/07/29/a555c200/index.m3u8
+骑兵破解UMSO-602 ちょっと大きめ乳輪の美人女優セレクション8人,https://t27.cdn2020.com/video/m3u8/2026/07/29/af129d69/index.m3u8
+骑兵破解UMSO-601 ぽっちゃり美女SEXカタログ50人,https://t27.cdn2020.com/video/m3u8/2026/07/29/cdb44ab3/index.m3u8
+骑兵破解UMSO-600 セーラー美少女BEST11人,https://t27.cdn2020.com/video/m3u8/2026/07/29/775cc6e3/index.m3u8
+骑兵破解TOTK-009拘束悶絶拷問,https://t27.cdn2020.com/video/m3u8/2026/07/29/30db3bf2/index.m3u8
+骑兵破解THU-049 天然成分由来 絶対的美少女汁120% 8時間 BEST VOL.09,https://t27.cdn2020.com/video/m3u8/2026/07/29/ec1cf063/index.m3u8
+骑兵破解TCHB-049 セフレちゃん卍ベスト02 美女,https://t27.cdn2020.com/video/m3u8/2026/07/29/c25890d3/index.m3u8
+骑兵破解SVFLA-007 おしっこ飲ませ聖水少女ちゃん 思春期,https://t27.cdn2020.com/video/m3u8/2026/07/29/be59ef92/index.m3u8
+骑兵破解SUPA-652 S級にkawaii素人美女50人に孕ませ確定50連発中出し,https://t27.cdn2020.com/video/m3u8/2026/07/29/caf8b563/index.m3u8
+骑兵破解SUPA-653 SEXならギャルにまかせとけ,https://t27.cdn2020.com/video/m3u8/2026/07/29/1f978df1/index.m3u8
+骑兵破解SVFLA-007 おしっこ飲ませ聖水少女ち,https://t27.cdn2020.com/video/m3u8/2026/07/29/be59ef92/index.m3u8
+骑兵破解SKMJ-644 素人女子盗撮映像300分総集編,https://t27.cdn2020.com/video/m3u8/2026/07/29/c8a5ab1a/index.m3u8
+骑兵破解SABA-947 露出癖アリ変態素人30人,https://t27.cdn2020.com/video/m3u8/2026/07/29/88882914/index.m3u8
+骑兵破解SKMJ-637,https://t27.cdn2020.com/video/m3u8/2026/07/29/966f8b7d/index.m3u8
+骑兵破解RSE-051 美人,https://t27.cdn2020.com/video/m3u8/2026/07/29/2a2388a6/index.m3u8
+骑兵破解RMSQ-012 敏感になった女体を隅,https://t27.cdn2020.com/video/m3u8/2026/07/29/fa737e97/index.m3u8
+骑兵破解PRMJ-321 感度抜群ー熟女4時間2,https://t27.cdn2020.com/video/m3u8/2026/07/29/11dc1528/index.m3u8
+骑兵破解PRMJ-320 母子交尾 過保護体液交換4時間6,https://t27.cdn2020.com/video/m3u8/2026/07/29/fcd54398/index.m3u8
+骑兵破解PRMJ-319 吸い付きたくなる首筋！,https://t27.cdn2020.com/video/m3u8/2026/07/29/14c18afa/index.m3u8
+骑兵破解PRMJ-318 勃起乳首を弄られ絶頂4時間3,https://t27.cdn2020.com/video/m3u8/2026/07/29/3158f640/index.m3u8
+骑兵破解PRIN-040 【人類必見】,https://t27.cdn2020.com/video/m3u8/2026/07/29/50f50d06/index.m3u8
+骑兵破解PPBD-308  巨乳女子体液全部性交4時間BEST,https://t27.cdn2020.com/video/m3u8/2026/07/29/acb4a7b0/index.m3u8
+骑兵破解NHDTA-330 接客中に顔を紅潮,https://t27.cdn2020.com/video/m3u8/2026/07/29/304cd6bc/index.m3u8
+骑兵破解NGHJ-015 彼氏を責めたことなんてないJ系美少女,https://t27.cdn2020.com/video/m3u8/2026/07/29/e785af8e/index.m3u8
+骑兵破解NATR-753 まるまる！松坂美紀2,https://t27.cdn2020.com/video/m3u8/2026/07/29/cff4337a/index.m3u8
+骑兵破解MIZD-462 美少女たちのにゅるにゅるシゴ,https://t27.cdn2020.com/video/m3u8/2026/07/29/d34854b9/index.m3u8
+骑兵破解KTRA-723 従順な素人娘と下品なセックス 4時間,https://t27.cdn2020.com/video/m3u8/2026/07/29/4c128cc4/index.m3u8
+骑兵破解KTRA-722 無毛なマ〇コに中出し！！ 4時間,https://t27.cdn2020.com/video/m3u8/2026/07/29/c13e6aa2/index.m3u8
+骑兵破解KTRA-721 ぺたんこラブ（ハート）愛すべき貧乳いもうとたち2 4時間,https://t27.cdn2020.com/video/m3u8/2026/07/29/240bd570/index.m3u8
+骑兵破解KSAT-095 素人妻,https://t27.cdn2020.com/video/m3u8/2026/07/29/d89f01a7/index.m3u8
+骑兵破解KIBD-330 4時間BEST,https://t27.cdn2020.com/video/m3u8/2026/07/29/8780fdc5/index.m3u8
+骑兵破解KAGP-362 ゾウさんパンツでフェラ3 5時間 50人,https://t27.cdn2020.com/video/m3u8/2026/07/29/e1da0802/index.m3u8
+骑兵破解KAGP-361 パパ活女子を晒します。2 5時間,https://t27.cdn2020.com/video/m3u8/2026/07/29/1d6f6ef2/index.m3u8
+骑兵破解HRSM-099,https://t27.cdn2020.com/video/m3u8/2026/07/29/26dd8c97/index.m3u8
+骑兵破解HPET-008,https://t27.cdn2020.com/video/m3u8/2026/07/29/2f2bfca2/index.m3u8
+骑兵破解HOIZ-166 ホイホイ ラ・マン15 素人,https://t27.cdn2020.com/video/m3u8/2026/07/29/44c6349c/index.m3u8
+骑兵破解HOIZ-165 ホイホイtower,https://t27.cdn2020.com/video/m3u8/2026/07/29/74ce337c/index.m3u8
+骑兵破解HOIZ-164美少女女子大生巨乳美乳,https://t27.cdn2020.com/video/m3u8/2026/07/29/ddd62a78/index.m3u8
+骑兵破解HNDB-265解禁作収録厳選6人娘,https://t27.cdn2020.com/video/m3u8/2026/07/29/d79f435e/index.m3u8
+骑兵破解HJBB-214,https://t27.cdn2020.com/video/m3u8/2026/07/29/277325f8/index.m3u8
+骑兵破解HAZUH-006,https://t27.cdn2020.com/video/m3u8/2026/07/29/358371a2/index.m3u8
+骑兵破解GS-2122 人妻湯恋旅行170 完全版,https://t27.cdn2020.com/video/m3u8/2026/07/29/f7ef38ab/index.m3u8
+骑兵破解GMAB-006 純真無垢な美少女たち 10人 4時間,https://t27.cdn2020.com/video/m3u8/2026/07/29/546570dc/index.m3u8
+骑兵破解GIGL-752 続・夫婦交換会2,https://t27.cdn2020.com/video/m3u8/2026/07/29/58588251/index.m3u8
+骑兵破解GHZ-036 母娘繚乱4時間BEST vol.8,https://t27.cdn2020.com/video/m3u8/2026/07/29/b7c7299f/index.m3u8
+骑兵破解ERDM-168 素人妻専門流出4時間,https://t27.cdn2020.com/video/m3u8/2026/07/29/ef4ab11a/index.m3u8
+骑兵破解ERDM-167 婦人科ドスケベ医セクハラ診察室4時間,https://t27.cdn2020.com/video/m3u8/2026/07/29/80210aab/index.m3u8
+骑兵破解ERDM-166 関係4時間,https://t27.cdn2020.com/video/m3u8/2026/07/29/c5abf84d/index.m3u8
+骑兵破解DASS-689,https://t27.cdn2020.com/video/m3u8/2026/07/29/5bb18b56/index.m3u8
+骑兵破解YTR-172,https://t27.cdn2020.com/video/m3u8/2026/07/28/3582cf5a/index.m3u8
+骑兵破解YMLW-046 温泉旅館風俗に潜入4時間,https://t27.cdn2020.com/video/m3u8/2026/07/28/e3b2dc8e/index.m3u8
+骑兵破解USAG-089 NO,https://t27.cdn2020.com/video/m3u8/2026/07/28/cf5f9ddf/index.m3u8
+骑兵破解UMSO-605 巨乳なのに、めっちゃスレンダー12人,https://t27.cdn2020.com/video/m3u8/2026/07/28/8abff090/index.m3u8
+骑兵破解UMSO-604 ぽっちゃり熟女SEXカタログ50人VOL.02,https://t27.cdn2020.com/video/m3u8/2026/07/28/a6d4cf9d/index.m3u8
+骑兵破解TNOZ-045,https://t27.cdn2020.com/video/m3u8/2026/07/28/776cf8ec/index.m3u8
+骑兵破解SW-1060,https://t27.cdn2020.com/video/m3u8/2026/07/28/ff0e4d53/index.m3u8
+骑兵破解SW-1059,https://t27.cdn2020.com/video/m3u8/2026/07/28/4dd3f307/index.m3u8
+骑兵破解SUPA-654 女子50人 SUPER BEST 240分,https://t27.cdn2020.com/video/m3u8/2026/07/28/9f9354e6/index.m3u8
+骑兵破解SUN-010 水城奈緒,https://t27.cdn2020.com/video/m3u8/2026/07/28/0450eb72/index.m3u8
+骑兵破解SKMJ-649 日本各地15名の一般旅行客 全員,https://t27.cdn2020.com/video/m3u8/2026/07/28/8ac8cb38/index.m3u8
+骑兵破解SKMJ-647,https://t27.cdn2020.com/video/m3u8/2026/07/28/eefa1bbb/index.m3u8
+骑兵破解SKMJ-636,https://t27.cdn2020.com/video/m3u8/2026/07/28/a4bb031c/index.m3u8
+骑兵破解SKMJ-635,https://t27.cdn2020.com/video/m3u8/2026/07/28/3abdd748/index.m3u8
+骑兵破解SCOP-877,https://t27.cdn2020.com/video/m3u8/2026/07/28/9fdcbbc4/index.m3u8
+骑兵破解SCBB-061,https://t27.cdn2020.com/video/m3u8/2026/07/28/35c5ab6a/index.m3u8
+骑兵破解PBD-495 白峰ミウ PREMIUM 2ndベスト,https://t27.cdn2020.com/video/m3u8/2026/07/28/a9b04378/index.m3u8
+骑兵破解ONEX-087 昔懐かしのアオハルソープランド 06,https://t27.cdn2020.com/video/m3u8/2026/07/28/1149d8ec/index.m3u8
+骑兵破解NHDTC-228,https://t27.cdn2020.com/video/m3u8/2026/07/28/504d3d8f/index.m3u8
+骑兵破解NGHJ-019,https://t27.cdn2020.com/video/m3u8/2026/07/28/ddb474d9/index.m3u8
+骑兵破解NGHJ-018 素人女子大生限定,https://t27.cdn2020.com/video/m3u8/2026/07/28/93ae0814/index.m3u8
+骑兵破解NGHJ-017,https://t27.cdn2020.com/video/m3u8/2026/07/28/9e695743/index.m3u8
+骑兵破解NEKK-004 個撮映像！！＃002 素人5名205分,https://t27.cdn2020.com/video/m3u8/2026/07/28/6492a22a/index.m3u8
+骑兵破解NATR-755 まるまる！田原凛花,https://t27.cdn2020.com/video/m3u8/2026/07/28/fc495acb/index.m3u8
+骑兵破解MUCH-192 デカ乳ママのむっちり肉感セックスBEST2 4時間,https://t27.cdn2020.com/video/m3u8/2026/07/28/9c2fb8e7/index.m3u8
+骑兵破解SUPA-653,https://t27.cdn2020.com/video/m3u8/2026/07/29/1f978df1/index.m3u8
+骑兵破解SUPA-652素人美女50人,https://t27.cdn2020.com/video/m3u8/2026/07/29/caf8b563/index.m3u8
+骑兵破解SUN-007,https://t27.cdn2020.com/video/m3u8/2026/07/29/84973429/index.m3u8
+骑兵破解SKMJ-644,https://t27.cdn2020.com/video/m3u8/2026/07/29/c8a5ab1a/index.m3u8
+骑兵破解SABA-947,https://t27.cdn2020.com/video/m3u8/2026/07/29/88882914/index.m3u8
+骑兵破解KTRA-723 従順な素人娘と下品なセックス 4時間,https://t27.cdn2020.com/video/m3u8/2026/07/29/4c128cc4/index.m3u8
+骑兵破解KTRA-722 無毛なマ〇コに中出し！！ 4時間,https://t27.cdn2020.com/video/m3u8/2026/07/29/c13e6aa2/index.m3u8
+骑兵破解KTRA-721 愛すべき貧乳いもうとたち2 4時間,https://t27.cdn2020.com/video/m3u8/2026/07/29/240bd570/index.m3u8
+骑兵破解KSAT-095,https://t27.cdn2020.com/video/m3u8/2026/07/29/d89f01a7/index.m3u8
+骑兵破解KIBD-330,https://t27.cdn2020.com/video/m3u8/2026/07/29/8780fdc5/index.m3u8
+骑兵破解KAGP-362 5時間,https://t27.cdn2020.com/video/m3u8/2026/07/29/e1da0802/index.m3u8
+骑兵破解KAGP-361 5時間,https://t27.cdn2020.com/video/m3u8/2026/07/29/1d6f6ef2/index.m3u8
+骑兵破解HPET-008 5時間,https://t27.cdn2020.com/video/m3u8/2026/07/29/2f2bfca2/index.m3u8
+骑兵破解HOIZ-166,https://t27.cdn2020.com/video/m3u8/2026/07/29/44c6349c/index.m3u8
+骑兵破解JKSR-690,https://t27.cdn2020.com/video/m3u8/2026/07/28/60c73cc7/index.m3u8
+骑兵破解JKSR-691 M開花SP 16人4時間,https://t27.cdn2020.com/video/m3u8/2026/07/28/375f2383/index.m3u8
+骑兵破解IDBD-970 31SEX8時間BEST,https://t27.cdn2020.com/video/m3u8/2026/07/28/9837f8d0/index.m3u8
+骑兵破解TRE-119 究極性交BEST 8時間 vol.1 12名,https://t27.cdn2020.com/video/m3u8/2026/07/21/fc8413be/index.m3u8
+骑兵破解TRE-117,https://t27.cdn2020.com/video/m3u8/2026/07/21/55358afc/index.m3u8
+骑兵破解NTKD-004 ぬるテカ巨乳 Vol.4,https://t27.cdn2020.com/video/m3u8/2026/07/21/8cb1c82b/index.m3u8
+骑兵破解KFNE-031 GH乳,https://t27.cdn2020.com/video/m3u8/2026/07/22/c2e17c42/index.m3u8
+骑兵破解HUNTA-701 お風呂場,https://t27.cdn2020.com/video/m3u8/2026/07/22/307b9ec1/index.m3u8
+骑兵破解MDBK-064,https://t27.cdn2020.com/video/m3u8/2026/07/21/1bb3f392/index.m3u8
+骑兵破解HRV-011検証団 BEST 8時間,https://t27.cdn2020.com/video/m3u8/2026/07/21/a117814a/index.m3u8
+骑兵破解DRC-005,https://t27.cdn2020.com/video/m3u8/2026/07/21/55820e69/index.m3u8
+骑兵破解OFJE-215 80連発8時間,https://t27.cdn2020.com/video/m3u8/2026/07/20/d44dce39/index.m3u8
+骑兵破解OFJE-214 8時間,https://t27.cdn2020.com/video/m3u8/2026/07/20/fbea7239/index.m3u8
+骑兵破解MTM-010,https://t27.cdn2020.com/video/m3u8/2026/07/20/7985c0d0/index.m3u8
+骑兵破解HUNTA-651,https://t27.cdn2020.com/video/m3u8/2026/07/20/ff688a48/index.m3u8
+骑兵破解HUNTA-653,https://t27.cdn2020.com/video/m3u8/2026/07/20/f50d5df4/index.m3u8
+骑兵破解HUNTA-678,https://t27.cdn2020.com/video/m3u8/2026/07/20/41de3c4a/index.m3u8
+骑兵破解CCKR-001素人巨乳爆乳20人300分,https://t27.cdn2020.com/video/m3u8/2026/07/20/957bb7bb/index.m3u8
+骑兵破解WA-591,https://t27.cdn2020.com/video/m3u8/2026/07/19/1c88ae43/index.m3u8
+骑兵破解SKMJ-0588人撮り下ろし469分,https://t27.cdn2020.com/video/m3u8/2026/07/19/4609150d/index.m3u8
+骑兵破解OFJE-208 8時間,https://t27.cdn2020.com/video/m3u8/2026/07/19/7675bc56/index.m3u8
+骑兵破解MIRD-284,https://t27.cdn2020.com/video/m3u8/2026/07/19/b5a7b125/index.m3u8
+骑兵破解DVAJ-414,https://t27.cdn2020.com/video/m3u8/2026/07/19/f4ec432a/index.m3u8
+骑兵破解AP-678,https://t27.cdn2020.com/video/m3u8/2026/07/19/97d85091/index.m3u8
+骑兵破解PYM-572 自撮り女子 40人,https://t27.cdn2020.com/video/m3u8/2026/07/17/5f3232f2/index.m3u8
+骑兵破解OKAX-5128時間2枚組,https://t27.cdn2020.com/video/m3u8/2026/07/17/20c06d06/index.m3u8
+骑兵破解IBW-996 IBW姉妹性交映像集 4時間,https://t27.cdn2020.com/video/m3u8/2026/07/17/885a169c/index.m3u8
+骑兵破解HOIZ-183・爆乳・巨乳,https://t27.cdn2020.com/video/m3u8/2026/07/17/d198954d/index.m3u8
+骑兵破解XVSR-464 超濃交 女優達4時間,https://t27.cdn2020.com/video/m3u8/2026/07/16/c30c6c9f/index.m3u8
