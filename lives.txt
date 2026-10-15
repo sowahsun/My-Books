@@ -420,9 +420,11 @@ IPTV影视推荐,http://120.87.19.109:80/PLTV/88888973/224/3221225700/1000010000
 深圳卫视4k,http://120.87.19.109:80/PLTV/88888973/224/3221226683/371164180.smil/01.m3u8?fmt=ts2hls,1,01.m3u8&rrsip=120.87.4.103:80&zoneoffset=0&servicetype=1&icpid=&limitflux=-1&limitdur=-1&tenantId=8601&accountinfo=ZErBHdoicx6KA8k34VvsyxmZWqqhmoqWnjwSzvmAgjq8m6DMrBjwBDjtfkmBgyvoi2n%2FkYZZroy5c4pnOUwIFy%2B%2FkIAavci9z%2FLJPqxg7dZGAMCQWKP%2FVYv0YgXiGkmJ%3A20260214223934%2C10500001346793%2C27.45.45.191%2C20260214223934%2Curn%3AHuawei%3AliveTV%3AXTV371164179%2C10001000211336%2C-1%2C0%2C1%2C%2C%2C2%2C%2C%2C%2C2%2C%2C371164180%2CEND&GuardEncType=2
 北京卫视4K,http://120.87.19.109:80/PLTV/88888973/224/3221226685/371059429.smil/01.m3u8?fmt=ts2hls,1,01.m3u8&rrsip=120.87.4.103:80&zoneoffset=0&servicetype=1&icpid=&limitflux=-1&limitdur=-1&tenantId=8601&accountinfo=ZErBHdoicx6KA8k34VvsyxmZWqqhmoqWnjwSzvmAgjq8m6DMrBjwBDjtfkmBgyvoi2n%2FkYZZroy5c4pnOUwIFwjPONabwq4Db4vofET%2FLZdGAMCQWKP%2FVYv0YgXiGkmJ%3A20260214223934%2C10500001346793%2C27.45.45.191%2C20260214223934%2Curn%3AHuawei%3AliveTV%3AXTV371059428%2C10001000211336%2C-1%2C0%2C1%2C%2C%2C2%2C%2C%2C%2C2%2C%2C371059429%2CEND&GuardEncType=2
 极速港台（挂梯）,#genre#
+翡翠台,http://cc.123.rr.kg/163189/fct
+无线新闻台,http://cc.123.rr.kg/163189/wxxwt
+HOY TV,https://cc.123.rr.kg/163189/hoy
 翡翠台4K(字幕),https://cdn3.indevs.in/stream/tvb/fct4k/
 凤凰中文,https://cdn6.cc.cd/163189/fhzw
-翡翠台,http://cc.123.rr.kg/163189/fct
 翡翠台,https://cdn6.cc.cd/163189/fct
 翡翠台(字幕),https://cdn3.indevs.in/stream/tvb/fct/
 明珠台(字幕),https://cdn3.indevs.in/stream/tvb/mzt/
@@ -810,7 +812,7 @@ baby,https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v1e00fgi0000ctq63sfog65
 move up,https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0300f6d0000c1110e3c60j1d8ttn99g&ratio=720p&line=0
 summer air,https://www.iesdouyin.com/aweme/v1/playwm/?line=0&logo_name=aweme_diversion_search&ratio=720p&video_id=v0200fg10000cm20flnog65j08qqtmh0
 take me hand,https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0200fg10000clnfk87og65tv4479500&ratio=720p&line=0
-normal no more,https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0d00fg10000civ51krc77uceq9j09o0&ratio=720p&line=0
+normal no more,https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0200fg10000cvvrm4vog65v9p2sp2hg&ratio=720p&line=0
 monsters,https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0300fg10000cl270lfog65hf7m2f3j0&ratio=720p&line=0
 run free,https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0300fg10000c6bn043c77u9bihknaj0&ratio=720p&line=0
 remember our summer,https://www.iesdouyin.com/aweme/v1/playwm/?line=0&logo_name=aweme_diversion_search&ratio=720p&video_id=v0200fg10000cocdiqjc77u8mnj0qmgg
@@ -938,6 +940,7 @@ AK电影,#genre#
 凤凰资讯,http://bobohome.ignorelist.com:20247/fengshows?id=1.m3u8
 凤凰香港,http://bobohome.ignorelist.com:20247/fengshows?id=3.m3u8
 寰宇新闻,http://128.14.206.166/pull-f5.flive.douyincdn.com/live/hyxw.flv
+TVB Plus,http://167.88.62.43:64012/0.ts
 NOW新闻台,http://psyl11.dyndns.tv:35451/live/axdynowtream/fSlawNmh15/23.ts
 FightSports,http://iptv.4666888.xyz/iptv2A.php?id=1
 TntSports1,http://iptv.4666888.xyz/iptv2A.php?id=2
